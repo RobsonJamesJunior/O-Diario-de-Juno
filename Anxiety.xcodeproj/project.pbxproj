@@ -74,10 +74,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E71351C217A2804008290E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E71351D217A281F008290E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2726C41217A1DDE00FC04FF /* Main.storyboard */,
+				E2726C44217A1DE000FC04FF /* Assets.xcassets */,
+				E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E71351E217A2829008290E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */,
+				E2726C3F217A1DDE00FC04FF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E2726C31217A1DDE00FC04FF = {
 			isa = PBXGroup;
 			children = (
 				E2726C3C217A1DDE00FC04FF /* Anxiety */,
+				E2726C49217A1DE000FC04FF /* Info.plist */,
 				E2726C51217A1DE000FC04FF /* AnxietyTests */,
 				E2726C5C217A1DE000FC04FF /* AnxietyUITests */,
 				E2726C3B217A1DDE00FC04FF /* Products */,
@@ -97,12 +124,9 @@
 		E2726C3C217A1DDE00FC04FF /* Anxiety */ = {
 			isa = PBXGroup;
 			children = (
-				E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */,
-				E2726C3F217A1DDE00FC04FF /* ViewController.swift */,
-				E2726C41217A1DDE00FC04FF /* Main.storyboard */,
-				E2726C44217A1DE000FC04FF /* Assets.xcassets */,
-				E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */,
-				E2726C49217A1DE000FC04FF /* Info.plist */,
+				5E71351E217A2829008290E4 /* Controller */,
+				5E71351D217A281F008290E4 /* View */,
+				5E71351C217A2804008290E4 /* Model */,
 			);
 			path = Anxiety;
 			sourceTree = "<group>";
