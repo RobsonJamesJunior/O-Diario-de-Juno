@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */; };
+		1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8EF218216BF0097921A /* Cena2ViewController.swift */; };
+		1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F1218216FC0097921A /* Cena3ViewController.swift */; };
+		1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F3218217310097921A /* Cena4ViewController.swift */; };
+		1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F5218217670097921A /* Cena5ViewController.swift */; };
+		1D2DB8F82182179E0097921A /* Cena6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F72182179E0097921A /* Cena6ViewController.swift */; };
+		1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F9218217DC0097921A /* Cena7ViewController.swift */; };
+		1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8FB218218C60097921A /* Cena8ViewController.swift */; };
+		1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8FD218219410097921A /* Cena9ViewController.swift */; };
+		1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8FF218219720097921A /* Cena10ViewController.swift */; };
+		1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB901218219A30097921A /* Cena11ViewController.swift */; };
+		1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB903218219D60097921A /* Cena12ViewController.swift */; };
+		1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90521821A0B0097921A /* Cena13ViewController.swift */; };
+		1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90721821A430097921A /* Cena14ViewController.swift */; };
+		1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90921821A740097921A /* Cena15ViewController.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
 		E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */; };
 		E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3F217A1DDE00FC04FF /* ViewController.swift */; };
@@ -35,6 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena1ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8EF218216BF0097921A /* Cena2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena2ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8F1218216FC0097921A /* Cena3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena3ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8F3218217310097921A /* Cena4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena4ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8F5218217670097921A /* Cena5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena5ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8F72182179E0097921A /* Cena6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena6ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8F9218217DC0097921A /* Cena7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena7ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8FB218218C60097921A /* Cena8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena8ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8FD218219410097921A /* Cena9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena9ViewController.swift; sourceTree = "<group>"; };
+		1D2DB8FF218219720097921A /* Cena10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena10ViewController.swift; sourceTree = "<group>"; };
+		1D2DB901218219A30097921A /* Cena11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena11ViewController.swift; sourceTree = "<group>"; };
+		1D2DB903218219D60097921A /* Cena12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena12ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90521821A0B0097921A /* Cena13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena13ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90721821A430097921A /* Cena14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena14ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90921821A740097921A /* Cena15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena15ViewController.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E2726C3A217A1DDE00FC04FF /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +128,21 @@
 			children = (
 				E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */,
 				E2726C3F217A1DDE00FC04FF /* ViewController.swift */,
+				1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */,
+				1D2DB8EF218216BF0097921A /* Cena2ViewController.swift */,
+				1D2DB8F1218216FC0097921A /* Cena3ViewController.swift */,
+				1D2DB8F3218217310097921A /* Cena4ViewController.swift */,
+				1D2DB8F5218217670097921A /* Cena5ViewController.swift */,
+				1D2DB8F72182179E0097921A /* Cena6ViewController.swift */,
+				1D2DB8F9218217DC0097921A /* Cena7ViewController.swift */,
+				1D2DB8FB218218C60097921A /* Cena8ViewController.swift */,
+				1D2DB8FD218219410097921A /* Cena9ViewController.swift */,
+				1D2DB8FF218219720097921A /* Cena10ViewController.swift */,
+				1D2DB901218219A30097921A /* Cena11ViewController.swift */,
+				1D2DB903218219D60097921A /* Cena12ViewController.swift */,
+				1D2DB90521821A0B0097921A /* Cena13ViewController.swift */,
+				1D2DB90721821A430097921A /* Cena14ViewController.swift */,
+				1D2DB90921821A740097921A /* Cena15ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,8 +329,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */,
+				1D2DB8F82182179E0097921A /* Cena6ViewController.swift in Sources */,
+				1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */,
+				1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */,
 				E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */,
+				1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */,
+				1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
+				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
+				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
+				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
+				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
+				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
+				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
+				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
+				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,
+				1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
