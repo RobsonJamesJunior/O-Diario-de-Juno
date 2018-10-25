@@ -24,6 +24,21 @@
             </objects>
             <point key="canvasLocation" x="30" y="134"/>
         </scene>
+        <!--Cena Espelho View Controller-->
+        <scene sceneID="8Nk-ZW-eYP">
+            <objects>
+                <viewController id="Mh4-Zm-bbc" customClass="CenaEspelhoViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6oV-vC-PkH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cMp-yi-mOu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IuO-jG-1qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="1070"/>
+        </scene>
         <!--Cena1 View Controller-->
         <scene sceneID="aEi-vV-sfP">
             <objects>

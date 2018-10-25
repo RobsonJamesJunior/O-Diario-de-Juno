@@ -23,6 +23,7 @@
 		1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90721821A430097921A /* Cena14ViewController.swift */; };
 		1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90921821A740097921A /* Cena15ViewController.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
+		E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */; };
 		E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */; };
 		E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3F217A1DDE00FC04FF /* ViewController.swift */; };
 		E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2726C41217A1DDE00FC04FF /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		1D2DB90721821A430097921A /* Cena14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena14ViewController.swift; sourceTree = "<group>"; };
 		1D2DB90921821A740097921A /* Cena15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena15ViewController.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenaEspelhoViewController.swift; sourceTree = "<group>"; };
 		E2726C3A217A1DDE00FC04FF /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2726C3F217A1DDE00FC04FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				1D2DB90521821A0B0097921A /* Cena13ViewController.swift */,
 				1D2DB90721821A430097921A /* Cena14ViewController.swift */,
 				1D2DB90921821A740097921A /* Cena15ViewController.swift */,
+				E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
+				E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
