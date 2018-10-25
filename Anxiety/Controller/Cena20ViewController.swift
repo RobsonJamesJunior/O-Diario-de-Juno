@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Cena15ViewController: UIViewController {
+class Cena20ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

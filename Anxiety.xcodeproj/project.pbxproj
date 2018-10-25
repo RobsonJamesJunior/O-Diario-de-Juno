@@ -22,6 +22,11 @@
 		1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90521821A0B0097921A /* Cena13ViewController.swift */; };
 		1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90721821A430097921A /* Cena14ViewController.swift */; };
 		1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90921821A740097921A /* Cena15ViewController.swift */; };
+		1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90B21821C380097921A /* Cena16ViewController.swift */; };
+		1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90D21821C880097921A /* Cena17ViewController.swift */; };
+		1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90F21821D150097921A /* Cena18ViewController.swift */; };
+		1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91121821D420097921A /* Cena19ViewController.swift */; };
+		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
 		E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */; };
 		E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */; };
@@ -66,6 +71,11 @@
 		1D2DB90521821A0B0097921A /* Cena13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena13ViewController.swift; sourceTree = "<group>"; };
 		1D2DB90721821A430097921A /* Cena14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena14ViewController.swift; sourceTree = "<group>"; };
 		1D2DB90921821A740097921A /* Cena15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena15ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90B21821C380097921A /* Cena16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena16ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90D21821C880097921A /* Cena17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena17ViewController.swift; sourceTree = "<group>"; };
+		1D2DB90F21821D150097921A /* Cena18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena18ViewController.swift; sourceTree = "<group>"; };
+		1D2DB91121821D420097921A /* Cena19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19ViewController.swift; sourceTree = "<group>"; };
+		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenaEspelhoViewController.swift; sourceTree = "<group>"; };
 		E2726C3A217A1DDE00FC04FF /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +156,11 @@
 				1D2DB90721821A430097921A /* Cena14ViewController.swift */,
 				1D2DB90921821A740097921A /* Cena15ViewController.swift */,
 				E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */,
+				1D2DB90B21821C380097921A /* Cena16ViewController.swift */,
+				1D2DB90D21821C880097921A /* Cena17ViewController.swift */,
+				1D2DB90F21821D150097921A /* Cena18ViewController.swift */,
+				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
+				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */,
 				1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */,
 				1D2DB8F82182179E0097921A /* Cena6ViewController.swift in Sources */,
 				1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */,
@@ -343,11 +359,15 @@
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
 				E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */,
+				1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
+				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
+				1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */,
 				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
+				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,
 				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,
 				1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */,
 			);
