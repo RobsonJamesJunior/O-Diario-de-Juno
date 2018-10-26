@@ -358,6 +358,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6vk-wc-7Hi"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena13ImageView" destination="QW6-QN-35S" id="Xf4-Qy-2oU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orl-n1-EN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
