@@ -382,6 +382,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ugz-aT-wMN"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena14ImageView" destination="R33-RP-0kl" id="GrD-Aw-f5Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kt5-kC-qvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
