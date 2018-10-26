@@ -406,6 +406,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IC6-x3-UAe"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena15ImageView" destination="dDC-Eg-7RC" id="AW1-7j-cJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBB-t1-2wP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
