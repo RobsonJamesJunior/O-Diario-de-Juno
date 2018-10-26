@@ -17,6 +17,7 @@ class Cena3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Cena3ImageView.isAccessibilityElement = true
     }
     
     
