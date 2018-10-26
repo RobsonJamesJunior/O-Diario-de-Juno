@@ -11,12 +11,12 @@ import UIKit
 class Cena16ViewController: UIViewController {
     
     
-    @IBOutlet weak var Cena17ImageView: UIImageView!
+    @IBOutlet weak var Cena16ImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Cena17ImageView.isAccessibilityElement = true
+        Cena16ImageView.isAccessibilityElement = true
     }
     
     
