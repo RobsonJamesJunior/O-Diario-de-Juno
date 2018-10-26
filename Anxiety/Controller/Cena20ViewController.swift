@@ -9,6 +9,9 @@
 import UIKit
 
 class Cena20ViewController: UIViewController {
+   
+    @IBOutlet weak var Cena20ImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

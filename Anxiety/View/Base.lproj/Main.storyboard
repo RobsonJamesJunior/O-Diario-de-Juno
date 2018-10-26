@@ -430,6 +430,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SFW-9g-iab"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena17ImageView" destination="OTs-2i-5P4" id="nUZ-CJ-z19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKW-dU-IAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,6 +454,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cfw-CR-YE3"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena17ImageView" destination="vNU-F8-Zb4" id="d6Y-pO-GvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFy-ic-SuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,6 +478,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nrd-Gc-dS6"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena18ImageView" destination="ZcS-qp-i84" id="AD8-Nd-bJI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-dl-RfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -493,6 +502,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Yik-pY-qlD"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OY-wI-KXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -514,6 +526,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena20ImageView" destination="cVn-Qp-ZEe" id="iZn-52-30T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbB-1p-LgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
