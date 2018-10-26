@@ -310,6 +310,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0xt-e6-brd"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena11ImageView" destination="qYa-50-BtW" id="iaC-KW-xkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gG3-py-nkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
