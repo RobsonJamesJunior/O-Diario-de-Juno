@@ -10,6 +10,10 @@ import UIKit
 
 class Cena2ViewController: UIViewController {
     
+    
+    @IBOutlet weak var Cena2View: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
