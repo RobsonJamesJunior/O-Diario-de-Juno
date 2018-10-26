@@ -166,6 +166,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Np6-J3-fur"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena5ImageView" destination="N6x-w5-JHf" id="05H-0V-raq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPo-G1-uEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +190,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pif-lN-qyO"/>
                     </view>
+                    <connections>
+                        <outlet property="Cena6ImageView" destination="uuB-Ce-POe" id="Z49-2Q-aRW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-9o-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
