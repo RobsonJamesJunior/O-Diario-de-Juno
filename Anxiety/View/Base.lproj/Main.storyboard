@@ -49,6 +49,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cMp-yi-mOu"/>
                     </view>
+                    <connections>
+                        <outlet property="CenaEspelhoImageView" destination="yjz-Ge-K82" id="y4r-cf-CRm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuO-jG-1qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
