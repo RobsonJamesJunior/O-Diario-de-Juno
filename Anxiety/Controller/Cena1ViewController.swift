@@ -10,8 +10,7 @@ import UIKit
 
 class Cena1ViewController: UIViewController {
     
-    @IBOutlet weak var Cena1View: UIImageView!
-    
+    @IBOutlet weak var Cena1ImageView: UIImageView!
     
     
     override func viewDidLoad() {

@@ -11,7 +11,7 @@ import UIKit
 class Cena2ViewController: UIViewController {
     
     
-    @IBOutlet weak var Cena2View: UIImageView!
+    @IBOutlet weak var Cena2ImageView: UIImageView!
     
     
     override func viewDidLoad() {

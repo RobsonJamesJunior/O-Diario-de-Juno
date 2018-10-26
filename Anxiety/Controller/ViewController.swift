@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var MainCenaView: UIImageView!
-    
+    @IBOutlet weak var MainCenaImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
