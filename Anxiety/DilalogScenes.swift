@@ -8,7 +8,7 @@
 
 import Foundation
 
-let cena1:[String] = ["Acordei cansado hj pela manha",]
+let cena1:[String] = ["Acordei cansado hoje pela manhã de novo",]
 
 let cena1_1:[String] = ["Não dormir muito na noite passada, passei horas e horas pensando.",]
 
