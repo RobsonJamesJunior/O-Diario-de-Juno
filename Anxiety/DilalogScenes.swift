@@ -20,7 +20,7 @@ let cena5:[String] = ["Huummm, qual roupa eu vou?", "Essa não, essa não… ess
 
 let cena6:[String] = ["Amigos","Bom dia", "Viagens", "Hilário", "HAHAHA","Trabalho","Faculdade", "Tchau","Achou errado!","Show!",]
 
-let cena11:[String] = ["Ele ta olhando pra mim?","Por que ele estaria olhando pra mim?",]
+let cena11:[String] = ["Ele está olhando pra mim?","Por que ele estaria olhando pra mim?",]
 
 let cena14:[String] = ["Será que é um assaltante?","Ta chegando perto, o que eu faço??",]
 
@@ -28,7 +28,7 @@ let cena15:[String] = ["Vou direto ou pego outro caminho?",]
 
 let cena16:[String] = ["aaaahhhh",]
 
-let cena20_1:[String] = ["TA ATRASADO!!!!! Vou descontar do seu salário.","Pega o avental.","Ta bom.",]
+let cena20_1:[String] = ["ESTÁ ATRASADO!!!!! Vou descontar do seu salário.","Pega o avental.","Ta bom.",]
 
 let cena20_2:[String] = ["Bom dia, vamos trabalhar?","To indo",]
 
