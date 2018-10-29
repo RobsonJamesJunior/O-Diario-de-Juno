@@ -80,15 +80,15 @@
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenaEspelhoViewController.swift; sourceTree = "<group>"; };
-		E2726C3A217A1DDE00FC04FF /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2726C3A217A1DDE00FC04FF /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Anxiety.app; path = "/Users/robsonjamesjunior/Documents/projectChallenge/Anxiety/build/Debug-iphoneos/Anxiety.app"; sourceTree = "<absolute>"; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2726C3F217A1DDE00FC04FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2726C42217A1DDE00FC04FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2726C44217A1DE000FC04FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2726C47217A1DE000FC04FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2726C49217A1DE000FC04FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2726C4E217A1DE000FC04FF /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2726C59217A1DE000FC04FF /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2726C4E217A1DE000FC04FF /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AnxietyTests.xctest; path = "/Users/robsonjamesjunior/Documents/projectChallenge/Anxiety/build/Debug-iphoneos/AnxietyTests.xctest"; sourceTree = "<absolute>"; };
+		E2726C59217A1DE000FC04FF /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AnxietyUITests.xctest; path = "/Users/robsonjamesjunior/Documents/projectChallenge/Anxiety/build/Debug-iphoneos/AnxietyUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,18 +170,7 @@
 			children = (
 				1D90FA442180F520003FF364 /* Default-568h@2x.png */,
 				E2726C3C217A1DDE00FC04FF /* Anxiety */,
-				E2726C3B217A1DDE00FC04FF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		E2726C3B217A1DDE00FC04FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E2726C3A217A1DDE00FC04FF /* Anxiety.app */,
-				E2726C4E217A1DE000FC04FF /* AnxietyTests.xctest */,
-				E2726C59217A1DE000FC04FF /* AnxietyUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E2726C3C217A1DDE00FC04FF /* Anxiety */ = {
@@ -283,7 +272,7 @@
 				Base,
 			);
 			mainGroup = E2726C31217A1DDE00FC04FF;
-			productRefGroup = E2726C3B217A1DDE00FC04FF /* Products */;
+			productRefGroup = E2726C31217A1DDE00FC04FF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
