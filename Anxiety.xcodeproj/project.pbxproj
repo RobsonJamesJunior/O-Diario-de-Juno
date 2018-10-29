@@ -27,6 +27,7 @@
 		1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90F21821D150097921A /* Cena18ViewController.swift */; };
 		1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91121821D420097921A /* Cena19ViewController.swift */; };
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
+		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */; };
@@ -77,6 +78,7 @@
 		1D2DB90F21821D150097921A /* Cena18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena18ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91121821D420097921A /* Cena19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
+		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenaEspelhoViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				1D2DB90F21821D150097921A /* Cena18ViewController.swift */,
 				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
 				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
+				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
+				1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */,
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
