@@ -36,8 +36,6 @@
 		E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2726C41217A1DDE00FC04FF /* Main.storyboard */; };
 		E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2726C44217A1DE000FC04FF /* Assets.xcassets */; };
 		E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */; };
-		E2726C53217A1DE000FC04FF /* AnxietyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C52217A1DE000FC04FF /* AnxietyTests.swift */; };
-		E2726C5E217A1DE000FC04FF /* AnxietyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C5D217A1DE000FC04FF /* AnxietyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,11 +88,7 @@
 		E2726C47217A1DE000FC04FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2726C49217A1DE000FC04FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2726C4E217A1DE000FC04FF /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2726C52217A1DE000FC04FF /* AnxietyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyTests.swift; sourceTree = "<group>"; };
-		E2726C54217A1DE000FC04FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2726C59217A1DE000FC04FF /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2726C5D217A1DE000FC04FF /* AnxietyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyUITests.swift; sourceTree = "<group>"; };
-		E2726C5F217A1DE000FC04FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +170,7 @@
 			children = (
 				1D90FA442180F520003FF364 /* Default-568h@2x.png */,
 				E2726C3C217A1DDE00FC04FF /* Anxiety */,
-				E2726C51217A1DE000FC04FF /* AnxietyTests */,
-				E2726C5C217A1DE000FC04FF /* AnxietyUITests */,
 				E2726C3B217A1DDE00FC04FF /* Products */,
-				E2726C49217A1DE000FC04FF /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,26 +190,9 @@
 				5E75ABD12183B95300C59507 /* Model */,
 				5E71351E217A2829008290E4 /* Controller */,
 				5E71351D217A281F008290E4 /* View */,
+				E2726C49217A1DE000FC04FF /* Info.plist */,
 			);
 			path = Anxiety;
-			sourceTree = "<group>";
-		};
-		E2726C51217A1DE000FC04FF /* AnxietyTests */ = {
-			isa = PBXGroup;
-			children = (
-				E2726C52217A1DE000FC04FF /* AnxietyTests.swift */,
-				E2726C54217A1DE000FC04FF /* Info.plist */,
-			);
-			path = AnxietyTests;
-			sourceTree = "<group>";
-		};
-		E2726C5C217A1DE000FC04FF /* AnxietyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E2726C5D217A1DE000FC04FF /* AnxietyUITests.swift */,
-				E2726C5F217A1DE000FC04FF /* Info.plist */,
-			);
-			path = AnxietyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2726C53217A1DE000FC04FF /* AnxietyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2726C5E217A1DE000FC04FF /* AnxietyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
