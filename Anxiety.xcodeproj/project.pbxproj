@@ -29,6 +29,7 @@
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
 		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
+		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
 		E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */; };
@@ -79,6 +80,7 @@
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
 		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5E75ABD22183B9A900C59507 /* DilalogScenes.swift */,
+				1DBE1BC82188EA560000F746 /* TipsScenes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				1D2DB90821821A430097921A /* Cena14ViewController.swift in Sources */,
 				1D2DB8F82182179E0097921A /* Cena6ViewController.swift in Sources */,
 				5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */,
+				1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */,
 				1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */,
 				1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */,
 				E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */,
