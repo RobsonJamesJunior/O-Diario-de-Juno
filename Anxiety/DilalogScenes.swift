@@ -42,7 +42,11 @@ let cena28:[String] = ["Não deveria mas preciso fumar pra me acalmar.",]
 
 let cena29:[String] = ["Tchau, até amanhã","Até, cuidado!",]
 
+let dicaCenaCafe:[String] = ["Dica: chás podem ajudar a se acalmar!",]
 
+let dicaCenaMetro:[String] = ["Músicas podem diminuir a ansiedade.",]
+
+let dicaCenaRespiracao:[String] = ["Tente controlar sua respiração",]
 
 
 
