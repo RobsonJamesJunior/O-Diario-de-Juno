@@ -32,7 +32,7 @@
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
-		5E82FA57218A454B00A43BE5 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA56218A454A00A43BE5 /* gif.gif */; };
+		5E82FA57218A454B00A43BE5 /* Cena1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA56218A454A00A43BE5 /* Cena1.gif */; };
 		E206C9B621821B63008AD2CA /* CenaEspelhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */; };
 		E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */; };
 		E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3F217A1DDE00FC04FF /* ViewController.swift */; };
@@ -87,7 +87,7 @@
 		5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA2B2188833900A43BE5 /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Juninho-Regular.ttf"; sourceTree = "<group>"; };
-		5E82FA56218A454A00A43BE5 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		5E82FA56218A454A00A43BE5 /* Cena1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena1.gif; sourceTree = "<group>"; };
 		E206C9B521821B63008AD2CA /* CenaEspelhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenaEspelhoViewController.swift; sourceTree = "<group>"; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2726C3F217A1DDE00FC04FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,11 +122,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D059C69218B0D3B006B5A0C /* ImagensCenas */ = {
+			isa = PBXGroup;
+			children = (
+				5E82FA56218A454A00A43BE5 /* Cena1.gif */,
+			);
+			path = ImagensCenas;
+			sourceTree = "<group>";
+		};
 		5E71351D217A281F008290E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E2726C41217A1DDE00FC04FF /* Main.storyboard */,
-				5E82FA56218A454A00A43BE5 /* gif.gif */,
+				1D059C69218B0D3B006B5A0C /* ImagensCenas */,
 				E2726C44217A1DE000FC04FF /* Assets.xcassets */,
 				E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */,
 			);
@@ -311,7 +319,7 @@
 				E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */,
-				5E82FA57218A454B00A43BE5 /* gif.gif in Resources */,
+				5E82FA57218A454B00A43BE5 /* Cena1.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
 				E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */,
 			);
