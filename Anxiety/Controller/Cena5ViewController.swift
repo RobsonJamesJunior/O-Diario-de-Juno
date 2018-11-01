@@ -15,7 +15,9 @@ class Cena5ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Cena5ImageView.isAccessibilityElement = true
+        Cena5ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
+        let Cena5Gif = UIImage.gifImageWithName("Cena_5") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena5
+        Cena5ImageView.image = Cena5Gif // Adicionando a variável à tela de ImageView
     }
     
     
