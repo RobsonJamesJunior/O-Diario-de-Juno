@@ -10,7 +10,27 @@ import UIKit
 
 class Cena6ViewController: UIViewController {
     
+    @IBOutlet weak var DicasLabel: UILabel!
     @IBOutlet weak var Cena6ImageView: UIImageView!
+    
+    
+    override func viewWillAppear(_ animated:Bool) {
+        super.viewWillAppear(animated)
+        
+        DicasLabel.center.x += view.bounds.height
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //animeted label
+        UIView.animate(withDuration: 1.0, animations:{
+            
+            self.DicasLabel.center.x -= self.view.bounds.height
+            
+        })
+    }
+
+    
     
     
     override func viewDidLoad() {
