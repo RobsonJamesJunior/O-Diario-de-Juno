@@ -28,6 +28,22 @@
 		1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91121821D420097921A /* Cena19ViewController.swift */; };
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
 		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
+		1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE4218F241B006DFE69 /* coração.mp3 */; };
+		1D7C0FF5218F241C006DFE69 /* transito.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE5218F241B006DFE69 /* transito.wav */; };
+		1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE6218F241B006DFE69 /* comendo2.wav */; };
+		1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE7218F241B006DFE69 /* passaro2.wav */; };
+		1D7C0FF8218F241C006DFE69 /* agua_pia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE8218F241B006DFE69 /* agua_pia.mp3 */; };
+		1D7C0FF9218F241C006DFE69 /* transito4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE9218F241B006DFE69 /* transito4.wav */; };
+		1D7C0FFA218F241C006DFE69 /* respiração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEA218F241B006DFE69 /* respiração.mp3 */; };
+		1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEB218F241B006DFE69 /* transito2.wav */; };
+		1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEC218F241B006DFE69 /* comendo.mp3 */; };
+		1D7C0FFD218F241C006DFE69 /* comendo3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FED218F241B006DFE69 /* comendo3.wav */; };
+		1D7C0FFE218F241C006DFE69 /* chave.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEE218F241C006DFE69 /* chave.wav */; };
+		1D7C0FFF218F241C006DFE69 /* transito3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEF218F241C006DFE69 /* transito3.wav */; };
+		1D7C1000218F241C006DFE69 /* chave2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF0218F241C006DFE69 /* chave2.mp3 */; };
+		1D7C1001218F241C006DFE69 /* coração3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF1218F241C006DFE69 /* coração3.wav */; };
+		1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */; };
+		1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF3218F241C006DFE69 /* coração2.mp3 */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		1DCA91FF218CDE9300934B35 /* Cena_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA91FE218CDE9300934B35 /* Cena_4.gif */; };
@@ -89,6 +105,22 @@
 		1D2DB91121821D420097921A /* Cena19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
 		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
+		1D7C0FE4218F241B006DFE69 /* coração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração.mp3"; sourceTree = "<group>"; };
+		1D7C0FE5218F241B006DFE69 /* transito.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito.wav; sourceTree = "<group>"; };
+		1D7C0FE6218F241B006DFE69 /* comendo2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = comendo2.wav; sourceTree = "<group>"; };
+		1D7C0FE7218F241B006DFE69 /* passaro2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passaro2.wav; sourceTree = "<group>"; };
+		1D7C0FE8218F241B006DFE69 /* agua_pia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agua_pia.mp3; sourceTree = "<group>"; };
+		1D7C0FE9218F241B006DFE69 /* transito4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito4.wav; sourceTree = "<group>"; };
+		1D7C0FEA218F241B006DFE69 /* respiração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "respiração.mp3"; sourceTree = "<group>"; };
+		1D7C0FEB218F241B006DFE69 /* transito2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito2.wav; sourceTree = "<group>"; };
+		1D7C0FEC218F241B006DFE69 /* comendo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comendo.mp3; sourceTree = "<group>"; };
+		1D7C0FED218F241B006DFE69 /* comendo3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = comendo3.wav; sourceTree = "<group>"; };
+		1D7C0FEE218F241C006DFE69 /* chave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chave.wav; sourceTree = "<group>"; };
+		1D7C0FEF218F241C006DFE69 /* transito3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito3.wav; sourceTree = "<group>"; };
+		1D7C0FF0218F241C006DFE69 /* chave2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chave2.mp3; sourceTree = "<group>"; };
+		1D7C0FF1218F241C006DFE69 /* coração3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "coração3.wav"; sourceTree = "<group>"; };
+		1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = passaro_acordar.mp3; sourceTree = "<group>"; };
+		1D7C0FF3218F241C006DFE69 /* coração2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração2.mp3"; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
 		1DCA91FE218CDE9300934B35 /* Cena_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_4.gif; sourceTree = "<group>"; };
@@ -157,6 +189,29 @@
 			path = ImagensCenas;
 			sourceTree = "<group>";
 		};
+		1D7C0FE3218F2385006DFE69 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1D7C0FE8218F241B006DFE69 /* agua_pia.mp3 */,
+				1D7C0FEE218F241C006DFE69 /* chave.wav */,
+				1D7C0FF0218F241C006DFE69 /* chave2.mp3 */,
+				1D7C0FEC218F241B006DFE69 /* comendo.mp3 */,
+				1D7C0FE6218F241B006DFE69 /* comendo2.wav */,
+				1D7C0FED218F241B006DFE69 /* comendo3.wav */,
+				1D7C0FE4218F241B006DFE69 /* coração.mp3 */,
+				1D7C0FF3218F241C006DFE69 /* coração2.mp3 */,
+				1D7C0FF1218F241C006DFE69 /* coração3.wav */,
+				1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */,
+				1D7C0FE7218F241B006DFE69 /* passaro2.wav */,
+				1D7C0FEA218F241B006DFE69 /* respiração.mp3 */,
+				1D7C0FE5218F241B006DFE69 /* transito.wav */,
+				1D7C0FEB218F241B006DFE69 /* transito2.wav */,
+				1D7C0FEF218F241C006DFE69 /* transito3.wav */,
+				1D7C0FE9218F241B006DFE69 /* transito4.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		5E71351D217A281F008290E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +257,7 @@
 		5E75ABD12183B95300C59507 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D7C0FE3218F2385006DFE69 /* Sounds */,
 				5E75ABD22183B9A900C59507 /* DilalogScenes.swift */,
 				1DBE1BC82188EA560000F746 /* TipsScenes.swift */,
 			);
@@ -344,18 +400,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */,
+				1D7C0FF5218F241C006DFE69 /* transito.wav in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
+				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
 				5E82FA80218CC98000A43BE5 /* Cena_7.gif in Resources */,
+				1D7C0FFE218F241C006DFE69 /* chave.wav in Resources */,
 				1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */,
+				1D7C1001218F241C006DFE69 /* coração3.wav in Resources */,
+				1D7C0FFD218F241C006DFE69 /* comendo3.wav in Resources */,
+				1D7C0FF8218F241C006DFE69 /* agua_pia.mp3 in Resources */,
 				5E82FA83218CC98000A43BE5 /* Cena_9.gif in Resources */,
+				1D7C0FFF218F241C006DFE69 /* transito3.wav in Resources */,
 				1DCA91FF218CDE9300934B35 /* Cena_4.gif in Resources */,
 				5E82FA81218CC98000A43BE5 /* Cena_5.gif in Resources */,
 				5E82FA82218CC98000A43BE5 /* Cena_6.gif in Resources */,
+				1D7C1000218F241C006DFE69 /* chave2.mp3 in Resources */,
+				1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */,
 				5E82FA57218A454B00A43BE5 /* Cena_1.gif in Resources */,
+				1D7C0FF9218F241C006DFE69 /* transito4.wav in Resources */,
+				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
+				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
+				1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */,
 				5E82FA63218B346B00A43BE5 /* Cena_3.gif in Resources */,
+				1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */,
+				1D7C0FFA218F241C006DFE69 /* respiração.mp3 in Resources */,
 				5E82FA66218B346B00A43BE5 /* Cena_ESP.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
 				5E82FA85218CC98000A43BE5 /* Cena_8.gif in Resources */,
+				1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */,
 				5E82FA62218B346B00A43BE5 /* Cena_2.gif in Resources */,
 				E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */,
 			);

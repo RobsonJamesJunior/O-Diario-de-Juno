@@ -8,16 +8,24 @@
 
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
+import AVFoundation // Biblioteca para utilizar sons
 
 class Cena1ViewController: UIViewController {
     
     @IBOutlet weak var Cena1ImageView: UIImageView!
     
     var timer: Timer!
+    var audioPlayer = AVAudioPlayer()
     var controlVibration: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "passaro_acordar", ofType: "mp3")!)) // colocando a música através do diretório
+            audioPlayer.prepareToPlay() // preparando o áudio
+        } catch {
+            print(error) // erro de áudio
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
         Cena1ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
@@ -31,6 +39,7 @@ class Cena1ViewController: UIViewController {
     
     @objc func update() { // Função de atualização para opreações constantes
         if controlVibration == false{ // Variável que faz vibrar apenas uma vez
+            audioPlayer.play() // dá o play no áudio
             for _ in 1...5 { // Repetição da quantidade de vibrações
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
                 sleep(1) // delay do comando
