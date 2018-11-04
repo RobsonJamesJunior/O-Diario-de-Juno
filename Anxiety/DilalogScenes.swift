@@ -10,7 +10,7 @@ import Foundation
 
 let cena1:[String] = ["Acordei cansado hoje, de novo",]
 
-let cena1_1:[String] = ["Não dormir muito na noite passada, passei horas e horas pensando.",]
+let cena1_1:[String] = ["Não consegui dormir, fiquei rolando na cama pensando besteiras.",]
 
 let cena2:[String] = ["Vamos la!",]
 
@@ -32,7 +32,7 @@ let cena20_1:[String] = ["ESTÁ ATRASADO!!!!! Vou descontar do seu salário.","P
 
 let cena20_2:[String] = ["Bom dia, vamos trabalhar?","To indo",]
 
-let cena23:[String] = ["Que isso cara? Ninguém aqui pediu isso não.","Desculpe senhor, vou ja trocar.","cuidado cara vai jogar as coisa em mim. Ta me vendo não?","Presta atenção!","Quero falar com o gerente!","Eu vou resolver senhor, me desculpe.",]
+let cena23:[String] = ["Que isso cara? Ninguém aqui pediu isso.","Desculpe senhor, vou ja trocar.","Cuidado idiota! Vai jogar as coisa em mim? Ta me vendo não?","Presta atenção!","Quero falar com o gerente!","Eu vou resolver senhor, me desculpe.",]
 
 let cena24:[String] = ["Preciso de um tempo!",]
 
