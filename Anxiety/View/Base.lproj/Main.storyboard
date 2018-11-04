@@ -84,20 +84,6 @@
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-PU-qau" userLabel="CenaUmText">
-                                <rect key="frame" x="16" y="49" width="343" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="Juninho-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -112,7 +98,6 @@
                     </view>
                     <connections>
                         <outlet property="Cena1ImageView" destination="eMq-j2-opY" id="oXW-QS-aEz"/>
-                        <outlet property="DialogoLabelCenaUm" destination="6KJ-PU-qau" id="xu3-oG-M6R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW9-DD-aSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
