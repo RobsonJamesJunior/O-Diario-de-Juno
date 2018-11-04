@@ -8,9 +8,7 @@
 
 import Foundation
 
-let cena1:[String] = [" Acordei cansado hoje, de novo",]
-
-let cena1_1:[String] = ["Não consegui dormir, fiquei rolando na cama pensando besteiras.",]
+let cena1:[String] = [" Acordei cansado hoje, de novo", "Não consegui dormir, fiquei rolando na cama pensando besteiras.",]
 
 let cena2:[String] = ["Vamos la!",]
 

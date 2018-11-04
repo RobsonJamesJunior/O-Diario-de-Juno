@@ -27,9 +27,9 @@ class Cena2ViewController: UIViewController {
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        if IsOk < cena1_1.count { // Variável que faz vibrar apenas uma vez
-            showOutgoingMessage(text: cena1_1[IsOk])
-            sleep(5)
+        if IsOk < cena1.count { // Variável que faz vibrar apenas uma vez
+            showOutgoingMessage(text: cena1[IsOk])
+            sleep(1)
             IsOk += 1
         } else{
             
@@ -81,5 +81,4 @@ class Cena2ViewController: UIViewController {
             view.addSubview(label)
         }
     }
-    
 }
