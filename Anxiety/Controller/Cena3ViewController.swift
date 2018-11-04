@@ -10,6 +10,7 @@ import UIKit
 
 class Cena3ViewController: UIViewController {
   
+    var timer = Timer()
     
     @IBOutlet weak var Cena3ImageView: UIImageView!
     
