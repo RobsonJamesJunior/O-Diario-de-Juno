@@ -36,9 +36,9 @@ let cena23:[String] = ["Que isso cara? Ninguém aqui pediu isso.","Desculpe senh
 
 let cena24:[String] = ["Preciso de um tempo!",]
 
-let cena27:[String] = ["ei? Tudo bem? Respira!!!!","Olha pra mim… isso… se acalme.","Quer uma água???","Claro!","Melhor agora?","To sim, obrigado!",]
+let cena27:[String] = ["Ei? Tudo bem? Respira!!!!","Olha pra mim… isso… calma.","Quer uma água???","Claro!","Melhor agora?","To sim, obrigado amiga!",]
 
-let cena28:[String] = ["Não deveria mas preciso fumar pra me acalmar.",]
+let cena28:[String] = ["Preciso fumar pra me acalmar.",]
 
 let cena29:[String] = ["Tchau, até amanhã","Até, cuidado!",]
 
