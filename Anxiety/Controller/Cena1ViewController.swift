@@ -105,7 +105,7 @@ class Cena1ViewController: UIViewController {
         
         label.center = outgoingMessageView.center
         
-        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? cena1[0]
+        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
             label.text! += ("\(letra)")
