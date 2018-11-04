@@ -56,52 +56,6 @@
             </objects>
             <point key="canvasLocation" x="29.600000000000001" y="123.68815592203899"/>
         </scene>
-        <!--Cena Espelho View Controller-->
-        <scene sceneID="8Nk-ZW-eYP">
-            <objects>
-                <viewController id="Mh4-Zm-bbc" customClass="CenaEspelhoViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6oV-vC-PkH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-Ge-K82">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-ym-rMw">
-                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="yqh-2e-NvL" kind="show" animates="NO" id="Ayr-IE-PTO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="cMp-yi-mOu" firstAttribute="bottom" secondItem="fBk-ym-rMw" secondAttribute="bottom" constant="8" id="AGu-Gz-WcI"/>
-                            <constraint firstItem="cMp-yi-mOu" firstAttribute="trailing" secondItem="fBk-ym-rMw" secondAttribute="trailing" constant="8" id="V2a-XY-Jnk"/>
-                            <constraint firstItem="yjz-Ge-K82" firstAttribute="top" secondItem="6oV-vC-PkH" secondAttribute="top" id="Wsn-eU-lKA"/>
-                            <constraint firstItem="yjz-Ge-K82" firstAttribute="leading" secondItem="cMp-yi-mOu" secondAttribute="leading" id="gpH-fP-Diu"/>
-                            <constraint firstItem="yjz-Ge-K82" firstAttribute="bottom" secondItem="cMp-yi-mOu" secondAttribute="bottom" id="irR-7B-uTH"/>
-                            <constraint firstItem="yjz-Ge-K82" firstAttribute="trailing" secondItem="cMp-yi-mOu" secondAttribute="trailing" id="rqe-GT-fNU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cMp-yi-mOu"/>
-                    </view>
-                    <connections>
-                        <outlet property="CenaEspelhoImageView" destination="yjz-Ge-K82" id="y4r-cf-CRm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IuO-jG-1qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2916" y="966.56671664167925"/>
-        </scene>
         <!--Cena1 View Controller-->
         <scene sceneID="aEi-vV-sfP">
             <objects>
@@ -218,7 +172,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Mh4-Zm-bbc" kind="show" animates="NO" id="OD9-XL-Ga4"/>
+                                    <segue destination="yqh-2e-NvL" kind="show" animates="NO" id="2XH-j8-54M"/>
                                 </connections>
                             </button>
                         </subviews>
