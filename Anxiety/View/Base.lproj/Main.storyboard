@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -40,8 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bTk-r4-blF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="28Z-Ke-j4z"/>
+                            <constraint firstItem="bTk-r4-blF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9cc-4h-3H8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qy8-ji-vnb" secondAttribute="bottom" constant="8" id="XBw-C6-H5x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy8-ji-vnb" secondAttribute="trailing" constant="8" id="lOR-f0-teO"/>
+                            <constraint firstItem="bTk-r4-blF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nwX-32-lat"/>
+                            <constraint firstItem="bTk-r4-blF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oaA-yH-nol"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -51,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="124"/>
+            <point key="canvasLocation" x="29.600000000000001" y="123.68815592203899"/>
         </scene>
         <!--Cena Espelho View Controller-->
         <scene sceneID="8Nk-ZW-eYP">
@@ -61,9 +64,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-Ge-K82">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-Ge-K82">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-ym-rMw">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -85,6 +87,10 @@
                         <constraints>
                             <constraint firstItem="cMp-yi-mOu" firstAttribute="bottom" secondItem="fBk-ym-rMw" secondAttribute="bottom" constant="8" id="AGu-Gz-WcI"/>
                             <constraint firstItem="cMp-yi-mOu" firstAttribute="trailing" secondItem="fBk-ym-rMw" secondAttribute="trailing" constant="8" id="V2a-XY-Jnk"/>
+                            <constraint firstItem="yjz-Ge-K82" firstAttribute="top" secondItem="6oV-vC-PkH" secondAttribute="top" id="Wsn-eU-lKA"/>
+                            <constraint firstItem="yjz-Ge-K82" firstAttribute="leading" secondItem="cMp-yi-mOu" secondAttribute="leading" id="gpH-fP-Diu"/>
+                            <constraint firstItem="yjz-Ge-K82" firstAttribute="bottom" secondItem="cMp-yi-mOu" secondAttribute="bottom" id="irR-7B-uTH"/>
+                            <constraint firstItem="yjz-Ge-K82" firstAttribute="trailing" secondItem="cMp-yi-mOu" secondAttribute="trailing" id="rqe-GT-fNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cMp-yi-mOu"/>
                     </view>
@@ -94,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuO-jG-1qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2916" y="967"/>
+            <point key="canvasLocation" x="2916" y="966.56671664167925"/>
         </scene>
         <!--Cena1 View Controller-->
         <scene sceneID="aEi-vV-sfP">
@@ -104,9 +110,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-j2-opY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-j2-opY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -127,7 +132,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" constant="8" id="IfD-yU-7uP"/>
+                            <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
                             <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="w8h-Ju-ooM" secondAttribute="trailing" constant="8" id="PbZ-xT-A7d"/>
+                            <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
+                            <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
+                            <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bOP-rH-s2e"/>
                     </view>
@@ -147,9 +156,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-UE-Q6D">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-UE-Q6D">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-pw-RkP">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -169,7 +177,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="n7f-UE-Q6D" firstAttribute="top" secondItem="nH9-NI-WaB" secondAttribute="top" id="EV6-6N-Ga6"/>
+                            <constraint firstItem="n7f-UE-Q6D" firstAttribute="trailing" secondItem="sX5-hC-qmI" secondAttribute="trailing" id="Pka-Hl-Fnd"/>
                             <constraint firstItem="sX5-hC-qmI" firstAttribute="bottom" secondItem="QeT-pw-RkP" secondAttribute="bottom" constant="8" id="RCR-LL-3T1"/>
+                            <constraint firstItem="n7f-UE-Q6D" firstAttribute="leading" secondItem="sX5-hC-qmI" secondAttribute="leading" id="anR-6Q-z3A"/>
+                            <constraint firstItem="n7f-UE-Q6D" firstAttribute="bottom" secondItem="sX5-hC-qmI" secondAttribute="bottom" id="mZI-34-Qlj"/>
                             <constraint firstItem="sX5-hC-qmI" firstAttribute="trailing" secondItem="QeT-pw-RkP" secondAttribute="trailing" constant="8" id="n4F-7f-kPZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sX5-hC-qmI"/>
@@ -190,9 +202,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-f0-tHc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-f0-tHc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Id-g7-Xnu">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -213,8 +224,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="v5w-f0-tHc" firstAttribute="trailing" secondItem="yWu-45-yr7" secondAttribute="trailing" id="2dT-mk-OiI"/>
+                            <constraint firstItem="v5w-f0-tHc" firstAttribute="bottom" secondItem="yWu-45-yr7" secondAttribute="bottom" id="Ypr-Qv-eWD"/>
+                            <constraint firstItem="v5w-f0-tHc" firstAttribute="leading" secondItem="yWu-45-yr7" secondAttribute="leading" id="aMB-hK-A86"/>
                             <constraint firstItem="yWu-45-yr7" firstAttribute="bottom" secondItem="7Id-g7-Xnu" secondAttribute="bottom" constant="8" id="dOt-6D-QBC"/>
                             <constraint firstItem="yWu-45-yr7" firstAttribute="trailing" secondItem="7Id-g7-Xnu" secondAttribute="trailing" constant="8" id="tT7-cg-7a5"/>
+                            <constraint firstItem="v5w-f0-tHc" firstAttribute="top" secondItem="vM1-hG-aTC" secondAttribute="top" id="x7F-xc-l6M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yWu-45-yr7"/>
                     </view>
@@ -234,9 +249,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-Kw-Pfc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-Kw-Pfc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7U-1T-PGg">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -256,6 +270,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0A1-Kw-Pfc" firstAttribute="top" secondItem="zoX-JC-cPa" secondAttribute="top" id="CA0-Zo-sUG"/>
+                            <constraint firstItem="0A1-Kw-Pfc" firstAttribute="trailing" secondItem="bZW-6i-ZUN" secondAttribute="trailing" id="Cpd-na-dB4"/>
+                            <constraint firstItem="0A1-Kw-Pfc" firstAttribute="bottom" secondItem="bZW-6i-ZUN" secondAttribute="bottom" id="jut-O8-NeE"/>
+                            <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="bottom" secondItem="C7U-1T-PGg" secondAttribute="bottom" constant="8" id="rjc-pV-O8X"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="C7U-1T-PGg" secondAttribute="trailing" constant="8" id="wue-Pg-9qD"/>
                         </constraints>
@@ -277,9 +295,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-w5-JHf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-w5-JHf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIg-u3-cDi">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -299,8 +316,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="N6x-w5-JHf" firstAttribute="bottom" secondItem="Np6-J3-fur" secondAttribute="bottom" id="DMa-aO-d2R"/>
+                            <constraint firstItem="N6x-w5-JHf" firstAttribute="trailing" secondItem="Np6-J3-fur" secondAttribute="trailing" id="FdR-z5-i5T"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="bottom" secondItem="mIg-u3-cDi" secondAttribute="bottom" constant="8" id="Jux-G4-Qmu"/>
+                            <constraint firstItem="N6x-w5-JHf" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" id="hgo-lt-sqB"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="mIg-u3-cDi" secondAttribute="trailing" constant="8" id="qbM-Pz-NzF"/>
+                            <constraint firstItem="N6x-w5-JHf" firstAttribute="top" secondItem="arj-6R-psu" secondAttribute="top" id="ubb-hf-aN2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np6-J3-fur"/>
                     </view>
@@ -320,9 +341,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-Ce-POe">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-Ce-POe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-61-fZO">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -370,8 +390,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="uuB-Ce-POe" firstAttribute="leading" secondItem="pif-lN-qyO" secondAttribute="leading" id="LmY-Bq-xbN"/>
+                            <constraint firstItem="uuB-Ce-POe" firstAttribute="top" secondItem="b4b-XJ-ys9" secondAttribute="top" id="ObL-aW-fkg"/>
+                            <constraint firstItem="uuB-Ce-POe" firstAttribute="trailing" secondItem="pif-lN-qyO" secondAttribute="trailing" id="dYm-vd-Eas"/>
                             <constraint firstItem="pif-lN-qyO" firstAttribute="bottom" secondItem="8gt-61-fZO" secondAttribute="bottom" constant="8" id="jFS-A1-4aW"/>
                             <constraint firstItem="pif-lN-qyO" firstAttribute="trailing" secondItem="8gt-61-fZO" secondAttribute="trailing" constant="8" id="kIu-xL-5yZ"/>
+                            <constraint firstItem="uuB-Ce-POe" firstAttribute="bottom" secondItem="pif-lN-qyO" secondAttribute="bottom" id="ob8-bi-rlL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pif-lN-qyO"/>
                     </view>
@@ -392,9 +416,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-HB-eOF">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -414,7 +437,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tq4-el-hFr" firstAttribute="top" secondItem="9d4-zz-e8c" secondAttribute="top" id="0h5-M6-MsW"/>
+                            <constraint firstItem="tq4-el-hFr" firstAttribute="bottom" secondItem="4Cz-bT-DXY" secondAttribute="bottom" id="7g7-So-tgK"/>
                             <constraint firstItem="4Cz-bT-DXY" firstAttribute="trailing" secondItem="ZQi-HB-eOF" secondAttribute="trailing" constant="8" id="XE3-ls-paz"/>
+                            <constraint firstItem="tq4-el-hFr" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" id="f0M-bl-MIQ"/>
+                            <constraint firstItem="tq4-el-hFr" firstAttribute="trailing" secondItem="4Cz-bT-DXY" secondAttribute="trailing" id="myN-h7-1nz"/>
                             <constraint firstItem="4Cz-bT-DXY" firstAttribute="bottom" secondItem="ZQi-HB-eOF" secondAttribute="bottom" constant="8" id="z8g-by-9RK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Cz-bT-DXY"/>
@@ -435,9 +462,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-Jl-kHX">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -458,7 +484,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lT6-Jk-eU4" firstAttribute="bottom" secondItem="zcF-Jl-kHX" secondAttribute="bottom" constant="8" id="7TA-lj-Lh2"/>
+                            <constraint firstItem="K1P-6d-VhE" firstAttribute="bottom" secondItem="lT6-Jk-eU4" secondAttribute="bottom" id="Q0n-tR-WWu"/>
                             <constraint firstItem="lT6-Jk-eU4" firstAttribute="trailing" secondItem="zcF-Jl-kHX" secondAttribute="trailing" constant="8" id="fjP-Ka-eFN"/>
+                            <constraint firstItem="K1P-6d-VhE" firstAttribute="trailing" secondItem="lT6-Jk-eU4" secondAttribute="trailing" id="iWl-Ze-VgC"/>
+                            <constraint firstItem="K1P-6d-VhE" firstAttribute="top" secondItem="lZJ-si-03k" secondAttribute="top" id="jvU-AY-Gzf"/>
+                            <constraint firstItem="K1P-6d-VhE" firstAttribute="leading" secondItem="lT6-Jk-eU4" secondAttribute="leading" id="uQg-xk-zQM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lT6-Jk-eU4"/>
                     </view>
@@ -478,9 +508,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kx3-2c-RYn">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kx3-2c-RYn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-iJ-o0y">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -500,8 +529,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Kx3-2c-RYn" firstAttribute="bottom" secondItem="PbR-mF-PPL" secondAttribute="bottom" id="4wZ-By-0ia"/>
                             <constraint firstItem="PbR-mF-PPL" firstAttribute="bottom" secondItem="y2O-iJ-o0y" secondAttribute="bottom" constant="8" id="5BS-PR-Qbo"/>
+                            <constraint firstItem="Kx3-2c-RYn" firstAttribute="trailing" secondItem="PbR-mF-PPL" secondAttribute="trailing" id="Rda-Da-aok"/>
                             <constraint firstItem="PbR-mF-PPL" firstAttribute="trailing" secondItem="y2O-iJ-o0y" secondAttribute="trailing" constant="8" id="WzV-5Y-YU3"/>
+                            <constraint firstItem="Kx3-2c-RYn" firstAttribute="leading" secondItem="PbR-mF-PPL" secondAttribute="leading" id="f3c-4S-vIu"/>
+                            <constraint firstItem="Kx3-2c-RYn" firstAttribute="top" secondItem="gdv-9f-1gI" secondAttribute="top" id="pm6-jT-8Hu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbR-mF-PPL"/>
                     </view>
@@ -521,9 +554,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-YB-fsC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-YB-fsC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-Jf-6B5">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -545,6 +577,10 @@
                         <constraints>
                             <constraint firstItem="81I-Fa-lUk" firstAttribute="trailing" secondItem="ceH-Jf-6B5" secondAttribute="trailing" constant="8" id="7hF-ha-tsT"/>
                             <constraint firstItem="81I-Fa-lUk" firstAttribute="bottom" secondItem="ceH-Jf-6B5" secondAttribute="bottom" constant="8" id="ChW-ev-MZy"/>
+                            <constraint firstItem="9TM-YB-fsC" firstAttribute="leading" secondItem="81I-Fa-lUk" secondAttribute="leading" id="DQq-aW-tdz"/>
+                            <constraint firstItem="9TM-YB-fsC" firstAttribute="bottom" secondItem="81I-Fa-lUk" secondAttribute="bottom" id="jd2-y7-2Kp"/>
+                            <constraint firstItem="9TM-YB-fsC" firstAttribute="trailing" secondItem="81I-Fa-lUk" secondAttribute="trailing" id="vP5-8r-Jcs"/>
+                            <constraint firstItem="9TM-YB-fsC" firstAttribute="top" secondItem="8C7-eG-iTC" secondAttribute="top" id="wrQ-AS-cx6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="81I-Fa-lUk"/>
                     </view>
@@ -564,9 +600,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-50-BtW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-50-BtW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-KL-r2z">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -586,6 +621,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qYa-50-BtW" firstAttribute="top" secondItem="nz0-EX-gQm" secondAttribute="top" id="7Vk-K9-XG2"/>
+                            <constraint firstItem="qYa-50-BtW" firstAttribute="bottom" secondItem="0xt-e6-brd" secondAttribute="bottom" id="DrR-0a-cmN"/>
+                            <constraint firstItem="qYa-50-BtW" firstAttribute="trailing" secondItem="0xt-e6-brd" secondAttribute="trailing" id="Uuq-h3-dqO"/>
+                            <constraint firstItem="qYa-50-BtW" firstAttribute="leading" secondItem="0xt-e6-brd" secondAttribute="leading" id="iwt-zM-OEE"/>
                             <constraint firstItem="0xt-e6-brd" firstAttribute="bottom" secondItem="0eC-KL-r2z" secondAttribute="bottom" constant="8" id="lKL-Mf-Cop"/>
                             <constraint firstItem="0xt-e6-brd" firstAttribute="trailing" secondItem="0eC-KL-r2z" secondAttribute="trailing" constant="8" id="zde-to-c9Y"/>
                         </constraints>
@@ -607,9 +646,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-c4-HsI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-c4-HsI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-HL-8BO">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -629,8 +667,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Erw-c4-HsI" firstAttribute="top" secondItem="4Yt-eq-Sda" secondAttribute="top" id="1Mi-T1-JAf"/>
+                            <constraint firstItem="Erw-c4-HsI" firstAttribute="leading" secondItem="vgL-TQ-03V" secondAttribute="leading" id="2cR-vK-v1X"/>
                             <constraint firstItem="vgL-TQ-03V" firstAttribute="trailing" secondItem="YrW-HL-8BO" secondAttribute="trailing" constant="8" id="QNf-xJ-6jL"/>
                             <constraint firstItem="vgL-TQ-03V" firstAttribute="bottom" secondItem="YrW-HL-8BO" secondAttribute="bottom" constant="8" id="WKI-Kq-tUc"/>
+                            <constraint firstItem="Erw-c4-HsI" firstAttribute="trailing" secondItem="vgL-TQ-03V" secondAttribute="trailing" id="aCJ-9T-fXz"/>
+                            <constraint firstItem="Erw-c4-HsI" firstAttribute="bottom" secondItem="vgL-TQ-03V" secondAttribute="bottom" id="eeW-du-mgT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vgL-TQ-03V"/>
                     </view>
@@ -640,7 +682,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDB-WF-g2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11316" y="124"/>
+            <point key="canvasLocation" x="11316" y="123.68815592203899"/>
         </scene>
         <!--Cena13 View Controller-->
         <scene sceneID="dQg-wY-pAE">
@@ -650,9 +692,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-QN-35S">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-QN-35S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -673,7 +714,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="QW6-QN-35S" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" id="AR6-Gm-Adv"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="bottom" secondItem="uuB-kT-gAz" secondAttribute="bottom" constant="8" id="Ojf-5F-Pao"/>
+                            <constraint firstItem="QW6-QN-35S" firstAttribute="trailing" secondItem="6vk-wc-7Hi" secondAttribute="trailing" id="W4h-nn-3J1"/>
+                            <constraint firstItem="QW6-QN-35S" firstAttribute="top" secondItem="5GG-WQ-e2c" secondAttribute="top" id="e7k-09-hrL"/>
+                            <constraint firstItem="QW6-QN-35S" firstAttribute="bottom" secondItem="6vk-wc-7Hi" secondAttribute="bottom" id="k0g-mM-bN8"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="uuB-kT-gAz" secondAttribute="trailing" constant="8" id="lDe-Yd-W2t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vk-wc-7Hi"/>
@@ -684,7 +729,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orl-n1-EN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12273" y="124"/>
+            <point key="canvasLocation" x="12272.799999999999" y="123.68815592203899"/>
         </scene>
         <!--Cena14 View Controller-->
         <scene sceneID="0fQ-58-woo">
@@ -694,9 +739,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R33-RP-0kl">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R33-RP-0kl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYm-cg-ON1">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -716,8 +760,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="R33-RP-0kl" firstAttribute="bottom" secondItem="ugz-aT-wMN" secondAttribute="bottom" id="7FR-2h-olR"/>
                             <constraint firstItem="ugz-aT-wMN" firstAttribute="bottom" secondItem="fYm-cg-ON1" secondAttribute="bottom" constant="8" id="PMf-iD-5Mp"/>
                             <constraint firstItem="ugz-aT-wMN" firstAttribute="trailing" secondItem="fYm-cg-ON1" secondAttribute="trailing" constant="8" id="ndz-m4-ddM"/>
+                            <constraint firstItem="R33-RP-0kl" firstAttribute="top" secondItem="38N-lW-L7D" secondAttribute="top" id="r2b-o7-Q7O"/>
+                            <constraint firstItem="R33-RP-0kl" firstAttribute="trailing" secondItem="ugz-aT-wMN" secondAttribute="trailing" id="s6Z-tn-JpB"/>
+                            <constraint firstItem="R33-RP-0kl" firstAttribute="leading" secondItem="ugz-aT-wMN" secondAttribute="leading" id="yXE-Dc-mgY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ugz-aT-wMN"/>
                     </view>
@@ -727,7 +775,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kt5-kC-qvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13207" y="124"/>
+            <point key="canvasLocation" x="13205.6" y="123.68815592203899"/>
         </scene>
         <!--Cena15 View Controller-->
         <scene sceneID="zaC-TW-vxs">
@@ -737,9 +785,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-Eg-7RC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-Eg-7RC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AED-Sy-uYE">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -759,8 +806,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="dDC-Eg-7RC" firstAttribute="top" secondItem="q46-Be-YCq" secondAttribute="top" id="5RK-fN-92R"/>
                             <constraint firstItem="IC6-x3-UAe" firstAttribute="bottom" secondItem="AED-Sy-uYE" secondAttribute="bottom" constant="8" id="ODa-sJ-2Ej"/>
                             <constraint firstItem="IC6-x3-UAe" firstAttribute="trailing" secondItem="AED-Sy-uYE" secondAttribute="trailing" constant="8" id="he8-fS-wI2"/>
+                            <constraint firstItem="dDC-Eg-7RC" firstAttribute="leading" secondItem="IC6-x3-UAe" secondAttribute="leading" id="uaJ-UD-K7g"/>
+                            <constraint firstItem="dDC-Eg-7RC" firstAttribute="bottom" secondItem="IC6-x3-UAe" secondAttribute="bottom" id="wj9-oz-TwQ"/>
+                            <constraint firstItem="dDC-Eg-7RC" firstAttribute="trailing" secondItem="IC6-x3-UAe" secondAttribute="trailing" id="xa7-4x-zRj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IC6-x3-UAe"/>
                     </view>
@@ -780,9 +831,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OTs-2i-5P4">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OTs-2i-5P4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJ0-6Y-gJF">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -802,8 +852,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OTs-2i-5P4" firstAttribute="leading" secondItem="SFW-9g-iab" secondAttribute="leading" id="5ws-rc-p5V"/>
+                            <constraint firstItem="OTs-2i-5P4" firstAttribute="bottom" secondItem="SFW-9g-iab" secondAttribute="bottom" id="8xV-3g-o6b"/>
                             <constraint firstItem="SFW-9g-iab" firstAttribute="bottom" secondItem="gJ0-6Y-gJF" secondAttribute="bottom" constant="8" id="M8v-Ol-nkK"/>
                             <constraint firstItem="SFW-9g-iab" firstAttribute="trailing" secondItem="gJ0-6Y-gJF" secondAttribute="trailing" constant="8" id="VaF-3Z-Aea"/>
+                            <constraint firstItem="OTs-2i-5P4" firstAttribute="top" secondItem="bax-8O-lVz" secondAttribute="top" id="fiW-AL-pxa"/>
+                            <constraint firstItem="OTs-2i-5P4" firstAttribute="trailing" secondItem="SFW-9g-iab" secondAttribute="trailing" id="kYE-eO-qrh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SFW-9g-iab"/>
                     </view>
@@ -823,9 +877,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNU-F8-Zb4">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNU-F8-Zb4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUp-DZ-ccM">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -846,7 +899,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cfw-CR-YE3" firstAttribute="trailing" secondItem="lUp-DZ-ccM" secondAttribute="trailing" constant="8" id="2cw-mV-6UT"/>
+                            <constraint firstItem="vNU-F8-Zb4" firstAttribute="bottom" secondItem="cfw-CR-YE3" secondAttribute="bottom" id="990-ay-VLT"/>
                             <constraint firstItem="cfw-CR-YE3" firstAttribute="bottom" secondItem="lUp-DZ-ccM" secondAttribute="bottom" constant="8" id="GDb-Dh-qp5"/>
+                            <constraint firstItem="vNU-F8-Zb4" firstAttribute="trailing" secondItem="cfw-CR-YE3" secondAttribute="trailing" id="OdV-0j-iMG"/>
+                            <constraint firstItem="vNU-F8-Zb4" firstAttribute="top" secondItem="nhN-x4-gK5" secondAttribute="top" id="TPL-xP-vWc"/>
+                            <constraint firstItem="vNU-F8-Zb4" firstAttribute="leading" secondItem="cfw-CR-YE3" secondAttribute="leading" id="yZI-T3-KVW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cfw-CR-YE3"/>
                     </view>
@@ -866,9 +923,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-mS-guG">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -889,7 +945,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nrd-Gc-dS6" firstAttribute="bottom" secondItem="3RY-mS-guG" secondAttribute="bottom" constant="8" id="0ep-cQ-yYe"/>
+                            <constraint firstItem="ZcS-qp-i84" firstAttribute="bottom" secondItem="Nrd-Gc-dS6" secondAttribute="bottom" id="1nx-L4-1jp"/>
+                            <constraint firstItem="ZcS-qp-i84" firstAttribute="leading" secondItem="Nrd-Gc-dS6" secondAttribute="leading" id="35V-un-3Se"/>
+                            <constraint firstItem="ZcS-qp-i84" firstAttribute="top" secondItem="lrf-WK-J6n" secondAttribute="top" id="3GT-I6-XOZ"/>
                             <constraint firstItem="Nrd-Gc-dS6" firstAttribute="trailing" secondItem="3RY-mS-guG" secondAttribute="trailing" constant="8" id="6oX-8X-mtp"/>
+                            <constraint firstItem="ZcS-qp-i84" firstAttribute="trailing" secondItem="Nrd-Gc-dS6" secondAttribute="trailing" id="eIU-3k-xfy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nrd-Gc-dS6"/>
                     </view>
@@ -909,9 +969,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-Z6-IiC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-Z6-IiC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-lL-gNE">
                                 <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
@@ -931,8 +990,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BLx-Z6-IiC" firstAttribute="top" secondItem="28P-JZ-y4C" secondAttribute="top" id="7u5-dn-I1E"/>
+                            <constraint firstItem="BLx-Z6-IiC" firstAttribute="trailing" secondItem="Yik-pY-qlD" secondAttribute="trailing" id="CGI-0O-eqD"/>
                             <constraint firstItem="Yik-pY-qlD" firstAttribute="bottom" secondItem="2G0-lL-gNE" secondAttribute="bottom" constant="8" id="Faw-ZU-JGj"/>
+                            <constraint firstItem="BLx-Z6-IiC" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="bfe-gO-wU7"/>
                             <constraint firstItem="Yik-pY-qlD" firstAttribute="trailing" secondItem="2G0-lL-gNE" secondAttribute="trailing" constant="8" id="vuh-RC-Ub9"/>
+                            <constraint firstItem="BLx-Z6-IiC" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="yjh-Eh-lJu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yik-pY-qlD"/>
                     </view>
@@ -952,12 +1015,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cVn-Qp-ZEe" firstAttribute="leading" secondItem="v0c-ds-RfW" secondAttribute="leading" id="9YC-ZE-LgG"/>
+                            <constraint firstItem="cVn-Qp-ZEe" firstAttribute="bottom" secondItem="v0c-ds-RfW" secondAttribute="bottom" id="RXc-uY-wTZ"/>
+                            <constraint firstItem="cVn-Qp-ZEe" firstAttribute="top" secondItem="ptZ-r1-ihi" secondAttribute="top" id="Wm6-JE-GVh"/>
+                            <constraint firstItem="cVn-Qp-ZEe" firstAttribute="trailing" secondItem="v0c-ds-RfW" secondAttribute="trailing" id="Xhn-QA-k2a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
                     <connections>
@@ -966,7 +1034,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbB-1p-LgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18926" y="130"/>
+            <point key="canvasLocation" x="18925.599999999999" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>
