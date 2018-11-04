@@ -21,13 +21,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -68,12 +68,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -114,12 +114,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-pw-RkP">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -160,13 +160,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Id-g7-Xnu">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -207,12 +207,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7U-1T-PGg">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -253,12 +253,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mIg-u3-cDi">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -299,12 +299,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-61-fZO">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -313,34 +313,6 @@
                                     <segue destination="oeO-wZ-Xpy" kind="show" animates="NO" id="Ygh-Gt-RfY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Den-5M-xzi">
-                                <rect key="frame" x="296" y="256" width="63" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Ch">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="smallSystem"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="á">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="LucidaGrande"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="s podem ajudar a acalmar">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="smallSystem"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -355,7 +327,6 @@
                     </view>
                     <connections>
                         <outlet property="Cena6ImageView" destination="uuB-Ce-POe" id="Z49-2Q-aRW"/>
-                        <outlet property="DicasLabel" destination="Den-5M-xzi" id="g1Z-A1-RHf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-9o-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,12 +345,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-HB-eOF">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -388,6 +359,34 @@
                                     <segue destination="rj0-kG-OH3" kind="show" animates="NO" id="1Re-dN-sSx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
+                                <rect key="frame" x="304" y="255" width="63" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ch">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="Juninho-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="á">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="s podem ajudar a acalmar">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="Juninho-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -402,6 +401,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena7ImageView" destination="tq4-el-hFr" id="drb-3b-LtI"/>
+                        <outlet property="DicasLabel" destination="4zV-sj-bjF" id="Wun-aL-XZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2h-gF-Uiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -420,12 +420,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-Jl-kHX">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -466,12 +466,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-iJ-o0y">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -512,12 +512,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-Jf-6B5">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -558,12 +558,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-KL-r2z">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -604,12 +604,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-HL-8BO">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -650,13 +650,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
                                                 <color key="NSColor" red="0.012386658031088071" green="0.012386658031088071" blue="0.012386658031088071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -697,12 +697,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYm-cg-ON1">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -743,12 +743,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AED-Sy-uYE">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -789,12 +789,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJ0-6Y-gJF">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -835,12 +835,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUp-DZ-ccM">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -881,12 +881,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-mS-guG">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -927,12 +927,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-lL-gNE">
-                                <rect key="frame" x="313" y="625.5" width="54" height="33.5"/>
+                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Button">
                                             <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
