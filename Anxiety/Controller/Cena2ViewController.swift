@@ -12,8 +12,32 @@ class Cena2ViewController: UIViewController {
     
     var timer: Timer!
     var IsOk: Int = 0
+    //esse é o colisor que sera usado para deletar as palavras
     
     @IBOutlet weak var Cena2ImageView: UIImageView!
+    
+    @IBOutlet weak var Palavra1: UILabel!
+    
+    @IBOutlet weak var Palavra2: UILabel!
+    
+    @IBOutlet weak var Palavra3: UILabel!
+    
+    @IBOutlet weak var Palavra4: UILabel!
+    
+    @IBOutlet weak var Palavra5: UILabel!
+    
+    @IBOutlet weak var Palavra6: UILabel!
+    
+    @IBOutlet weak var Palavra7: UILabel!
+    
+    @IBAction func StartGame(_ sender: Any) {
+        
+        
+    }
+    
+    func fazerBotoesDiminuir(){
+        
+    }
     
     
     override func viewDidLoad() {
