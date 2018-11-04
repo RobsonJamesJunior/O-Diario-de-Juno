@@ -452,6 +452,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="CHAVE"/>
                                 <connections>
+                                    <action selector="keySegueScene:" destination="rj0-kG-OH3" eventType="touchUpInside" id="Xlf-te-io8"/>
                                     <segue destination="kv1-zQ-Mta" kind="showDetail" animates="NO" id="l0c-7f-adi"/>
                                 </connections>
                             </button>
