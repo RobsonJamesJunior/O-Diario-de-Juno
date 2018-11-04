@@ -52,9 +52,23 @@ class Cena1ViewController: UIViewController {
         }
         
         
-        
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.animatedLabel()
+    }
+    
+    func animatedLabel(){
+        DialogoLabelCenaUm.text = ""
+        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? cena1[0]
+        
+        for letra in labelDialog {
+            DialogoLabelCenaUm.text! += ("\(letra)")
+            RunLoop.current.run(until: Date()+0.10)
+        }
+    
+    }
     
 }
