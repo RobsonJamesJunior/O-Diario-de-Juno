@@ -13,7 +13,7 @@ import AVFoundation // Biblioteca para utilizar sons
 class Cena1ViewController: UIViewController {
     
     @IBOutlet weak var Cena1ImageView: UIImageView!
-    
+    @IBOutlet weak var DialogoLabelCenaUm: UILabel! //Label usada para o dialogo da cena1
     var timer: Timer!
     var audioPlayer = AVAudioPlayer()
     var controlVibration: Bool = false
@@ -33,6 +33,8 @@ class Cena1ViewController: UIViewController {
         Cena1ImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
       
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena1ViewController.update), userInfo: nil, repeats: true)
+        
+        DialogoLabelCenaUm.text = cena1[0]
 
     }
     
@@ -48,6 +50,9 @@ class Cena1ViewController: UIViewController {
         } else{
             
         }
+        
+        
+        
     }
     
     
