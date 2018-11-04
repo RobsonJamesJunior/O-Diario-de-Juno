@@ -13,7 +13,7 @@ class Cena5ViewController: UIViewController {
     
     @IBOutlet weak var Cena5ImageView: UIImageView!
     
-     var audioPlayer = AVAudioPlayer()
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()

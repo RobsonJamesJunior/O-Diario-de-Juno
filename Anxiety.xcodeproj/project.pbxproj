@@ -29,11 +29,10 @@
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
 		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
 		1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE4218F241B006DFE69 /* coração.mp3 */; };
-		1D7C0FF5218F241C006DFE69 /* transito.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE5218F241B006DFE69 /* transito.wav */; };
 		1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE6218F241B006DFE69 /* comendo2.wav */; };
 		1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE7218F241B006DFE69 /* passaro2.wav */; };
 		1D7C0FF8218F241C006DFE69 /* agua_pia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE8218F241B006DFE69 /* agua_pia.mp3 */; };
-		1D7C0FF9218F241C006DFE69 /* transito4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE9218F241B006DFE69 /* transito4.wav */; };
+		1D7C0FF9218F241C006DFE69 /* metro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE9218F241B006DFE69 /* metro.wav */; };
 		1D7C0FFA218F241C006DFE69 /* respiração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEA218F241B006DFE69 /* respiração.mp3 */; };
 		1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEB218F241B006DFE69 /* transito2.wav */; };
 		1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FEC218F241B006DFE69 /* comendo.mp3 */; };
@@ -105,11 +104,10 @@
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
 		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
 		1D7C0FE4218F241B006DFE69 /* coração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração.mp3"; sourceTree = "<group>"; };
-		1D7C0FE5218F241B006DFE69 /* transito.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito.wav; sourceTree = "<group>"; };
 		1D7C0FE6218F241B006DFE69 /* comendo2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = comendo2.wav; sourceTree = "<group>"; };
 		1D7C0FE7218F241B006DFE69 /* passaro2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passaro2.wav; sourceTree = "<group>"; };
 		1D7C0FE8218F241B006DFE69 /* agua_pia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agua_pia.mp3; sourceTree = "<group>"; };
-		1D7C0FE9218F241B006DFE69 /* transito4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito4.wav; sourceTree = "<group>"; };
+		1D7C0FE9218F241B006DFE69 /* metro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metro.wav; sourceTree = "<group>"; };
 		1D7C0FEA218F241B006DFE69 /* respiração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "respiração.mp3"; sourceTree = "<group>"; };
 		1D7C0FEB218F241B006DFE69 /* transito2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = transito2.wav; sourceTree = "<group>"; };
 		1D7C0FEC218F241B006DFE69 /* comendo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comendo.mp3; sourceTree = "<group>"; };
@@ -202,10 +200,9 @@
 				1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */,
 				1D7C0FE7218F241B006DFE69 /* passaro2.wav */,
 				1D7C0FEA218F241B006DFE69 /* respiração.mp3 */,
-				1D7C0FE5218F241B006DFE69 /* transito.wav */,
 				1D7C0FEB218F241B006DFE69 /* transito2.wav */,
 				1D7C0FEF218F241C006DFE69 /* transito3.wav */,
-				1D7C0FE9218F241B006DFE69 /* transito4.wav */,
+				1D7C0FE9218F241B006DFE69 /* metro.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -397,7 +394,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */,
-				1D7C0FF5218F241C006DFE69 /* transito.wav in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
 				5E82FA80218CC98000A43BE5 /* Cena_8.gif in Resources */,
@@ -414,7 +410,7 @@
 				1D7C1000218F241C006DFE69 /* chave2.mp3 in Resources */,
 				1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */,
 				5E82FA57218A454B00A43BE5 /* Cena_1.gif in Resources */,
-				1D7C0FF9218F241C006DFE69 /* transito4.wav in Resources */,
+				1D7C0FF9218F241C006DFE69 /* metro.wav in Resources */,
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
 				1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */,
