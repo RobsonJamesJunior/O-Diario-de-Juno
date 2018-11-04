@@ -12,7 +12,6 @@ import AVFoundation // Biblioteca para utilizar sons
 class Cena5ViewController: UIViewController {
     
     @IBOutlet weak var Cena5ImageView: UIImageView!
-    
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -27,9 +26,7 @@ class Cena5ViewController: UIViewController {
         } catch {
             print(error) // erro de áudio
         }
-        
         audioPlayer.play() // dá o play no áudio
     }
-    
     
 }

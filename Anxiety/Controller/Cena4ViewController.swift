@@ -30,7 +30,7 @@ class Cena4ViewController: UIViewController {
     @objc func update() { // Função de atualização para opreações constantes
         if IsOk < cena4.count { // Variável que faz vibrar apenas uma vez
             showOutgoingMessage(text: cena4[IsOk])
-            sleep(3)
+            sleep(1)
             IsOk += 1
         } else{
             
