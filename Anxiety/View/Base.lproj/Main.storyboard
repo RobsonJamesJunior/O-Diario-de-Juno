@@ -20,16 +20,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="138" y="133" width="99" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
+                                <rect key="frame" x="16" y="170" width="343" height="36"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -42,7 +41,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="28Z-Ke-j4z"/>
+                            <constraint firstItem="qy8-ji-vnb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="4N0-MX-YY9"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9cc-4h-3H8"/>
+                            <constraint firstItem="qy8-ji-vnb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M9X-HS-kS5"/>
+                            <constraint firstItem="qy8-ji-vnb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RGY-F0-xii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy8-ji-vnb" secondAttribute="trailing" constant="16" id="ZT0-XY-znk"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nwX-32-lat"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oaA-yH-nol"/>
                         </constraints>
