@@ -53,7 +53,7 @@ class Cena12ViewController: UIViewController {
             title = "Passou longe!"
         }
         
-        let message: String = "\n\(title)"
+        let message: String = "\n\(title)" + "\nO valor que você colocou foi: \(currentValue) de \(targetValue)"
         
         let alert = UIAlertController(title: "Pontuação", message: message, preferredStyle: .alert)
         
