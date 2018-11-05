@@ -110,8 +110,8 @@ class Cena19ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 210,// posição x
-                y: view.frame.height - bubbleImageSize.height - 550, //posição y
+            CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
+                y: view.frame.height - bubbleImageSize.height - 450, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -156,7 +156,7 @@ class Cena19ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
-                y: view.frame.height - bubbleImageSize.height - 300, //posição y
+                y: view.frame.height - bubbleImageSize.height - 350, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -223,4 +223,5 @@ class Cena19ViewController: UIViewController {
             RunLoop.current.run(until: Date()+0.10)
             view.addSubview(label)
         }
+    }
 }
