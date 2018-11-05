@@ -984,13 +984,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m59-mG-6Hs">
+                                <rect key="frame" x="321" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="jwi-VD-0CH" kind="showDetail" animates="NO" id="vgW-Td-I0m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="m59-mG-6Hs" secondAttribute="trailing" constant="8" id="6QV-MU-xxx"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="leading" secondItem="v0c-ds-RfW" secondAttribute="leading" id="9YC-ZE-LgG"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="bottom" secondItem="v0c-ds-RfW" secondAttribute="bottom" id="RXc-uY-wTZ"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="top" secondItem="ptZ-r1-ihi" secondAttribute="top" id="Wm6-JE-GVh"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="trailing" secondItem="v0c-ds-RfW" secondAttribute="trailing" id="Xhn-QA-k2a"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="bottom" secondItem="m59-mG-6Hs" secondAttribute="bottom" constant="8" id="bxt-zr-g87"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
@@ -1013,6 +1022,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sd3-tx-v4M">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RX-A7-VtY">
+                                <rect key="frame" x="321" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="XUu-vf-qhr" kind="showDetail" animates="NO" id="7q7-7k-Kf5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1020,6 +1036,8 @@
                             <constraint firstItem="sd3-tx-v4M" firstAttribute="trailing" secondItem="RNX-UH-IPh" secondAttribute="trailing" id="SNE-uM-BqI"/>
                             <constraint firstItem="sd3-tx-v4M" firstAttribute="leading" secondItem="RNX-UH-IPh" secondAttribute="leading" id="Znx-Ka-9ji"/>
                             <constraint firstItem="sd3-tx-v4M" firstAttribute="top" secondItem="1mt-BX-r7t" secondAttribute="top" id="bvR-gg-AfR"/>
+                            <constraint firstItem="RNX-UH-IPh" firstAttribute="bottom" secondItem="0RX-A7-VtY" secondAttribute="bottom" constant="8" id="iof-KJ-t3V"/>
+                            <constraint firstItem="RNX-UH-IPh" firstAttribute="trailing" secondItem="0RX-A7-VtY" secondAttribute="trailing" constant="8" id="zUi-C2-YuQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RNX-UH-IPh"/>
                     </view>
@@ -1029,7 +1047,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAd-Pq-DED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19837.599999999999" y="129.98500749625188"/>
+            <point key="canvasLocation" x="19838" y="124"/>
         </scene>
         <!--Cena22 View Controller-->
         <scene sceneID="kS2-u7-55e">
@@ -1042,6 +1060,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-xr-VLW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-J8-530">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Im4-oa-puN" kind="showDetail" animates="NO" id="Ksc-5z-l9p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1071,6 +1097,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nzz-bQ-L11">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-Tg-TBX">
+                                <rect key="frame" x="321" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Bja-xi-oTj" kind="showDetail" animates="NO" id="L6O-72-0iz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1078,6 +1111,8 @@
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="trailing" secondItem="bHD-v9-8Ea" secondAttribute="trailing" id="Q4q-fe-pOb"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="top" secondItem="ZYn-32-Oo5" secondAttribute="top" id="VZ8-Di-Yf1"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" id="o0I-jF-lAV"/>
+                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="trailing" secondItem="ZgN-Tg-TBX" secondAttribute="trailing" constant="8" id="pzi-Bi-W0t"/>
+                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="ZgN-Tg-TBX" secondAttribute="bottom" constant="8" id="ygm-b8-Rdu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bHD-v9-8Ea"/>
                     </view>
