@@ -16,18 +16,27 @@ class Cena7ViewController: UIViewController {
     var timer: Timer!
     var IsOk: Int = 0
     
-    override func viewWillAppear(_ animated:Bool) {
-        super.viewWillAppear(animated)
-        DicasLabel.center.x += view.bounds.height
-    }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        //animeted label
+    func dicasLoad(){
+        DicasLabel.text = dicaCenaCafe[0]
+        DicasLabel.center.x += view.bounds.height
         UIView.animate(withDuration: 1.0, animations:{
             self.DicasLabel.center.x -= self.view.bounds.height
         })
     }
+    
+//    override func viewWillAppear(_ animated:Bool) {
+//        super.viewWillAppear(animated)
+//        DicasLabel.center.x += view.bounds.height
+//    }
+//
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        //animeted label
+//        UIView.animate(withDuration: 1.0, animations:{
+//            self.DicasLabel.center.x -= self.view.bounds.height
+//        })
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +72,8 @@ class Cena7ViewController: UIViewController {
                 showOutgoingMessage9(text: cena6[IsOk])
             default:
                 showOutgoingMessage10(text: cena6[IsOk])
+                dicasLoad()
             }
-            sleep(1)
             IsOk += 1
         } else{
             
