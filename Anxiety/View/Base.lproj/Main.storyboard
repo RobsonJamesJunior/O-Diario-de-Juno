@@ -383,9 +383,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drM-57-YKm">
-                                <rect key="frame" x="84" y="198" width="37" height="37"/>
+                                <rect key="frame" x="80" y="209" width="46" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="CHAVE"/>
+                                <state key="normal" image="key" backgroundImage="key"/>
                                 <connections>
                                     <action selector="keySegueScene:" destination="rj0-kG-OH3" eventType="touchUpInside" id="Xlf-te-io8"/>
                                     <segue destination="kv1-zQ-Mta" kind="showDetail" animates="NO" id="l0c-7f-adi"/>
@@ -1289,7 +1289,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CHAVE" width="16" height="16"/>
         <image name="Cena_1.gif" width="750" height="1334"/>
         <image name="Cena_10.gif" width="750" height="1334"/>
         <image name="Cena_11.gif" width="750" height="1334"/>
@@ -1317,6 +1316,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Inspira" width="200" height="200"/>
         <image name="caixa_dialogo" width="750" height="360"/>
+        <image name="key" width="250" height="250"/>
         <image name="respira" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
