@@ -1156,13 +1156,21 @@
                                     <action selector="InspirarButton:" destination="Im4-oa-puN" eventType="touchUpInside" id="3LC-tP-rxA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgk-6S-ZMZ">
+                                <rect key="frame" x="317" y="36" width="42" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="bottom" secondItem="bHD-v9-8Ea" secondAttribute="bottom" id="HZh-1W-yph"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="trailing" secondItem="bHD-v9-8Ea" secondAttribute="trailing" id="Q4q-fe-pOb"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="top" secondItem="ZYn-32-Oo5" secondAttribute="top" id="VZ8-Di-Yf1"/>
+                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="trailing" secondItem="fgk-6S-ZMZ" secondAttribute="trailing" constant="16" id="aGa-cO-thz"/>
                             <constraint firstItem="UCw-IL-JPV" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" constant="8" id="hGr-QO-onP"/>
+                            <constraint firstItem="fgk-6S-ZMZ" firstAttribute="top" secondItem="bHD-v9-8Ea" secondAttribute="top" constant="16" id="juu-2W-zr1"/>
                             <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="UCw-IL-JPV" secondAttribute="bottom" constant="8" id="mPb-i8-0WM"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" id="o0I-jF-lAV"/>
                             <constraint firstItem="bHD-v9-8Ea" firstAttribute="trailing" secondItem="ZgN-Tg-TBX" secondAttribute="trailing" constant="8" id="pzi-Bi-W0t"/>
@@ -1172,6 +1180,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena23ImageView" destination="Nzz-bQ-L11" id="HhC-bW-xfq"/>
+                        <outlet property="timeResp" destination="fgk-6S-ZMZ" id="Kjr-3F-b9D"/>
                         <segue destination="Bja-xi-oTj" kind="showDetail" identifier="Segue23" animates="NO" id="lQ5-7h-Wck"/>
                     </connections>
                 </viewController>

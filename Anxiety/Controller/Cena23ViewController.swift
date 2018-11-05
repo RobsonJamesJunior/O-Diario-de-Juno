@@ -13,10 +13,15 @@ class Cena23ViewController: UIViewController {
     
     @IBOutlet weak var Cena23ImageView: UIImageView!
     
+    
+    @IBOutlet weak var timeResp: UILabel!
+    
     var inspBool: Bool = false
     var respBool: Bool = false
     var countAlc: Int = 0
     var timer: Timer!
+    
+    var countTime = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +29,26 @@ class Cena23ViewController: UIViewController {
         Cena23ImageView.isAccessibilityElement = true
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena7ViewController.update), userInfo: nil, repeats: true)
+        timeResp.text = "0"
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena7ViewController.update), userInfo: nil, repeats: true)
         
     }
     
     
     @objc func update() { // Função de atualização para opreações constantes
+
+        if countTime <= 3 {
+            timeResp.text = "\(3 - countTime)"
+            countTime += 1
+        }
+        
         if inspBool == true && respBool == true {
             countAlc += 1
             respBool = false
             inspBool = false
             print(countAlc)
         }
+        
         if countAlc == 5 {
             performSegue(withIdentifier: "Segue23", sender: nil)
         }
@@ -43,15 +56,21 @@ class Cena23ViewController: UIViewController {
     
     
     @IBAction func InspirarButton(_ sender: Any) {
-        inspBool = true
-        let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
-        Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
+        if inspBool == false && countTime == 4 {
+            countTime = 0
+            inspBool = true
+            let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
+            Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
+        }
     }
     
     @IBAction func RespirarButton(_ sender: Any) {
-        respBool = true
-         let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
-         Cena23ImageView.image = Cena23_2Gif // Adicionando a variável à tela de ImageView
+        if respBool == false && countTime == 4 {
+            countTime = 0
+            respBool = true
+            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
+            Cena23ImageView.image = Cena23_2Gif // Adicionando a variável à tela de ImageView
+        }
     }
     
     
