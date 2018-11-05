@@ -67,33 +67,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-j2-opY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="179" y="623.5" width="188" height="35.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
+                                <rect key="frame" x="32" y="623" width="343" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
+                                <rect key="frame" x="144" y="623" width="119" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Aperte para Continuar">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="32" y="623" width="343" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" constant="8" id="IfD-yU-7uP"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
-                            <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="w8h-Ju-ooM" secondAttribute="trailing" constant="8" id="PbZ-xT-A7d"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>

@@ -37,7 +37,6 @@ class Cena19ViewController: UIViewController {
             default:
                 showOutgoingMessage4(text: cena19[IsOk])
             }
-            sleep(1)
             IsOk += 1
         } else{
             

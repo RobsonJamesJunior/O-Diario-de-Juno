@@ -29,7 +29,6 @@ class Cena6ViewController: UIViewController {
     @objc func update() { // Função de atualização para opreações constantes
         if IsOk < cena5.count { // Variável que faz vibrar apenas uma vez
             showOutgoingMessage(text: cena5[IsOk])
-            sleep(1)
             IsOk += 1
         } else{
             performSegue(withIdentifier: "Segue6", sender: nil)

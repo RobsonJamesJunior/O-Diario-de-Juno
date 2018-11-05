@@ -26,7 +26,7 @@ class Cena4ViewController: UIViewController {
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        sleep(1)
+        //sleep(UInt32(0.1))
         performSegue(withIdentifier: "Segue4", sender: nil)
     }
     
