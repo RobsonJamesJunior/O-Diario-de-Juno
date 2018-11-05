@@ -34,7 +34,7 @@ class Cena3ViewController: UIViewController {
             sleep(1)
             IsOk += 1
         } else{
-            
+            performSegue(withIdentifier: "Segue3", sender: nil)
         }
     }
     
