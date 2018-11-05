@@ -17,7 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        MainCenaImageView.isAccessibilityElement = true
+        MainCenaImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
+        let Cena1Gif = UIImage.gifImageWithName("menu") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1
+        MainCenaImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
+        
         
     }
 

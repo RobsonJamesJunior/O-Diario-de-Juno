@@ -20,14 +20,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="304" y="623.5" width="63" height="35.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
+                                <rect key="frame" x="138" y="133" width="99" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Button">
+                                        <fragment content="Start Game">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="18" name="Juninho-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -41,8 +43,6 @@
                         <constraints>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="28Z-Ke-j4z"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9cc-4h-3H8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qy8-ji-vnb" secondAttribute="bottom" constant="8" id="XBw-C6-H5x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qy8-ji-vnb" secondAttribute="trailing" constant="8" id="lOR-f0-teO"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nwX-32-lat"/>
                             <constraint firstItem="bTk-r4-blF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oaA-yH-nol"/>
                         </constraints>
@@ -84,6 +84,10 @@
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
+                                <rect key="frame" x="32" y="623" width="343" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -98,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena1ImageView" destination="eMq-j2-opY" id="oXW-QS-aEz"/>
+                        <outlet property="alarmCell" destination="5lZ-Qr-FsH" id="Jo0-Tp-ccG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW9-DD-aSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1254,6 +1259,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Inspira" width="200" height="200"/>
         <image name="caixa_dialogo" width="750" height="360"/>
+        <image name="cell_alarm" width="350" height="350"/>
         <image name="key" width="250" height="250"/>
         <image name="respira" width="200" height="200"/>
         <image name="seta" width="250" height="250"/>
