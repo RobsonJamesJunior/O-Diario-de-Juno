@@ -17,6 +17,8 @@ class Cena20ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Cena20ImageView.isAccessibilityElement = true
+        let Cena20Gif = UIImage.gifImageWithName("Cena_20") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
+        Cena20ImageView.image = Cena20Gif // Adicionando a variável à tela de ImageView
     }
     
     
