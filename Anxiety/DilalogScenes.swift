@@ -20,9 +20,7 @@ let cena6:[String] = ["Amigos","Bom dia", "Viagens", "Hilário", "HAHAHA","Traba
 
 let cena11:[String] = ["Ele está olhando pra mim?","Por que ele estaria olhando pra mim?",]
 
-let cena14:[String] = ["Será que é um assaltante?","Ta chegando perto, o que eu faço??",]
-
-let cena15:[String] = ["Vou direto ou pego outro caminho?",]
+let cena19:[String] = ["Será que é um assaltante?","Ta chegando perto, o que eu faço??", "Vou direto ou pego outro caminho?",]
 
 let cena16:[String] = ["aaaahhhh",]
 
