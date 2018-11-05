@@ -63,7 +63,7 @@ class Cena3ViewController: UIViewController {
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
-        let bubbleImage = UIImage(named: "cidio")?
+        let bubbleImage = UIImage(named: "bubble_Chat")?
             .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
                             resizingMode: .tile)
             .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
