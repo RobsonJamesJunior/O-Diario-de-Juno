@@ -39,7 +39,7 @@ class Cena6ViewController: UIViewController {
     func showOutgoingMessage(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         

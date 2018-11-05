@@ -84,7 +84,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage1(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -129,7 +129,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage2(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -174,7 +174,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage3(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -219,7 +219,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage4(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -264,7 +264,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage5(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -309,7 +309,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage6(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -354,7 +354,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage7(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -399,7 +399,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage8(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -444,7 +444,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage9(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -489,7 +489,7 @@ class Cena7ViewController: UIViewController {
     func showOutgoingMessage10(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
