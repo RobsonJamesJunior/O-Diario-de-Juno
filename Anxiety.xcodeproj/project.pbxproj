@@ -72,6 +72,8 @@
 		1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */; };
 		1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF3218F241C006DFE69 /* coração2.mp3 */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
+		1DB47035218FD6CD00BDB5F1 /* Cena_19_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */; };
+		1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */; };
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
@@ -165,6 +167,8 @@
 		1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = passaro_acordar.mp3; sourceTree = "<group>"; };
 		1D7C0FF3218F241C006DFE69 /* coração2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração2.mp3"; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_19_1.gif; sourceTree = "<group>"; };
+		1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19_1ViewController.swift; sourceTree = "<group>"; };
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +211,7 @@
 		1D059C69218B0D3B006B5A0C /* ImagensCenas */ = {
 			isa = PBXGroup;
 			children = (
+				1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */,
 				1D68E7D5218FC80E00FDA350 /* Cena_1.gif */,
 				1D68E7D9218FC80E00FDA350 /* Cena_2.gif */,
 				1D68E7D8218FC80E00FDA350 /* Cena_3.gif */,
@@ -298,6 +303,7 @@
 				1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */,
 				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
 				1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */,
+				1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D68E7E5218FC80E00FDA350 /* Cena_4.gif in Resources */,
+				1DB47035218FD6CD00BDB5F1 /* Cena_19_1.gif in Resources */,
 				E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
@@ -538,6 +545,7 @@
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
 				1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */,
+				1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */,
 				1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */,
 				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
 				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,

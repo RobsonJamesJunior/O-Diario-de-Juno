@@ -950,7 +950,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="MB3-rv-Xbu" kind="show" animates="NO" id="i5c-Yg-lkI"/>
+                                    <segue destination="A6N-NS-WoM" kind="showDetail" animates="NO" id="0TQ-0k-Dqx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -972,6 +972,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OY-wI-KXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17968.799999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Cena191 View Controller-->
+        <scene sceneID="eiq-tj-lT1">
+            <objects>
+                <viewController id="A6N-NS-WoM" customClass="Cena19_1ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1eY-Ik-Jn5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_19_1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-4G-ULI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="iVS-6Z-gra"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-oA-g6Y">
+                                <rect key="frame" x="321" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="MB3-rv-Xbu" kind="showDetail" animates="NO" id="aAm-CN-j22"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BtG-4G-ULI" firstAttribute="trailing" secondItem="723-0K-Wiq" secondAttribute="trailing" id="Jrp-jO-SC5"/>
+                            <constraint firstItem="723-0K-Wiq" firstAttribute="bottom" secondItem="pNd-oA-g6Y" secondAttribute="bottom" constant="8" id="MEt-DV-xMe"/>
+                            <constraint firstItem="BtG-4G-ULI" firstAttribute="leading" secondItem="723-0K-Wiq" secondAttribute="leading" id="hmP-Bt-L7h"/>
+                            <constraint firstItem="723-0K-Wiq" firstAttribute="trailing" secondItem="pNd-oA-g6Y" secondAttribute="trailing" constant="8" id="mb7-QF-Op8"/>
+                            <constraint firstItem="BtG-4G-ULI" firstAttribute="bottom" secondItem="723-0K-Wiq" secondAttribute="bottom" id="zVS-35-B2J"/>
+                            <constraint firstItem="BtG-4G-ULI" firstAttribute="top" secondItem="1eY-Ik-Jn5" secondAttribute="top" id="zeR-uT-ta7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="723-0K-Wiq"/>
+                    </view>
+                    <connections>
+                        <outlet property="Cena19_1ImageView" destination="BtG-4G-ULI" id="cQg-kZ-QjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c28-Mg-yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17969" y="890"/>
         </scene>
         <!--Cena20 View Controller-->
         <scene sceneID="vsD-vy-TDe">
@@ -1167,6 +1208,7 @@
         <image name="Cena_17.gif" width="750" height="1334"/>
         <image name="Cena_18.gif" width="750" height="1334"/>
         <image name="Cena_19.gif" width="750" height="1334"/>
+        <image name="Cena_19_1.gif" width="750" height="1334"/>
         <image name="Cena_2.gif" width="750" height="1334"/>
         <image name="Cena_20.gif" width="750" height="1334"/>
         <image name="Cena_21.gif" width="750" height="1334"/>
