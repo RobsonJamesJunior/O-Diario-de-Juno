@@ -47,7 +47,7 @@ class Cena5ViewController: UIViewController {
             sleep(1)
             IsOk += 1
         } else{
-            
+            performSegue(withIdentifier: "Segue5", sender: nil)
         }
         
     }
