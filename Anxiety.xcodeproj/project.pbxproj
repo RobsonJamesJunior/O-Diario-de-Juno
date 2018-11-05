@@ -52,6 +52,10 @@
 		1D68E7F4218FC80E00FDA350 /* Cena_13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DC218FC80E00FDA350 /* Cena_13.gif */; };
 		1D68E7F5218FC80E00FDA350 /* Cena_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DD218FC80E00FDA350 /* Cena_16.gif */; };
 		1D68E7F6218FC80E00FDA350 /* Cena_8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DE218FC80E00FDA350 /* Cena_8.gif */; };
+		1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */; };
+		1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */; };
+		1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */; };
+		1D68E7FE218FCB8D00FDA350 /* Cena24ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */; };
 		1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE4218F241B006DFE69 /* coração.mp3 */; };
 		1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE6218F241B006DFE69 /* comendo2.wav */; };
 		1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE7218F241B006DFE69 /* passaro2.wav */; };
@@ -141,6 +145,10 @@
 		1D68E7DC218FC80E00FDA350 /* Cena_13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_13.gif; sourceTree = "<group>"; };
 		1D68E7DD218FC80E00FDA350 /* Cena_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_16.gif; sourceTree = "<group>"; };
 		1D68E7DE218FC80E00FDA350 /* Cena_8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_8.gif; sourceTree = "<group>"; };
+		1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena21ViewController.swift; sourceTree = "<group>"; };
+		1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena22ViewController.swift; sourceTree = "<group>"; };
+		1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena23ViewController.swift; sourceTree = "<group>"; };
+		1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena24ViewController.swift; sourceTree = "<group>"; };
 		1D7C0FE4218F241B006DFE69 /* coração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração.mp3"; sourceTree = "<group>"; };
 		1D7C0FE6218F241B006DFE69 /* comendo2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = comendo2.wav; sourceTree = "<group>"; };
 		1D7C0FE7218F241B006DFE69 /* passaro2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passaro2.wav; sourceTree = "<group>"; };
@@ -286,6 +294,10 @@
 				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
 				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
 				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
+				1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */,
+				1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */,
+				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
+				1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,8 +523,10 @@
 				1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */,
 				1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */,
 				E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */,
+				1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */,
 				1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */,
 				1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */,
+				1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
@@ -523,11 +537,13 @@
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
+				1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */,
 				1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */,
 				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
 				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,
 				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,
 				1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */,
+				1D68E7FE218FCB8D00FDA350 /* Cena24ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
