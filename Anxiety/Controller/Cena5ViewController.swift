@@ -22,13 +22,7 @@ class Cena5ViewController: UIViewController {
         Cena5ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena5Gif = UIImage.gifImageWithName("Cena_5") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena5
         Cena5ImageView.image = Cena5Gif // Adicionando a variável à tela de ImageView
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "agua_pia", ofType: "mp3")!)) // colocando a música através do diretório
-//            audioPlayer.prepareToPlay() // preparando o áudio
-//        } catch {
-//            print(error) // erro de áudio
-//        }
-//        audioPlayer.play() // dá o play no áudio
+
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena5ViewController.update), userInfo: nil, repeats: true)
         
     }

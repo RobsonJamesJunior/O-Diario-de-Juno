@@ -78,6 +78,7 @@
                                     <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
+                                    <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
                                 </connections>
                             </button>
