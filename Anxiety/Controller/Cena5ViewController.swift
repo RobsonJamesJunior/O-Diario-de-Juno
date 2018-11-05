@@ -71,7 +71,7 @@ class Cena5ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width - 210, // posição x
                 y: view.frame.height - bubbleImageSize.height - 550, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -91,7 +91,7 @@ class Cena5ViewController: UIViewController {
         
         for letra in labelDialog {
             label.text! += ("\(letra)")
-            RunLoop.current.run(until: Date()+0.05)
+            RunLoop.current.run(until: Date()+0.10)
             view.addSubview(label)
         }
     }
@@ -117,7 +117,7 @@ class Cena5ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
-                y: view.frame.height - bubbleImageSize.height - 550, //posição y
+                y: view.frame.height - bubbleImageSize.height - 300, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -136,7 +136,7 @@ class Cena5ViewController: UIViewController {
         
         for letra in labelDialog {
             label.text! += ("\(letra)")
-            RunLoop.current.run(until: Date()+0.05)
+            RunLoop.current.run(until: Date()+0.10)
             view.addSubview(label)
         }
     }
@@ -181,7 +181,7 @@ class Cena5ViewController: UIViewController {
         
         for letra in labelDialog {
             label.text! += ("\(letra)")
-            RunLoop.current.run(until: Date()+0.05)
+            RunLoop.current.run(until: Date()+0.10)
             view.addSubview(label)
         }
     }

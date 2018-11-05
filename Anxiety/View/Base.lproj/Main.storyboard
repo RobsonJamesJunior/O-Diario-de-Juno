@@ -261,23 +261,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-HB-eOF">
-                                <rect key="frame" x="179" y="623.5" width="188" height="35.5"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Aperte para Continuar">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="rj0-kG-OH3" kind="show" animates="NO" id="1Re-dN-sSx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
                                 <rect key="frame" x="245" y="275" width="130" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -297,16 +280,15 @@
                         <constraints>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="top" secondItem="9d4-zz-e8c" secondAttribute="top" id="0h5-M6-MsW"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="bottom" secondItem="4Cz-bT-DXY" secondAttribute="bottom" id="7g7-So-tgK"/>
-                            <constraint firstItem="4Cz-bT-DXY" firstAttribute="trailing" secondItem="ZQi-HB-eOF" secondAttribute="trailing" constant="8" id="XE3-ls-paz"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" id="f0M-bl-MIQ"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="trailing" secondItem="4Cz-bT-DXY" secondAttribute="trailing" id="myN-h7-1nz"/>
-                            <constraint firstItem="4Cz-bT-DXY" firstAttribute="bottom" secondItem="ZQi-HB-eOF" secondAttribute="bottom" constant="8" id="z8g-by-9RK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Cz-bT-DXY"/>
                     </view>
                     <connections>
                         <outlet property="Cena7ImageView" destination="tq4-el-hFr" id="drb-3b-LtI"/>
                         <outlet property="DicasLabel" destination="4zV-sj-bjF" id="Wun-aL-XZa"/>
+                        <segue destination="rj0-kG-OH3" kind="showDetail" identifier="Segue7" animates="NO" id="orA-1I-m5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2h-gF-Uiy" userLabel="First Responder" sceneMemberID="firstResponder"/>

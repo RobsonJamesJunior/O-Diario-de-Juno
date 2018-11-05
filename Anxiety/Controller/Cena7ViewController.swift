@@ -76,7 +76,7 @@ class Cena7ViewController: UIViewController {
             }
             IsOk += 1
         } else{
-            
+            performSegue(withIdentifier: "Segue7", sender: nil)
         }
         
     }
