@@ -27,6 +27,10 @@
 		1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90F21821D150097921A /* Cena18ViewController.swift */; };
 		1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91121821D420097921A /* Cena19ViewController.swift */; };
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
+		1D2F692C2190358000C70D6B /* ms3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F69282190357F00C70D6B /* ms3.wav */; };
+		1D2F692D2190358000C70D6B /* ms2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F69292190358000C70D6B /* ms2.wav */; };
+		1D2F692E2190358000C70D6B /* ms4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F692A2190358000C70D6B /* ms4.wav */; };
+		1D2F692F2190358000C70D6B /* ms1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F692B2190358000C70D6B /* ms1.wav */; };
 		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
 		1D68E7DF218FC80E00FDA350 /* Cena_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7C7218FC80C00FDA350 /* Cena_5.gif */; };
 		1D68E7E0218FC80E00FDA350 /* Cena_6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7C8218FC80D00FDA350 /* Cena_6.gif */; };
@@ -124,6 +128,10 @@
 		1D2DB90F21821D150097921A /* Cena18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena18ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91121821D420097921A /* Cena19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
+		1D2F69282190357F00C70D6B /* ms3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms3.wav; sourceTree = "<group>"; };
+		1D2F69292190358000C70D6B /* ms2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms2.wav; sourceTree = "<group>"; };
+		1D2F692A2190358000C70D6B /* ms4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms4.wav; sourceTree = "<group>"; };
+		1D2F692B2190358000C70D6B /* ms1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms1.wav; sourceTree = "<group>"; };
 		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
 		1D68E7C7218FC80C00FDA350 /* Cena_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_5.gif; sourceTree = "<group>"; };
 		1D68E7C8218FC80D00FDA350 /* Cena_6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_6.gif; sourceTree = "<group>"; };
@@ -263,6 +271,10 @@
 				1D7C0FEA218F241B006DFE69 /* respiração.mp3 */,
 				1D7C0FEB218F241B006DFE69 /* transito2.wav */,
 				1D7C0FEF218F241C006DFE69 /* transito3.wav */,
+				1D2F692B2190358000C70D6B /* ms1.wav */,
+				1D2F69292190358000C70D6B /* ms2.wav */,
+				1D2F69282190357F00C70D6B /* ms3.wav */,
+				1D2F692A2190358000C70D6B /* ms4.wav */,
 				1D7C0FE9218F241B006DFE69 /* metro.wav */,
 			);
 			path = Sounds;
@@ -465,10 +477,13 @@
 				E2675A09219020BD0066ADE8 /* menu.gif in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
+				1D2F692C2190358000C70D6B /* ms3.wav in Resources */,
 				1D68E7E7218FC80E00FDA350 /* Cena_12.gif in Resources */,
 				1D7C0FFE218F241C006DFE69 /* chave.wav in Resources */,
+				1D2F692F2190358000C70D6B /* ms1.wav in Resources */,
 				1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */,
 				1D68E7E4218FC80E00FDA350 /* Cena_20.gif in Resources */,
+				1D2F692E2190358000C70D6B /* ms4.wav in Resources */,
 				1D7C1001218F241C006DFE69 /* coração3.wav in Resources */,
 				1D7C0FFD218F241C006DFE69 /* comendo3.wav in Resources */,
 				1DB8C374218FEDB400149C22 /* Cena_23_2.gif in Resources */,
@@ -494,6 +509,7 @@
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
 				1D68E7F5218FC80E00FDA350 /* Cena_16.gif in Resources */,
+				1D2F692D2190358000C70D6B /* ms2.wav in Resources */,
 				1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */,
 				1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */,
 				1DB8C371218FE28200149C22 /* Cena_24.gif in Resources */,

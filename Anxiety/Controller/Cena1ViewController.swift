@@ -22,7 +22,7 @@ class Cena1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "passaro_acordar", ofType: "mp3")!)) // colocando a música através do diretório
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
             audioPlayer.prepareToPlay() // preparando o áudio
         } catch {
             print(error) // erro de áudio
@@ -33,24 +33,20 @@ class Cena1ViewController: UIViewController {
         let Cena1Gif = UIImage.gifImageWithName("Cena_1") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1
         Cena1ImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
       
-//        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena1ViewController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena1ViewController.update), userInfo: nil, repeats: true)
 
     }
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        if IsOk == false{ // Variável que faz vibrar apenas uma vez
-            audioPlayer.play() // dá o play no áudio
-           // for _ in 1...5 { // Repetição da quantidade de vibrações
-             //   AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
+//        if IsOk == false{ // Variável que faz vibrar apenas uma vez
+        audioPlayer.play() // dá o play no áudio
+        for _ in 1...5 { // Repetição da quantidade de vibrações
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
               //  sleep(1) // delay do comando
-            IsOk = true
 //            showOutgoingMessage(text: cena1[0])
-            //}
-        } else{
-            
         }
-   
+    
     }
     
     

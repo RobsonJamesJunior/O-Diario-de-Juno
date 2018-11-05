@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var MainCenaImageView: UIImageView!
     
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,4 @@ class ViewController: UIViewController {
         
         
     }
-
-
 }
-
