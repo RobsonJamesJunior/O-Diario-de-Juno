@@ -8,6 +8,7 @@
 
 
 import UIKit
+import AudioToolbox // Biblioteca para utilizar vibração
 
 class Cena23ViewController: UIViewController {
     
@@ -20,6 +21,7 @@ class Cena23ViewController: UIViewController {
     var respBool: Bool = false
     var countAlc: Int = 0
     var timer: Timer!
+    var portVib: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +43,20 @@ class Cena23ViewController: UIViewController {
             respBool = false
             inspBool = false
             print(countAlc)
+            
         }
         
         if countAlc == 5 {
+            portVib = true
             performSegue(withIdentifier: "Segue23", sender: nil)
         }
+        
+        if portVib == false {
+            for _ in 1...5 { // Repetição da quantidade de vibrações
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
+            }
+        }
+        
     }
     
     
