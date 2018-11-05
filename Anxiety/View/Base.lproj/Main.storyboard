@@ -240,37 +240,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_6.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-Ce-POe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-61-fZO">
-                                <rect key="frame" x="179" y="623.5" width="188" height="35.5"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Aperte para Continuar">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="oeO-wZ-Xpy" kind="show" animates="NO" id="Ygh-Gt-RfY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uuB-Ce-POe" firstAttribute="leading" secondItem="pif-lN-qyO" secondAttribute="leading" id="LmY-Bq-xbN"/>
                             <constraint firstItem="uuB-Ce-POe" firstAttribute="top" secondItem="b4b-XJ-ys9" secondAttribute="top" id="ObL-aW-fkg"/>
                             <constraint firstItem="uuB-Ce-POe" firstAttribute="trailing" secondItem="pif-lN-qyO" secondAttribute="trailing" id="dYm-vd-Eas"/>
-                            <constraint firstItem="pif-lN-qyO" firstAttribute="bottom" secondItem="8gt-61-fZO" secondAttribute="bottom" constant="8" id="jFS-A1-4aW"/>
-                            <constraint firstItem="pif-lN-qyO" firstAttribute="trailing" secondItem="8gt-61-fZO" secondAttribute="trailing" constant="8" id="kIu-xL-5yZ"/>
                             <constraint firstItem="uuB-Ce-POe" firstAttribute="bottom" secondItem="pif-lN-qyO" secondAttribute="bottom" id="ob8-bi-rlL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pif-lN-qyO"/>
                     </view>
                     <connections>
-                        <outlet property="Cena6ImageView" destination="uuB-Ce-POe" id="Z49-2Q-aRW"/>
+                        <outlet property="Cena6ImageView" destination="uuB-Ce-POe" id="irF-4F-2EF"/>
+                        <segue destination="oeO-wZ-Xpy" kind="showDetail" identifier="Segue6" animates="NO" id="cx2-1E-moy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-9o-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>

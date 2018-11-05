@@ -32,7 +32,7 @@ class Cena6ViewController: UIViewController {
             sleep(1)
             IsOk += 1
         } else{
-            
+            performSegue(withIdentifier: "Segue6", sender: nil)
         }
         
     }
