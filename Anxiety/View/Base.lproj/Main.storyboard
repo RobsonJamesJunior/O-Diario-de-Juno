@@ -411,6 +411,7 @@
                                     <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
+                                    <action selector="StopSounTraffic:" destination="rGv-8F-XZB" eventType="touchUpInside" id="Uuu-Wx-mHa"/>
                                     <segue destination="DXh-Ka-2lH" kind="show" animates="NO" id="SM5-vf-gKf"/>
                                 </connections>
                             </button>

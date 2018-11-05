@@ -14,7 +14,7 @@ let cena2:[String] = ["Vamos la!",]
 
 let cena4:[String] = ["Esta tudo bem!","    Estou feliz!    ","     Que legal!    ",]
 
-let cena5:[String] = ["Huummm, qual roupa eu vou?", "Essa não, essa não… essa aqui será? Melhor outra.",]
+let cena5:[String] = ["Huummm, qual roupa eu vou usar para sair? ", "Essa não, essa não… essa aqui será? Melhor outra. Não sei, tem nada legal.",]
 
 let cena6:[String] = ["Amigos","Bom dia", "Viagens", "Hilário", "HAHAHA","Trabalho","Faculdade", "Tchau","Achou errado!","Show!",]
 

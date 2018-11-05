@@ -31,4 +31,7 @@ class Cena10ViewController: UIViewController {
     }
     
     
+    @IBAction func StopSounTraffic(_ sender: Any) {
+        audioPlayer.stop()
+    }
 }

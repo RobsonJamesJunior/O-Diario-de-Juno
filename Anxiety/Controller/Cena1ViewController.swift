@@ -53,7 +53,10 @@ class Cena1ViewController: UIViewController {
              
             }
         }
-    
+        
+        if !audioPlayer.isPlaying{
+            audioPlayer.play()
+        }
     }
     
     

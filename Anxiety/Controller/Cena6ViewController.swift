@@ -21,14 +21,19 @@ class Cena6ViewController: UIViewController {
         Cena6ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena6Gif = UIImage.gifImageWithName("Cena_6") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
         Cena6ImageView.image = Cena6Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena6ViewController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(Cena6ViewController.update), userInfo: nil, repeats: true)
         
     }
     
     
     @objc func update() { // Função de atualização para opreações constantes
         if IsOk < cena5.count { // Variável que faz vibrar apenas uma vez
-            showOutgoingMessage(text: cena5[IsOk])
+            switch IsOk {
+            case 0:
+                showOutgoingMessage1(text: cena5[IsOk])
+            default:
+                showOutgoingMessage2(text: cena5[IsOk])
+            }
             IsOk += 1
         } else{
             performSegue(withIdentifier: "Segue6", sender: nil)
@@ -36,7 +41,7 @@ class Cena6ViewController: UIViewController {
         
     }
     
-    func showOutgoingMessage(text: String) {
+    func showOutgoingMessage1(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
         label.font = UIFont(name: "Juninho-Regular", size: 18)
@@ -56,8 +61,53 @@ class Cena6ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
                 y: view.frame.height - bubbleImageSize.height - 550, //posição y
+                width: bubbleImageSize.width,
+                height: bubbleImageSize.height))
+        
+        let bubbleImage = UIImage(named: "bubble_Chat")?
+            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
+                            resizingMode: .tile)
+            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        
+        outgoingMessageView.image = bubbleImage
+        
+        view.addSubview(outgoingMessageView)
+        
+        label.center = outgoingMessageView.center
+        
+        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
+        
+        for letra in labelDialog {
+            label.text! += ("\(letra)")
+            RunLoop.current.run(until: Date()+0.10)
+            view.addSubview(label)
+        }
+    }
+    
+    func showOutgoingMessage2(text: String) {
+        let label =  UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
+        label.textColor = .black
+        label.text = ""
+        
+        let constraintRect = CGSize(width: 0.66 * view.frame.width,
+                                    height: .greatestFiniteMagnitude)
+        let boundingBox = text.boundingRect(with: constraintRect,
+                                            options: .usesLineFragmentOrigin,
+                                            attributes: [.font: label.font],
+                                            context: nil)
+        label.frame.size = CGSize(width: ceil(boundingBox.width),
+                                  height: ceil(boundingBox.height))
+        
+        let bubbleImageSize = CGSize(width: label.frame.width + 28,
+                                     height: label.frame.height + 20)
+        
+        let outgoingMessageView = UIImageView(frame:
+            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
+                y: view.frame.height - bubbleImageSize.height - 450, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
