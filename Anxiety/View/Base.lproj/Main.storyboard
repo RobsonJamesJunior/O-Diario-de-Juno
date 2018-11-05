@@ -84,6 +84,10 @@
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
+                                <rect key="frame" x="32" y="623" width="343" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -98,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena1ImageView" destination="eMq-j2-opY" id="oXW-QS-aEz"/>
+                        <outlet property="alarmCell" destination="5lZ-Qr-FsH" id="Jo0-Tp-ccG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SW9-DD-aSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1308,6 +1313,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Inspira" width="200" height="200"/>
         <image name="caixa_dialogo" width="750" height="360"/>
+        <image name="cell_alarm" width="350" height="350"/>
         <image name="key" width="250" height="250"/>
         <image name="respira" width="200" height="200"/>
         <image name="seta" width="250" height="250"/>

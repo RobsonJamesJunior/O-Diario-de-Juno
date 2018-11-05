@@ -14,6 +14,7 @@ class Cena1ViewController: UIViewController {
     
     @IBOutlet weak var Cena1ImageView: UIImageView!
 
+    @IBOutlet weak var alarmCell: UIImageView!
     var timer: Timer!
     var audioPlayer = AVAudioPlayer()
     var IsOk: Bool = false
@@ -53,10 +54,10 @@ class Cena1ViewController: UIViewController {
     }
     
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.animatedLabel()
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 228})
+    }
     
 //    func animatedLabel(){
 //        DialogoLabelCenaUm.text = ""
