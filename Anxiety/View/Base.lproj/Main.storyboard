@@ -974,26 +974,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_19.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-Z6-IiC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2M-54-W5G">
-                                <rect key="frame" x="126" y="461" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2M-54-W5G">
+                                <rect key="frame" x="78" y="300" width="111" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="setaEsquerda"/>
                                 <connections>
                                     <segue destination="MB3-rv-Xbu" kind="show" id="jLS-7t-5QE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-lL-gNE">
-                                <rect key="frame" x="304" y="624" width="63" height="36"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-lL-gNE">
+                                <rect key="frame" x="132" y="531" width="111" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="seta">
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <segue destination="A6N-NS-WoM" kind="showDetail" animates="NO" id="0TQ-0k-Dqx"/>
@@ -1004,9 +998,7 @@
                         <constraints>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="top" secondItem="28P-JZ-y4C" secondAttribute="top" id="7u5-dn-I1E"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="trailing" secondItem="Yik-pY-qlD" secondAttribute="trailing" id="CGI-0O-eqD"/>
-                            <constraint firstItem="Yik-pY-qlD" firstAttribute="bottom" secondItem="2G0-lL-gNE" secondAttribute="bottom" constant="8" id="Faw-ZU-JGj"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="bfe-gO-wU7"/>
-                            <constraint firstItem="Yik-pY-qlD" firstAttribute="trailing" secondItem="2G0-lL-gNE" secondAttribute="trailing" constant="8" id="vuh-RC-Ub9"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="yjh-Eh-lJu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yik-pY-qlD"/>
@@ -1318,6 +1310,8 @@
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="key" width="250" height="250"/>
         <image name="respira" width="200" height="200"/>
+        <image name="seta" width="250" height="250"/>
+        <image name="setaEsquerda" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
