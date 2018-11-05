@@ -14,7 +14,11 @@ class Cena12ViewController: UIViewController {
     var targetValue: Int = 0
     var contadorDerounds: Int = 1
    
+    @IBOutlet weak var pressToContinue: UIButton!
     func startNewRound(){
+        if contadorDerounds > 3{
+            pressToContinue.isHidden = false
+        }
         //contadorDerounds+=1
        // round.text = String(contadorDerounds)
         contadorDerounds+=1
@@ -40,13 +44,13 @@ class Cena12ViewController: UIViewController {
         var title: String
         
         if diference == 0{
-            title = "Perfect!"
+            title = "Perfeito!"
             //score += 100
         }else if diference < 5{
-            title = "You almost There"
+            title = "Quase acertou!"
            // score += 50
         }else{
-            title = "Not even close..."
+            title = "Passou longe!"
         }
         
         let message: String = "\n\(title)"
