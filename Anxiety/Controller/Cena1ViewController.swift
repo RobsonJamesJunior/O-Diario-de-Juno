@@ -9,19 +9,26 @@
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 import AVFoundation // Biblioteca para utilizar sons
+var isOk:Bool = false
 
 class Cena1ViewController: UIViewController {
     
     @IBOutlet weak var Cena1ImageView: UIImageView!
 
+    @IBOutlet weak var alarmCell: UIImageView!
     var timer: Timer!
     var audioPlayer = AVAudioPlayer()
     var IsOk: Bool = false
     
+    @IBAction func ButtonStopVibration(_ sender: Any) {
+        IsOk = true
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "passaro_acordar", ofType: "mp3")!)) // colocando a música através do diretório
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
             audioPlayer.prepareToPlay() // preparando o áudio
         } catch {
             print(error) // erro de áudio
@@ -38,16 +45,13 @@ class Cena1ViewController: UIViewController {
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        if IsOk == false{ // Variável que faz vibrar apenas uma vez
-            audioPlayer.play() // dá o play no áudio
-           // for _ in 1...5 { // Repetição da quantidade de vibrações
-             //   AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
-              //  sleep(1) // delay do comando
-            IsOk = true
-            showOutgoingMessage(text: cena1[0])
-            //}
-        } else{
-            
+
+        audioPlayer.play() // dá o play no áudio
+        if IsOk == false {
+            for _ in 1...5 { // Repetição da quantidade de vibrações
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
+             
+            }
         }
    
     }
@@ -107,11 +111,16 @@ class Cena1ViewController: UIViewController {
         
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
-        for letra in labelDialog {
-            label.text! += ("\(letra)")
-            RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+        if !audioPlayer.isPlaying{
+            audioPlayer.play()
         }
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 228})
+    }
+
     
 }

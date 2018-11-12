@@ -27,7 +27,37 @@
 		1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB90F21821D150097921A /* Cena18ViewController.swift */; };
 		1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91121821D420097921A /* Cena19ViewController.swift */; };
 		1D2DB91421821DB80097921A /* Cena20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB91321821DB80097921A /* Cena20ViewController.swift */; };
+		1D2F692C2190358000C70D6B /* ms3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F69282190357F00C70D6B /* ms3.wav */; };
+		1D2F692D2190358000C70D6B /* ms2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F69292190358000C70D6B /* ms2.wav */; };
+		1D2F692E2190358000C70D6B /* ms4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F692A2190358000C70D6B /* ms4.wav */; };
+		1D2F692F2190358000C70D6B /* ms1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D2F692B2190358000C70D6B /* ms1.wav */; };
 		1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D352802218698060015B4A4 /* UIImageViewExtensao.swift */; };
+		1D68E7DF218FC80E00FDA350 /* Cena_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7C7218FC80C00FDA350 /* Cena_5.gif */; };
+		1D68E7E0218FC80E00FDA350 /* Cena_6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7C8218FC80D00FDA350 /* Cena_6.gif */; };
+		1D68E7E1218FC80E00FDA350 /* Cena_9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7C9218FC80D00FDA350 /* Cena_9.gif */; };
+		1D68E7E2218FC80E00FDA350 /* Cena_17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CA218FC80D00FDA350 /* Cena_17.gif */; };
+		1D68E7E3218FC80E00FDA350 /* Cena_19.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CB218FC80D00FDA350 /* Cena_19.gif */; };
+		1D68E7E4218FC80E00FDA350 /* Cena_20.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CC218FC80D00FDA350 /* Cena_20.gif */; };
+		1D68E7E5218FC80E00FDA350 /* Cena_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CD218FC80D00FDA350 /* Cena_4.gif */; };
+		1D68E7E6218FC80E00FDA350 /* Cena_22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CE218FC80D00FDA350 /* Cena_22.gif */; };
+		1D68E7E7218FC80E00FDA350 /* Cena_12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7CF218FC80D00FDA350 /* Cena_12.gif */; };
+		1D68E7E8218FC80E00FDA350 /* Cena_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D0218FC80D00FDA350 /* Cena_7.gif */; };
+		1D68E7E9218FC80E00FDA350 /* Cena_15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D1218FC80D00FDA350 /* Cena_15.gif */; };
+		1D68E7EA218FC80E00FDA350 /* Cena_14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D2218FC80D00FDA350 /* Cena_14.gif */; };
+		1D68E7EB218FC80E00FDA350 /* Cena_18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D3218FC80D00FDA350 /* Cena_18.gif */; };
+		1D68E7ED218FC80E00FDA350 /* Cena_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D5218FC80E00FDA350 /* Cena_1.gif */; };
+		1D68E7EE218FC80E00FDA350 /* Cena_10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D6218FC80E00FDA350 /* Cena_10.gif */; };
+		1D68E7EF218FC80E00FDA350 /* Cena_21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D7218FC80E00FDA350 /* Cena_21.gif */; };
+		1D68E7F0218FC80E00FDA350 /* Cena_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D8218FC80E00FDA350 /* Cena_3.gif */; };
+		1D68E7F1218FC80E00FDA350 /* Cena_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7D9218FC80E00FDA350 /* Cena_2.gif */; };
+		1D68E7F2218FC80E00FDA350 /* Cena_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DA218FC80E00FDA350 /* Cena_11.gif */; };
+		1D68E7F4218FC80E00FDA350 /* Cena_13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DC218FC80E00FDA350 /* Cena_13.gif */; };
+		1D68E7F5218FC80E00FDA350 /* Cena_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DD218FC80E00FDA350 /* Cena_16.gif */; };
+		1D68E7F6218FC80E00FDA350 /* Cena_8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D68E7DE218FC80E00FDA350 /* Cena_8.gif */; };
+		1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */; };
+		1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */; };
+		1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */; };
+		1D68E7FE218FCB8D00FDA350 /* Cena24ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */; };
 		1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE4218F241B006DFE69 /* coração.mp3 */; };
 		1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE6218F241B006DFE69 /* comendo2.wav */; };
 		1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FE7218F241B006DFE69 /* passaro2.wav */; };
@@ -44,19 +74,15 @@
 		1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */; };
 		1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF3218F241C006DFE69 /* coração2.mp3 */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
+		1DB47035218FD6CD00BDB5F1 /* Cena_19_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */; };
+		1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */; };
+		1DB8C371218FE28200149C22 /* Cena_24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB8C370218FE28100149C22 /* Cena_24.gif */; };
+		1DB8C374218FEDB400149C22 /* Cena_23_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB8C372218FEDB400149C22 /* Cena_23_2.gif */; };
+		1DB8C375218FEDB400149C22 /* Cena_23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB8C373218FEDB400149C22 /* Cena_23.gif */; };
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
-		1DCA91FF218CDE9300934B35 /* Cena_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA91FE218CDE9300934B35 /* Cena_5.gif */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
-		5E82FA57218A454B00A43BE5 /* Cena_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA56218A454A00A43BE5 /* Cena_1.gif */; };
-		5E82FA62218B346B00A43BE5 /* Cena_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA59218B346A00A43BE5 /* Cena_2.gif */; };
-		5E82FA63218B346B00A43BE5 /* Cena_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA5A218B346A00A43BE5 /* Cena_3.gif */; };
-		5E82FA66218B346B00A43BE5 /* Cena_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA5D218B346A00A43BE5 /* Cena_4.gif */; };
-		5E82FA80218CC98000A43BE5 /* Cena_8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA7A218CC98000A43BE5 /* Cena_8.gif */; };
-		5E82FA81218CC98000A43BE5 /* Cena_6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA7B218CC98000A43BE5 /* Cena_6.gif */; };
-		5E82FA82218CC98000A43BE5 /* Cena_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA7C218CC98000A43BE5 /* Cena_7.gif */; };
-		5E82FA83218CC98000A43BE5 /* Cena_10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA7D218CC98000A43BE5 /* Cena_10.gif */; };
-		5E82FA85218CC98000A43BE5 /* Cena_9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA7F218CC98000A43BE5 /* Cena_9.gif */; };
+		E2675A09219020BD0066ADE8 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = E2675A08219020BD0066ADE8 /* menu.gif */; };
 		E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */; };
 		E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2726C3F217A1DDE00FC04FF /* ViewController.swift */; };
 		E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2726C41217A1DDE00FC04FF /* Main.storyboard */; };
@@ -102,7 +128,37 @@
 		1D2DB90F21821D150097921A /* Cena18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena18ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91121821D420097921A /* Cena19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19ViewController.swift; sourceTree = "<group>"; };
 		1D2DB91321821DB80097921A /* Cena20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena20ViewController.swift; sourceTree = "<group>"; };
+		1D2F69282190357F00C70D6B /* ms3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms3.wav; sourceTree = "<group>"; };
+		1D2F69292190358000C70D6B /* ms2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms2.wav; sourceTree = "<group>"; };
+		1D2F692A2190358000C70D6B /* ms4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms4.wav; sourceTree = "<group>"; };
+		1D2F692B2190358000C70D6B /* ms1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ms1.wav; sourceTree = "<group>"; };
 		1D352802218698060015B4A4 /* UIImageViewExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensao.swift; sourceTree = "<group>"; };
+		1D68E7C7218FC80C00FDA350 /* Cena_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_5.gif; sourceTree = "<group>"; };
+		1D68E7C8218FC80D00FDA350 /* Cena_6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_6.gif; sourceTree = "<group>"; };
+		1D68E7C9218FC80D00FDA350 /* Cena_9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_9.gif; sourceTree = "<group>"; };
+		1D68E7CA218FC80D00FDA350 /* Cena_17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_17.gif; sourceTree = "<group>"; };
+		1D68E7CB218FC80D00FDA350 /* Cena_19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_19.gif; sourceTree = "<group>"; };
+		1D68E7CC218FC80D00FDA350 /* Cena_20.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_20.gif; sourceTree = "<group>"; };
+		1D68E7CD218FC80D00FDA350 /* Cena_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_4.gif; sourceTree = "<group>"; };
+		1D68E7CE218FC80D00FDA350 /* Cena_22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_22.gif; sourceTree = "<group>"; };
+		1D68E7CF218FC80D00FDA350 /* Cena_12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_12.gif; sourceTree = "<group>"; };
+		1D68E7D0218FC80D00FDA350 /* Cena_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_7.gif; sourceTree = "<group>"; };
+		1D68E7D1218FC80D00FDA350 /* Cena_15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_15.gif; sourceTree = "<group>"; };
+		1D68E7D2218FC80D00FDA350 /* Cena_14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_14.gif; sourceTree = "<group>"; };
+		1D68E7D3218FC80D00FDA350 /* Cena_18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_18.gif; sourceTree = "<group>"; };
+		1D68E7D5218FC80E00FDA350 /* Cena_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_1.gif; sourceTree = "<group>"; };
+		1D68E7D6218FC80E00FDA350 /* Cena_10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_10.gif; sourceTree = "<group>"; };
+		1D68E7D7218FC80E00FDA350 /* Cena_21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_21.gif; sourceTree = "<group>"; };
+		1D68E7D8218FC80E00FDA350 /* Cena_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_3.gif; sourceTree = "<group>"; };
+		1D68E7D9218FC80E00FDA350 /* Cena_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_2.gif; sourceTree = "<group>"; };
+		1D68E7DA218FC80E00FDA350 /* Cena_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_11.gif; sourceTree = "<group>"; };
+		1D68E7DC218FC80E00FDA350 /* Cena_13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_13.gif; sourceTree = "<group>"; };
+		1D68E7DD218FC80E00FDA350 /* Cena_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_16.gif; sourceTree = "<group>"; };
+		1D68E7DE218FC80E00FDA350 /* Cena_8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_8.gif; sourceTree = "<group>"; };
+		1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena21ViewController.swift; sourceTree = "<group>"; };
+		1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena22ViewController.swift; sourceTree = "<group>"; };
+		1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena23ViewController.swift; sourceTree = "<group>"; };
+		1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena24ViewController.swift; sourceTree = "<group>"; };
 		1D7C0FE4218F241B006DFE69 /* coração.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração.mp3"; sourceTree = "<group>"; };
 		1D7C0FE6218F241B006DFE69 /* comendo2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = comendo2.wav; sourceTree = "<group>"; };
 		1D7C0FE7218F241B006DFE69 /* passaro2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passaro2.wav; sourceTree = "<group>"; };
@@ -119,22 +175,18 @@
 		1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = passaro_acordar.mp3; sourceTree = "<group>"; };
 		1D7C0FF3218F241C006DFE69 /* coração2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração2.mp3"; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_19_1.gif; sourceTree = "<group>"; };
+		1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19_1ViewController.swift; sourceTree = "<group>"; };
+		1DB8C370218FE28100149C22 /* Cena_24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_24.gif; sourceTree = "<group>"; };
+		1DB8C372218FEDB400149C22 /* Cena_23_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23_2.gif; sourceTree = "<group>"; };
+		1DB8C373218FEDB400149C22 /* Cena_23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23.gif; sourceTree = "<group>"; };
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
-		1DCA91FE218CDE9300934B35 /* Cena_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_5.gif; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA2B2188833900A43BE5 /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Juninho-Regular.ttf"; sourceTree = "<group>"; };
-		5E82FA56218A454A00A43BE5 /* Cena_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_1.gif; sourceTree = "<group>"; };
-		5E82FA59218B346A00A43BE5 /* Cena_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_2.gif; sourceTree = "<group>"; };
-		5E82FA5A218B346A00A43BE5 /* Cena_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_3.gif; sourceTree = "<group>"; };
-		5E82FA5D218B346A00A43BE5 /* Cena_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_4.gif; sourceTree = "<group>"; };
-		5E82FA7A218CC98000A43BE5 /* Cena_8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_8.gif; sourceTree = "<group>"; };
-		5E82FA7B218CC98000A43BE5 /* Cena_6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_6.gif; sourceTree = "<group>"; };
-		5E82FA7C218CC98000A43BE5 /* Cena_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_7.gif; sourceTree = "<group>"; };
-		5E82FA7D218CC98000A43BE5 /* Cena_10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_10.gif; sourceTree = "<group>"; };
-		5E82FA7F218CC98000A43BE5 /* Cena_9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_9.gif; sourceTree = "<group>"; };
+		E2675A08219020BD0066ADE8 /* menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = menu.gif; sourceTree = "<group>"; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2726C3F217A1DDE00FC04FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2726C42217A1DDE00FC04FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,16 +223,33 @@
 		1D059C69218B0D3B006B5A0C /* ImagensCenas */ = {
 			isa = PBXGroup;
 			children = (
-				1DCA91FE218CDE9300934B35 /* Cena_5.gif */,
-				5E82FA56218A454A00A43BE5 /* Cena_1.gif */,
-				5E82FA59218B346A00A43BE5 /* Cena_2.gif */,
-				5E82FA5A218B346A00A43BE5 /* Cena_3.gif */,
-				5E82FA5D218B346A00A43BE5 /* Cena_4.gif */,
-				5E82FA7B218CC98000A43BE5 /* Cena_6.gif */,
-				5E82FA7C218CC98000A43BE5 /* Cena_7.gif */,
-				5E82FA7A218CC98000A43BE5 /* Cena_8.gif */,
-				5E82FA7F218CC98000A43BE5 /* Cena_9.gif */,
-				5E82FA7D218CC98000A43BE5 /* Cena_10.gif */,
+				E2675A08219020BD0066ADE8 /* menu.gif */,
+				1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */,
+				1D68E7D5218FC80E00FDA350 /* Cena_1.gif */,
+				1D68E7D9218FC80E00FDA350 /* Cena_2.gif */,
+				1D68E7D8218FC80E00FDA350 /* Cena_3.gif */,
+				1D68E7CD218FC80D00FDA350 /* Cena_4.gif */,
+				1D68E7C7218FC80C00FDA350 /* Cena_5.gif */,
+				1D68E7C8218FC80D00FDA350 /* Cena_6.gif */,
+				1D68E7D0218FC80D00FDA350 /* Cena_7.gif */,
+				1DB8C372218FEDB400149C22 /* Cena_23_2.gif */,
+				1DB8C373218FEDB400149C22 /* Cena_23.gif */,
+				1D68E7DE218FC80E00FDA350 /* Cena_8.gif */,
+				1D68E7C9218FC80D00FDA350 /* Cena_9.gif */,
+				1D68E7D6218FC80E00FDA350 /* Cena_10.gif */,
+				1D68E7DA218FC80E00FDA350 /* Cena_11.gif */,
+				1D68E7CF218FC80D00FDA350 /* Cena_12.gif */,
+				1D68E7DC218FC80E00FDA350 /* Cena_13.gif */,
+				1D68E7D2218FC80D00FDA350 /* Cena_14.gif */,
+				1D68E7D1218FC80D00FDA350 /* Cena_15.gif */,
+				1D68E7DD218FC80E00FDA350 /* Cena_16.gif */,
+				1D68E7CA218FC80D00FDA350 /* Cena_17.gif */,
+				1D68E7D3218FC80D00FDA350 /* Cena_18.gif */,
+				1D68E7CB218FC80D00FDA350 /* Cena_19.gif */,
+				1D68E7CC218FC80D00FDA350 /* Cena_20.gif */,
+				1D68E7D7218FC80E00FDA350 /* Cena_21.gif */,
+				1D68E7CE218FC80D00FDA350 /* Cena_22.gif */,
+				1DB8C370218FE28100149C22 /* Cena_24.gif */,
 			);
 			path = ImagensCenas;
 			sourceTree = "<group>";
@@ -202,6 +271,10 @@
 				1D7C0FEA218F241B006DFE69 /* respiração.mp3 */,
 				1D7C0FEB218F241B006DFE69 /* transito2.wav */,
 				1D7C0FEF218F241C006DFE69 /* transito3.wav */,
+				1D2F692B2190358000C70D6B /* ms1.wav */,
+				1D2F69292190358000C70D6B /* ms2.wav */,
+				1D2F69282190357F00C70D6B /* ms3.wav */,
+				1D2F692A2190358000C70D6B /* ms4.wav */,
 				1D7C0FE9218F241B006DFE69 /* metro.wav */,
 			);
 			path = Sounds;
@@ -244,6 +317,11 @@
 				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
 				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
 				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
+				1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */,
+				1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */,
+				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
+				1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */,
+				1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -393,36 +471,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D68E7E5218FC80E00FDA350 /* Cena_4.gif in Resources */,
+				1DB47035218FD6CD00BDB5F1 /* Cena_19_1.gif in Resources */,
 				E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */,
+				E2675A09219020BD0066ADE8 /* menu.gif in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
-				5E82FA80218CC98000A43BE5 /* Cena_8.gif in Resources */,
+				1D2F692C2190358000C70D6B /* ms3.wav in Resources */,
+				1D68E7E7218FC80E00FDA350 /* Cena_12.gif in Resources */,
 				1D7C0FFE218F241C006DFE69 /* chave.wav in Resources */,
+				1D2F692F2190358000C70D6B /* ms1.wav in Resources */,
 				1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */,
+				1D68E7E4218FC80E00FDA350 /* Cena_20.gif in Resources */,
+				1D2F692E2190358000C70D6B /* ms4.wav in Resources */,
 				1D7C1001218F241C006DFE69 /* coração3.wav in Resources */,
 				1D7C0FFD218F241C006DFE69 /* comendo3.wav in Resources */,
+				1DB8C374218FEDB400149C22 /* Cena_23_2.gif in Resources */,
+				1D68E7EA218FC80E00FDA350 /* Cena_14.gif in Resources */,
+				1D68E7E6218FC80E00FDA350 /* Cena_22.gif in Resources */,
+				1D68E7E1218FC80E00FDA350 /* Cena_9.gif in Resources */,
+				1DB8C375218FEDB400149C22 /* Cena_23.gif in Resources */,
 				1D7C0FF8218F241C006DFE69 /* agua_pia.mp3 in Resources */,
-				5E82FA83218CC98000A43BE5 /* Cena_10.gif in Resources */,
+				1D68E7F1218FC80E00FDA350 /* Cena_2.gif in Resources */,
 				1D7C0FFF218F241C006DFE69 /* transito3.wav in Resources */,
-				1DCA91FF218CDE9300934B35 /* Cena_5.gif in Resources */,
-				5E82FA81218CC98000A43BE5 /* Cena_6.gif in Resources */,
-				5E82FA82218CC98000A43BE5 /* Cena_7.gif in Resources */,
 				1D7C1000218F241C006DFE69 /* chave2.mp3 in Resources */,
 				1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */,
-				5E82FA57218A454B00A43BE5 /* Cena_1.gif in Resources */,
+				1D68E7ED218FC80E00FDA350 /* Cena_1.gif in Resources */,
 				1D7C0FF9218F241C006DFE69 /* metro.wav in Resources */,
+				1D68E7E2218FC80E00FDA350 /* Cena_17.gif in Resources */,
+				1D68E7EF218FC80E00FDA350 /* Cena_21.gif in Resources */,
+				1D68E7EB218FC80E00FDA350 /* Cena_18.gif in Resources */,
+				1D68E7E9218FC80E00FDA350 /* Cena_15.gif in Resources */,
+				1D68E7F4218FC80E00FDA350 /* Cena_13.gif in Resources */,
+				1D68E7F0218FC80E00FDA350 /* Cena_3.gif in Resources */,
+				1D68E7EE218FC80E00FDA350 /* Cena_10.gif in Resources */,
+				1D68E7F6218FC80E00FDA350 /* Cena_8.gif in Resources */,
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
+				1D68E7F5218FC80E00FDA350 /* Cena_16.gif in Resources */,
+				1D2F692D2190358000C70D6B /* ms2.wav in Resources */,
 				1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */,
-				5E82FA63218B346B00A43BE5 /* Cena_3.gif in Resources */,
 				1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */,
+				1DB8C371218FE28200149C22 /* Cena_24.gif in Resources */,
+				1D68E7F2218FC80E00FDA350 /* Cena_11.gif in Resources */,
+				1D68E7E0218FC80E00FDA350 /* Cena_6.gif in Resources */,
 				1D7C0FFA218F241C006DFE69 /* respiração.mp3 in Resources */,
-				5E82FA66218B346B00A43BE5 /* Cena_4.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
-				5E82FA85218CC98000A43BE5 /* Cena_9.gif in Resources */,
 				1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */,
-				5E82FA62218B346B00A43BE5 /* Cena_2.gif in Resources */,
 				E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */,
+				1D68E7E8218FC80E00FDA350 /* Cena_7.gif in Resources */,
+				1D68E7E3218FC80E00FDA350 /* Cena_19.gif in Resources */,
+				1D68E7DF218FC80E00FDA350 /* Cena_5.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +554,10 @@
 				1D2DB8F4218217310097921A /* Cena4ViewController.swift in Sources */,
 				1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */,
 				E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */,
+				1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */,
 				1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */,
 				1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */,
+				1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
@@ -467,11 +568,14 @@
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
+				1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */,
+				1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */,
 				1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */,
 				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
 				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,
 				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,
 				1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */,
+				1D68E7FE218FCB8D00FDA350 /* Cena24ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = SMM55X2K37;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -663,7 +767,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = SMM55X2K37;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

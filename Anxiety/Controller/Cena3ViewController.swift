@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Cena3ViewController: UIViewController {
   
@@ -30,11 +31,11 @@ class Cena3ViewController: UIViewController {
     @objc func update() { // Função de atualização para opreações constantes
         if IsOk < cena2.count { // Variável que faz vibrar apenas uma vez
             showOutgoingMessage(text: cena2[IsOk])
-            sleep(5)
+            sleep(1)
             IsOk += 1
             //}
         } else{
-            
+            performSegue(withIdentifier: "Segue3", sender: nil)
         }
         
     }
@@ -43,7 +44,7 @@ class Cena3ViewController: UIViewController {
     func showOutgoingMessage(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -60,12 +61,12 @@ class Cena3ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 250, // posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width - 230, // posição x
                 y: view.frame.height - bubbleImageSize.height - 550, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
-        let bubbleImage = UIImage(named: "cidio")?
+        let bubbleImage = UIImage(named: "bubble_Chat")?
             .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
                             resizingMode: .tile)
             .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
@@ -84,5 +85,6 @@ class Cena3ViewController: UIViewController {
             view.addSubview(label)
         }
     }
+    
     
 }

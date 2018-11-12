@@ -15,30 +15,8 @@ class Cena2ViewController: UIViewController {
     //esse é o colisor que sera usado para deletar as palavras
     
     @IBOutlet weak var Cena2ImageView: UIImageView!
-    
-    @IBOutlet weak var Palavra1: UILabel!
-    
-    @IBOutlet weak var Palavra2: UILabel!
-    
-    @IBOutlet weak var Palavra3: UILabel!
-    
-    @IBOutlet weak var Palavra4: UILabel!
-    
-    @IBOutlet weak var Palavra5: UILabel!
-    
-    @IBOutlet weak var Palavra6: UILabel!
-    
-    @IBOutlet weak var Palavra7: UILabel!
-    
-    @IBAction func StartGame(_ sender: Any) {
-        
-        
-    }
-    
-    func fazerBotoesDiminuir(){
-        
-    }
-    
+    var timer: Timer!
+    var IsOk: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,13 +30,13 @@ class Cena2ViewController: UIViewController {
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        if IsOk < cena1_1.count { // Variável que faz vibrar apenas uma vez
-            showOutgoingMessage(text: cena1_1[IsOk])
-            sleep(5)
+        if IsOk < cena1.count { // Variável que faz vibrar apenas uma vez
+            showOutgoingMessage(text: cena1[IsOk])
+            sleep(1)
             IsOk += 1
             //}
         } else{
-            
+            performSegue(withIdentifier: "Segue2", sender: nil)
         }
         
     }
@@ -67,7 +45,7 @@ class Cena2ViewController: UIViewController {
     func showOutgoingMessage(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -89,7 +67,7 @@ class Cena2ViewController: UIViewController {
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
-        let bubbleImage = UIImage(named: "cidio")?
+        let bubbleImage = UIImage(named: "bubble_Chat")?
             .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
                             resizingMode: .tile)
             .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
@@ -111,3 +89,4 @@ class Cena2ViewController: UIViewController {
     
     
 }
+

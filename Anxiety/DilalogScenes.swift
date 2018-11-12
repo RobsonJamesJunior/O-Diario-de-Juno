@@ -8,23 +8,19 @@
 
 import Foundation
 
-let cena1:[String] = [" Acordei cansado hoje, de novo",]
-
-let cena1_1:[String] = ["Não consegui dormir, fiquei rolando na cama pensando besteiras.",]
+let cena1:[String] = [" Acordei cansado hoje, de novo", "Não consegui dormir, fiquei rolando na cama pensando besteiras.",]
 
 let cena2:[String] = ["Vamos la!",]
 
-let cena4:[String] = ["Esta tudo bem!","Estou feliz!","Que legal!",]
+let cena4:[String] = ["Esta tudo bem!","    Estou feliz!    ","     Que legal!    ",]
 
-let cena5:[String] = ["Huummm, qual roupa eu vou?", "Essa não, essa não… essa aqui será? Melhor outra.",]
+let cena5:[String] = ["Huummm, qual roupa eu vou usar para sair? ", "Essa não, essa não… essa aqui será? Melhor outra. Não sei, tem nada legal.",]
 
 let cena6:[String] = ["Amigos","Bom dia", "Viagens", "Hilário", "HAHAHA","Trabalho","Faculdade", "Tchau","Achou errado!","Show!",]
 
 let cena11:[String] = ["Ele está olhando pra mim?","Por que ele estaria olhando pra mim?",]
 
-let cena14:[String] = ["Será que é um assaltante?","Ta chegando perto, o que eu faço??",]
-
-let cena15:[String] = ["Vou direto ou pego outro caminho?",]
+let cena19:[String] = ["Será que é um assaltante?","Ta chegando perto, o que eu faço??", "Vou direto ou pego outro caminho?",]
 
 let cena16:[String] = ["aaaahhhh",]
 
