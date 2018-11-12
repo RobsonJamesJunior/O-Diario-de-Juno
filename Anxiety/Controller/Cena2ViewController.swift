@@ -15,8 +15,7 @@ class Cena2ViewController: UIViewController {
     //esse é o colisor que sera usado para deletar as palavras
     
     @IBOutlet weak var Cena2ImageView: UIImageView!
-    var timer: Timer!
-    var IsOk: Int = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

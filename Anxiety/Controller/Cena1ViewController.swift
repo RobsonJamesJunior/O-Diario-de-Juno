@@ -53,69 +53,11 @@ class Cena1ViewController: UIViewController {
              
             }
         }
-   
-    }
-    
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.animatedLabel()
-//    }
-    
-//    func animatedLabel(){
-//        DialogoLabelCenaUm.text = ""
-//        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? cena1[0]
-//
-//        for letra in labelDialog {
-//            DialogoLabelCenaUm.text! += ("\(letra)")
-//            RunLoop.current.run(until: Date()+0.10)
-//        }
-//
-//    }
-    
-    func showOutgoingMessage(text: String) {
-        let label =  UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = .black
-        label.text = ""
-        
-        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-                                    height: .greatestFiniteMagnitude)
-        let boundingBox = text.boundingRect(with: constraintRect,
-                                            options: .usesLineFragmentOrigin,
-                                            attributes: [.font: label.font],
-                                            context: nil)
-        label.frame.size = CGSize(width: ceil(boundingBox.width),
-                                  height: ceil(boundingBox.height))
-        
-        let bubbleImageSize = CGSize(width: label.frame.width + 28,
-                                     height: label.frame.height + 20)
-        
-        let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
-                y: view.frame.height - bubbleImageSize.height - 550, //posição y
-                width: bubbleImageSize.width,
-                height: bubbleImageSize.height))
-        
-        let bubbleImage = UIImage(named: "cidio")?
-            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-                            resizingMode: .tile)
-            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        
-        outgoingMessageView.image = bubbleImage
-        
-        view.addSubview(outgoingMessageView)
-        
-        label.center = outgoingMessageView.center
-        
-        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         if !audioPlayer.isPlaying{
             audioPlayer.play()
         }
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
