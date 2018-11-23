@@ -86,6 +86,8 @@ class Cena12ViewController: UIViewController {
         startNewRound()
         upDateLabel()
     }
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
 }

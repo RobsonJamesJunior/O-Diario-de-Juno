@@ -36,5 +36,7 @@ class Cena8ViewController: UIViewController {
     @IBAction func keySegueScene(_ sender: Any) {
         audioPlayer.play()
     }  
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

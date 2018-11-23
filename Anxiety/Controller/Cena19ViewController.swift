@@ -223,4 +223,8 @@ class Cena19ViewController: UIViewController {
             view.addSubview(label)
         }
     }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

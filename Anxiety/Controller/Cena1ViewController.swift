@@ -61,8 +61,11 @@ class Cena1ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 228})
+        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 320})
     }
 
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
 }

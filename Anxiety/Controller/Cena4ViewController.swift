@@ -23,4 +23,7 @@ class Cena4ViewController: UIViewController {
   
     }
 
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

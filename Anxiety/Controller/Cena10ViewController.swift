@@ -34,4 +34,8 @@ class Cena10ViewController: UIViewController {
     @IBAction func StopSounTraffic(_ sender: Any) {
         audioPlayer.stop()
     }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

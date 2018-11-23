@@ -21,5 +21,7 @@ class Cena15ViewController: UIViewController {
         Cena15ImageView.image = Cena15Gif // Adicionando a variável à tela de ImageView
     }
     
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

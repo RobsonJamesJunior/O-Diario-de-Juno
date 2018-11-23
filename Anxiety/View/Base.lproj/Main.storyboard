@@ -75,16 +75,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-j2-opY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="32" y="623" width="343" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
+                                <rect key="frame" x="0.0" y="638" width="375" height="350"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="144" y="623" width="119" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
+                                <rect key="frame" x="128" y="623" width="119" height="34"/>
                                 <connections>
                                     <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
@@ -93,8 +88,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5lZ-Qr-FsH" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="5mO-PM-PXv"/>
+                            <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="w8h-Ju-ooM" secondAttribute="trailing" constant="128" id="M6h-55-G90"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
+                            <constraint firstAttribute="bottom" secondItem="5lZ-Qr-FsH" secondAttribute="bottom" constant="-321" id="Ozg-s6-bTa"/>
+                            <constraint firstItem="5lZ-Qr-FsH" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="P5M-F7-pvj"/>
+                            <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" constant="10" id="Smh-ZV-DSg"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
+                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" constant="128" id="nId-iW-cBy"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
                         </constraints>

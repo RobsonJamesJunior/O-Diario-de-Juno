@@ -86,6 +86,8 @@ class Cena2ViewController: UIViewController {
         }
     }
     
-    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }
 
