@@ -13,7 +13,7 @@ class Cena2ViewController: UIViewController {
     var timer: Timer!
     var IsOk: Int = 0
     var validAnimation: Bool = true
-    //esse é o colisor que sera usado para deletar as palavras
+    var fimDefrase: Bool =  false
     
     @IBOutlet weak var Cena2ImageView: UIImageView!
     
@@ -55,9 +55,12 @@ class Cena2ViewController: UIViewController {
     
     
     @IBAction func ContDialog(_ sender: Any) {
-        dialoLabelCena2.text?.removeAll()
-        IsOk += 1
-        validAnimation = true
+        if fimDefrase == true {
+            dialoLabelCena2.text?.removeAll()
+            IsOk += 1
+            validAnimation = true
+            fimDefrase = false
+        }
     }
     
 //    func showOutgoingMessage(text: String) {
@@ -115,6 +118,7 @@ class Cena2ViewController: UIViewController {
             dialoLabelCena2.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }
+        fimDefrase = true
         validAnimation = false
     }
     
