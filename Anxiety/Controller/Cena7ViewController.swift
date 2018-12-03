@@ -326,7 +326,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width + 10,// posição x
                 y: view.frame.height - bubbleImageSize.height - 550, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -371,7 +371,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width + 10,// posição x
                 y: view.frame.height - bubbleImageSize.height - 500, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -416,7 +416,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width + 10,// posição x
                 y: view.frame.height - bubbleImageSize.height - 450, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -461,7 +461,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width + 10,// posição x
                 y: view.frame.height - bubbleImageSize.height - 400, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -506,7 +506,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width + 10,// posição x
                 y: view.frame.height - bubbleImageSize.height - 350, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))

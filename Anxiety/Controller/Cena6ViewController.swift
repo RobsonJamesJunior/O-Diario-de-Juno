@@ -18,6 +18,7 @@ class Cena6ViewController: UIViewController {
     var timer: Timer!
     var IsOk: Int = 0
     var validAnimation: Bool = true
+    var fimDefrase: Bool =  false
     
     
     override func viewDidLoad() {
@@ -56,14 +57,18 @@ class Cena6ViewController: UIViewController {
             dialogCena6Label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }
+        fimDefrase = true
         validAnimation = false
     }
     
     
     @IBAction func setDialogCena6(_ sender: Any) {
-        dialogCena6Label.text?.removeAll()
-        IsOk += 1
-        validAnimation = true
+        if fimDefrase == true {
+            dialogCena6Label.text?.removeAll()
+            IsOk += 1
+            validAnimation = true
+            fimDefrase = false
+        }
     }
     
     
