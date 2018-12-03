@@ -13,6 +13,7 @@ class Cena7ViewController: UIViewController {
     @IBOutlet weak var DicasLabel: UILabel!
     @IBOutlet weak var Cena7ImageView: UIImageView!
     
+    
     var timer: Timer!
     var IsOk: Int = 0
     

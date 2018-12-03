@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
@@ -177,18 +177,50 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_3.gif" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-f0-tHc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-Qx-UoE">
+                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="M0z-fL-aUD"/>
+                                    <constraint firstAttribute="height" constant="98" id="lyB-Zq-NsB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-QQ-BUz">
+                                <rect key="frame" x="5" y="509" width="365" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSg-6m-wcC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="setDialogCena3:" destination="XPV-67-qBN" eventType="touchUpInside" id="6RI-DH-b4B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lGa-QQ-BUz" firstAttribute="centerX" secondItem="vpc-Qx-UoE" secondAttribute="centerX" id="261-1m-U1W"/>
+                            <constraint firstItem="yWu-45-yr7" firstAttribute="trailing" secondItem="MSg-6m-wcC" secondAttribute="trailing" id="2a3-mb-gQc"/>
                             <constraint firstItem="v5w-f0-tHc" firstAttribute="trailing" secondItem="yWu-45-yr7" secondAttribute="trailing" id="2dT-mk-OiI"/>
+                            <constraint firstItem="yWu-45-yr7" firstAttribute="bottom" secondItem="vpc-Qx-UoE" secondAttribute="bottom" constant="60" id="8ti-Uy-g4r"/>
+                            <constraint firstItem="vpc-Qx-UoE" firstAttribute="leading" secondItem="yWu-45-yr7" secondAttribute="leading" id="F7y-yb-YKb"/>
+                            <constraint firstItem="yWu-45-yr7" firstAttribute="trailing" secondItem="lGa-QQ-BUz" secondAttribute="trailing" constant="5" id="JYR-KF-52u"/>
+                            <constraint firstItem="yWu-45-yr7" firstAttribute="bottom" secondItem="MSg-6m-wcC" secondAttribute="bottom" id="PfK-2e-oDN"/>
+                            <constraint firstItem="lGa-QQ-BUz" firstAttribute="leading" secondItem="yWu-45-yr7" secondAttribute="leading" constant="5" id="VzV-jY-FzX"/>
                             <constraint firstItem="v5w-f0-tHc" firstAttribute="bottom" secondItem="yWu-45-yr7" secondAttribute="bottom" id="Ypr-Qv-eWD"/>
                             <constraint firstItem="v5w-f0-tHc" firstAttribute="leading" secondItem="yWu-45-yr7" secondAttribute="leading" id="aMB-hK-A86"/>
+                            <constraint firstItem="MSg-6m-wcC" firstAttribute="leading" secondItem="yWu-45-yr7" secondAttribute="leading" id="jAX-gM-zoL"/>
+                            <constraint firstItem="lGa-QQ-BUz" firstAttribute="height" secondItem="vpc-Qx-UoE" secondAttribute="height" id="k9u-XX-8QO"/>
+                            <constraint firstItem="MSg-6m-wcC" firstAttribute="top" secondItem="vM1-hG-aTC" secondAttribute="top" id="sAe-NW-fpd"/>
+                            <constraint firstItem="lGa-QQ-BUz" firstAttribute="centerY" secondItem="vpc-Qx-UoE" secondAttribute="centerY" id="tua-KR-dS4"/>
                             <constraint firstItem="v5w-f0-tHc" firstAttribute="top" secondItem="vM1-hG-aTC" secondAttribute="top" id="x7F-xc-l6M"/>
+                            <constraint firstItem="vpc-Qx-UoE" firstAttribute="trailing" secondItem="yWu-45-yr7" secondAttribute="trailing" id="ywU-Y0-TMU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yWu-45-yr7"/>
                     </view>
                     <connections>
                         <outlet property="Cena3ImageView" destination="v5w-f0-tHc" id="wzz-vo-Ctq"/>
+                        <outlet property="dialogLabelCena3" destination="lGa-QQ-BUz" id="GxV-ED-HPR"/>
                         <segue destination="yqh-2e-NvL" kind="showDetail" identifier="Segue3" animates="NO" id="Zpd-pg-lRw"/>
                     </connections>
                 </viewController>
@@ -277,10 +309,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_6.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-Ce-POe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="NcW-TR-1Ih">
-                                <rect key="frame" x="0.0" y="500" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="500" width="750" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="3YF-JF-apY"/>
                                     <constraint firstAttribute="height" constant="98" id="UqE-ZY-ejs"/>
@@ -293,7 +325,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwe-Ga-GrO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
                                 <connections>
                                     <action selector="setDialogCena6:" destination="AaJ-nd-og4" eventType="touchUpInside" id="a6Y-3v-DH2"/>
                                 </connections>
@@ -1214,6 +1246,7 @@
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
         <image name="key" width="250" height="250"/>
+        <image name="menu.gif" width="750" height="1334"/>
         <image name="play" width="350" height="350"/>
         <image name="respira" width="200" height="200"/>
         <image name="seta" width="250" height="250"/>
