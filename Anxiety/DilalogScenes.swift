@@ -12,7 +12,7 @@ let cena1:[String] = [" Acordei cansado hoje, de novo", "Não consegui dormir, f
 
 let cena2:[String] = ["Vamos la!",]
 
-let cena4:[String] = ["Esta tudo bem!","    Estou feliz!    ","     Que legal!    ",]
+let cena4:[String] = ["Esta tudo bem!","Estou feliz!","Que legal!",]
 
 let cena5:[String] = ["Huummm, qual roupa eu vou usar para sair? ", "Essa não, essa não…", "essa aqui será?", "Melhor outra.", "Não sei, tem nada legal.",]
 

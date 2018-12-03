@@ -279,18 +279,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_5.gif" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-w5-JHf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-Ue-5G4">
+                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="8I0-Pk-mfd"/>
+                                    <constraint firstAttribute="height" constant="98" id="eR3-O3-0Z5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-UV-ENg">
+                                <rect key="frame" x="5" y="509" width="365" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-rB-eAR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <action selector="setDialogCena5:" destination="ITT-Dr-ArQ" eventType="touchUpInside" id="Cjz-k3-UOC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="bottom" secondItem="Np6-J3-fur" secondAttribute="bottom" id="DMa-aO-d2R"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="trailing" secondItem="Np6-J3-fur" secondAttribute="trailing" id="FdR-z5-i5T"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="bottom" secondItem="UDm-rB-eAR" secondAttribute="bottom" id="GRM-cs-3EF"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="F3M-UV-ENg" secondAttribute="trailing" constant="5" id="K9G-gd-GHH"/>
+                            <constraint firstItem="F3M-UV-ENg" firstAttribute="centerY" secondItem="iRz-Ue-5G4" secondAttribute="centerY" id="L90-mk-bZE"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="bottom" secondItem="iRz-Ue-5G4" secondAttribute="bottom" constant="60" id="MG3-HG-7g1"/>
+                            <constraint firstItem="UDm-rB-eAR" firstAttribute="top" secondItem="Np6-J3-fur" secondAttribute="top" id="SsD-zy-FaT"/>
+                            <constraint firstItem="F3M-UV-ENg" firstAttribute="height" secondItem="iRz-Ue-5G4" secondAttribute="height" id="VBg-WV-k89"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="iRz-Ue-5G4" secondAttribute="trailing" id="e4w-jY-Nt5"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" id="hgo-lt-sqB"/>
+                            <constraint firstItem="iRz-Ue-5G4" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" id="kXd-5l-0D4"/>
+                            <constraint firstItem="F3M-UV-ENg" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" constant="5" id="poV-aV-W3s"/>
+                            <constraint firstItem="UDm-rB-eAR" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" id="rsG-wJ-Fc8"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="UDm-rB-eAR" secondAttribute="trailing" id="uJc-Nq-jxV"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="top" secondItem="arj-6R-psu" secondAttribute="top" id="ubb-hf-aN2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np6-J3-fur"/>
                     </view>
                     <connections>
                         <outlet property="Cena5ImageView" destination="N6x-w5-JHf" id="05H-0V-raq"/>
+                        <outlet property="dialogLabelCena5" destination="F3M-UV-ENg" id="vTx-vL-fIz"/>
                         <segue destination="AaJ-nd-og4" kind="showDetail" identifier="Segue5" animates="NO" id="3hs-BC-8wS"/>
                     </connections>
                 </viewController>
