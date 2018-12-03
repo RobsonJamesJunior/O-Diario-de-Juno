@@ -161,8 +161,8 @@ class Cena6ViewController: UIViewController {
 //            view.addSubview(label)
 //        }
 //    }
-//
-//    override var prefersStatusBarHidden: Bool{
-//        return true
-//    }
+
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 }

@@ -121,5 +121,8 @@ class Cena3ViewController: UIViewController {
         validAnimation = false
     }
 
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
 }
