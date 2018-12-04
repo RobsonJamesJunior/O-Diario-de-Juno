@@ -10,7 +10,7 @@
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 
-class Cena23ViewController: UIViewController {
+class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
     
     @IBOutlet weak var Cena23ImageView: UIImageView!
     
@@ -33,10 +33,12 @@ class Cena23ViewController: UIViewController {
         
         respImageView.isUserInteractionEnabled = true
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
-        tapGestureRecognizer.numberOfTapsRequired = 1
-        respImageView.addGestureRecognizer(tapGestureRecognizer)
         
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
+        
+        longPress.minimumPressDuration = 0.5
+        longPress.delegate = self
+        self.respImageView.addGestureRecognizer(longPress)
         
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
@@ -45,7 +47,17 @@ class Cena23ViewController: UIViewController {
     
    
     @objc func addPulse(){
-        let pulse = Pulsing(numberOfPulses: 5, radius: 110, position: respImageView.center)
+        if countAlc == 0 {
+            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
+            Cena23ImageView.image = Cena23_2Gif
+            countAlc = 1
+        } else {
+            let Cena23Gif = UIImage.gifImageWithName("Cena_23")
+            Cena23ImageView.image = Cena23Gif
+            countAlc = 0
+        }
+        
+        let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: respImageView.center)
         pulse.animationDuration = 0.8
         pulse.backgroundColor = UIColor.blue.cgColor
 
