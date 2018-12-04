@@ -73,6 +73,7 @@
 		1D7C1001218F241C006DFE69 /* coração3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF1218F241C006DFE69 /* coração3.wav */; };
 		1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */; };
 		1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D7C0FF3218F241C006DFE69 /* coração2.mp3 */; };
+		1D7DC80921B600FA00360F12 /* DeviceExtensao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC80821B600FA00360F12 /* DeviceExtensao.swift */; };
 		1D90FA452180F520003FF364 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D90FA442180F520003FF364 /* Default-568h@2x.png */; };
 		1DB47035218FD6CD00BDB5F1 /* Cena_19_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */; };
 		1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */; };
@@ -174,6 +175,7 @@
 		1D7C0FF1218F241C006DFE69 /* coração3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "coração3.wav"; sourceTree = "<group>"; };
 		1D7C0FF2218F241C006DFE69 /* passaro_acordar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = passaro_acordar.mp3; sourceTree = "<group>"; };
 		1D7C0FF3218F241C006DFE69 /* coração2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coração2.mp3"; sourceTree = "<group>"; };
+		1D7DC80821B600FA00360F12 /* DeviceExtensao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtensao.swift; sourceTree = "<group>"; };
 		1D90FA442180F520003FF364 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1DB47034218FD6CD00BDB5F1 /* Cena_19_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_19_1.gif; sourceTree = "<group>"; };
 		1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena19_1ViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +282,15 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		1D7DC80B21B6012900360F12 /* ExtensoesFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
+				1D7DC80821B600FA00360F12 /* DeviceExtensao.swift */,
+			);
+			path = ExtensoesFramework;
+			sourceTree = "<group>";
+		};
 		5E71351D217A281F008290E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,7 +327,7 @@
 				1D2DB90F21821D150097921A /* Cena18ViewController.swift */,
 				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
 				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
-				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
+				1D7DC80B21B6012900360F12 /* ExtensoesFramework */,
 				1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */,
 				1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */,
 				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
@@ -562,6 +573,7 @@
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
 				1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */,
+				1D7DC80921B600FA00360F12 /* DeviceExtensao.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
 				1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */,
