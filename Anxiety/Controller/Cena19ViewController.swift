@@ -17,6 +17,16 @@ class Cena19ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        leftSwipe.direction = .left
+        
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        downSwipe.direction = .down
+        
+        view.addGestureRecognizer(leftSwipe)
+        view.addGestureRecognizer(downSwipe)
+        
+        
         Cena19ImageView.isAccessibilityElement = true
         let Cena19Gif = UIImage.gifImageWithName("Cena_19") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena19ImageView.image = Cena19Gif // Adicionando a variável à tela de ImageView
@@ -223,6 +233,21 @@ class Cena19ViewController: UIViewController {
             view.addSubview(label)
         }
     }
+    
+    
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            switch sender.direction {
+            case .left:
+                performSegue(withIdentifier: "segueCena19_1", sender: nil)
+            case .down:
+                performSegue(withIdentifier: "segueCena19_2", sender: nil)
+            default:
+                break
+            }
+        }
+    }
+    
     
     override var prefersStatusBarHidden: Bool{
         return true
