@@ -10,12 +10,12 @@
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 
-class Cena23ViewController: UIViewController {
+class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
     
     @IBOutlet weak var Cena23ImageView: UIImageView!
     
+    @IBOutlet weak var respImageView: UIImageView!
     
-
     
     var inspBool: Bool = false
     var respBool: Bool = false
@@ -27,33 +27,41 @@ class Cena23ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Cena23ImageView.isAccessibilityElement = true
+        
+        let imagemInitial = UIImage.init(named: "respira")
+        respImageView.image = imagemInitial
+        
+        respImageView.isUserInteractionEnabled = true
+        
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
+        
+        longPress.minimumPressDuration = 0.5
+        longPress.delegate = self
+        self.respImageView.addGestureRecognizer(longPress)
+        
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena7ViewController.update), userInfo: nil, repeats: true)
-        
+  
     }
     
-    
-    @objc func update() { // Função de atualização para opreações constantes
-        
-        if inspBool == true && respBool == true {
-            countAlc += 1
-            respBool = false
-            inspBool = false
-            print(countAlc)
+   
+    @objc func addPulse(){
+        if countAlc == 0 {
+            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
+            Cena23ImageView.image = Cena23_2Gif
+            countAlc = 1
+        } else {
+            let Cena23Gif = UIImage.gifImageWithName("Cena_23")
+            Cena23ImageView.image = Cena23Gif
+            countAlc = 0
         }
         
-        if countAlc == 5 {
-            portVib = true
-            performSegue(withIdentifier: "Segue23", sender: nil)
-        }
-        
-        if portVib == false {
-            for _ in 1...5 { // Repetição da quantidade de vibrações
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
-            }
-        }
-        
+        let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: respImageView.center)
+        pulse.animationDuration = 0.8
+        pulse.backgroundColor = UIColor.blue.cgColor
+
+        self.view.layer.insertSublayer(pulse, below: respImageView.layer)
     }
     
     
