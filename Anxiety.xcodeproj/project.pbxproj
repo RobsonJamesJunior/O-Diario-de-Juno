@@ -81,6 +81,7 @@
 		1DB8C374218FEDB400149C22 /* Cena_23_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB8C372218FEDB400149C22 /* Cena_23_2.gif */; };
 		1DB8C375218FEDB400149C22 /* Cena_23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DB8C373218FEDB400149C22 /* Cena_23.gif */; };
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
+		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
 		E2675A09219020BD0066ADE8 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = E2675A08219020BD0066ADE8 /* menu.gif */; };
@@ -183,6 +184,7 @@
 		1DB8C372218FEDB400149C22 /* Cena_23_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23_2.gif; sourceTree = "<group>"; };
 		1DB8C373218FEDB400149C22 /* Cena_23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23.gif; sourceTree = "<group>"; };
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
+		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +287,7 @@
 		1D7DC80B21B6012900360F12 /* ExtensoesFramework */ = {
 			isa = PBXGroup;
 			children = (
+				1DC8A3A121B6CBBD0019804B /* Pulsing.swift */,
 				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
 				1D7DC80821B600FA00360F12 /* DeviceExtensao.swift */,
 			);
@@ -567,6 +570,7 @@
 				E2726C40217A1DDE00FC04FF /* ViewController.swift in Sources */,
 				1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */,
 				1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */,
+				1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */,
 				1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */,
 				1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
