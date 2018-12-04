@@ -469,7 +469,7 @@ class Cena7ViewController: UIViewController {
                                      height: label.frame.height + 20)
         
         let outgoingMessageView = UIImageView(frame:
-            CGRect(x: view.frame.width - bubbleImageSize.width - 245 ,// posição x
+            CGRect(x: view.frame.width - bubbleImageSize.width - 225 ,// posição x
                 y: view.frame.height - bubbleImageSize.height - 400, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
@@ -515,11 +515,11 @@ class Cena7ViewController: UIViewController {
         let bubbleImageSize = CGSize(width: label.frame.width + 28,
                                      height: label.frame.height + 20)
         
-        if ((device == "iPhone7")||(device == "Simulador iPhone7")) {
-        
+        if ((device == "iPhone 7")||(device == "Simulador iPhone 7")) {
+            print(device)
             let outgoingMessageView = UIImageView(frame:
-                CGRect(x: view.frame.width - bubbleImageSize.width - 245 ,// posição x
-                    y: view.frame.height - bubbleImageSize.height - 350, //posição y
+                CGRect(x: view.frame.width - bubbleImageSize.width - 225 ,// posição x
+                    y: view.frame.height - bubbleImageSize.height - 400, //posição y
                     width: bubbleImageSize.width,
                     height: bubbleImageSize.height))
         
@@ -542,32 +542,32 @@ class Cena7ViewController: UIViewController {
                 view.addSubview(label)
             }
         } else {
+            print(device)
+            let outgoingMessageView = UIImageView(frame:
+                CGRect(x: view.frame.width - bubbleImageSize.width - 320 ,// posição x
+                    y: view.frame.height - bubbleImageSize.height - 350, //posição y
+                    width: bubbleImageSize.width,
+                    height: bubbleImageSize.height))
                 
-                let outgoingMessageView = UIImageView(frame:
-                    CGRect(x: view.frame.width - bubbleImageSize.width - 320 ,// posição x
-                        y: view.frame.height - bubbleImageSize.height - 350, //posição y
-                        width: bubbleImageSize.width,
-                        height: bubbleImageSize.height))
-                
-                let bubbleImage = UIImage(named: "bubble_Chat")?
+            let bubbleImage = UIImage(named: "bubble_Chat")?
                     .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-                                    resizingMode: .tile)
+                                resizingMode: .tile)
                     .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
                 
-                outgoingMessageView.image = bubbleImage
+            outgoingMessageView.image = bubbleImage
                 
-                self.view.addSubview(outgoingMessageView)
+            self.view.addSubview(outgoingMessageView)
                 
-                label.center = outgoingMessageView.center
+            label.center = outgoingMessageView.center
                 
-                let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
+            let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
                 
-                for letra in labelDialog {
+            for letra in labelDialog {
                     label.text! += ("\(letra)")
                     RunLoop.current.run(until: Date()+0.10)
                     self.view.addSubview(label)
-                }
             }
+        }
     }
  
     override var prefersStatusBarHidden: Bool{
