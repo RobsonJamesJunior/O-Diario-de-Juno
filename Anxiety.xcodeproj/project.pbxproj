@@ -327,12 +327,12 @@
 				1D2DB90F21821D150097921A /* Cena18ViewController.swift */,
 				1D2DB91121821D420097921A /* Cena19ViewController.swift */,
 				1D2DB91321821DB80097921A /* Cena20ViewController.swift */,
-				1D7DC80B21B6012900360F12 /* ExtensoesFramework */,
 				1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */,
 				1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */,
 				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
 				1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */,
 				1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */,
+				1D7DC80B21B6012900360F12 /* ExtensoesFramework */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

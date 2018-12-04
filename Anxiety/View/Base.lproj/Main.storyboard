@@ -955,24 +955,11 @@
                                     <constraint firstAttribute="width" constant="375" id="iVS-6Z-gra"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-oA-g6Y">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="YT5-W8-yd7"/>
-                                    <constraint firstAttribute="height" constant="50" id="eBt-FD-8sQ"/>
-                                </constraints>
-                                <state key="normal" image="skip"/>
-                                <connections>
-                                    <segue destination="Bja-xi-oTj" kind="showDetail" animates="NO" id="fh8-Pf-BZw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BtG-4G-ULI" firstAttribute="trailing" secondItem="723-0K-Wiq" secondAttribute="trailing" id="Jrp-jO-SC5"/>
-                            <constraint firstAttribute="bottom" secondItem="pNd-oA-g6Y" secondAttribute="bottom" constant="16" id="QKJ-17-SOw"/>
                             <constraint firstItem="BtG-4G-ULI" firstAttribute="leading" secondItem="723-0K-Wiq" secondAttribute="leading" id="hmP-Bt-L7h"/>
-                            <constraint firstAttribute="trailing" secondItem="pNd-oA-g6Y" secondAttribute="trailing" constant="16" id="owJ-yb-zKX"/>
                             <constraint firstItem="BtG-4G-ULI" firstAttribute="bottom" secondItem="723-0K-Wiq" secondAttribute="bottom" id="zVS-35-B2J"/>
                             <constraint firstItem="BtG-4G-ULI" firstAttribute="top" secondItem="1eY-Ik-Jn5" secondAttribute="top" id="zeR-uT-ta7"/>
                         </constraints>
@@ -980,6 +967,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena19_1ImageView" destination="BtG-4G-ULI" id="cQg-kZ-QjR"/>
+                        <segue destination="XUu-vf-qhr" kind="show" identifier="segue19_2_1" animates="NO" id="WW0-jn-LRJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c28-Mg-yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1263,6 +1251,6 @@
         <image name="skip" width="350" height="350"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fh8-Pf-BZw"/>
+        <segue reference="WW0-jn-LRJ"/>
     </inferredMetricsTieBreakers>
 </document>
