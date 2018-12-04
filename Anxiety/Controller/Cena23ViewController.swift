@@ -31,6 +31,12 @@ class Cena23ViewController: UIViewController {
         let imagemInitial = UIImage.init(named: "respira")
         respImageView.image = imagemInitial
         
+        respImageView.isUserInteractionEnabled = true
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        respImageView.addGestureRecognizer(tapGestureRecognizer)
+        
         
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
@@ -41,17 +47,7 @@ class Cena23ViewController: UIViewController {
     
     @objc func update() { // Função de atualização para opreações constantes
         
-        if inspBool == true && respBool == true {
-            countAlc += 1
-            respBool = false
-            inspBool = false
-            print(countAlc)
-        }
-        
-        if countAlc == 5 {
-            portVib = true
-            performSegue(withIdentifier: "Segue23", sender: nil)
-        }
+
         
         if portVib == false {
             for _ in 1...5 { // Repetição da quantidade de vibrações
@@ -59,6 +55,14 @@ class Cena23ViewController: UIViewController {
             }
         }
         
+    }
+   
+    @objc func addPulse(){
+        let pulse = Pulsing(numberOfPulses: 5, radius: 110, position: respImageView.center)
+        pulse.animationDuration = 1.5
+        pulse.backgroundColor = UIColor.blue.cgColor
+
+        self.view.layer.insertSublayer(pulse, below: respImageView.layer)
     }
     
     
