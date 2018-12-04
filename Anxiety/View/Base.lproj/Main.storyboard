@@ -469,7 +469,7 @@
                         <outlet property="Cena8ImageView" destination="K1P-6d-VhE" id="AdD-zM-BBe"/>
                         <outlet property="fech" destination="V18-0V-6rb" id="jhm-4B-817"/>
                         <outlet property="key" destination="Kep-nb-7uu" id="raW-m1-hR7"/>
-                        <segue destination="kv1-zQ-Mta" kind="show" identifier="next" id="ZGq-fL-WEU"/>
+                        <segue destination="kv1-zQ-Mta" kind="show" identifier="next" animates="NO" id="ZGq-fL-WEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ea9-CH-iUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
