@@ -1016,19 +1016,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_20.gif" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-4d-t9Z">
+                                <rect key="frame" x="304" y="596" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="L4l-qG-TrZ"/>
+                                    <constraint firstAttribute="height" constant="55" id="Z0M-nH-6bb"/>
+                                </constraints>
+                                <state key="normal" image="skip"/>
+                                <connections>
+                                    <segue destination="jwi-VD-0CH" kind="show" animates="NO" id="YiZ-hD-8qv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="leading" secondItem="v0c-ds-RfW" secondAttribute="leading" id="9YC-ZE-LgG"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="bottom" secondItem="WZM-4d-t9Z" secondAttribute="bottom" constant="16" id="JY6-cN-FUH"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="bottom" secondItem="v0c-ds-RfW" secondAttribute="bottom" id="RXc-uY-wTZ"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="top" secondItem="ptZ-r1-ihi" secondAttribute="top" id="Wm6-JE-GVh"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="trailing" secondItem="v0c-ds-RfW" secondAttribute="trailing" id="Xhn-QA-k2a"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="WZM-4d-t9Z" secondAttribute="trailing" constant="16" id="mlq-x7-65s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
                     <connections>
                         <outlet property="Cena20ImageView" destination="cVn-Qp-ZEe" id="iZn-52-30T"/>
-                        <segue destination="jwi-VD-0CH" kind="show" identifier="segueCena20" id="Kq7-N2-pJ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbB-1p-LgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1130,31 +1142,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_23.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nzz-bQ-L11">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-8J-ZuN">
-                                <rect key="frame" x="16" y="596" width="55" height="55"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="respira" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Dv-cSl">
+                                <rect key="frame" x="150" y="576" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="BGA-i2-hu3"/>
-                                    <constraint firstAttribute="height" constant="55" id="t3e-MT-mLL"/>
+                                    <constraint firstAttribute="width" constant="75" id="T4p-p5-SIj"/>
+                                    <constraint firstAttribute="height" constant="75" id="nQh-h9-gsb"/>
                                 </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Dv-cSl">
-                                <rect key="frame" x="225" y="553" width="134" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="SaI-8J-ZuN" secondAttribute="bottom" constant="16" id="F6X-tI-ihR"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="bottom" secondItem="bHD-v9-8Ea" secondAttribute="bottom" id="HZh-1W-yph"/>
+                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="aig-Dv-cSl" secondAttribute="bottom" constant="16" id="IPD-5y-UC2"/>
+                            <constraint firstItem="aig-Dv-cSl" firstAttribute="centerX" secondItem="ZYn-32-Oo5" secondAttribute="centerX" id="JzG-jm-WRI"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="trailing" secondItem="bHD-v9-8Ea" secondAttribute="trailing" id="Q4q-fe-pOb"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="top" secondItem="ZYn-32-Oo5" secondAttribute="top" id="VZ8-Di-Yf1"/>
-                            <constraint firstItem="SaI-8J-ZuN" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" constant="16" id="e3i-BR-jFe"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" id="o0I-jF-lAV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bHD-v9-8Ea"/>
                     </view>
                     <connections>
                         <outlet property="Cena23ImageView" destination="Nzz-bQ-L11" id="HhC-bW-xfq"/>
+                        <outlet property="respImageView" destination="aig-Dv-cSl" id="Ljq-aB-eUi"/>
                         <segue destination="Bja-xi-oTj" kind="showDetail" identifier="Segue23" animates="NO" id="lQ5-7h-Wck"/>
                     </connections>
                 </viewController>
@@ -1223,6 +1232,7 @@
         <image name="key" width="250" height="250"/>
         <image name="menu.gif" width="750" height="1334"/>
         <image name="play" width="350" height="350"/>
+        <image name="respira" width="200" height="200"/>
         <image name="skip" width="350" height="350"/>
     </resources>
     <inferredMetricsTieBreakers>

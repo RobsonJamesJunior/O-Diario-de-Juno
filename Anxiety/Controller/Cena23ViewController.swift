@@ -14,8 +14,8 @@ class Cena23ViewController: UIViewController {
     
     @IBOutlet weak var Cena23ImageView: UIImageView!
     
+    @IBOutlet weak var respImageView: UIImageView!
     
-
     
     var inspBool: Bool = false
     var respBool: Bool = false
@@ -29,7 +29,7 @@ class Cena23ViewController: UIViewController {
         Cena23ImageView.isAccessibilityElement = true
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena7ViewController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
         
     }
     
