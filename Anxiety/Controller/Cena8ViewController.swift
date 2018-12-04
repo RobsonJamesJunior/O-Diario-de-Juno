@@ -33,9 +33,13 @@ class Cena8ViewController: UIViewController {
         let gifChave = UIImage.gifImageWithName("key") // variável com gif do asset da chave
         key.image = gifChave // setando o asset gif no ImageView
         
-        addPanGesture(view: key)
-        keyViewOrigin = key.frame.origin
-       // view.bringSubviewToFront(key)
+        keyViewOrigin = key.frame.origin // posicao da key Asset
+        
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
+        
+        key.addGestureRecognizer(pan)
+        
+        view.bringSubviewToFront(key)
         
 //        do {
 //            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chave", ofType: "wav")!)) // colocando a música através do diretório
@@ -46,15 +50,8 @@ class Cena8ViewController: UIViewController {
         
     }
     
-    func addPanGesture(view: UIView) {
-        
-        let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
-        view.addGestureRecognizer(pan)
-       
-    }
-    
     @objc func handlePan(sender: UIPanGestureRecognizer) {
-        
+        print ("Handle Pan")
         let keyView = sender.view!
         
         switch sender.state {
@@ -79,7 +76,7 @@ class Cena8ViewController: UIViewController {
     
     
     func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
-        
+        print ("Movendo")
         let translation = sender.translation(in: view)
         
         view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
@@ -87,7 +84,7 @@ class Cena8ViewController: UIViewController {
     }
     
     func returnViewToOrigin(view: UIView) {
-        
+        print ("Voltando")
         UIView.animate(withDuration: 0.3, animations: {
             view.frame.origin = self.keyViewOrigin
         })
@@ -95,7 +92,7 @@ class Cena8ViewController: UIViewController {
     
     
     func deleteView(view: UIView) {
-        
+        print ("Deletando")
         UIView.animate(withDuration: 0.3, animations: {
             view.alpha = 0.0
         })
