@@ -1016,36 +1016,192 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_20.gif" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m59-mG-6Hs">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-x2-Xor">
+                                <rect key="frame" x="255" y="20" width="55" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="cLE-31-oub"/>
-                                    <constraint firstAttribute="height" constant="50" id="mKm-60-Jho"/>
+                                    <constraint firstAttribute="height" constant="55" id="6ge-yY-t2Q"/>
+                                    <constraint firstAttribute="width" constant="55" id="i8p-Hp-C0w"/>
                                 </constraints>
-                                <state key="normal" image="skip"/>
+                                <state key="normal" image="pegada-Esq"/>
                                 <connections>
-                                    <segue destination="jwi-VD-0CH" kind="showDetail" animates="NO" id="vgW-Td-I0m"/>
+                                    <action selector="buttonPe12:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="Qyh-uu-uN4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-bJ-QDy">
+                                <rect key="frame" x="315" y="71" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Cf0-Mu-5Ol"/>
+                                    <constraint firstAttribute="width" constant="55" id="liu-bS-BuM"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe11:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="1Gm-FX-NaD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE2-Cp-b7t">
+                                <rect key="frame" x="254" y="126" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Fmc-PN-pgo"/>
+                                    <constraint firstAttribute="width" constant="55" id="Og4-NR-Fof"/>
+                                </constraints>
+                                <state key="normal" image="pegada-Esq"/>
+                                <connections>
+                                    <action selector="buttonPe10:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="Z63-UX-QE4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBm-CW-NFZ">
+                                <rect key="frame" x="315" y="189" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="pyc-lV-m8O"/>
+                                    <constraint firstAttribute="height" constant="55" id="uSk-Ca-SEo"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe9:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="G4Z-zK-dWj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20L-6e-P4w">
+                                <rect key="frame" x="254" y="252" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Te2-UQ-hfv"/>
+                                    <constraint firstAttribute="width" constant="55" id="nCq-bd-XBJ"/>
+                                </constraints>
+                                <state key="normal" image="pegada-Esq"/>
+                                <connections>
+                                    <action selector="buttonPe8:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="ime-LK-WQl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqI-mX-cNN">
+                                <rect key="frame" x="315" y="306" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="VUE-OG-HnJ"/>
+                                    <constraint firstAttribute="width" constant="55" id="ovY-h7-Zuo"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe7:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="KfF-MI-e0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDA-6g-zFY">
+                                <rect key="frame" x="254" y="355" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Jyk-tA-Z56"/>
+                                    <constraint firstAttribute="width" constant="55" id="i4Y-P2-fFr"/>
+                                </constraints>
+                                <state key="normal" image="pegada-Esq"/>
+                                <connections>
+                                    <action selector="buttonPe6:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="9kQ-hS-E2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eU-bT-fSu">
+                                <rect key="frame" x="315" y="412" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="YQh-zR-01W"/>
+                                    <constraint firstAttribute="width" constant="55" id="i5R-go-NGD"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe5:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="jAg-Kb-v4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-7E-Lpb">
+                                <rect key="frame" x="260" y="472" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="0Cs-dd-IQj"/>
+                                    <constraint firstAttribute="height" constant="55" id="TeH-pj-UMi"/>
+                                </constraints>
+                                <state key="normal" image="pegada-Esq"/>
+                                <connections>
+                                    <action selector="buttonPe4:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="aAt-DT-tKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLF-zr-yYH">
+                                <rect key="frame" x="315" y="522" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="LpA-Hu-tcY"/>
+                                    <constraint firstAttribute="height" constant="55" id="vuT-fz-mCQ"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe3:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="yXE-Jt-H8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-Aa-x4e">
+                                <rect key="frame" x="315" y="607" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="ebL-M7-ZLq"/>
+                                    <constraint firstAttribute="height" constant="55" id="gbg-Qf-sVa"/>
+                                </constraints>
+                                <state key="normal" image="pegada-png"/>
+                                <connections>
+                                    <action selector="buttonPe1:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="JnY-lK-oDa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgp-vw-nJR">
+                                <rect key="frame" x="260" y="567" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="6Rt-Iy-fBD"/>
+                                    <constraint firstAttribute="height" constant="55" id="Sbs-a5-hoU"/>
+                                </constraints>
+                                <state key="normal" image="pegada-Esq"/>
+                                <connections>
+                                    <action selector="buttonPe2:" destination="MB3-rv-Xbu" eventType="touchUpInside" id="zKy-oR-kuz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="sh8-bJ-QDy" firstAttribute="leading" secondItem="d9B-x2-Xor" secondAttribute="trailing" constant="5" id="0Xe-dF-eQF"/>
+                            <constraint firstItem="Fat-7E-Lpb" firstAttribute="top" secondItem="iDA-6g-zFY" secondAttribute="bottom" constant="62" id="1qA-Ha-u12"/>
+                            <constraint firstItem="TLF-zr-yYH" firstAttribute="leading" secondItem="Dgp-vw-nJR" secondAttribute="trailing" id="5aW-Fs-bgd"/>
+                            <constraint firstItem="ryu-Aa-x4e" firstAttribute="top" secondItem="TLF-zr-yYH" secondAttribute="bottom" constant="30" id="6Se-QE-6EC"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="xqI-mX-cNN" secondAttribute="trailing" constant="5" id="7rv-0b-51T"/>
+                            <constraint firstItem="PE2-Cp-b7t" firstAttribute="top" secondItem="d9B-x2-Xor" secondAttribute="bottom" constant="51" id="8GG-2n-Zsk"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="leading" secondItem="v0c-ds-RfW" secondAttribute="leading" id="9YC-ZE-LgG"/>
-                            <constraint firstItem="v0c-ds-RfW" firstAttribute="bottom" secondItem="m59-mG-6Hs" secondAttribute="bottom" constant="16" id="Eaf-4H-nWk"/>
-                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="m59-mG-6Hs" secondAttribute="trailing" constant="16" id="MhZ-0v-StC"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="PE2-Cp-b7t" secondAttribute="trailing" constant="66" id="AFb-G5-R8y"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="bottom" secondItem="ryu-Aa-x4e" secondAttribute="bottom" constant="5" id="Ck2-E2-OQx"/>
+                            <constraint firstItem="TLF-zr-yYH" firstAttribute="top" secondItem="9eU-bT-fSu" secondAttribute="bottom" constant="55" id="Hd3-8s-clk"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="20L-6e-P4w" secondAttribute="trailing" constant="66" id="Iph-r8-R3e"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="DBm-CW-NFZ" secondAttribute="trailing" constant="5" id="LuU-PI-qOJ"/>
+                            <constraint firstItem="20L-6e-P4w" firstAttribute="top" secondItem="PE2-Cp-b7t" secondAttribute="bottom" constant="71" id="NI3-vp-fWQ"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="bottom" secondItem="v0c-ds-RfW" secondAttribute="bottom" id="RXc-uY-wTZ"/>
+                            <constraint firstItem="9eU-bT-fSu" firstAttribute="top" secondItem="xqI-mX-cNN" secondAttribute="bottom" constant="51" id="Scc-LF-sIW"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="top" secondItem="ptZ-r1-ihi" secondAttribute="top" id="Wm6-JE-GVh"/>
+                            <constraint firstItem="Dgp-vw-nJR" firstAttribute="top" secondItem="Fat-7E-Lpb" secondAttribute="bottom" constant="40" id="WuV-Qv-qZz"/>
                             <constraint firstItem="cVn-Qp-ZEe" firstAttribute="trailing" secondItem="v0c-ds-RfW" secondAttribute="trailing" id="Xhn-QA-k2a"/>
+                            <constraint firstItem="TLF-zr-yYH" firstAttribute="leading" secondItem="Fat-7E-Lpb" secondAttribute="trailing" id="aTq-20-jlw"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="sh8-bJ-QDy" secondAttribute="trailing" constant="5" id="h0g-cM-11b"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="ryu-Aa-x4e" secondAttribute="trailing" constant="5" id="mEb-2z-2gd"/>
+                            <constraint firstItem="xqI-mX-cNN" firstAttribute="top" secondItem="DBm-CW-NFZ" secondAttribute="bottom" constant="62" id="mzH-CK-F43"/>
+                            <constraint firstItem="xqI-mX-cNN" firstAttribute="leading" secondItem="iDA-6g-zFY" secondAttribute="trailing" constant="6" id="p5T-MJ-dZO"/>
+                            <constraint firstItem="iDA-6g-zFY" firstAttribute="top" secondItem="20L-6e-P4w" secondAttribute="bottom" constant="48" id="pJh-TR-qGa"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="TLF-zr-yYH" secondAttribute="trailing" constant="5" id="q1U-Nd-MKM"/>
+                            <constraint firstItem="DBm-CW-NFZ" firstAttribute="top" secondItem="sh8-bJ-QDy" secondAttribute="bottom" constant="63" id="qAK-Wq-kRP"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="bottom" secondItem="Dgp-vw-nJR" secondAttribute="bottom" constant="45" id="rji-Py-jk3"/>
+                            <constraint firstItem="v0c-ds-RfW" firstAttribute="trailing" secondItem="9eU-bT-fSu" secondAttribute="trailing" constant="5" id="xpo-IM-TjO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
                     <connections>
                         <outlet property="Cena20ImageView" destination="cVn-Qp-ZEe" id="iZn-52-30T"/>
+                        <outlet property="butto12" destination="d9B-x2-Xor" id="wzR-vi-Tau"/>
+                        <outlet property="button1" destination="ryu-Aa-x4e" id="Kue-mk-9Ys"/>
+                        <outlet property="button10" destination="PE2-Cp-b7t" id="7Sl-aP-smL"/>
+                        <outlet property="button11" destination="sh8-bJ-QDy" id="7aG-UU-knL"/>
+                        <outlet property="button2" destination="Dgp-vw-nJR" id="aQ7-dp-no2"/>
+                        <outlet property="button3" destination="TLF-zr-yYH" id="iuQ-Ot-MO1"/>
+                        <outlet property="button4" destination="Fat-7E-Lpb" id="u60-RS-D2B"/>
+                        <outlet property="button5" destination="9eU-bT-fSu" id="y6m-uo-EzN"/>
+                        <outlet property="button6" destination="iDA-6g-zFY" id="Rn0-IM-19e"/>
+                        <outlet property="button7" destination="xqI-mX-cNN" id="wwN-9l-CXx"/>
+                        <outlet property="button8" destination="20L-6e-P4w" id="6xa-nr-gpc"/>
+                        <outlet property="button9" destination="DBm-CW-NFZ" id="WjX-M3-OuC"/>
+                        <segue destination="jwi-VD-0CH" kind="show" identifier="segueCena20" id="Kq7-N2-pJ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbB-1p-LgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18927" y="124"/>
+            <point key="canvasLocation" x="18925.599999999999" y="123.68815592203899"/>
         </scene>
         <!--Cena21 View Controller-->
         <scene sceneID="oy0-ys-K4f">
@@ -1277,11 +1433,13 @@
         <image name="cell_alarm" width="350" height="350"/>
         <image name="key" width="250" height="250"/>
         <image name="menu.gif" width="750" height="1334"/>
+        <image name="pegada-Esq" width="512" height="512"/>
+        <image name="pegada-png" width="512" height="512"/>
         <image name="play" width="350" height="350"/>
         <image name="respira" width="200" height="200"/>
         <image name="skip" width="350" height="350"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WW0-jn-LRJ"/>
+        <segue reference="7q7-7k-Kf5"/>
     </inferredMetricsTieBreakers>
 </document>
