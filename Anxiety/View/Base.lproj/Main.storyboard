@@ -446,15 +446,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.gif" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drM-57-YKm">
-                                <rect key="frame" x="80" y="209" width="46" height="59"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jtf-WU-YXl">
+                                <rect key="frame" x="236" y="353" width="58" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="key" backgroundImage="key"/>
-                                <connections>
-                                    <action selector="keySegueScene:" destination="rj0-kG-OH3" eventType="touchUpInside" id="Xlf-te-io8"/>
-                                    <segue destination="kv1-zQ-Mta" kind="showDetail" animates="NO" id="l0c-7f-adi"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="Wai-cV-99x">
+                                <rect key="frame" x="59" y="187" width="89" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -467,6 +466,9 @@
                     </view>
                     <connections>
                         <outlet property="Cena8ImageView" destination="K1P-6d-VhE" id="AdD-zM-BBe"/>
+                        <outlet property="fechaduraImageView" destination="Jtf-WU-YXl" id="p6N-fG-Jy0"/>
+                        <outlet property="keyImageView" destination="Wai-cV-99x" id="RXq-kS-7DZ"/>
+                        <segue destination="kv1-zQ-Mta" kind="show" identifier="next" id="ZGq-fL-WEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ea9-CH-iUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
