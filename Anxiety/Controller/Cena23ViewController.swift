@@ -40,26 +40,13 @@ class Cena23ViewController: UIViewController {
         
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
-        
+  
     }
     
-    
-    @objc func update() { // Função de atualização para opreações constantes
-        
-
-        
-        if portVib == false {
-            for _ in 1...5 { // Repetição da quantidade de vibrações
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
-            }
-        }
-        
-    }
    
     @objc func addPulse(){
         let pulse = Pulsing(numberOfPulses: 5, radius: 110, position: respImageView.center)
-        pulse.animationDuration = 1.5
+        pulse.animationDuration = 0.8
         pulse.backgroundColor = UIColor.blue.cgColor
 
         self.view.layer.insertSublayer(pulse, below: respImageView.layer)
