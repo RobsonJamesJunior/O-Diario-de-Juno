@@ -18,6 +18,8 @@ class Cena8ViewController: UIViewController {
     
     @IBOutlet weak var fech: UIImageView!
     
+    var keyViewOrigin: CGPoint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,10 @@ class Cena8ViewController: UIViewController {
         let gifChave = UIImage.gifImageWithName("key") // variável com gif do asset da chave
         key.image = gifChave // setando o asset gif no ImageView
         
+        addPanGesture(view: key)
+        keyViewOrigin = key.frame.origin
+       // view.bringSubviewToFront(key)
+        
 //        do {
 //            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chave", ofType: "wav")!)) // colocando a música através do diretório
 //            audioPlayer.prepareToPlay() // preparando o áudio
@@ -40,6 +46,60 @@ class Cena8ViewController: UIViewController {
         
     }
     
+    func addPanGesture(view: UIView) {
+        
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
+        view.addGestureRecognizer(pan)
+       
+    }
+    
+    @objc func handlePan(sender: UIPanGestureRecognizer) {
+        
+        let keyView = sender.view!
+        
+        switch sender.state {
+            
+        case .began, .changed:
+            moveViewWithPan(view: keyView, sender: sender)
+            
+        case .ended:
+            if keyView.frame.intersects(fech.frame) {
+                deleteView(view: keyView)
+                
+            } else {
+                returnViewToOrigin(view: keyView)
+            }
+            
+        default:
+            break
+        }
+    }
+    
+    
+    
+    
+    func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
+        
+        let translation = sender.translation(in: view)
+        
+        view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
+    
+    func returnViewToOrigin(view: UIView) {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            view.frame.origin = self.keyViewOrigin
+        })
+    }
+    
+    
+    func deleteView(view: UIView) {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            view.alpha = 0.0
+        })
+    }
   
     
     override var prefersStatusBarHidden: Bool{
