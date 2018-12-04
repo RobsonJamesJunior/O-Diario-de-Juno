@@ -921,18 +921,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_19.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-Z6-IiC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-QB-h0w">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <action selector="setDialogCena19:" destination="AkW-kv-PzE" eventType="touchUpInside" id="roY-lm-D4K"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="SfX-Fo-yF3">
+                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="LeS-D9-nKM"/>
+                                    <constraint firstAttribute="width" constant="375" id="sUs-nh-rrs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC4-2E-tsw">
+                                <rect key="frame" x="5" y="509" width="365" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OMD-QB-h0w" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="45j-gn-Qyw"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="top" secondItem="28P-JZ-y4C" secondAttribute="top" id="7u5-dn-I1E"/>
+                            <constraint firstItem="OMD-QB-h0w" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="9WI-f3-E6M"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="trailing" secondItem="Yik-pY-qlD" secondAttribute="trailing" id="CGI-0O-eqD"/>
+                            <constraint firstItem="OMD-QB-h0w" firstAttribute="trailing" secondItem="Yik-pY-qlD" secondAttribute="trailing" id="EZc-gd-Cn7"/>
+                            <constraint firstItem="OC4-2E-tsw" firstAttribute="centerY" secondItem="SfX-Fo-yF3" secondAttribute="centerY" id="Ngq-CX-v89"/>
+                            <constraint firstItem="OMD-QB-h0w" firstAttribute="top" secondItem="Yik-pY-qlD" secondAttribute="top" id="OOR-Wj-0AA"/>
+                            <constraint firstItem="Yik-pY-qlD" firstAttribute="trailing" secondItem="OC4-2E-tsw" secondAttribute="trailing" constant="5" id="XtA-jg-LaS"/>
+                            <constraint firstItem="OC4-2E-tsw" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" constant="5" id="Z6Z-Ka-hUr"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="bfe-gO-wU7"/>
+                            <constraint firstItem="OC4-2E-tsw" firstAttribute="height" secondItem="SfX-Fo-yF3" secondAttribute="height" id="f4A-rn-leP"/>
+                            <constraint firstItem="Yik-pY-qlD" firstAttribute="bottom" secondItem="SfX-Fo-yF3" secondAttribute="bottom" constant="60" id="gFN-JN-4yc"/>
+                            <constraint firstItem="SfX-Fo-yF3" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="jP4-h7-5Nb"/>
+                            <constraint firstItem="Yik-pY-qlD" firstAttribute="trailing" secondItem="SfX-Fo-yF3" secondAttribute="trailing" id="ou4-UG-skR"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="yjh-Eh-lJu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yik-pY-qlD"/>
                     </view>
                     <connections>
                         <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
+                        <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
                         <segue destination="A6N-NS-WoM" kind="show" identifier="segueCena19_2" animates="NO" id="RaI-Zt-Pde"/>
                     </connections>
