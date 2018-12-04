@@ -496,13 +496,13 @@ class Cena7ViewController: UIViewController {
     
     func showOutgoingMessage10(text: String) {
         let device = UIDevice.modelName
-        
+
         let label =  UILabel()
         label.numberOfLines = 0
         label.font = UIFont(name: "Juninho-Regular", size: 18)
         label.textColor = .black
         label.text = ""
-        
+
         let constraintRect = CGSize(width: 0.66 * view.frame.width,
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
@@ -511,31 +511,30 @@ class Cena7ViewController: UIViewController {
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
-        
+
         let bubbleImageSize = CGSize(width: label.frame.width + 28,
                                      height: label.frame.height + 20)
-        
-        if ((device == "iPhone 7")||(device == "Simulador iPhone 7")) {
-            print(device)
+
+        if ((device == "iPhone 7")||(device == "Simulator iPhone 7")) {
             let outgoingMessageView = UIImageView(frame:
-                CGRect(x: view.frame.width - bubbleImageSize.width - 225 ,// posição x
-                    y: view.frame.height - bubbleImageSize.height - 400, //posição y
+                CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
+                    y: view.frame.height - bubbleImageSize.height - 350, //posição y
                     width: bubbleImageSize.width,
                     height: bubbleImageSize.height))
-        
+
             let bubbleImage = UIImage(named: "bubble_Chat")?
                 .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-                            resizingMode: .tile)
+                                resizingMode: .tile)
                 .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        
+
             outgoingMessageView.image = bubbleImage
-        
+
             view.addSubview(outgoingMessageView)
-        
+
             label.center = outgoingMessageView.center
-        
+
             let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-        
+
             for letra in labelDialog {
                 label.text! += ("\(letra)")
                 RunLoop.current.run(until: Date()+0.10)
@@ -548,20 +547,20 @@ class Cena7ViewController: UIViewController {
                     y: view.frame.height - bubbleImageSize.height - 350, //posição y
                     width: bubbleImageSize.width,
                     height: bubbleImageSize.height))
-                
+
             let bubbleImage = UIImage(named: "bubble_Chat")?
                     .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
                                 resizingMode: .tile)
                     .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-                
+
             outgoingMessageView.image = bubbleImage
-                
+
             self.view.addSubview(outgoingMessageView)
-                
+
             label.center = outgoingMessageView.center
-                
+
             let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-                
+
             for letra in labelDialog {
                     label.text! += ("\(letra)")
                     RunLoop.current.run(until: Date()+0.10)
@@ -569,7 +568,7 @@ class Cena7ViewController: UIViewController {
             }
         }
     }
- 
+        
     override var prefersStatusBarHidden: Bool{
         return true
     }
