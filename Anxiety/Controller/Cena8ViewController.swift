@@ -62,7 +62,7 @@ class Cena8ViewController: UIViewController {
         case .ended:
             if keyView.frame.intersects(fech.frame) {
                 deleteView(view: keyView)
-                
+                 performSegue(withIdentifier: "next", sender: nil)
             } else {
                 returnViewToOrigin(view: keyView)
             }
