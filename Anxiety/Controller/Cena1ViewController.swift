@@ -63,6 +63,13 @@ class Cena1ViewController: UIViewController {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 320})
     }
+    
+    
+    @IBAction func backMenu(_ sender: Any) {
+        performSegue(withIdentifier: "BackMenu", sender: nil)
+    }
+    
+    
 
     override var prefersStatusBarHidden: Bool{
         return true

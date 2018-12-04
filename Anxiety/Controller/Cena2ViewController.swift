@@ -122,6 +122,12 @@ class Cena2ViewController: UIViewController {
         validAnimation = false
     }
     
+    
+    @IBAction func backMenu(_ sender: Any) {
+        performSegue(withIdentifier: "BackMenu", sender: nil)
+    }
+    
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
