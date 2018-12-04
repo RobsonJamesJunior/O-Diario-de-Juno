@@ -27,6 +27,11 @@ class Cena23ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Cena23ImageView.isAccessibilityElement = true
+        
+        let imagemInitial = UIImage.init(named: "respira")
+        respImageView.image = imagemInitial
+        
+        
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
