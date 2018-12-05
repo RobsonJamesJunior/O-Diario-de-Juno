@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="124"/>
+            <point key="canvasLocation" x="-1076" y="124"/>
         </scene>
         <!--Cena1 View Controller-->
         <scene sceneID="aEi-vV-sfP">
@@ -503,7 +503,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="zee-Oc-Zwx"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="IMd-dr-kIE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -539,11 +539,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.gif" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V18-0V-6rb">
-                                <rect key="frame" x="228" y="354" width="73" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.15683335479999999" blue="0.1140543671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="key.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
                                 <rect key="frame" x="65" y="189" width="65" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -556,9 +551,14 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="eZv-4j-qO3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="AFy-AR-ZPS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fech" translatesAutoresizingMaskIntoConstraints="NO" id="V18-0V-6rb">
+                                <rect key="frame" x="230" y="376" width="73" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15683335479999999" blue="0.1140543671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -614,7 +614,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="rFn-AU-c3N"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="SjY-cO-eps"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -672,7 +672,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="NHl-84-HdC"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="s8o-c1-ApH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -729,7 +729,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="d6c-ck-sHp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="xnc-Y9-H6w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -786,7 +786,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="tnG-05-BEK"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="OII-KW-CMc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -844,7 +844,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="FWS-ba-cxi"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="X79-cz-nVR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -898,7 +898,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="L0k-gW-g4s"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="LTs-jF-Jgk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -953,7 +953,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="Wn8-aQ-5NX"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="iZh-Yb-7DQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1010,7 +1010,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" id="pgS-q4-qLd"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="6AI-g5-cDu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1067,7 +1067,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="hmz-JK-OFJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="qcd-vn-WTV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1124,7 +1124,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" id="Nhv-sZ-kXC"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="lwG-my-eug"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1187,7 +1187,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="nYj-uo-6yZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Rmb-Jb-Tco"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1246,7 +1246,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="V35-2N-RME"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="ytA-uu-vHk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1300,7 +1300,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="kKa-q4-YTr"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="nmn-DP-73c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1355,7 +1355,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="showDetail" id="oW9-QV-vbW"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="5A5-s0-fS4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1410,7 +1410,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="G2o-ip-lni"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="cVp-2i-YcO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1461,7 +1461,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="JFg-V5-EF7"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="x5k-1z-zBI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1507,7 +1507,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="WdF-kq-gKd"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="zgU-rF-g5n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1559,6 +1559,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
+        <image name="fech" width="98" height="92"/>
         <image name="home" width="250" height="250"/>
         <image name="key.gif" width="500" height="500"/>
         <image name="menu.gif" width="750" height="1334"/>
@@ -1569,6 +1570,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
         <segue reference="Dy1-mc-iQ1"/>
-        <segue reference="DUF-yw-1dl"/>
+        <segue reference="LTs-jF-Jgk"/>
     </inferredMetricsTieBreakers>
 </document>

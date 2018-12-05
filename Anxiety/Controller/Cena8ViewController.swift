@@ -30,6 +30,13 @@ class Cena8ViewController: UIViewController {
         let Cena8Gif = UIImage.gifImageWithName("Cena_8") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena8
         Cena8ImageView.image = Cena8Gif // Adicionando a variável à tela de ImageView
         
+        fech.clipsToBounds = true
+        fech.layer.borderColor = UIColor.red.cgColor
+        fech.layer.borderWidth = 3
+        
+        let imageFech = UIImage.init(named: "fech")
+        fech.image = imageFech
+        
         let gifChave = UIImage.gifImageWithName("key") // variável com gif do asset da chave
         key.image = gifChave // setando o asset gif no ImageView
         
