@@ -9,7 +9,7 @@
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 import AVFoundation // Biblioteca para utilizar sons
-var isOk:Bool = false
+
 
 class Cena1ViewController: UIViewController {
     
@@ -27,6 +27,7 @@ class Cena1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        IsOk = false
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
             audioPlayer.prepareToPlay() // preparando o áudio
@@ -50,7 +51,6 @@ class Cena1ViewController: UIViewController {
         if IsOk == false {
             for _ in 1...5 { // Repetição da quantidade de vibrações
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
-             
             }
         }
         
@@ -67,8 +67,8 @@ class Cena1ViewController: UIViewController {
     
     @IBAction func backMenu(_ sender: Any) {
         performSegue(withIdentifier: "BackMenu", sender: nil)
+        IsOk = true
     }
-    
     
 
     override var prefersStatusBarHidden: Bool{
