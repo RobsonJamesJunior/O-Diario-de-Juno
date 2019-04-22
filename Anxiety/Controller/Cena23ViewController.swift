@@ -16,15 +16,17 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
     
     @IBOutlet weak var respImageView: UIImageView!
     
-    
+    var labelEnd: Bool = false
     var inspBool: Bool = false
     var respBool: Bool = false
     var countAlc: Int = 0
     var timer: Timer!
     var portVib: Bool = false
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         Cena23ImageView.isAccessibilityElement = true
         

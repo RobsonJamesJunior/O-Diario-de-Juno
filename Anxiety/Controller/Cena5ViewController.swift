@@ -17,12 +17,15 @@ class Cena5ViewController: UIViewController {
     var IsOk: Int = 0
     var validAnimation: Bool = true
     var fimDefrase: Bool =  false
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     @IBOutlet weak var dialogLabelCena5: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogLabelCena5.numberOfLines = 0
@@ -43,6 +46,7 @@ class Cena5ViewController: UIViewController {
     
     
     @IBAction func setDialogCena5(_ sender: Any) {
+        validAnimation = false
         if fimDefrase == true {
             dialogLabelCena5.text?.removeAll()
             IsOk += 1
@@ -57,6 +61,7 @@ class Cena5ViewController: UIViewController {
                 setLabelDialog()
             }
         } else{
+            initialView = false
             performSegue(withIdentifier: "Segue5", sender: nil)
         }
         
@@ -65,6 +70,10 @@ class Cena5ViewController: UIViewController {
     
     func setLabelDialog(){
         for letra in cena4[IsOk] {
+            if validAnimation == false {
+                dialogLabelCena5.text! = cena4[IsOk]
+                break
+            }
             dialogLabelCena5.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }

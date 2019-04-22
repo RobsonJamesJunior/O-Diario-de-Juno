@@ -19,9 +19,12 @@ class Cena19ViewController: UIViewController {
     var validAnimation: Bool = true
     var fimDefrase: Bool =  false
     var okNext: Bool = false
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogCena19Label.numberOfLines = 0
@@ -63,6 +66,7 @@ class Cena19ViewController: UIViewController {
     
     
     @IBAction func setDialogCena19(_ sender: Any) {
+        validAnimation = false
         if fimDefrase == true {
             dialogCena19Label.text?.removeAll()
             IsOk += 1
@@ -73,6 +77,10 @@ class Cena19ViewController: UIViewController {
     
     func setLabelDialog(){
         for letra in cena19[IsOk] {
+            if validAnimation == false {
+                dialogCena19Label.text! = cena19[IsOk]
+                break
+            }
             dialogCena19Label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }
@@ -268,8 +276,10 @@ class Cena19ViewController: UIViewController {
                 switch sender.direction {
                 case .left:
                     performSegue(withIdentifier: "segueCena19_1", sender: nil)
+                    initialView = false
                 case .down:
                     performSegue(withIdentifier: "segueCena19_2", sender: nil)
+                    initialView = false
                 default:
                     break
                 }

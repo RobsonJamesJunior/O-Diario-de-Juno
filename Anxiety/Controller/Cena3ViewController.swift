@@ -15,6 +15,8 @@ class Cena3ViewController: UIViewController {
     var IsOk: Int = 0
     var validAnimation: Bool = true
     var fimDefrase: Bool =  false
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     @IBOutlet weak var Cena3ImageView: UIImageView!
     
@@ -23,6 +25,7 @@ class Cena3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogLabelCena3.numberOfLines = 0
@@ -47,6 +50,7 @@ class Cena3ViewController: UIViewController {
                 setLabelDialog()
             }
         } else{
+            initialView = false
             performSegue(withIdentifier: "Segue3", sender: nil)
         }
         
@@ -54,6 +58,7 @@ class Cena3ViewController: UIViewController {
     
     
     @IBAction func setDialogCena3(_ sender: Any) {
+        validAnimation = false
         if fimDefrase == true {
             dialogLabelCena3.text?.removeAll()
             IsOk += 1
@@ -114,6 +119,10 @@ class Cena3ViewController: UIViewController {
     
     func setLabelDialog(){
         for letra in cena2[IsOk] {
+            if validAnimation == false {
+                dialogLabelCena3.text! = cena2[IsOk]
+                break
+            }
             dialogLabelCena3.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }

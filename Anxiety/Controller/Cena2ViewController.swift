@@ -14,6 +14,7 @@ class Cena2ViewController: UIViewController {
     var IsOk: Int = 0
     var validAnimation: Bool = true
     var fimDefrase: Bool =  false
+    var initialView: Bool = false
     
     @IBOutlet weak var Cena2ImageView: UIImageView!
     
@@ -23,6 +24,7 @@ class Cena2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
         dialoLabelCena2.numberOfLines = 0
@@ -40,21 +42,26 @@ class Cena2ViewController: UIViewController {
     }
     
     
-    @objc func update() { // Função de atualização para opreações constantes
-        if IsOk < cena1.count { // Variável que faz vibrar apenas uma vez
-           // sleep(1)
-            if validAnimation == true {
-                setLabelDialog()
+    @objc func update() {
+        if initialView == true {
+            print("fudeu")
+            // Função de atualização para opreações constantes
+            if IsOk < cena1.count { // Variável que faz vibrar apenas uma vez
+                // sleep(1)
+                if validAnimation == true {
+                    setLabelDialog()
+                }
+                //}
+            } else{
+                initialView = false
+                performSegue(withIdentifier: "Segue2", sender: nil)
             }
-            //}
-        } else{
-            performSegue(withIdentifier: "Segue2", sender: nil)
         }
-        
     }
     
     
     @IBAction func ContDialog(_ sender: Any) {
+        validAnimation = false
         if fimDefrase == true {
             dialoLabelCena2.text?.removeAll()
             IsOk += 1
@@ -115,6 +122,10 @@ class Cena2ViewController: UIViewController {
     
     func setLabelDialog(){
         for letra in cena1[IsOk] {
+            if validAnimation == false {
+                dialoLabelCena2.text! = cena1[IsOk]
+                break
+            }
             dialoLabelCena2.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }
@@ -124,6 +135,7 @@ class Cena2ViewController: UIViewController {
     
     
     @IBAction func backMenu(_ sender: Any) {
+        initialView = false
         performSegue(withIdentifier: "BackMenu", sender: nil)
     }
     

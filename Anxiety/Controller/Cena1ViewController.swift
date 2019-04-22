@@ -19,6 +19,7 @@ class Cena1ViewController: UIViewController {
     var timer: Timer!
     var audioPlayer = AVAudioPlayer()
     var IsOk: Bool = false
+    var initialView: Bool = false
     
     @IBAction func ButtonStopVibration(_ sender: Any) {
         IsOk = true
@@ -27,6 +28,7 @@ class Cena1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         IsOk = false
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
@@ -66,6 +68,7 @@ class Cena1ViewController: UIViewController {
     
     
     @IBAction func backMenu(_ sender: Any) {
+        initialView = false
         performSegue(withIdentifier: "BackMenu", sender: nil)
         IsOk = true
     }

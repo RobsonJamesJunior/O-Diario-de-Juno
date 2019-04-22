@@ -19,11 +19,12 @@ class Cena8ViewController: UIViewController {
     @IBOutlet weak var fech: UIImageView!
     
     var keyViewOrigin: CGPoint!
-    
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initialView = true
         
         // Do any additional setup after loading the view, typically from a nib.
         Cena8ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
@@ -69,6 +70,7 @@ class Cena8ViewController: UIViewController {
         case .ended:
             if keyView.frame.intersects(fech.frame) {
                 deleteView(view: keyView)
+                initialView = false
                  performSegue(withIdentifier: "next", sender: nil)
             } else {
                 returnViewToOrigin(view: keyView)

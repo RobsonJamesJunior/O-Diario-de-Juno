@@ -11,9 +11,12 @@ import UIKit
 class Cena11ViewController: UIViewController {
     
     @IBOutlet weak var Cena11ImageView: UIImageView!
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         Cena11ImageView.isAccessibilityElement = true
         let Cena11Gif = UIImage.gifImageWithName("Cena_11") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6

@@ -11,9 +11,12 @@ import UIKit
 class Cena19_1ViewController: UIViewController {
 
     @IBOutlet weak var Cena19_1ImageView: UIImageView!
+    var labelEnd: Bool = false
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         downSwipe.direction = .down

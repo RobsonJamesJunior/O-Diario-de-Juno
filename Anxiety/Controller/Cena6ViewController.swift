@@ -14,15 +14,16 @@ class Cena6ViewController: UIViewController {
     @IBOutlet weak var Cena6ImageView: UIImageView!
     @IBOutlet weak var dialogCena6Label: UILabel!
     
-    
+    var labelEnd: Bool = false
     var timer: Timer!
     var IsOk: Int = 0
     var validAnimation: Bool = true
     var fimDefrase: Bool =  false
-    
+    var initialView: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogCena6Label.numberOfLines = 0
@@ -47,6 +48,7 @@ class Cena6ViewController: UIViewController {
                 setLabelDialog()
             }
         } else{
+            initialView = false
             performSegue(withIdentifier: "Segue6", sender: nil)
         }
         
@@ -54,6 +56,10 @@ class Cena6ViewController: UIViewController {
     
     func setLabelDialog(){
         for letra in cena5[IsOk] {
+            if validAnimation == false {
+                dialogCena6Label.text! = cena5[IsOk]
+                break
+            }
             dialogCena6Label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
         }
@@ -63,6 +69,7 @@ class Cena6ViewController: UIViewController {
     
     
     @IBAction func setDialogCena6(_ sender: Any) {
+        validAnimation = false
         if fimDefrase == true {
             dialogCena6Label.text?.removeAll()
             IsOk += 1
