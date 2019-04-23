@@ -6,11 +6,11 @@
 //  Copyright © 2018 Joel Menezes Hamon. All rights reserved.
 //
 
-
+import Foundation
 import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 
-class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
+class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var Cena23ImageView: UIImageView!
     
@@ -23,6 +23,8 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
     var timer: Timer!
     var portVib: Bool = false
     var initialView: Bool = false
+    
+    var longePressBeginTime: TimeInterval = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +50,36 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate  {
     }
     
    
-    @objc func addPulse(){
-        if countAlc == 0 {
+    @objc func addPulse(longPress: UIGestureRecognizer){
+//        if countAlc == 0 {
+//            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
+//            Cena23ImageView.image = Cena23_2Gif
+//            countAlc = 1
+//        } else {
+//            let Cena23Gif = UIImage.gifImageWithName("Cena_23")
+//            Cena23ImageView.image = Cena23Gif
+//            countAlc = 0
+//        }
+        
+        if (longPress.state == UIGestureRecognizer.State.ended)
+        {
+            let gestureTime = NSDate.timeIntervalSinceReferenceDate -
+                longePressBeginTime
+            print("Gesture time = \(gestureTime)")
             let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
             Cena23ImageView.image = Cena23_2Gif
-            countAlc = 1
-        } else {
+        }
+        else if (longPress.state == UIGestureRecognizer.State.began)
+        {
+            print("Began")
+            
+            longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
+            
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
             Cena23ImageView.image = Cena23Gif
-            countAlc = 0
         }
+        
+        
         
         let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: respImageView.center)
         pulse.animationDuration = 0.8
