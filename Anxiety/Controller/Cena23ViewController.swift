@@ -28,7 +28,8 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         initialView = true
+        initialView = true
+        labelEnd = true
         // Do any additional setup after loading the view, typically from a nib.
         Cena23ImageView.isAccessibilityElement = true
         
@@ -64,6 +65,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
+            labelEnd = true
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
                 longePressBeginTime
             print("Gesture time = \(gestureTime)")
@@ -73,7 +75,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
             print("Began")
-            
+            labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
             
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
@@ -84,10 +86,12 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func update() { // Função de atualização para opreações constantes
         if initialView == true {
-            let pulse = Pulsing(numberOfPulses: 1, radius: 90, position: respImageView.center)
-            pulse.animationDuration = 1.0
-            pulse.backgroundColor = UIColor.blue.cgColor
-            self.view.layer.insertSublayer(pulse, below: respImageView.layer)
+            if labelEnd == true {
+                let pulse = Pulsing(numberOfPulses: 1, radius: 90, position: respImageView.center)
+                pulse.animationDuration = 1.0
+                pulse.backgroundColor = UIColor.blue.cgColor
+                self.view.layer.insertSublayer(pulse, below: respImageView.layer)
+            }
         }
     }
     
