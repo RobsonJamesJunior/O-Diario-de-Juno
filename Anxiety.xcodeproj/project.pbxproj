@@ -84,6 +84,12 @@
 		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		1DC8A3A621B6D6120019804B /* key.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A521B6D6120019804B /* key.gif */; };
 		5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */; };
+		5E4057FA226F65E8005AE9C2 /* AguaPiaSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F9226F65E8005AE9C2 /* AguaPiaSound.swift */; };
+		5E4057FC226F66B3005AE9C2 /* Chave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057FB226F66B3005AE9C2 /* Chave.swift */; };
+		5E4057FE226F6786005AE9C2 /* Coracao1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057FD226F6786005AE9C2 /* Coracao1.swift */; };
+		5E405800226F6856005AE9C2 /* Coracao2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057FF226F6856005AE9C2 /* Coracao2.swift */; };
+		5E405802226F6933005AE9C2 /* Passaros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E405801226F6933005AE9C2 /* Passaros.swift */; };
+		5E405804226F6F4A005AE9C2 /* Transito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E405803226F6F4A005AE9C2 /* Transito.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
 		E2675A09219020BD0066ADE8 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = E2675A08219020BD0066ADE8 /* menu.gif */; };
@@ -172,6 +178,12 @@
 		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		1DC8A3A521B6D6120019804B /* key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = key.gif; sourceTree = "<group>"; };
 		5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBackground.swift; sourceTree = "<group>"; };
+		5E4057F9226F65E8005AE9C2 /* AguaPiaSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AguaPiaSound.swift; sourceTree = "<group>"; };
+		5E4057FB226F66B3005AE9C2 /* Chave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chave.swift; sourceTree = "<group>"; };
+		5E4057FD226F6786005AE9C2 /* Coracao1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coracao1.swift; sourceTree = "<group>"; };
+		5E4057FF226F6856005AE9C2 /* Coracao2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coracao2.swift; sourceTree = "<group>"; };
+		5E405801226F6933005AE9C2 /* Passaros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passaros.swift; sourceTree = "<group>"; };
+		5E405803226F6F4A005AE9C2 /* Transito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transito.swift; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Juninho-Regular.ttf"; sourceTree = "<group>"; };
@@ -327,6 +339,12 @@
 				5E75ABD22183B9A900C59507 /* DilalogScenes.swift */,
 				1DBE1BC82188EA560000F746 /* TipsScenes.swift */,
 				5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */,
+				5E4057F9226F65E8005AE9C2 /* AguaPiaSound.swift */,
+				5E4057FB226F66B3005AE9C2 /* Chave.swift */,
+				5E4057FF226F6856005AE9C2 /* Coracao2.swift */,
+				5E4057FD226F6786005AE9C2 /* Coracao1.swift */,
+				5E405801226F6933005AE9C2 /* Passaros.swift */,
+				5E405803226F6F4A005AE9C2 /* Transito.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,11 +514,16 @@
 				1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
 				1D2DB8FA218217DC0097921A /* Cena7ViewController.swift in Sources */,
+				5E4057FC226F66B3005AE9C2 /* Chave.swift in Sources */,
 				1D2DB904218219D60097921A /* Cena12ViewController.swift in Sources */,
 				1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */,
 				1D7DC80921B600FA00360F12 /* DeviceExtensao.swift in Sources */,
+				5E405802226F6933005AE9C2 /* Passaros.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
+				5E4057FA226F65E8005AE9C2 /* AguaPiaSound.swift in Sources */,
+				5E405800226F6856005AE9C2 /* Coracao2.swift in Sources */,
+				5E4057FE226F6786005AE9C2 /* Coracao1.swift in Sources */,
 				1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */,
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
@@ -508,6 +531,7 @@
 				1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */,
 				1DB47037218FD72F00BDB5F1 /* Cena19_1ViewController.swift in Sources */,
 				1D2DB90C21821C380097921A /* Cena16ViewController.swift in Sources */,
+				5E405804226F6F4A005AE9C2 /* Transito.swift in Sources */,
 				1D2DB90621821A0B0097921A /* Cena13ViewController.swift in Sources */,
 				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,
 				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,

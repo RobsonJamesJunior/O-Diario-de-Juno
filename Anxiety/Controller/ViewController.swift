@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let Cena1Gif = UIImage.gifImageWithName("menu") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1
         MainCenaImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
         
-        MusicHelper.sharedHelper.playBackgroundMusic()
+      //  MusicHelper.sharedHelper.playBackgroundMusic()
         
     }
     override var prefersStatusBarHidden: Bool{
