@@ -83,11 +83,12 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func update() { // Função de atualização para opreações constantes
+        if initialView == true {
             let pulse = Pulsing(numberOfPulses: 1, radius: 90, position: respImageView.center)
             pulse.animationDuration = 1.0
             pulse.backgroundColor = UIColor.blue.cgColor
             self.view.layer.insertSublayer(pulse, below: respImageView.layer)
- 
+        }
     }
     
     
