@@ -477,9 +477,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
                                 <rect key="frame" x="245" y="285" width="130" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="  ">
                                         <attributes>
@@ -502,14 +501,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="IMd-dr-kIE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0R-Op-aTK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="passDialog:" destination="oeO-wZ-Xpy" eventType="touchUpInside" id="8Jq-Nl-wag"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="top" secondItem="9d4-zz-e8c" secondAttribute="top" id="0h5-M6-MsW"/>
+                            <constraint firstItem="d0R-Op-aTK" firstAttribute="width" secondItem="tq4-el-hFr" secondAttribute="width" id="2Hl-0T-N4L"/>
+                            <constraint firstItem="d0R-Op-aTK" firstAttribute="centerY" secondItem="tq4-el-hFr" secondAttribute="centerY" id="2ss-iU-u45"/>
+                            <constraint firstItem="4Cz-bT-DXY" firstAttribute="bottom" secondItem="4zV-sj-bjF" secondAttribute="bottom" constant="285" id="5Am-rN-YXx"/>
+                            <constraint firstItem="d0R-Op-aTK" firstAttribute="centerX" secondItem="tq4-el-hFr" secondAttribute="centerX" id="60p-n3-cAx"/>
+                            <constraint firstItem="d0R-Op-aTK" firstAttribute="height" secondItem="tq4-el-hFr" secondAttribute="height" id="7GA-gI-xsU"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="bottom" secondItem="4Cz-bT-DXY" secondAttribute="bottom" id="7g7-So-tgK"/>
                             <constraint firstItem="8fj-Jv-YTI" firstAttribute="top" secondItem="4Cz-bT-DXY" secondAttribute="top" constant="16" id="9iR-XQ-JCi"/>
+                            <constraint firstItem="4zV-sj-bjF" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" constant="245" id="Eb0-Ao-N3W"/>
                             <constraint firstItem="4Cz-bT-DXY" firstAttribute="trailing" secondItem="8fj-Jv-YTI" secondAttribute="trailing" constant="16" id="IGr-QM-b4P"/>
+                            <constraint firstItem="4zV-sj-bjF" firstAttribute="trailing" secondItem="d0R-Op-aTK" secondAttribute="trailing" id="RFA-SU-dZA"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" id="f0M-bl-MIQ"/>
+                            <constraint firstItem="4zV-sj-bjF" firstAttribute="centerY" secondItem="d0R-Op-aTK" secondAttribute="centerY" id="mqN-IL-MBi"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="trailing" secondItem="4Cz-bT-DXY" secondAttribute="trailing" id="myN-h7-1nz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Cz-bT-DXY"/>
@@ -1563,9 +1576,8 @@
         <image name="skip" width="350" height="350"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CJW-WV-rcg"/>
         <segue reference="lQ5-7h-Wck"/>
         <segue reference="zYr-fu-XuC"/>
-        <segue reference="DUF-yw-1dl"/>
+        <segue reference="IMd-dr-kIE"/>
     </inferredMetricsTieBreakers>
 </document>

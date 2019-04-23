@@ -124,9 +124,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -169,9 +177,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -214,9 +230,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -259,9 +283,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -304,9 +336,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -349,9 +389,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -394,9 +442,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -439,9 +495,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -491,9 +555,17 @@ class Cena7ViewController: UIViewController {
         let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
         
         for letra in labelDialog {
+            if labelEnd == true {
+                break
+            }
             label.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
-            view.addSubview(label)
+            self.view.addSubview(label)
+        }
+        if labelEnd == true {
+            label.text = labelDialog
+            self.view.addSubview(label)
+            labelEnd = false
         }
     }
     
@@ -563,15 +635,29 @@ class Cena7ViewController: UIViewController {
             label.center = outgoingMessageView.center
 
             let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-
+            
             for letra in labelDialog {
+                    if labelEnd == true {
+                        break
+                    }
                     label.text! += ("\(letra)")
                     RunLoop.current.run(until: Date()+0.10)
                     self.view.addSubview(label)
             }
+            if labelEnd == true {
+               label.text = labelDialog
+               self.view.addSubview(label)
+                labelEnd = false
+            }
+            
         }
     }
-        
+    
+    
+    @IBAction func passDialog(_ sender: Any) {
+        labelEnd = true
+    }
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
