@@ -30,12 +30,12 @@ class Cena1ViewController: UIViewController {
         super.viewDidLoad()
         initialView = true
         IsOk = false
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
-            audioPlayer.prepareToPlay() // preparando o áudio
-        } catch {
-            print(error) // erro de áudio
-        }
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
+//            audioPlayer.prepareToPlay() // preparando o áudio
+//        } catch {
+//            print(error) // erro de áudio
+//        }
         
         // Do any additional setup after loading the view, typically from a nib.
         Cena1ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
@@ -49,16 +49,16 @@ class Cena1ViewController: UIViewController {
     
     @objc func update() { // Função de atualização para opreações constantes
 
-        audioPlayer.play() // dá o play no áudio
+//audioPlayer.play() // dá o play no áudio
         if IsOk == false {
             for _ in 1...5 { // Repetição da quantidade de vibrações
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
             }
         }
         
-        if !audioPlayer.isPlaying{
-            audioPlayer.play()
-        }
+//        if !audioPlayer.isPlaying{
+//           // audioPlayer.play()
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

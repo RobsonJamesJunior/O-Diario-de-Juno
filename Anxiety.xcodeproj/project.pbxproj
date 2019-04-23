@@ -83,6 +83,7 @@
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		1DC8A3A621B6D6120019804B /* key.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A521B6D6120019804B /* key.gif */; };
+		5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */; };
 		5E75ABD32183B9A900C59507 /* DilalogScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75ABD22183B9A900C59507 /* DilalogScenes.swift */; };
 		5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */; };
 		E2675A09219020BD0066ADE8 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = E2675A08219020BD0066ADE8 /* menu.gif */; };
@@ -92,6 +93,23 @@
 		E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2726C44217A1DE000FC04FF /* Assets.xcassets */; };
 		E2726C48217A1DE000FC04FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2726C4F217A1DE000FC04FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2726C32217A1DDE00FC04FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2726C39217A1DDE00FC04FF;
+			remoteInfo = Anxiety;
+		};
+		E2726C5A217A1DE000FC04FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2726C32217A1DDE00FC04FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2726C39217A1DDE00FC04FF;
+			remoteInfo = Anxiety;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena1ViewController.swift; sourceTree = "<group>"; };
@@ -170,8 +188,11 @@
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
 		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		1DC8A3A521B6D6120019804B /* key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = key.gif; sourceTree = "<group>"; };
+		5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBackground.swift; sourceTree = "<group>"; };
 		5E75ABD22183B9A900C59507 /* DilalogScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DilalogScenes.swift; path = Anxiety/DilalogScenes.swift; sourceTree = SOURCE_ROOT; };
 		5E82FA292188833900A43BE5 /* Anxiety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxiety.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E82FA2B2188833900A43BE5 /* AnxietyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Juninho-Regular.ttf"; sourceTree = "<group>"; };
 		E2675A08219020BD0066ADE8 /* menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = menu.gif; sourceTree = "<group>"; };
 		E2726C3D217A1DDE00FC04FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +205,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		E2726C37217A1DDE00FC04FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2726C4B217A1DE000FC04FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2726C56217A1DE000FC04FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,6 +359,7 @@
 				1D7C0FE3218F2385006DFE69 /* Sounds */,
 				5E75ABD22183B9A900C59507 /* DilalogScenes.swift */,
 				1DBE1BC82188EA560000F746 /* TipsScenes.swift */,
+				5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +378,8 @@
 				1D90FA442180F520003FF364 /* Default-568h@2x.png */,
 				E2726C3C217A1DDE00FC04FF /* Anxiety */,
 				5E82FA292188833900A43BE5 /* Anxiety.app */,
+				5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */,
+				5E82FA2B2188833900A43BE5 /* AnxietyUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,6 +415,42 @@
 			productReference = 5E82FA292188833900A43BE5 /* Anxiety.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E2726C4D217A1DE000FC04FF /* AnxietyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2726C65217A1DE000FC04FF /* Build configuration list for PBXNativeTarget "AnxietyTests" */;
+			buildPhases = (
+				E2726C4A217A1DE000FC04FF /* Sources */,
+				E2726C4B217A1DE000FC04FF /* Frameworks */,
+				E2726C4C217A1DE000FC04FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2726C50217A1DE000FC04FF /* PBXTargetDependency */,
+			);
+			name = AnxietyTests;
+			productName = AnxietyTests;
+			productReference = 5E82FA2A2188833900A43BE5 /* AnxietyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2726C58217A1DE000FC04FF /* AnxietyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2726C68217A1DE000FC04FF /* Build configuration list for PBXNativeTarget "AnxietyUITests" */;
+			buildPhases = (
+				E2726C55217A1DE000FC04FF /* Sources */,
+				E2726C56217A1DE000FC04FF /* Frameworks */,
+				E2726C57217A1DE000FC04FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2726C5B217A1DE000FC04FF /* PBXTargetDependency */,
+			);
+			name = AnxietyUITests;
+			productName = AnxietyUITests;
+			productReference = 5E82FA2B2188833900A43BE5 /* AnxietyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,7 +463,14 @@
 				TargetAttributes = {
 					E2726C39217A1DDE00FC04FF = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1020;
+					};
+					E2726C4D217A1DE000FC04FF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E2726C39217A1DDE00FC04FF;
+					};
+					E2726C58217A1DE000FC04FF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E2726C39217A1DDE00FC04FF;
 					};
 				};
 			};
@@ -407,6 +488,8 @@
 			projectRoot = "";
 			targets = (
 				E2726C39217A1DDE00FC04FF /* Anxiety */,
+				E2726C4D217A1DE000FC04FF /* AnxietyTests */,
+				E2726C58217A1DE000FC04FF /* AnxietyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -471,6 +554,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2726C4C217A1DE000FC04FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2726C57217A1DE000FC04FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -509,11 +606,39 @@
 				1D2DB91221821D420097921A /* Cena19ViewController.swift in Sources */,
 				1D2DB8FE218219410097921A /* Cena9ViewController.swift in Sources */,
 				1D2DB8F6218217670097921A /* Cena5ViewController.swift in Sources */,
+				5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */,
 				1D68E7FE218FCB8D00FDA350 /* Cena24ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2726C4A217A1DE000FC04FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2726C55217A1DE000FC04FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2726C50217A1DE000FC04FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2726C39217A1DDE00FC04FF /* Anxiety */;
+			targetProxy = E2726C4F217A1DE000FC04FF /* PBXContainerItemProxy */;
+		};
+		E2726C5B217A1DE000FC04FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2726C39217A1DDE00FC04FF /* Anxiety */;
+			targetProxy = E2726C5A217A1DE000FC04FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2726C41217A1DDE00FC04FF /* Main.storyboard */ = {
@@ -656,7 +781,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = 2CW963BG8P;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,7 +789,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.Anxiety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -674,7 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = 2CW963BG8P;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,8 +807,90 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.Anxiety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E2726C66217A1DE000FC04FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SMM55X2K37;
+				INFOPLIST_FILE = AnxietyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.AnxietyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anxiety.app/Anxiety";
+			};
+			name = Debug;
+		};
+		E2726C67217A1DE000FC04FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SMM55X2K37;
+				INFOPLIST_FILE = AnxietyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.AnxietyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anxiety.app/Anxiety";
+			};
+			name = Release;
+		};
+		E2726C69217A1DE000FC04FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SMM55X2K37;
+				INFOPLIST_FILE = AnxietyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.AnxietyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Anxiety;
+			};
+			name = Debug;
+		};
+		E2726C6A217A1DE000FC04FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SMM55X2K37;
+				INFOPLIST_FILE = AnxietyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.AnxietyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Anxiety;
 			};
 			name = Release;
 		};
@@ -704,6 +911,24 @@
 			buildConfigurations = (
 				E2726C63217A1DE000FC04FF /* Debug */,
 				E2726C64217A1DE000FC04FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2726C65217A1DE000FC04FF /* Build configuration list for PBXNativeTarget "AnxietyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2726C66217A1DE000FC04FF /* Debug */,
+				E2726C67217A1DE000FC04FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2726C68217A1DE000FC04FF /* Build configuration list for PBXNativeTarget "AnxietyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2726C69217A1DE000FC04FF /* Debug */,
+				E2726C6A217A1DE000FC04FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
