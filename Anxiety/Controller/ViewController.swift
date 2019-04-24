@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var MainCenaImageView: UIImageView!
+    @IBOutlet weak var startGame: UIButton!
     
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +23,19 @@ class ViewController: UIViewController {
         MainCenaImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
         
       //  MusicHelper.sharedHelper.playBackgroundMusic()
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         
     }
+    
+   
+
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    @objc func update() { // Função de atualização para opreações constantes
+       
+    }
+    
 }
