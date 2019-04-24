@@ -96,7 +96,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -149,7 +149,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font!],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -202,7 +202,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -255,7 +255,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -308,7 +308,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -361,7 +361,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -414,7 +414,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -467,7 +467,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
@@ -523,7 +523,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         
         
@@ -582,7 +582,7 @@ class Cena7ViewController: UIViewController {
                                     height: .greatestFiniteMagnitude)
         let boundingBox = text.boundingRect(with: constraintRect,
                                             options: .usesFontLeading,
-                                            attributes: [.font: label.font],
+                                            attributes: [.font: label.font as Any],
                                             context: nil)
         label.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
