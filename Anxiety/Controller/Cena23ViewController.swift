@@ -21,10 +21,12 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     var labelEnd: Bool = false
     var inspBool: Bool = false
     var respBool: Bool = false
-    var countAlc: Bool = false
+    var countAlc: Int = 0
     var timer: Timer!
     var portVib: Bool = false
     var initialView: Bool = false
+    var feedbackGenerator: UINotificationFeedbackGenerator?
+    
     
     var longePressBeginTime: TimeInterval = 0.0
     
@@ -36,11 +38,14 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedbackGenerator = UINotificationFeedbackGenerator()
+        countAlc = 0
+        progressBar.progress = 0
         initialView = true
         labelEnd = true
         progressBar.layer.cornerRadius = progressBar.frame.height / 2
         progressIncrement = 2.0/duration
-        
+        progressCounter = progressCounter + progressIncrement
         Cena23ImageView.isAccessibilityElement = true
         
         let imagemInitial = UIImage.init(named: "respira")
@@ -51,7 +56,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
         
-        longPress.minimumPressDuration = 0.5
+        longPress.minimumPressDuration = 1.0
         longPress.delegate = self
         self.respImageView.addGestureRecognizer(longPress)
         
@@ -63,7 +68,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
    
     @objc func addPulse(longPress: UIGestureRecognizer){
-        countAlc = true
+       
 //        if countAlc == 0 {
 //            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
 //            Cena23ImageView.image = Cena23_2Gif
@@ -76,10 +81,16 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
-           // countAlc = true
+            
             labelEnd = true
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
                 longePressBeginTime
+//            if countAlc == 0 {
+//                progressCounter = progressCounter + progressIncrement
+//                countAlc = 1
+//            }
+            progressBar.progress = progressCounter
+            progressCounter = progressCounter + progressIncrement
             print("Gesture time = \(gestureTime)")
             let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
             Cena23ImageView.image = Cena23_2Gif
@@ -87,6 +98,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
             print("Began")
+            self.feedbackGenerator?.notificationOccurred(.success)
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
@@ -96,21 +108,20 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func update() { // Função de atualização para opreações constantes
-        print("1 - \(countAlc)")
+        
         if initialView == true {
             if labelEnd == true {
-                progressBar.progress = 0
-                progressCounter = 0
+//                progressBar.progress = 0
+//                progressCounter = 0
                 let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: respImageView.center)
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
             } else {
-                
-                if(progressCounter > 1.0){timer.invalidate()} //sai da funcao de update
-                if (countAlc == true){
-                    progressBar.progress = progressCounter
-                    progressCounter = progressCounter + progressIncrement
+                if(progressCounter > 1.0) {
+                    //prepare for segue
+                } else {
+                   
                 }
             }
         }
