@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     
     var timer: Timer!
     
+    var nameMusic = "ms1"
+    var type = "wav"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,7 +26,7 @@ class ViewController: UIViewController {
         let Cena1Gif = UIImage.gifImageWithName("menu") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1
         MainCenaImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
         
-      //  MusicHelper.sharedHelper.playBackgroundMusic()
+        MusicHelper.sharedHelper.playBackgroundMusic(nome: nameMusic, type: type)
 //        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         
     }

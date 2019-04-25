@@ -35,9 +35,12 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     let duration:Float = 6.0
     var progressIncrement:Float = 0
     var trueSemaf: Bool = false
+    let imageRespira = UIImage(named: "respira")
+    let imageInspira = UIImage(named: "Inspira")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        respImageView.image = imageRespira
         feedbackGenerator = UINotificationFeedbackGenerator()
         countAlc = 0
         progressBar.progress = 0
@@ -81,7 +84,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
-            
+            respImageView.image = imageInspira
             labelEnd = true
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
                 longePressBeginTime
@@ -97,6 +100,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
+            respImageView.image = imageRespira
             print("Began")
             self.feedbackGenerator?.notificationOccurred(.success)
             labelEnd = false
