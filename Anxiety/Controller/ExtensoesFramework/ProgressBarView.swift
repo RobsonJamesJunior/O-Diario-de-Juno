@@ -61,7 +61,7 @@ class ProgressBarView: UIView {
         let y = self.frame.height/2
         let center = CGPoint(x: x, y: y)
         print(x,y,center)
-        bgPath.addArc(withCenter: center, radius: 45, startAngle: CGFloat(0), endAngle: CGFloat(6.28), clockwise: true)
+        bgPath.addArc(withCenter: center, radius: 75, startAngle: CGFloat(0), endAngle: CGFloat(6.28), clockwise: true)
         bgPath.close()
     }
 }

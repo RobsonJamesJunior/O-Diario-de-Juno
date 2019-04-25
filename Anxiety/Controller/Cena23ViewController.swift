@@ -26,7 +26,9 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     var portVib: Bool = false
     var initialView: Bool = false
     var feedbackGenerator: UINotificationFeedbackGenerator?
+    var cronom = TimeInterval()
     
+    @IBOutlet weak var feedbackLabel: UILabel!
     
     var longePressBeginTime: TimeInterval = 0.0
     
@@ -40,6 +42,9 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedbackLabel.isHidden = false
+        feedbackLabel.text = "Pressione o botão e respire fundo por 2 segundos"
+        feedbackLabel.font = UIFont(name: "Juninho-Regular", size: 24)
         respImageView.image = imageRespira
         feedbackGenerator = UINotificationFeedbackGenerator()
         countAlc = 0
@@ -59,7 +64,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
         
-        longPress.minimumPressDuration = 0.3
+        longPress.minimumPressDuration = 0.5
         longPress.delegate = self
         self.respImageView.addGestureRecognizer(longPress)
         
@@ -69,6 +74,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
     }
     
+    var countTimerCrom: Bool = false
    
     @objc func addPulse(longPress: UIGestureRecognizer){
        
@@ -84,6 +90,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
+            countTimerCrom = false
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
             longePressBeginTime
              print("Gesture time = \(gestureTime)")
@@ -98,12 +105,20 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                 progressCounter = progressCounter + progressIncrement
                 let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
                 Cena23ImageView.image = Cena23_2Gif
+                feedbackLabel.text = "Muito bem, faça novamente!"
             } else {
+                self.feedbackGenerator?.notificationOccurred(.error)
+                feedbackLabel.text = "Respire mais fundo"
+                flashLabel()
                 flash()
             }
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
+            feedbackLabel.text = "0"
+            countTimerCrom = true
+            cronom = NSDate.timeIntervalSinceReferenceDate
+//            feedbackLabel.text = "Respire"
             respImageView.image = imageRespira
             print("Began")
             labelEnd = false
@@ -121,9 +136,8 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if initialView == true {
             if labelEnd == true {
-//                progressBar.progress = 0
-//                progressCounter = 0
-                let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: respImageView.center)
+
+                let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
@@ -131,6 +145,17 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                     //prepare for segue
                     initialView = false
                     performSegue(withIdentifier: "Segue23", sender: nil)
+                }
+            } else {
+                if countTimerCrom == true {
+                    if ((NSDate.timeIntervalSinceReferenceDate - cronom) > 2) {
+                        self.feedbackGenerator?.notificationOccurred(.success)
+                        feedbackLabel.text = "Pode saltar o ar e inspirar"
+                    } else {
+                        feedbackLabel.text = "\(Int(Float(NSDate.timeIntervalSinceReferenceDate - cronom).rounded()))"
+                    }
+                } else {
+                    
                 }
             }
         }
@@ -168,6 +193,18 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         flash.repeatCount = 3
         
         respImageView.layer.add(flash, forKey: nil)
+    }
+    
+    func flashLabel() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 3
+        
+        feedbackLabel.layer.add(flash, forKey: nil)
     }
     
     
