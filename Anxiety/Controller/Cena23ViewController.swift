@@ -21,7 +21,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     var labelEnd: Bool = false
     var inspBool: Bool = false
     var respBool: Bool = false
-    var countAlc: Int = 0
+    var countAlc: Bool = false
     var timer: Timer!
     var portVib: Bool = false
     var initialView: Bool = false
@@ -30,16 +30,16 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // For Progress Bar
     var progressCounter:Float = 0
-    let duration:Float = 10.0
+    let duration:Float = 6.0
     var progressIncrement:Float = 0
-    
+    var trueSemaf: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialView = true
         labelEnd = true
         progressBar.layer.cornerRadius = progressBar.frame.height / 2
-        progressIncrement = 1.0/duration
+        progressIncrement = 2.0/duration
         
         Cena23ImageView.isAccessibilityElement = true
         
@@ -63,6 +63,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
    
     @objc func addPulse(longPress: UIGestureRecognizer){
+        countAlc = true
 //        if countAlc == 0 {
 //            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
 //            Cena23ImageView.image = Cena23_2Gif
@@ -75,6 +76,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
+           // countAlc = true
             labelEnd = true
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
                 longePressBeginTime
@@ -84,11 +86,9 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
-            
             print("Began")
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
-            
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
             Cena23ImageView.image = Cena23Gif
         }
@@ -96,19 +96,27 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func update() { // Função de atualização para opreações constantes
+        print("1 - \(countAlc)")
         if initialView == true {
             if labelEnd == true {
-                let pulse = Pulsing(numberOfPulses: 1, radius: 40, position: progressBar.center)
+                progressBar.progress = 0
+                progressCounter = 0
+                let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: respImageView.center)
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
             } else {
-                if(progressCounter > 1.0){timer.invalidate()}
-                progressBar.progress = progressCounter
-                progressCounter = progressCounter + progressIncrement
+                
+                if(progressCounter > 1.0){timer.invalidate()} //sai da funcao de update
+                if (countAlc == true){
+                    progressBar.progress = progressCounter
+                    progressCounter = progressCounter + progressIncrement
+                }
             }
         }
     }
+    
+    
     
     
 // button inspirar
