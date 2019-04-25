@@ -14,7 +14,9 @@ class Cena4ViewController: UIViewController {
     var initialView: Bool = false
     
     @IBOutlet weak var Cena4ImageView: UIImageView!
-//    var timer: Timer!
+    @IBOutlet weak var Boca: UIImageView!
+    @IBOutlet weak var Escova: UIImageView!
+    //    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,9 @@ class Cena4ViewController: UIViewController {
         let Cena4Gif = UIImage.gifImageWithName("Cena_4") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena4
         Cena4ImageView.image = Cena4Gif // Adicionando a variável à tela de ImageView
   
+        
+        
+        
     }
 
     override var prefersStatusBarHidden: Bool{

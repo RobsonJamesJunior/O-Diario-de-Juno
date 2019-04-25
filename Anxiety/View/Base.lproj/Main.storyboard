@@ -303,6 +303,10 @@
                                 <rect key="frame" x="16" y="326" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ZU-9A-3iK">
+                                <rect key="frame" x="114" y="269" width="197" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -318,7 +322,9 @@
                         <viewLayoutGuide key="safeArea" id="bZW-6i-ZUN"/>
                     </view>
                     <connections>
+                        <outlet property="Boca" destination="6ZU-9A-3iK" id="ZsQ-h3-GP7"/>
                         <outlet property="Cena4ImageView" destination="0A1-Kw-Pfc" id="NyP-JR-5mb"/>
+                        <outlet property="Escova" destination="zOM-Sp-pIX" id="hJb-Td-9Y7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7W-2k-S4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1584,6 +1590,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
         <segue reference="Dy1-mc-iQ1"/>
-        <segue reference="AFy-AR-ZPS"/>
+        <segue reference="leZ-Sl-Yqu"/>
     </inferredMetricsTieBreakers>
 </document>
