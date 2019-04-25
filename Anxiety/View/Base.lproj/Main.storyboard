@@ -299,6 +299,10 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="escova.png" translatesAutoresizingMaskIntoConstraints="NO" id="zOM-Sp-pIX">
+                                <rect key="frame" x="16" y="326" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1560,7 +1564,7 @@
         <image name="Cena_23.gif" width="750" height="1334"/>
         <image name="Cena_24.gif" width="750" height="1334"/>
         <image name="Cena_3.gif" width="750" height="1334"/>
-        <image name="Cena_4.gif" width="750" height="1334"/>
+        <image name="Cena_4.gif" width="675" height="1200"/>
         <image name="Cena_5.gif" width="750" height="1334"/>
         <image name="Cena_6.gif" width="750" height="1334"/>
         <image name="Cena_7.gif" width="750" height="1334"/>
@@ -1568,6 +1572,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
+        <image name="escova.png" width="2124" height="1449"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="250" height="250"/>
         <image name="key.gif" width="500" height="500"/>
