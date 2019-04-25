@@ -59,7 +59,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(Cena23ViewController.addPulse))
         
-        longPress.minimumPressDuration = 1.0
+        longPress.minimumPressDuration = 0.3
         longPress.delegate = self
         self.respImageView.addGestureRecognizer(longPress)
         
@@ -84,29 +84,35 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
-            respImageView.image = imageInspira
-            labelEnd = true
             let gestureTime = NSDate.timeIntervalSinceReferenceDate -
-                longePressBeginTime
-//            if countAlc == 0 {
-//                progressCounter = progressCounter + progressIncrement
-//                countAlc = 1
-//            }
-            progressBar.progress = progressCounter
-            progressCounter = progressCounter + progressIncrement
-            print("Gesture time = \(gestureTime)")
-            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
-            Cena23ImageView.image = Cena23_2Gif
+            longePressBeginTime
+             print("Gesture time = \(gestureTime)")
+            if gestureTime > 2 {
+                respImageView.image = imageInspira
+                labelEnd = true
+                //            if countAlc == 0 {
+                //                progressCounter = progressCounter + progressIncrement
+                //                countAlc = 1
+                //            }
+                progressBar.progress = progressCounter
+                progressCounter = progressCounter + progressIncrement
+                let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
+                Cena23ImageView.image = Cena23_2Gif
+            } else {
+                flash()
+            }
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
             respImageView.image = imageRespira
             print("Began")
-            self.feedbackGenerator?.notificationOccurred(.success)
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
             Cena23ImageView.image = Cena23Gif
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+//                    self.feedbackGenerator?.notificationOccurred(.success)
+//            }
         }
         
     }
@@ -121,17 +127,48 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
-            } else {
                 if(progressCounter > 1.0) {
                     //prepare for segue
-                } else {
-                   
+                    initialView = false
+                    performSegue(withIdentifier: "Segue23", sender: nil)
                 }
             }
         }
     }
     
     
+    func shake() {
+        
+        let center = respImageView.center
+        
+        let shake = CABasicAnimation(keyPath: "position")
+        shake.duration = 0.1
+        shake.repeatCount = 2
+        shake.autoreverses = true
+        
+        let fromPoint = CGPoint(x: center.x - 5, y: center.y)
+        let fromValue = NSValue(cgPoint: fromPoint)
+        
+        let toPoint = CGPoint(x: center.x + 5, y: center.y)
+        let toValue = NSValue(cgPoint: toPoint)
+        
+        shake.fromValue = fromValue
+        shake.toValue = toValue
+        
+        respImageView.layer.add(shake, forKey: "position")
+    }
+    
+    func flash() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 3
+        
+        respImageView.layer.add(flash, forKey: nil)
+    }
     
     
 // button inspirar
