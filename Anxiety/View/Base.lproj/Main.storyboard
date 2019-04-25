@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rj0-kG-OH3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Im4-oa-puN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1455,13 +1455,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_23.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nzz-bQ-L11">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="respira" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Dv-cSl">
-                                <rect key="frame" x="150" y="576" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="T4p-p5-SIj"/>
-                                    <constraint firstAttribute="height" constant="75" id="nQh-h9-gsb"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APM-DJ-krM">
                                 <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
@@ -1473,22 +1466,42 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="x5k-1z-zBI"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtI-MT-gL4" customClass="ProgressBarView" customModule="Anxiety" customModuleProvider="target">
+                                <rect key="frame" x="127.5" y="523" width="120" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="respira" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Dv-cSl">
+                                        <rect key="frame" x="22.5" y="22.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="T4p-p5-SIj"/>
+                                            <constraint firstAttribute="height" constant="75" id="nQh-h9-gsb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="aig-Dv-cSl" firstAttribute="centerY" secondItem="VtI-MT-gL4" secondAttribute="centerY" id="NuG-Ae-Pm1"/>
+                                    <constraint firstItem="aig-Dv-cSl" firstAttribute="centerX" secondItem="VtI-MT-gL4" secondAttribute="centerX" id="VwO-nM-loo"/>
+                                    <constraint firstAttribute="width" constant="120" id="eVk-Mi-Hgw"/>
+                                    <constraint firstAttribute="height" constant="120" id="jUa-y5-2OB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="APM-DJ-krM" secondAttribute="trailing" constant="16" id="FYq-UZ-Aib"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="bottom" secondItem="bHD-v9-8Ea" secondAttribute="bottom" id="HZh-1W-yph"/>
-                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="aig-Dv-cSl" secondAttribute="bottom" constant="16" id="IPD-5y-UC2"/>
-                            <constraint firstItem="aig-Dv-cSl" firstAttribute="centerX" secondItem="ZYn-32-Oo5" secondAttribute="centerX" id="JzG-jm-WRI"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="trailing" secondItem="bHD-v9-8Ea" secondAttribute="trailing" id="Q4q-fe-pOb"/>
+                            <constraint firstItem="VtI-MT-gL4" firstAttribute="centerX" secondItem="ZYn-32-Oo5" secondAttribute="centerX" id="QTE-s2-z87"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="top" secondItem="ZYn-32-Oo5" secondAttribute="top" id="VZ8-Di-Yf1"/>
                             <constraint firstItem="APM-DJ-krM" firstAttribute="top" secondItem="ZYn-32-Oo5" secondAttribute="top" constant="16" id="drA-ll-MLr"/>
+                            <constraint firstItem="bHD-v9-8Ea" firstAttribute="bottom" secondItem="VtI-MT-gL4" secondAttribute="bottom" constant="24" id="ehr-hl-Hbo"/>
                             <constraint firstItem="Nzz-bQ-L11" firstAttribute="leading" secondItem="bHD-v9-8Ea" secondAttribute="leading" id="o0I-jF-lAV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bHD-v9-8Ea"/>
                     </view>
                     <connections>
                         <outlet property="Cena23ImageView" destination="Nzz-bQ-L11" id="HhC-bW-xfq"/>
+                        <outlet property="progressBar" destination="VtI-MT-gL4" id="h2G-KB-gGI"/>
                         <outlet property="respImageView" destination="aig-Dv-cSl" id="Ljq-aB-eUi"/>
                         <segue destination="Bja-xi-oTj" kind="showDetail" identifier="Segue23" animates="NO" id="lQ5-7h-Wck"/>
                     </connections>
@@ -1579,6 +1592,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
         <segue reference="Dy1-mc-iQ1"/>
-        <segue reference="AFy-AR-ZPS"/>
+        <segue reference="x5k-1z-zBI"/>
     </inferredMetricsTieBreakers>
 </document>

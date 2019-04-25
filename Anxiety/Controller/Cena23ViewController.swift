@@ -16,6 +16,8 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var respImageView: UIImageView!
     
+     @IBOutlet weak var progressBar: ProgressBarView!
+    
     var labelEnd: Bool = false
     var inspBool: Bool = false
     var respBool: Bool = false
@@ -26,11 +28,19 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var longePressBeginTime: TimeInterval = 0.0
     
+    // For Progress Bar
+    var progressCounter:Float = 0
+    let duration:Float = 10.0
+    var progressIncrement:Float = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialView = true
         labelEnd = true
-        // Do any additional setup after loading the view, typically from a nib.
+        progressBar.layer.cornerRadius = progressBar.frame.height / 2
+        progressIncrement = 1.0/duration
+        
         Cena23ImageView.isAccessibilityElement = true
         
         let imagemInitial = UIImage.init(named: "respira")
@@ -74,6 +84,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
+            
             print("Began")
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
@@ -87,10 +98,14 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     @objc func update() { // Função de atualização para opreações constantes
         if initialView == true {
             if labelEnd == true {
-                let pulse = Pulsing(numberOfPulses: 1, radius: 90, position: respImageView.center)
+                let pulse = Pulsing(numberOfPulses: 1, radius: 40, position: progressBar.center)
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
+            } else {
+                if(progressCounter > 1.0){timer.invalidate()}
+                progressBar.progress = progressCounter
+                progressCounter = progressCounter + progressIncrement
             }
         }
     }
