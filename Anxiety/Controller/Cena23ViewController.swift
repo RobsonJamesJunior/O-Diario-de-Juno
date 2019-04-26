@@ -16,6 +16,8 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var respImageView: UIImageView!
     
+     @IBOutlet weak var progressBar: ProgressBarView!
+    
     var labelEnd: Bool = false
     var inspBool: Bool = false
     var respBool: Bool = false
@@ -23,14 +25,36 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     var timer: Timer!
     var portVib: Bool = false
     var initialView: Bool = false
+    var feedbackGenerator: UINotificationFeedbackGenerator?
+    var cronom = TimeInterval()
+    
+    @IBOutlet weak var feedbackLabel: UILabel!
     
     var longePressBeginTime: TimeInterval = 0.0
     
+    // For Progress Bar
+    var progressCounter:Float = 0
+    let duration:Float = 6.0
+    var progressIncrement:Float = 0
+    var trueSemaf: Bool = false
+    let imageRespira = UIImage(named: "respira")
+    let imageInspira = UIImage(named: "Inspira")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        MusicHelper.sharedHelper.audioPlayer?.play()
+        feedbackLabel.isHidden = false
+        feedbackLabel.text = "Pressione o botão e respire fundo por 2 segundos"
+        feedbackLabel.font = UIFont(name: "Juninho-Regular", size: 24)
+        respImageView.image = imageRespira
+        feedbackGenerator = UINotificationFeedbackGenerator()
+        countAlc = 0
+        progressBar.progress = 0
         initialView = true
         labelEnd = true
-        // Do any additional setup after loading the view, typically from a nib.
+        progressBar.layer.cornerRadius = progressBar.frame.height / 2
+        progressIncrement = 2.0/duration
+        progressCounter = progressCounter + progressIncrement
         Cena23ImageView.isAccessibilityElement = true
         
         let imagemInitial = UIImage.init(named: "respira")
@@ -51,8 +75,10 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
     }
     
+    var countTimerCrom: Bool = false
    
     @objc func addPulse(longPress: UIGestureRecognizer){
+       
 //        if countAlc == 0 {
 //            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
 //            Cena23ImageView.image = Cena23_2Gif
@@ -65,34 +91,121 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
-            labelEnd = true
-            let gestureTime = NSDate.timeIntervalSinceReferenceDate -
-                longePressBeginTime
-            print("Gesture time = \(gestureTime)")
-            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
-            Cena23ImageView.image = Cena23_2Gif
+            countTimerCrom = false
+//           // let gestureTime = NSDate.timeIntervalSinceReferenceDate -
+//            longePressBeginTime
+//             print("Gesture time = \(gestureTime)")
+            if ((NSDate.timeIntervalSinceReferenceDate - cronom) > 2){
+                respImageView.image = imageInspira
+                labelEnd = true
+                //            if countAlc == 0 {
+                //                progressCounter = progressCounter + progressIncrement
+                //                countAlc = 1
+                //            }
+                progressBar.progress = progressCounter
+                progressCounter = progressCounter + progressIncrement
+                let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
+                Cena23ImageView.image = Cena23_2Gif
+                feedbackLabel.text = "Muito bem, faça novamente!"
+            } else {
+                self.feedbackGenerator?.notificationOccurred(.error)
+                feedbackLabel.text = "Respire mais fundo"
+                flashLabel()
+                flash()
+            }
         }
         else if (longPress.state == UIGestureRecognizer.State.began)
         {
+            feedbackLabel.text = "0"
+            countTimerCrom = true
+            cronom = NSDate.timeIntervalSinceReferenceDate
+//            feedbackLabel.text = "Respire"
+            respImageView.image = imageRespira
             print("Began")
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
-            
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
             Cena23ImageView.image = Cena23Gif
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+//                    self.feedbackGenerator?.notificationOccurred(.success)
+//            }
         }
         
     }
     
     @objc func update() { // Função de atualização para opreações constantes
+        
         if initialView == true {
             if labelEnd == true {
-                let pulse = Pulsing(numberOfPulses: 1, radius: 90, position: respImageView.center)
+
+                let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
                 pulse.animationDuration = 1.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
+                if(progressCounter > 1.0) {
+                    //prepare for segue
+                    initialView = false
+                    performSegue(withIdentifier: "Segue23", sender: nil)
+                }
+            } else {
+                if countTimerCrom == true {
+                    if ((NSDate.timeIntervalSinceReferenceDate - cronom) > 2) {
+                        self.feedbackGenerator?.notificationOccurred(.success)
+                        feedbackLabel.text = "Pode saltar o ar e inspirar"
+                    } else {
+                        feedbackLabel.text = "\(Int(Float(NSDate.timeIntervalSinceReferenceDate - cronom).rounded()))"
+                    }
+                } else {
+                    
+                }
             }
         }
+    }
+    
+    
+    func shake() {
+        
+        let center = respImageView.center
+        
+        let shake = CABasicAnimation(keyPath: "position")
+        shake.duration = 0.1
+        shake.repeatCount = 2
+        shake.autoreverses = true
+        
+        let fromPoint = CGPoint(x: center.x - 5, y: center.y)
+        let fromValue = NSValue(cgPoint: fromPoint)
+        
+        let toPoint = CGPoint(x: center.x + 5, y: center.y)
+        let toValue = NSValue(cgPoint: toPoint)
+        
+        shake.fromValue = fromValue
+        shake.toValue = toValue
+        
+        respImageView.layer.add(shake, forKey: "position")
+    }
+    
+    func flash() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 3
+        
+        respImageView.layer.add(flash, forKey: nil)
+    }
+    
+    func flashLabel() {
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = 3
+        
+        feedbackLabel.layer.add(flash, forKey: nil)
     }
     
     

@@ -52,7 +52,7 @@ class Cena8ViewController: UIViewController {
         
         view.bringSubviewToFront(key)
         
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(Cena1ViewController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(Cena8ViewController.update), userInfo: nil, repeats: true)
 
         
 //        do {

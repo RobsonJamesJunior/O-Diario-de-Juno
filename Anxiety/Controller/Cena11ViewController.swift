@@ -16,6 +16,7 @@ class Cena11ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MusicHelper.sharedHelper.audioPlayer?.volume = 1
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         Cena11ImageView.isAccessibilityElement = true

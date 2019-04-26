@@ -14,6 +14,16 @@ class Cena14ViewController: UIViewController {
     var labelEnd: Bool = false
     var initialView: Bool = false
     var countNextMusic = 0
+    var timer: Timer!
+    
+    @IBOutlet weak var nextOut: UIButton!
+    
+    
+    @IBOutlet weak var backOut: UIButton!
+    
+    
+    @IBOutlet weak var playOut: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,49 +32,86 @@ class Cena14ViewController: UIViewController {
         Cena14ImageView.isAccessibilityElement = true
         let Cena14Gif = UIImage.gifImageWithName("Cena_14") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
         Cena14ImageView.image = Cena14Gif // Adicionando a variável à tela de ImageView
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena14ViewController.update), userInfo: nil, repeats: true)
+
     }
     
-    @IBAction func next(_ sender: Any) {
-         countNextMusic += 1
+    
+    @objc func update() { // Função de atualização para opreações constantes
         
+        let pulse1 = Pulsing(numberOfPulses: 1, radius: 35, position: nextOut.center)
+        pulse1.animationDuration = 1.0
+        pulse1.backgroundColor = UIColor.blue.cgColor
+        self.view.layer.insertSublayer(pulse1, below: nextOut.layer)
+        
+        let pulse2 = Pulsing(numberOfPulses: 1, radius: 35, position: backOut.center)
+        pulse2.animationDuration = 1.0
+        pulse2.backgroundColor = UIColor.blue.cgColor
+        self.view.layer.insertSublayer(pulse2, below: backOut.layer)
+        
+        let pulse3 = Pulsing(numberOfPulses: 1, radius: 45, position: playOut.center)
+        pulse3.animationDuration = 2.0
+        pulse3.backgroundColor = UIColor.green.cgColor
+        self.view.layer.insertSublayer(pulse3, below: playOut.layer)
+    }
+        
+    
+    
+    @IBAction func next(_ sender: Any) {
+        if countNextMusic >= 0 && countNextMusic < 5 {
+            countNextMusic += 1
+        }
+        print("next \(countNextMusic)" )
         if countNextMusic == 1{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms2", type: "wav")
-            
+            print("a" )
         }else if countNextMusic == 2{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms3", type: "wav")
-            
+            print("b" )
         }else if countNextMusic == 3{
             
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms4", type: "wav")
+            print("c" )
         }else if countNextMusic == 4{
             
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms1", type: "wav")
             countNextMusic = 0
+            print("d" )
+        } else if countNextMusic > 4{
+            countNextMusic = 0
         }
-        
-        
         
     }
     
     @IBAction func back(_ sender: Any) {
-        
-        countNextMusic -= 1
-        
-        if countNextMusic == 1{
+        if countNextMusic > 0 && countNextMusic <= 5 {
+            countNextMusic -= 1
+        }
+        print("back \(countNextMusic)" )
+        if countNextMusic == 0{
+            countNextMusic = 5
+        }
+        else if countNextMusic == 1{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms2", type: "wav")
-            countNextMusic = 4
-            
+            print("1" )
         }else if countNextMusic == 2{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms3", type: "wav")
-            
+            print("2" )
         }else if countNextMusic == 3{
-            
+            print("3" )
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms4", type: "wav")
         }else if countNextMusic == 4{
-            
+            print("4" )
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms1", type: "wav")
         }
     }
+    
+
+//    let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
+//    pulse.animationDuration = 1.0
+//    pulse.backgroundColor = UIColor.blue.cgColor
+//    self.view.layer.insertSublayer(pulse, below: respImageView.layer)
+    
     
     
     override var prefersStatusBarHidden: Bool{
