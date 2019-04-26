@@ -1258,6 +1258,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
+                        <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
                         <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
                         <segue destination="A6N-NS-WoM" kind="show" identifier="segueCena19_2" animates="NO" id="RaI-Zt-Pde"/>
@@ -1642,8 +1643,7 @@
         <image name="sucessor" width="531" height="531"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dy1-mc-iQ1"/>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="dbI-18-LY6"/>
+        <segue reference="Rmb-Jb-Tco"/>
     </inferredMetricsTieBreakers>
 </document>
