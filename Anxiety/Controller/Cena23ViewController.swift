@@ -42,6 +42,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MusicHelper.sharedHelper.audioPlayer?.play()
         feedbackLabel.isHidden = false
         feedbackLabel.text = "Pressione o botão e respire fundo por 2 segundos"
         feedbackLabel.font = UIFont(name: "Juninho-Regular", size: 24)
