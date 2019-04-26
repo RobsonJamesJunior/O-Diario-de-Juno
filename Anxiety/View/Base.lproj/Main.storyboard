@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Im4-oa-puN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="40"/>
+                                <rect key="frame" x="16" y="170" width="343" height="43"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -432,7 +432,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="zYr-fu-XuC"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="dbI-18-LY6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-9o-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5749.6000000000004" y="123.68815592203899"/>
+            <point key="canvasLocation" x="5801" y="124"/>
         </scene>
         <!--Cena7 View Controller-->
         <scene sceneID="nrv-vH-EJd">
@@ -1642,8 +1642,8 @@
         <image name="sucessor" width="531" height="531"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lQ5-7h-Wck"/>
         <segue reference="Dy1-mc-iQ1"/>
-        <segue reference="x5k-1z-zBI"/>
+        <segue reference="lQ5-7h-Wck"/>
+        <segue reference="dbI-18-LY6"/>
     </inferredMetricsTieBreakers>
 </document>
