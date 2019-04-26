@@ -71,7 +71,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
         Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
         
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(Cena23ViewController.update), userInfo: nil, repeats: true)
     }
     
     var countTimerCrom: Bool = false
@@ -138,7 +138,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
             if labelEnd == true {
 
                 let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
-                pulse.animationDuration = 1.0
+                pulse.animationDuration = 2.0
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
                 if(progressCounter > 1.0) {
