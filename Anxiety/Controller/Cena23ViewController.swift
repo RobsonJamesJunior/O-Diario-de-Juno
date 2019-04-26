@@ -91,10 +91,10 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
             countTimerCrom = false
-            let gestureTime = NSDate.timeIntervalSinceReferenceDate -
-            longePressBeginTime
-             print("Gesture time = \(gestureTime)")
-            if gestureTime > 2 {
+//           // let gestureTime = NSDate.timeIntervalSinceReferenceDate -
+//            longePressBeginTime
+//             print("Gesture time = \(gestureTime)")
+            if ((NSDate.timeIntervalSinceReferenceDate - cronom) > 2){
                 respImageView.image = imageInspira
                 labelEnd = true
                 //            if countAlc == 0 {
