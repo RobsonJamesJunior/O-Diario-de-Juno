@@ -14,7 +14,7 @@ class Transito {
     var audioPlayer: AVAudioPlayer?
     
     func playBackgroundMusic() {
-        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "transito", ofType: "wav")!)
+        let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "transito3", ofType: "wav")!)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
             audioPlayer!.numberOfLoops = 1

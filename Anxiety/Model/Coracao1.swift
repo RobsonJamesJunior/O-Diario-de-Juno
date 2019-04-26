@@ -17,7 +17,7 @@ class Coracao1 {
         let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "coração", ofType: "mp3")!)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
-            audioPlayer!.numberOfLoops = 1
+            audioPlayer!.numberOfLoops = -1
             audioPlayer!.prepareToPlay()
             audioPlayer!.play()
         } catch {

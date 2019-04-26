@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         MainCenaImageView.image = Cena1Gif // Adicionando a variável à tela de ImageView
         
         MusicHelper.sharedHelper.playBackgroundMusic(nome: nameMusic, type: type)
+        
 //        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         
     }
