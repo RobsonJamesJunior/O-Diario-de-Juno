@@ -44,7 +44,6 @@ class Cena2ViewController: UIViewController {
     
     @objc func update() {
         if initialView == true {
-            print("fudeu")
             // Função de atualização para opreações constantes
             if IsOk < cena1.count { // Variável que faz vibrar apenas uma vez
                 // sleep(1)

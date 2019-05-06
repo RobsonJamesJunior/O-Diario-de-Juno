@@ -13,6 +13,7 @@ class Cena19ViewController: UIViewController {
     @IBOutlet weak var Cena19ImageView: UIImageView!
     @IBOutlet weak var dialogCena19Label: UILabel!
     
+    @IBOutlet weak var caixaDialog: UIImageView!
     
     var timer: Timer!
     var IsOk: Int = 0
@@ -24,6 +25,8 @@ class Cena19ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dialogCena19Label.isHidden = false
+        caixaDialog.isHidden = false
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -60,7 +63,9 @@ class Cena19ViewController: UIViewController {
             }
         } else{
             okNext = true
-            dialogCena19Label.text = "..."
+            dialogCena19Label.isHidden = true
+            caixaDialog.isHidden = true
+            
         }
     }
     

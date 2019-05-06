@@ -85,7 +85,8 @@ class Cena8ViewController: UIViewController {
     func pulsedFech() {
         let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: fech.center)
         pulse.animationDuration = 1.0
-        pulse.backgroundColor = UIColor.blue.cgColor
+//        pulse.backgroundColor = UIColor.blue.cgColor
+         pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
         self.view.layer.insertSublayer(pulse, below: fech.layer)
     }
     

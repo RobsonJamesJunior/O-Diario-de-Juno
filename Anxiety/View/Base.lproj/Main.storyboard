@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="40"/>
+                                <rect key="frame" x="16" y="170" width="343" height="43"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -74,13 +74,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
                                 <rect key="frame" x="0.0" y="638" width="375" height="350"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="128" y="623" width="119" height="34"/>
-                                <connections>
-                                    <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
-                                    <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-7E-nFm">
                                 <rect key="frame" x="299" y="36" width="60" height="60"/>
                                 <constraints>
@@ -92,18 +85,29 @@
                                     <action selector="backMenu:" destination="W0a-9h-xUq" eventType="touchUpInside" id="axY-nW-cTi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
+                                <rect key="frame" x="97.5" y="591" width="180" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="8vE-Ep-oz5"/>
+                                    <constraint firstAttribute="height" constant="76" id="YBF-mi-tvx"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
+                                    <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5lZ-Qr-FsH" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="5mO-PM-PXv"/>
                             <constraint firstItem="9DI-7E-nFm" firstAttribute="top" secondItem="bOP-rH-s2e" secondAttribute="top" constant="16" id="FHf-db-UQA"/>
-                            <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="w8h-Ju-ooM" secondAttribute="trailing" constant="128" id="M6h-55-G90"/>
+                            <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" id="JBM-8Z-aQ3"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
                             <constraint firstAttribute="bottom" secondItem="5lZ-Qr-FsH" secondAttribute="bottom" constant="-321" id="Ozg-s6-bTa"/>
                             <constraint firstItem="5lZ-Qr-FsH" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="P5M-F7-pvj"/>
-                            <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" constant="10" id="Smh-ZV-DSg"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
-                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" constant="128" id="nId-iW-cBy"/>
+                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerX" secondItem="8ze-UO-fiH" secondAttribute="centerX" id="bZB-Oi-ybc"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
                             <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="9DI-7E-nFm" secondAttribute="trailing" constant="16" id="wSe-6F-bf8"/>
@@ -113,6 +117,7 @@
                     <connections>
                         <outlet property="Cena1ImageView" destination="eMq-j2-opY" id="oXW-QS-aEz"/>
                         <outlet property="alarmCell" destination="5lZ-Qr-FsH" id="Jo0-Tp-ccG"/>
+                        <outlet property="stopButtonOut" destination="w8h-Ju-ooM" id="fTO-aN-xjZ"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackMenu" animates="NO" id="66f-uO-lzy"/>
                     </connections>
                 </viewController>
@@ -432,7 +437,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="show" animates="NO" id="zYr-fu-XuC"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="dbI-18-LY6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-9o-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5749.6000000000004" y="123.68815592203899"/>
+            <point key="canvasLocation" x="5801" y="124"/>
         </scene>
         <!--Cena7 View Controller-->
         <scene sceneID="nrv-vH-EJd">
@@ -1258,6 +1263,7 @@
                     </view>
                     <connections>
                         <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
+                        <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
                         <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
                         <segue destination="A6N-NS-WoM" kind="show" identifier="segueCena19_2" animates="NO" id="RaI-Zt-Pde"/>
@@ -1629,6 +1635,7 @@
         <image name="Cena_7.gif" width="750" height="1334"/>
         <image name="Cena_8.gif" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
+        <image name="Stop" width="518" height="205"/>
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
         <image name="fech" width="98" height="92"/>
@@ -1643,7 +1650,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="Dy1-mc-iQ1"/>
-        <segue reference="s8o-c1-ApH"/>
+        <segue reference="66f-uO-lzy"/>
     </inferredMetricsTieBreakers>
 </document>
