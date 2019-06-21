@@ -35,6 +35,7 @@ class Cena1ViewController: UIViewController {
         initialView = true
         IsOk = false
         stopButtonOut.isHidden = true
+        alarmCell.shake(duration: 2.0)
 //        do {
 //            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
 //            audioPlayer.prepareToPlay() // preparando o áudio
@@ -80,8 +81,10 @@ class Cena1ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 320})
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
             self.stopButtonOut.isHidden = false
+            self.alarmCell.shake(duration: 2.0)
             }
     }
     

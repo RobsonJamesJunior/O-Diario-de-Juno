@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqh-2e-NvL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -279,7 +279,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_4.gif" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-Kw-Pfc">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_4.gif" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-Kw-Pfc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcV-DU-P4X">
@@ -304,6 +304,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
+                                <rect key="frame" x="16" y="247" width="343" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
+                                <rect key="frame" x="62" y="508" width="251" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.328468184" green="0.75679566710000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -320,6 +329,8 @@
                     </view>
                     <connections>
                         <outlet property="Cena4ImageView" destination="0A1-Kw-Pfc" id="NyP-JR-5mb"/>
+                        <outlet property="EscovaImage" destination="jPn-LM-erk" id="09y-Fy-tak"/>
+                        <outlet property="Mouth" destination="ukC-Lu-ezh" id="zmO-Pn-ceA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7W-2k-S4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1650,6 +1661,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="66f-uO-lzy"/>
+        <segue reference="leZ-Sl-Yqu"/>
     </inferredMetricsTieBreakers>
 </document>

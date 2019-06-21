@@ -83,6 +83,7 @@
 		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		1DC8A3A621B6D6120019804B /* key.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A521B6D6120019804B /* key.gif */; };
 		1DFDAECD2271E54400824D98 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDAECC2271E54400824D98 /* ProgressBarView.swift */; };
+		5E06217922BD228300B4A83C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06217822BD228300B4A83C /* ShakeView.swift */; };
 		5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */; };
 		5E4057FA226F65E8005AE9C2 /* AguaPiaSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F9226F65E8005AE9C2 /* AguaPiaSound.swift */; };
 		5E4057FC226F66B3005AE9C2 /* Chave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057FB226F66B3005AE9C2 /* Chave.swift */; };
@@ -179,6 +180,7 @@
 		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		1DC8A3A521B6D6120019804B /* key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = key.gif; sourceTree = "<group>"; };
 		1DFDAECC2271E54400824D98 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		5E06217822BD228300B4A83C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBackground.swift; sourceTree = "<group>"; };
 		5E4057F9226F65E8005AE9C2 /* AguaPiaSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AguaPiaSound.swift; sourceTree = "<group>"; };
 		5E4057FB226F66B3005AE9C2 /* Chave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chave.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				1DC8A3A121B6CBBD0019804B /* Pulsing.swift */,
 				1D352802218698060015B4A4 /* UIImageViewExtensao.swift */,
 				1D7DC80821B600FA00360F12 /* DeviceExtensao.swift */,
+				5E06217822BD228300B4A83C /* ShakeView.swift */,
 			);
 			path = ExtensoesFramework;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				5E405800226F6856005AE9C2 /* Coracao2.swift in Sources */,
 				5E4057FE226F6786005AE9C2 /* Coracao1.swift in Sources */,
 				1D352803218698060015B4A4 /* UIImageViewExtensao.swift in Sources */,
+				5E06217922BD228300B4A83C /* ShakeView.swift in Sources */,
 				1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */,
 				1D2DB91021821D150097921A /* Cena18ViewController.swift in Sources */,
 				1D2DB90A21821A740097921A /* Cena15ViewController.swift in Sources */,
@@ -693,7 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = 2CW963BG8P;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97WB89LRXA;
+				DEVELOPMENT_TEAM = 2CW963BG8P;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
