@@ -24,6 +24,7 @@ class Cena1ViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     var IsOk: Bool = false
     var initialView: Bool = false
+    var teste = 0
     
     @IBAction func ButtonStopVibration(_ sender: Any) {
         IsOk = true
