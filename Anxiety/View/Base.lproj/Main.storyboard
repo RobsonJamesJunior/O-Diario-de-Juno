@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
@@ -1646,13 +1646,13 @@
         <image name="Cena_7.gif" width="750" height="1334"/>
         <image name="Cena_8.gif" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
+        <image name="Menu.gif" width="750" height="1334"/>
         <image name="Stop" width="518" height="205"/>
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="250" height="250"/>
         <image name="key.gif" width="500" height="500"/>
-        <image name="menu.gif" width="750" height="1334"/>
         <image name="play" width="350" height="350"/>
         <image name="predecessor" width="531" height="531"/>
         <image name="respira" width="200" height="200"/>

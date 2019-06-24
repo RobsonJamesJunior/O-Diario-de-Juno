@@ -34,7 +34,7 @@ class Cena6ViewController: UIViewController {
         dialogCena6Label.lineBreakMode = .byTruncatingHead
         
         Cena6ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
-        let Cena6Gif = UIImage.gifImageWithName("Cena_6") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
+        let Cena6Gif = UIImage(named: "Cena_6") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
         Cena6ImageView.image = Cena6Gif // Adicionando a variável à tela de ImageView
         timer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(Cena6ViewController.update), userInfo: nil, repeats: true)
         
