@@ -491,7 +491,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
@@ -562,7 +562,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.gif" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="key.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
@@ -731,7 +731,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_11.gif" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-50-BtW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_11.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-50-BtW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-KL-r2z">
@@ -1160,7 +1160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_18.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_18.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-mS-guG">
@@ -1623,14 +1623,14 @@
     <resources>
         <image name="Cena_1.gif" width="750" height="1334"/>
         <image name="Cena_10.gif" width="750" height="1334"/>
-        <image name="Cena_11.gif" width="750" height="1334"/>
+        <image name="Cena_11.png" width="750" height="805"/>
         <image name="Cena_12.gif" width="750" height="1334"/>
         <image name="Cena_13.gif" width="750" height="1334"/>
         <image name="Cena_14.gif" width="750" height="1334"/>
         <image name="Cena_15.gif" width="750" height="1334"/>
         <image name="Cena_16.gif" width="750" height="1334"/>
         <image name="Cena_17.gif" width="750" height="1334"/>
-        <image name="Cena_18.gif" width="750" height="1334"/>
+        <image name="Cena_18.png" width="750" height="1334"/>
         <image name="Cena_19.gif" width="750" height="1334"/>
         <image name="Cena_19_1.gif" width="750" height="1334"/>
         <image name="Cena_2.gif" width="750" height="1334"/>
@@ -1643,8 +1643,8 @@
         <image name="Cena_4.gif" width="750" height="1334"/>
         <image name="Cena_5.gif" width="750" height="1334"/>
         <image name="Cena_6.png" width="750" height="1334"/>
-        <image name="Cena_7.gif" width="750" height="1334"/>
-        <image name="Cena_8.gif" width="750" height="1334"/>
+        <image name="Cena_7.png" width="750" height="1334"/>
+        <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Stop" width="518" height="205"/>
         <image name="caixa_dialogo" width="750" height="360"/>
@@ -1661,6 +1661,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="dbI-18-LY6"/>
+        <segue reference="lwG-my-eug"/>
     </inferredMetricsTieBreakers>
 </document>
