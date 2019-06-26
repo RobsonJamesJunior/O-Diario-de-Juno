@@ -18,7 +18,7 @@ extension UIView {
         let rotation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
         rotation.values = [-5, 5, -5, 5, -3, 3, -2, 2, 0].map {
             ( degrees: Double) -> Double in
-            let radians: Double = (M_PI * degrees) / 180.0
+            let radians: Double = .pi / 180.0
             return radians
         }
         

@@ -26,6 +26,7 @@ class Cena6ViewController: UIViewController {
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
+        IsOk = 0
         dialogCena6Label.numberOfLines = 0
         dialogCena6Label.font = UIFont(name: "Juninho-Regular", size: 18)
         dialogCena6Label.numberOfLines = 2
@@ -34,24 +35,32 @@ class Cena6ViewController: UIViewController {
         dialogCena6Label.lineBreakMode = .byTruncatingHead
         
         Cena6ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
-        let Cena6Gif = UIImage.gifImageWithURL("Cena_6") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
-        Cena6ImageView.image = Cena6Gif // Adicionando a variável à tela de ImageView
-        timer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(Cena6ViewController.update), userInfo: nil, repeats: true)
+   //     let Cena6Gif = UIImage.gifImageWithURL("Cena_6")
+        
+        
+        let imageCena6 = UIImage.init(named: "Cena_6")
+        
+  //      Cena6ImageView.image = Cena6Gif // Adicionando a variável à tela de ImageView
+        
+        Cena6ImageView.image = imageCena6
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena6ViewController.update), userInfo: nil, repeats: true)
         
     }
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        if IsOk < cena5.count { // Variável que faz vibrar apenas uma vez
-           // sleep(1)
-            if validAnimation == true {
-                setLabelDialog()
+        if initialView == true {
+            if IsOk < cena5.count { // Variável que faz vibrar apenas uma vez
+                // sleep(1)
+                if validAnimation == true {
+                    setLabelDialog()
+                }
+            } else{
+                initialView = false
+                performSegue(withIdentifier: "Segue6", sender: nil)
             }
-        } else{
-            initialView = false
-            performSegue(withIdentifier: "Segue6", sender: nil)
         }
-        
     }
     
     func setLabelDialog(){
