@@ -28,7 +28,7 @@ class Cena6ViewController: UIViewController {
         
         IsOk = 0
         dialogCena6Label.numberOfLines = 0
-        dialogCena6Label.font = UIFont(name: "Juninho-Regular", size: 18)
+        dialogCena6Label.font = UIFont(name: "Junorepacked-Regular", size: 28)
         dialogCena6Label.numberOfLines = 2
         dialogCena6Label.textColor = .black
         dialogCena6Label.textAlignment = .center

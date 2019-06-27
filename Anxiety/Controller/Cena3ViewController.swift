@@ -29,7 +29,7 @@ class Cena3ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogLabelCena3.numberOfLines = 0
-        dialogLabelCena3.font = UIFont(name: "Juninho-Regular", size: 18)
+        dialogLabelCena3.font = UIFont(name: "Junorepacked-Regular", size: 28)
         dialogLabelCena3.numberOfLines = 2
         dialogLabelCena3.textColor = .black
         dialogLabelCena3.textAlignment = .center

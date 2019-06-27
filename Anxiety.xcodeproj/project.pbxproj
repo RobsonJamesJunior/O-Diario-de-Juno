@@ -85,6 +85,7 @@
 		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		1DC8A3A621B6D6120019804B /* key.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A521B6D6120019804B /* key.gif */; };
 		1DE8DC8522C46A86008D99EB /* chave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DE8DC8422C46A86008D99EB /* chave.gif */; };
+		1DE8DC8722C46D1C008D99EB /* Junorepacked-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE8DC8622C46D1C008D99EB /* Junorepacked-Regular.ttf */; };
 		1DFDAECD2271E54400824D98 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDAECC2271E54400824D98 /* ProgressBarView.swift */; };
 		5E06217922BD228300B4A83C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06217822BD228300B4A83C /* ShakeView.swift */; };
 		5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */; };
@@ -183,6 +184,7 @@
 		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		1DC8A3A521B6D6120019804B /* key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = key.gif; sourceTree = "<group>"; };
 		1DE8DC8422C46A86008D99EB /* chave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chave.gif; sourceTree = "<group>"; };
+		1DE8DC8622C46D1C008D99EB /* Junorepacked-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Junorepacked-Regular.ttf"; sourceTree = "<group>"; };
 		1DFDAECC2271E54400824D98 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		5E06217822BD228300B4A83C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBackground.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */,
+				1DE8DC8622C46D1C008D99EB /* Junorepacked-Regular.ttf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				1D2CA04A22C36F4600C5B5CC /* Cena_17.gif in Resources */,
 				1D2CA04222C36AB200C5B5CC /* Cena_6.png in Resources */,
 				1D7C0FF9218F241C006DFE69 /* metro.wav in Resources */,
+				1DE8DC8722C46D1C008D99EB /* Junorepacked-Regular.ttf in Resources */,
 				1DC8A3A621B6D6120019804B /* key.gif in Resources */,
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,

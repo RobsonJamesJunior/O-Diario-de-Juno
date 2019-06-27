@@ -28,7 +28,7 @@ class Cena2ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         dialoLabelCena2.numberOfLines = 0
-        dialoLabelCena2.font = UIFont(name: "Juninho-Regular", size: 18)
+        dialoLabelCena2.font = UIFont(name: "Junorepacked-Regular", size: 28)
         dialoLabelCena2.numberOfLines = 2
         dialoLabelCena2.textColor = .black
         dialoLabelCena2.textAlignment = .center
@@ -119,14 +119,18 @@ class Cena2ViewController: UIViewController {
 //    }
     
     
+    
     func setLabelDialog(){
         for letra in cena1[IsOk] {
             if validAnimation == false {
                 dialoLabelCena2.text! = cena1[IsOk]
                 break
+                
             }
+            
             dialoLabelCena2.text! += ("\(letra)")
             RunLoop.current.run(until: Date()+0.10)
+            
         }
         fimDefrase = true
         validAnimation = false

@@ -45,7 +45,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         MusicHelper.sharedHelper.audioPlayer?.play()
         feedbackLabel.isHidden = false
         feedbackLabel.text = "Pressione o botão e respire fundo por 2 segundos"
-        feedbackLabel.font = UIFont(name: "Juninho-Regular", size: 24)
+        feedbackLabel.font = UIFont(name: "Junorepacked-Regular", size: 28)
         respImageView.image = imageRespira
         feedbackGenerator = UINotificationFeedbackGenerator()
         countAlc = 0
