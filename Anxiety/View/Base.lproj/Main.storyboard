@@ -304,26 +304,36 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
-                                <rect key="frame" x="16" y="247" width="343" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
+                                <rect key="frame" x="76" y="291" width="237" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="20f-4f-jP1"/>
+                                    <constraint firstAttribute="width" constant="237" id="SDV-sn-b40"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
-                                <rect key="frame" x="62" y="508" width="251" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.328468184" green="0.75679566710000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
+                                <rect key="frame" x="62" y="500" width="251" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="DTI-1O-3Eu"/>
+                                    <constraint firstAttribute="height" constant="69" id="s7M-T1-pcc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="top" secondItem="zoX-JC-cPa" secondAttribute="top" id="CA0-Zo-sUG"/>
+                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="top" secondItem="bZW-6i-ZUN" secondAttribute="top" constant="271" id="CCS-fe-Jud"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="trailing" secondItem="bZW-6i-ZUN" secondAttribute="trailing" id="Cpd-na-dB4"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="vcV-DU-P4X" secondAttribute="trailing" constant="32" id="F3b-rX-jWI"/>
+                            <constraint firstItem="jPn-LM-erk" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" id="Qym-nF-uSg"/>
                             <constraint firstItem="GU9-fX-13z" firstAttribute="top" secondItem="bZW-6i-ZUN" secondAttribute="top" constant="16" id="Sma-aq-RFc"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="bottom" secondItem="vcV-DU-P4X" secondAttribute="bottom" constant="32" id="bI2-73-e8l"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="bottom" secondItem="bZW-6i-ZUN" secondAttribute="bottom" id="jut-O8-NeE"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="GU9-fX-13z" secondAttribute="trailing" constant="16" id="lfd-IF-qbz"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
+                            <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="16" id="r7X-So-CsF"/>
+                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" constant="7" id="xcH-3j-7RH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZW-6i-ZUN"/>
                     </view>
@@ -1621,6 +1631,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Brush" width="554" height="100"/>
         <image name="Cena_1.gif" width="750" height="1334"/>
         <image name="Cena_10.gif" width="750" height="1334"/>
         <image name="Cena_11.png" width="750" height="805"/>
@@ -1647,20 +1658,20 @@
         <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Stop" width="518" height="205"/>
-        <image name="caixa_dialogo" width="750" height="360"/>
+        <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="350" height="350"/>
         <image name="fech" width="98" height="92"/>
-        <image name="home" width="250" height="250"/>
+        <image name="home" width="266" height="266"/>
         <image name="key.gif" width="500" height="500"/>
         <image name="menu.gif" width="750" height="1334"/>
         <image name="play" width="350" height="350"/>
         <image name="predecessor" width="531" height="531"/>
-        <image name="respira" width="200" height="200"/>
-        <image name="skip" width="350" height="350"/>
+        <image name="respira" width="266" height="266"/>
+        <image name="skip" width="266" height="266"/>
         <image name="sucessor" width="531" height="531"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="zgU-rF-g5n"/>
+        <segue reference="leZ-Sl-Yqu"/>
     </inferredMetricsTieBreakers>
 </document>
