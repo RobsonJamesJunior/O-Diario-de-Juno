@@ -28,19 +28,12 @@ class Cena8ViewController: UIViewController {
         super.viewDidLoad()
         initialView = true
         movendo = false
-        // Do any additional setup after loading the view, typically from a nib.
-        Cena8ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
-  //      let Cena8Gif = UIImage.gifImageWithName("Cena_8") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena8
         
-           let Cena8Image = UIImage.init(named: "Cena_8")
+        Cena8ImageView.isAccessibilityElement = true
         
-        Cena8ImageView.image = Cena8Image // Adicionando a variável à tela de ImageView
+        let Cena8Image = UIImage.init(named: "Cena_8")
         
-        fech.clipsToBounds = true
-        fech.layer.cornerRadius = fech.frame.size.height / 2
-//        fech.layer.borderColor = UIColor.red.cgColor
-//        fech.layer.borderWidth = 3
-        
+        Cena8ImageView.image = Cena8Image
         
         fech.image = nil
         
@@ -56,15 +49,7 @@ class Cena8ViewController: UIViewController {
         view.bringSubviewToFront(key)
         
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(Cena8ViewController.update), userInfo: nil, repeats: true)
-
-        
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chave", ofType: "wav")!)) // colocando a música através do diretório
-//            audioPlayer.prepareToPlay() // preparando o áudio
-//        } catch {
-//            print(error) // erro de áudio
-//        }
-        
+    
     }
     
     
@@ -84,14 +69,7 @@ class Cena8ViewController: UIViewController {
         key.layer.add(shake, forKey: "position")
     }
     
-    
-//    func pulsedFech() {
-//        let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: fech.center)
-//        pulse.animationDuration = 1.0
-////        pulse.backgroundColor = UIColor.blue.cgColor
-//         pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-//        self.view.layer.insertSublayer(pulse, below: fech.layer)
-//    }
+
     
     @objc func handlePan(sender: UIPanGestureRecognizer) {
         print ("Handle Pan")
