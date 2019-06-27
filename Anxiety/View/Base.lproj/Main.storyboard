@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Im4-oa-puN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqh-2e-NvL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -78,6 +78,18 @@
                                     <constraint firstAttribute="height" constant="350" id="w1h-ZT-eOt"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
+                                <rect key="frame" x="117.5" y="788.5" width="140" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="ZnJ-ZZ-PHY"/>
+                                    <constraint firstAttribute="width" constant="140" id="h7x-4r-aVH"/>
+                                </constraints>
+                                <state key="normal" image="parar"/>
+                                <connections>
+                                    <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
+                                    <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-7E-nFm">
                                 <rect key="frame" x="299" y="36" width="60" height="60"/>
                                 <constraints>
@@ -89,26 +101,15 @@
                                     <action selector="backMenu:" destination="W0a-9h-xUq" eventType="touchUpInside" id="axY-nW-cTi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="97.5" y="591" width="180" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="8vE-Ep-oz5"/>
-                                    <constraint firstAttribute="height" constant="76" id="YBF-mi-tvx"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
-                                    <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerY" secondItem="5lZ-Qr-FsH" secondAttribute="centerY" id="9yF-C6-IDD"/>
                             <constraint firstItem="9DI-7E-nFm" firstAttribute="top" secondItem="bOP-rH-s2e" secondAttribute="top" constant="16" id="FHf-db-UQA"/>
-                            <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" id="JBM-8Z-aQ3"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
                             <constraint firstAttribute="bottom" secondItem="5lZ-Qr-FsH" secondAttribute="bottom" constant="-321" id="Ozg-s6-bTa"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
-                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerX" secondItem="8ze-UO-fiH" secondAttribute="centerX" id="bZB-Oi-ybc"/>
+                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerX" secondItem="5lZ-Qr-FsH" secondAttribute="centerX" id="nOn-pX-hc9"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
                             <constraint firstItem="5lZ-Qr-FsH" firstAttribute="centerX" secondItem="8ze-UO-fiH" secondAttribute="centerX" id="wLt-Nc-NEO"/>
@@ -306,19 +307,19 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
-                                <rect key="frame" x="62" y="500" width="251" height="69"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="251" id="DTI-1O-3Eu"/>
-                                    <constraint firstAttribute="height" constant="69" id="s7M-T1-pcc"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolha.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
                                 <rect key="frame" x="104" y="304" width="183" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="20f-4f-jP1"/>
                                     <constraint firstAttribute="width" constant="183" id="SDV-sn-b40"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
+                                <rect key="frame" x="0.0" y="371" width="375" height="212"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="DTI-1O-3Eu"/>
+                                    <constraint firstAttribute="height" constant="212" id="s7M-T1-pcc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -334,7 +335,7 @@
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="bottom" secondItem="bZW-6i-ZUN" secondAttribute="bottom" id="jut-O8-NeE"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="GU9-fX-13z" secondAttribute="trailing" constant="16" id="lfd-IF-qbz"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
-                            <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="16" id="r7X-So-CsF"/>
+                            <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="2" id="r7X-So-CsF"/>
                             <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" constant="8" id="xcH-3j-7RH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZW-6i-ZUN"/>
@@ -504,22 +505,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.png" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zV-sj-bjF">
-                                <rect key="frame" x="245" y="285" width="130" height="97"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="  ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="Juninho-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-Jv-YTI">
                                 <rect key="frame" x="299" y="36" width="60" height="60"/>
                                 <constraints>
@@ -537,97 +525,25 @@
                                     <action selector="passDialog:" destination="oeO-wZ-Xpy" eventType="touchUpInside" id="8Jq-Nl-wag"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao" translatesAutoresizingMaskIntoConstraints="NO" id="4Re-T8-7DV" userLabel="MamaoEscolhido">
-                                <rect key="frame" x="226" y="313" width="49" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao" translatesAutoresizingMaskIntoConstraints="NO" id="emU-Yu-ZIt">
-                                <rect key="frame" x="283" y="313" width="49" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao1" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-6C-Vmo">
-                                <rect key="frame" x="294" y="252" width="65" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao2" translatesAutoresizingMaskIntoConstraints="NO" id="et0-f9-jsg">
-                                <rect key="frame" x="234" y="259" width="62" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="ule-jl-Kqq">
-                                <rect key="frame" x="114" y="141" width="62" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-4L-agT">
-                                <rect key="frame" x="147" y="166" width="62" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="lAa-CC-6dV" userLabel="paoEscolhido">
-                                <rect key="frame" x="184" y="177" width="62" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao2" translatesAutoresizingMaskIntoConstraints="NO" id="xqr-y7-QER">
-                                <rect key="frame" x="165" y="111" width="70" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="OdT-3M-9Ds">
-                                <rect key="frame" x="147" y="443" width="39" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="apl-um-NkS">
-                                <rect key="frame" x="219" y="450" width="39" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="hep-pa-GQw">
-                                <rect key="frame" x="184" y="419" width="39" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-AM-LGv" userLabel="OvoEscolhido">
-                                <rect key="frame" x="181" y="472" width="39" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hand1_caucasian" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-DE-JVQ">
-                                <rect key="frame" x="-8" y="-50" width="184" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Juno_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="Peq-C5-sXh">
-                                <rect key="frame" x="208" y="597" width="184" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hand_caucasian_pajamas3" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-Ji-GEI">
-                                <rect key="frame" x="-120" y="313" width="181" height="113"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-Nd-snh">
-                                <rect key="frame" x="120" y="590" width="164" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="top" secondItem="9d4-zz-e8c" secondAttribute="top" id="0h5-M6-MsW"/>
                             <constraint firstItem="d0R-Op-aTK" firstAttribute="width" secondItem="tq4-el-hFr" secondAttribute="width" id="2Hl-0T-N4L"/>
                             <constraint firstItem="d0R-Op-aTK" firstAttribute="centerY" secondItem="tq4-el-hFr" secondAttribute="centerY" constant="52" id="2ss-iU-u45"/>
-                            <constraint firstItem="4Cz-bT-DXY" firstAttribute="bottom" secondItem="4zV-sj-bjF" secondAttribute="bottom" constant="285" id="5Am-rN-YXx"/>
                             <constraint firstItem="d0R-Op-aTK" firstAttribute="centerX" secondItem="tq4-el-hFr" secondAttribute="centerX" id="60p-n3-cAx"/>
                             <constraint firstItem="d0R-Op-aTK" firstAttribute="height" secondItem="tq4-el-hFr" secondAttribute="height" constant="-104" id="7GA-gI-xsU"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="bottom" secondItem="4Cz-bT-DXY" secondAttribute="bottom" id="7g7-So-tgK"/>
                             <constraint firstItem="8fj-Jv-YTI" firstAttribute="top" secondItem="4Cz-bT-DXY" secondAttribute="top" constant="16" id="9iR-XQ-JCi"/>
-                            <constraint firstItem="4zV-sj-bjF" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" constant="245" id="Eb0-Ao-N3W"/>
                             <constraint firstItem="4Cz-bT-DXY" firstAttribute="trailing" secondItem="8fj-Jv-YTI" secondAttribute="trailing" constant="16" id="IGr-QM-b4P"/>
-                            <constraint firstItem="4zV-sj-bjF" firstAttribute="trailing" secondItem="d0R-Op-aTK" secondAttribute="trailing" id="RFA-SU-dZA"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="leading" secondItem="4Cz-bT-DXY" secondAttribute="leading" id="f0M-bl-MIQ"/>
-                            <constraint firstItem="4zV-sj-bjF" firstAttribute="centerY" secondItem="d0R-Op-aTK" secondAttribute="centerY" constant="-52" id="mqN-IL-MBi"/>
                             <constraint firstItem="tq4-el-hFr" firstAttribute="trailing" secondItem="4Cz-bT-DXY" secondAttribute="trailing" id="myN-h7-1nz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Cz-bT-DXY"/>
                     </view>
                     <connections>
                         <outlet property="Cena7ImageView" destination="tq4-el-hFr" id="drb-3b-LtI"/>
-                        <outlet property="DicasLabel" destination="4zV-sj-bjF" id="Wun-aL-XZa"/>
-                        <outlet property="mamaoImageVIew" destination="4Re-T8-7DV" id="oei-li-xbH"/>
-                        <outlet property="ovoImageView" destination="Twn-AM-LGv" id="Rfr-cH-LE3"/>
-                        <outlet property="paoImageView" destination="lAa-CC-6dV" id="rPh-Yt-KAi"/>
-                        <segue destination="rj0-kG-OH3" kind="showDetail" identifier="Segue7" animates="NO" id="orA-1I-m5X"/>
+                        <segue destination="rj0-kG-OH3" kind="showDetail" identifier="next" animates="NO" id="orA-1I-m5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2h-gF-Uiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -656,12 +572,12 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="AFy-AR-ZPS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fech" translatesAutoresizingMaskIntoConstraints="NO" id="V18-0V-6rb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V18-0V-6rb">
                                 <rect key="frame" x="230" y="376" width="73" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.15683335479999999" blue="0.1140543671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chave.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chave.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
                                 <rect key="frame" x="73" y="289" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1241,7 +1157,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_18.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_18.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-mS-guG">
@@ -1404,7 +1320,6 @@
                     </view>
                     <connections>
                         <outlet property="Cena19_1ImageView" destination="BtG-4G-ULI" id="cQg-kZ-QjR"/>
-                        <segue destination="Bja-xi-oTj" kind="show" identifier="segueCena19_1" animates="NO" id="qwX-0A-qLz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c28-Mg-yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1651,7 +1566,6 @@
                         <outlet property="feedbackLabel" destination="WdI-DF-fEf" id="YRG-HL-TZz"/>
                         <outlet property="progressBar" destination="VtI-MT-gL4" id="h2G-KB-gGI"/>
                         <outlet property="respImageView" destination="aig-Dv-cSl" id="Ljq-aB-eUi"/>
-                        <segue destination="Bja-xi-oTj" kind="showDetail" identifier="Segue23" animates="NO" id="lQ5-7h-Wck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2K-WO-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1698,7 +1612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHD-5f-Bkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22564" y="99"/>
+            <point key="canvasLocation" x="21638" y="-821"/>
         </scene>
     </scenes>
     <resources>
@@ -1712,7 +1626,7 @@
         <image name="Cena_15.gif" width="750" height="1334"/>
         <image name="Cena_16.gif" width="750" height="1334"/>
         <image name="Cena_17.gif" width="750" height="1334"/>
-        <image name="Cena_18.png" width="750" height="1334"/>
+        <image name="Cena_18.gif" width="750" height="1334"/>
         <image name="Cena_19.gif" width="750" height="1334"/>
         <image name="Cena_19_1.gif" width="750" height="1334"/>
         <image name="Cena_2.gif" width="750" height="1334"/>
@@ -1725,42 +1639,24 @@
         <image name="Cena_4.gif" width="750" height="1334"/>
         <image name="Cena_5.gif" width="750" height="1334"/>
         <image name="Cena_6.png" width="750" height="1334"/>
-        <image name="Cena_7.png" width="750" height="1334"/>
+        <image name="Cena_7.gif" width="750" height="1334"/>
         <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
-<<<<<<< HEAD
-        <image name="Hand1_caucasian" width="166" height="655"/>
-        <image name="Hand_caucasian_pajamas3" width="759" height="174"/>
-        <image name="Juno_Hand" width="165" height="653"/>
-        <image name="Mamao" width="103" height="153"/>
-        <image name="Mamao1" width="153" height="103"/>
-        <image name="Mamao2" width="103" height="153"/>
-        <image name="Ovo" width="108" height="140"/>
-=======
         <image name="Iphone" width="750" height="1334"/>
         <image name="Left" width="58" height="84"/>
         <image name="Play1" width="135" height="135"/>
         <image name="Rigth" width="59" height="84"/>
         <image name="Scream2.png" width="530" height="986"/>
->>>>>>> Developer
         <image name="caixa_dialogo" width="697" height="215"/>
-        <image name="cell_alarm" width="640" height="1020"/>
-        <image name="chave.gif" width="80" height="99"/>
-        <image name="fech" width="98" height="92"/>
+        <image name="cell_alarm" width="500" height="797"/>
+        <image name="chave.png" width="62" height="85"/>
         <image name="home" width="266" height="266"/>
         <image name="menu.gif" width="750" height="1334"/>
-<<<<<<< HEAD
-        <image name="pao" width="110" height="171"/>
-        <image name="pao2" width="171" height="110"/>
-        <image name="play" width="350" height="350"/>
-        <image name="predecessor" width="531" height="531"/>
-=======
->>>>>>> Developer
+        <image name="parar" width="500" height="159"/>
         <image name="respira" width="266" height="266"/>
         <image name="skip" width="266" height="266"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lQ5-7h-Wck"/>
-        <segue reference="leZ-Sl-Yqu"/>
+        <segue reference="lwG-my-eug"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -35,15 +35,9 @@ class Cena1ViewController: UIViewController {
         super.viewDidLoad()
         initialView = true
         IsOk = false
-        stopButtonOut.isHidden = true
+        stopButtonOut.isHidden = false
         alarmCell.shake(duration: 2.0)
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ms3", ofType: "wav")!)) // colocando a música através do diretório
-//            audioPlayer.prepareToPlay() // preparando o áudio
-//        } catch {
-//            print(error) // erro de áudio
-//        }
-        
+
         // Do any additional setup after loading the view, typically from a nib.
         Cena1ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena1Gif = UIImage.gifImageWithName("Cena_1") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1
@@ -56,7 +50,6 @@ class Cena1ViewController: UIViewController {
     
     @objc func update() { // Função de atualização para opreações constantes
 
-//audioPlayer.play() // dá o play no áudio
         
         if IsOk == false {
             for _ in 1...5 { // Repetição da quantidade de vibrações
@@ -65,27 +58,20 @@ class Cena1ViewController: UIViewController {
          
         }
         
-//        if !audioPlayer.isPlaying{
-//           // audioPlayer.play()
-//        }
     }
-    
-  //  func pulsing(){
-  //      let pulse = Pulsing(numberOfPulses: 1, radius: 150, position: stopButtonOut.center)
-   //     pulse.animationDuration = 3.0
-        //     pulse2.backgroundColor = UIColor.blue.cgColor
-   //     pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-    //    self.view.layer.insertSublayer(pulse, below: stopButtonOut.layer)
-  //  }
+
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 310})
         
+        UIView.animate(withDuration: 1, animations: {self.stopButtonOut.frame.origin.y -= 210})
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
-            self.stopButtonOut.isHidden = false
+//            self.stopButtonOut.isHidden = false
             self.alarmCell.shake(duration: 2.0)
+            self.stopButtonOut.shake(duration: 2.0)
             }
     }
     

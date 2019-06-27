@@ -12,8 +12,6 @@
 		1D2CA02722C3664E00C5B5CC /* Cena_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01D22C3655000C5B5CC /* Cena_2.gif */; };
 		1D2CA02822C3665300C5B5CC /* Cena_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01122C3654E00C5B5CC /* Cena_3.gif */; };
 		1D2CA02922C3665700C5B5CC /* Cena_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01522C3654F00C5B5CC /* Cena_5.gif */; };
-		1D2CA03122C3667500C5B5CC /* Cena_14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA02122C3655100C5B5CC /* Cena_14.gif */; };
-		1D2CA03322C3667A00C5B5CC /* Cena_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA00B22C3654D00C5B5CC /* Cena_16.gif */; };
 		1D2CA03622C3668200C5B5CC /* Cena_19_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01E22C3655100C5B5CC /* Cena_19_1.gif */; };
 		1D2CA03D22C3669600C5B5CC /* Cena_24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01222C3654E00C5B5CC /* Cena_24.gif */; };
 		1D2CA03E22C3669900C5B5CC /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01722C3654F00C5B5CC /* menu.gif */; };
@@ -28,12 +26,9 @@
 		1D2CA05222C36F9B00C5B5CC /* Cena_22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05122C36F9B00C5B5CC /* Cena_22.gif */; };
 		1D2CA05422C36FBA00C5B5CC /* Cena_23_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05322C36FBA00C5B5CC /* Cena_23_2.gif */; };
 		1D2CA05622C3702600C5B5CC /* Cena_23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05522C3702500C5B5CC /* Cena_23.gif */; };
-		1D2CA05822C3FA7400C5B5CC /* Cena_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05722C3FA7400C5B5CC /* Cena_7.png */; };
 		1D2CA05A22C3FAE800C5B5CC /* Cena_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05922C3FAE800C5B5CC /* Cena_8.png */; };
 		1D2CA05C22C3FB0300C5B5CC /* Cena_9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05B22C3FB0300C5B5CC /* Cena_9.gif */; };
 		1D2CA05F22C3FB7C00C5B5CC /* Cena_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA05E22C3FB7C00C5B5CC /* Cena_11.png */; };
-		1D2CA06122C3FBDC00C5B5CC /* Cena_13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA06022C3FBDC00C5B5CC /* Cena_13.gif */; };
-		1D2CA06322C3FC0700C5B5CC /* Cena_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA06222C3FC0700C5B5CC /* Cena_18.png */; };
 		1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */; };
 		1D2DB8F0218216BF0097921A /* Cena2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8EF218216BF0097921A /* Cena2ViewController.swift */; };
 		1D2DB8F2218216FC0097921A /* Cena3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DB8F1218216FC0097921A /* Cena3ViewController.swift */; };
@@ -65,6 +60,10 @@
 		1D40365022C4816200D12EDA /* Bolha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40364F22C4816200D12EDA /* Bolha.gif */; };
 		1D40365422C488F400D12EDA /* chave.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365322C488F400D12EDA /* chave.png */; };
 		1D40365622C4911F00D12EDA /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365522C4911F00D12EDA /* IndieFlower.ttf */; };
+		1D40365E22C4D9CC00D12EDA /* Cena_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365D22C4D9CC00D12EDA /* Cena_7.gif */; };
+		1D40366022C4DCE200D12EDA /* Cena_13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365F22C4DCE200D12EDA /* Cena_13.gif */; };
+		1D40366222C4DCFC00D12EDA /* Cena_18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366122C4DCFC00D12EDA /* Cena_18.gif */; };
+		1D40366422C4DD5000D12EDA /* Cena_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366322C4DD4F00D12EDA /* Cena_16.gif */; };
 		1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */; };
 		1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */; };
 		1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */; };
@@ -112,7 +111,6 @@
 
 /* Begin PBXFileReference section */
 		1D2CA00A22C3654D00C5B5CC /* Cena_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_1.gif; sourceTree = "<group>"; };
-		1D2CA00B22C3654D00C5B5CC /* Cena_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_16.gif; sourceTree = "<group>"; };
 		1D2CA00C22C3654D00C5B5CC /* Cena_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_4.gif; sourceTree = "<group>"; };
 		1D2CA01122C3654E00C5B5CC /* Cena_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_3.gif; sourceTree = "<group>"; };
 		1D2CA01222C3654E00C5B5CC /* Cena_24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_24.gif; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		1D2CA01722C3654F00C5B5CC /* menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = menu.gif; sourceTree = "<group>"; };
 		1D2CA01D22C3655000C5B5CC /* Cena_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_2.gif; sourceTree = "<group>"; };
 		1D2CA01E22C3655100C5B5CC /* Cena_19_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_19_1.gif; sourceTree = "<group>"; };
-		1D2CA02122C3655100C5B5CC /* Cena_14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_14.gif; sourceTree = "<group>"; };
 		1D2CA04122C36AB200C5B5CC /* Cena_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_6.png; sourceTree = "<group>"; };
 		1D2CA04322C36EF900C5B5CC /* Cena_10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_10.gif; sourceTree = "<group>"; };
 		1D2CA04522C36F1300C5B5CC /* Cena_12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_12.gif; sourceTree = "<group>"; };
@@ -132,12 +129,9 @@
 		1D2CA05122C36F9B00C5B5CC /* Cena_22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_22.gif; sourceTree = "<group>"; };
 		1D2CA05322C36FBA00C5B5CC /* Cena_23_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23_2.gif; sourceTree = "<group>"; };
 		1D2CA05522C3702500C5B5CC /* Cena_23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_23.gif; sourceTree = "<group>"; };
-		1D2CA05722C3FA7400C5B5CC /* Cena_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_7.png; sourceTree = "<group>"; };
 		1D2CA05922C3FAE800C5B5CC /* Cena_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_8.png; sourceTree = "<group>"; };
 		1D2CA05B22C3FB0300C5B5CC /* Cena_9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_9.gif; sourceTree = "<group>"; };
 		1D2CA05E22C3FB7C00C5B5CC /* Cena_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_11.png; sourceTree = "<group>"; };
-		1D2CA06022C3FBDC00C5B5CC /* Cena_13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_13.gif; sourceTree = "<group>"; };
-		1D2CA06222C3FC0700C5B5CC /* Cena_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_18.png; sourceTree = "<group>"; };
 		1D2DB8ED2182160E0097921A /* Cena1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena1ViewController.swift; sourceTree = "<group>"; };
 		1D2DB8EF218216BF0097921A /* Cena2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena2ViewController.swift; sourceTree = "<group>"; };
 		1D2DB8F1218216FC0097921A /* Cena3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena3ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +163,10 @@
 		1D40364F22C4816200D12EDA /* Bolha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bolha.gif; sourceTree = "<group>"; };
 		1D40365322C488F400D12EDA /* chave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chave.png; sourceTree = "<group>"; };
 		1D40365522C4911F00D12EDA /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		1D40365D22C4D9CC00D12EDA /* Cena_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_7.gif; sourceTree = "<group>"; };
+		1D40365F22C4DCE200D12EDA /* Cena_13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_13.gif; sourceTree = "<group>"; };
+		1D40366122C4DCFC00D12EDA /* Cena_18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_18.gif; sourceTree = "<group>"; };
+		1D40366322C4DD4F00D12EDA /* Cena_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_16.gif; sourceTree = "<group>"; };
 		1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena21ViewController.swift; sourceTree = "<group>"; };
 		1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena22ViewController.swift; sourceTree = "<group>"; };
 		1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena23ViewController.swift; sourceTree = "<group>"; };
@@ -237,18 +235,17 @@
 				1D2CA00C22C3654D00C5B5CC /* Cena_4.gif */,
 				1D2CA01522C3654F00C5B5CC /* Cena_5.gif */,
 				1D2CA04122C36AB200C5B5CC /* Cena_6.png */,
-				1D2CA05722C3FA7400C5B5CC /* Cena_7.png */,
+				1D40365D22C4D9CC00D12EDA /* Cena_7.gif */,
 				1D2CA05922C3FAE800C5B5CC /* Cena_8.png */,
 				1D2CA05B22C3FB0300C5B5CC /* Cena_9.gif */,
 				1D2CA04322C36EF900C5B5CC /* Cena_10.gif */,
 				1D2CA05E22C3FB7C00C5B5CC /* Cena_11.png */,
 				1D2CA04522C36F1300C5B5CC /* Cena_12.gif */,
-				1D2CA06022C3FBDC00C5B5CC /* Cena_13.gif */,
-				1D2CA02122C3655100C5B5CC /* Cena_14.gif */,
+				1D40365F22C4DCE200D12EDA /* Cena_13.gif */,
 				1D2CA04722C36F2F00C5B5CC /* Cena_15.gif */,
-				1D2CA00B22C3654D00C5B5CC /* Cena_16.gif */,
+				1D40366322C4DD4F00D12EDA /* Cena_16.gif */,
 				1D2CA04922C36F4600C5B5CC /* Cena_17.gif */,
-				1D2CA06222C3FC0700C5B5CC /* Cena_18.png */,
+				1D40366122C4DCFC00D12EDA /* Cena_18.gif */,
 				1D2CA04B22C36F5D00C5B5CC /* Cena_19.gif */,
 				1D2CA01E22C3655100C5B5CC /* Cena_19_1.gif */,
 				1D2CA04D22C36F7000C5B5CC /* Cena_20.gif */,
@@ -475,7 +472,7 @@
 				1D2CA04622C36F1300C5B5CC /* Cena_12.gif in Resources */,
 				1D2CA02722C3664E00C5B5CC /* Cena_2.gif in Resources */,
 				1D40365422C488F400D12EDA /* chave.png in Resources */,
-				1D2CA06322C3FC0700C5B5CC /* Cena_18.png in Resources */,
+				1D40366422C4DD5000D12EDA /* Cena_16.gif in Resources */,
 				5E82FA4F2188AC0600A43BE5 /* Juninho-Regular.ttf in Resources */,
 				1D7C1002218F241C006DFE69 /* passaro_acordar.mp3 in Resources */,
 				1D2F692C2190358000C70D6B /* ms3.wav in Resources */,
@@ -492,7 +489,6 @@
 				E2A43F122271E9030093B87C /* escova.png in Resources */,
 				1D2CA04C22C36F5D00C5B5CC /* Cena_19.gif in Resources */,
 				1D2CA03D22C3669600C5B5CC /* Cena_24.gif in Resources */,
-				1D2CA03122C3667500C5B5CC /* Cena_14.gif in Resources */,
 				1D7C0FFF218F241C006DFE69 /* transito3.wav in Resources */,
 				1D7C1000218F241C006DFE69 /* chave2.mp3 in Resources */,
 				1D7C0FF6218F241C006DFE69 /* comendo2.wav in Resources */,
@@ -506,7 +502,6 @@
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
 				1D2CA05422C36FBA00C5B5CC /* Cena_23_2.gif in Resources */,
-				1D2CA05822C3FA7400C5B5CC /* Cena_7.png in Resources */,
 				1D2CA05622C3702600C5B5CC /* Cena_23.gif in Resources */,
 				1D2F692D2190358000C70D6B /* ms2.wav in Resources */,
 				1D2CA04822C36F2F00C5B5CC /* Cena_15.gif in Resources */,
@@ -516,16 +511,17 @@
 				1D2CA05A22C3FAE800C5B5CC /* Cena_8.png in Resources */,
 				1D40365022C4816200D12EDA /* Bolha.gif in Resources */,
 				1D2CA05222C36F9B00C5B5CC /* Cena_22.gif in Resources */,
-				1D2CA03322C3667A00C5B5CC /* Cena_16.gif in Resources */,
 				1D7C0FFB218F241C006DFE69 /* transito2.wav in Resources */,
 				1D2CA03E22C3669900C5B5CC /* menu.gif in Resources */,
+				1D40365E22C4D9CC00D12EDA /* Cena_7.gif in Resources */,
 				1D7C0FFA218F241C006DFE69 /* respiração.mp3 in Resources */,
 				1D2CA05022C36F8500C5B5CC /* Cena_21.gif in Resources */,
 				1D2CA02822C3665300C5B5CC /* Cena_3.gif in Resources */,
 				1D40364C22C47D6800D12EDA /* Scream3.png in Resources */,
+				1D40366222C4DCFC00D12EDA /* Cena_18.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
 				1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */,
-				1D2CA06122C3FBDC00C5B5CC /* Cena_13.gif in Resources */,
+				1D40366022C4DCE200D12EDA /* Cena_13.gif in Resources */,
 				E2726C43217A1DDE00FC04FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -79,29 +79,16 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
    
     @objc func addPulse(longPress: UIGestureRecognizer){
        
-//        if countAlc == 0 {
-//            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
-//            Cena23ImageView.image = Cena23_2Gif
-//            countAlc = 1
-//        } else {
-//            let Cena23Gif = UIImage.gifImageWithName("Cena_23")
-//            Cena23ImageView.image = Cena23Gif
-//            countAlc = 0
-//        }
+
         
         if (longPress.state == UIGestureRecognizer.State.ended)
         {
             countTimerCrom = false
-//           // let gestureTime = NSDate.timeIntervalSinceReferenceDate -
-//            longePressBeginTime
-//             print("Gesture time = \(gestureTime)")
+
             if ((NSDate.timeIntervalSinceReferenceDate - cronom) > 2){
                 respImageView.image = imageInspira
                 labelEnd = true
-                //            if countAlc == 0 {
-                //                progressCounter = progressCounter + progressIncrement
-                //                countAlc = 1
-                //            }
+         
                 progressBar.progress = progressCounter
                 progressCounter = progressCounter + progressIncrement
                 let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2")
@@ -119,16 +106,14 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
             feedbackLabel.text = "0"
             countTimerCrom = true
             cronom = NSDate.timeIntervalSinceReferenceDate
-//            feedbackLabel.text = "Respire"
+
             respImageView.image = imageRespira
             print("Began")
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
             Cena23ImageView.image = Cena23Gif
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//                    self.feedbackGenerator?.notificationOccurred(.success)
-//            }
+
         }
         
     }
@@ -143,9 +128,11 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                 pulse.backgroundColor = UIColor.blue.cgColor
                 self.view.layer.insertSublayer(pulse, below: respImageView.layer)
                 if(progressCounter > 1.0) {
-                    //prepare for segue
                     initialView = false
-                    performSegue(withIdentifier: "Segue23", sender: nil)
+                    
+                    //MARK: Preparrrre Hereeee
+                    
+                   // performSegue(withIdentifier: "Segue23", sender: nil)
                 }
             } else {
                 if countTimerCrom == true {
