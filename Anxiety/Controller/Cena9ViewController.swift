@@ -13,6 +13,8 @@ class Cena9ViewController: UIViewController {
     var labelEnd: Bool = false
     var initialView: Bool = false
     
+    
+    
     @IBOutlet weak var Cena9ImageView: UIImageView!
     
     override func viewDidLoad() {

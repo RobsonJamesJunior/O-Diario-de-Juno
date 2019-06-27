@@ -12,6 +12,9 @@ class Cena7ViewController: UIViewController {
     
     @IBOutlet weak var DicasLabel: UILabel!
     @IBOutlet weak var Cena7ImageView: UIImageView!
+    @IBOutlet weak var ovoImageView: UIImageView!
+    @IBOutlet weak var mamaoImageVIew: UIImageView!
+    @IBOutlet weak var paoImageView: UIImageView!
     
     
     var timer: Timer!
@@ -19,12 +22,33 @@ class Cena7ViewController: UIViewController {
     var labelEnd: Bool = false
     var initialView: Bool = false
     
+    var ovoOriginView: CGPoint!
+    var mamaoOriginView: CGPoint!
+    var paoOriginView: CGPoint!
+    
+    var movendo = false
+    
     func dicasLoad(){
         DicasLabel.text = dicaCenaCafe[0]
         DicasLabel.center.x += view.bounds.height
         UIView.animate(withDuration: 1.0, animations:{
             self.DicasLabel.center.x -= self.view.bounds.height
         })
+    }
+    func shakeOvo() {
+        let center = ovoImageView.center
+        
+        let shake = CABasicAnimation(keyPath: "position")
+        shake.duration = 0.1
+        shake.repeatCount = 2
+        shake.autoreverses = true
+        let fromPoint = CGPoint(x: center.x - 5, y: center.y)
+        let fromValue = NSValue(cgPoint: fromPoint)
+        let toPoint = CGPoint(x: center.x + 5, y: center.y)
+        let toValue = NSValue(cgPoint: toPoint)
+        shake.fromValue = fromValue
+        shake.toValue = toValue
+        ovoImageView.layer.add(shake, forKey: "position")
     }
     
 //    override func viewWillAppear(_ animated:Bool) {
@@ -46,6 +70,13 @@ class Cena7ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         Cena7ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
 //        let Cena7Gif = UIImage.gifImageWithName("Cena_7") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena7
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena7ViewController.handlePan(sender:)))
+        ovoImageView.addGestureRecognizer(pan)
+       // mamaoImageVIew.addGestureRecognizer(pan)
+        //paoImageView.addGestureRecognizer(pan)
+       // view.bringSubviewToFront(mamaoImageVIew)
+        view.bringSubviewToFront(ovoImageView)
+        //view.bringSubviewToFront(paoImageView)
         
         let Cena7Image = UIImage.init(named: "Cena_7")
         
@@ -55,7 +86,194 @@ class Cena7ViewController: UIViewController {
     }
     
     
+    // MARK: gesture ovo
+    @objc func handlePan(sender: UIPanGestureRecognizer) {
+        print ("Handle Pan")
+        let ovoView = sender.view!
+        
+        switch sender.state {
+            
+        case .began, .changed:
+            moveViewWithPan(view: ovoView, sender: sender)
+            
+        case .ended:
+            if ovoView.frame.intersects(ovoImageView.frame) {
+                //deleteView(view: keyView)
+                initialView = false
+               // performSegue(withIdentifier: "next", sender: nil)
+                
+            } else {
+                returnViewToOrigin(view: ovoView)
+                //shakeOvo()
+            }
+            
+        default:
+            break
+        }
+    }
+    
+    
+    
+    func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
+        print ("Movendo")
+        movendo = true
+        let translation = sender.translation(in: view)
+        
+        view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
+    
+    func returnViewToOrigin(view: UIView) {
+        print ("Voltando")
+        movendo = false
+        UIView.animate(withDuration: 0.3, animations: {
+            view.frame.origin = self.ovoOriginView
+        })
+    }
+    
+    
+    func deleteView(view: UIView) {
+        print ("Deletando")
+        UIView.animate(withDuration: 0.3, animations: {
+            view.alpha = 0.0
+        })
+    }
+    
+    
+//    //Mark: Pao
+//    @objc func handlePaoPan(sender: UIPanGestureRecognizer) {
+//        print ("Handle Pan")
+//        let paoView = sender.view!
+//
+//        switch sender.state {
+//
+//        case .began, .changed:
+//            movePaoViewWithPan(view: paoView, sender: sender)
+//
+//        case .ended:
+//            if paoView.frame.intersects(ovoImageView.frame) {
+//                //deleteView(view: keyView)
+//                initialView = false
+//                // performSegue(withIdentifier: "next", sender: nil)
+//
+//            } else {
+//                returnViewToOrigin(view: paoView)
+//                //shakeOvo()
+//            }
+//
+//        default:
+//            break
+//        }
+//    }
+    
+    
+    
+//    func movePaoViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
+//        print ("Movendo")
+//        movendo = true
+//        let translation = sender.translation(in: view)
+//
+//        view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+//        sender.setTranslation(CGPoint.zero, in: view)
+//    }
+//
+//    func returnPaoViewToOrigin(view: UIView) {
+//        print ("Voltando")
+//        movendo = false
+//        UIView.animate(withDuration: 0.3, animations: {
+//            view.frame.origin = self.paoOriginView
+//        })
+//    }
+//
+//
+//    func deleteVPaoView(view: UIView) {
+//        print ("Deletando")
+//        UIView.animate(withDuration: 0.3, animations: {
+//            view.alpha = 0.0
+//        })
+//    }
+//
+//    //Mark: mamao
+//
+//    @objc func handleMamaoPan(sender: UIPanGestureRecognizer) {
+//        print ("Handle Pan")
+//        let mamaoView = sender.view!
+//
+//        switch sender.state {
+//
+//        case .began, .changed:
+//            movePaoViewWithPan(view: mamaoView, sender: sender)
+//
+//        case .ended:
+//            if mamaoView.frame.intersects(mamaoImageVIew.frame) {
+//                //deleteView(view: keyView)
+//                initialView = false
+//                // performSegue(withIdentifier: "next", sender: nil)
+//
+//            } else {
+//                returnViewToOrigin(view: mamaoView)
+//                //shakeOvo()
+//            }
+//
+//        default:
+//            break
+//        }
+//    }
+//
+//
+//
+//    func moveMamaoViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
+//        print ("Movendo")
+//        movendo = true
+//        let translation = sender.translation(in: view)
+//
+//        view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+//        sender.setTranslation(CGPoint.zero, in: view)
+//    }
+//
+//    func returnMamaoViewToOrigin(view: UIView) {
+//        print ("Voltando")
+//        movendo = false
+//        UIView.animate(withDuration: 0.3, animations: {
+//            view.frame.origin = self.mamaoOriginView
+//        })
+//    }
+//
+//
+//    func deleteMamaoView(view: UIView) {
+//        print ("Deletando")
+//        UIView.animate(withDuration: 0.3, animations: {
+//            view.alpha = 0.0
+//        })
+//    }
+//
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @objc func update() { // Função de atualização para opreações constantes
+        
+        if movendo == false {
+            //shakeOvo()
+        }
         if IsOk < cena6.count { // Variável que faz vibrar apenas uma vez
             switch IsOk {
             case 0:
@@ -83,7 +301,7 @@ class Cena7ViewController: UIViewController {
             IsOk += 1
         } else{
             initialView = false
-            performSegue(withIdentifier: "Segue7", sender: nil)
+            //performSegue(withIdentifier: "Segue7", sender: nil)
         }
         
     }
