@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqh-2e-NvL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oeO-wZ-Xpy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="40"/>
+                                <rect key="frame" x="16" y="170" width="343" height="43"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -536,6 +536,70 @@
                                     <action selector="passDialog:" destination="oeO-wZ-Xpy" eventType="touchUpInside" id="8Jq-Nl-wag"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao" translatesAutoresizingMaskIntoConstraints="NO" id="4Re-T8-7DV" userLabel="MamaoEscolhido">
+                                <rect key="frame" x="226" y="313" width="49" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao" translatesAutoresizingMaskIntoConstraints="NO" id="emU-Yu-ZIt">
+                                <rect key="frame" x="283" y="313" width="49" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao1" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-6C-Vmo">
+                                <rect key="frame" x="294" y="252" width="65" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mamao2" translatesAutoresizingMaskIntoConstraints="NO" id="et0-f9-jsg">
+                                <rect key="frame" x="234" y="259" width="62" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="ule-jl-Kqq">
+                                <rect key="frame" x="114" y="141" width="62" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-4L-agT">
+                                <rect key="frame" x="147" y="166" width="62" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao" translatesAutoresizingMaskIntoConstraints="NO" id="lAa-CC-6dV" userLabel="paoEscolhido">
+                                <rect key="frame" x="184" y="177" width="62" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pao2" translatesAutoresizingMaskIntoConstraints="NO" id="xqr-y7-QER">
+                                <rect key="frame" x="165" y="111" width="70" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="OdT-3M-9Ds">
+                                <rect key="frame" x="147" y="443" width="39" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="apl-um-NkS">
+                                <rect key="frame" x="219" y="450" width="39" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="hep-pa-GQw">
+                                <rect key="frame" x="184" y="419" width="39" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ovo" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-AM-LGv" userLabel="OvoEscolhido">
+                                <rect key="frame" x="181" y="472" width="39" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hand1_caucasian" translatesAutoresizingMaskIntoConstraints="NO" id="OwR-DE-JVQ">
+                                <rect key="frame" x="-8" y="-50" width="184" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Juno_Hand" translatesAutoresizingMaskIntoConstraints="NO" id="Peq-C5-sXh">
+                                <rect key="frame" x="208" y="597" width="184" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hand_caucasian_pajamas3" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-Ji-GEI">
+                                <rect key="frame" x="-120" y="313" width="181" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-Nd-snh">
+                                <rect key="frame" x="120" y="590" width="164" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -559,6 +623,9 @@
                     <connections>
                         <outlet property="Cena7ImageView" destination="tq4-el-hFr" id="drb-3b-LtI"/>
                         <outlet property="DicasLabel" destination="4zV-sj-bjF" id="Wun-aL-XZa"/>
+                        <outlet property="mamaoImageVIew" destination="4Re-T8-7DV" id="oei-li-xbH"/>
+                        <outlet property="ovoImageView" destination="Twn-AM-LGv" id="Rfr-cH-LE3"/>
+                        <outlet property="paoImageView" destination="lAa-CC-6dV" id="rPh-Yt-KAi"/>
                         <segue destination="rj0-kG-OH3" kind="showDetail" identifier="Segue7" animates="NO" id="orA-1I-m5X"/>
                     </connections>
                 </viewController>
@@ -1659,11 +1726,20 @@
         <image name="Cena_7.png" width="750" height="1334"/>
         <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
+        <image name="Hand1_caucasian" width="166" height="655"/>
+        <image name="Hand_caucasian_pajamas3" width="759" height="174"/>
+        <image name="Juno_Hand" width="165" height="653"/>
+        <image name="Mamao" width="103" height="153"/>
+        <image name="Mamao1" width="153" height="103"/>
+        <image name="Mamao2" width="103" height="153"/>
+        <image name="Ovo" width="108" height="140"/>
         <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="640" height="1020"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="266" height="266"/>
         <image name="menu.gif" width="750" height="1334"/>
+        <image name="pao" width="110" height="171"/>
+        <image name="pao2" width="171" height="110"/>
         <image name="play" width="350" height="350"/>
         <image name="predecessor" width="531" height="531"/>
         <image name="respira" width="266" height="266"/>
@@ -1672,6 +1748,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="AFy-AR-ZPS"/>
+        <segue reference="IMd-dr-kIE"/>
     </inferredMetricsTieBreakers>
 </document>
