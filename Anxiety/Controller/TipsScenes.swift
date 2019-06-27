@@ -8,7 +8,7 @@
 
 import Foundation
 
-let dicaCenaCafe:[String] = ["Chás podem ajudar a se acalmar!",]
+let dicaCenaCafe:[String] = ["Chás podem ajudar a se acalmar",]
 
 let dicaCenaMetro:[String] = ["Músicas podem diminuir a ansiedade.",]
 

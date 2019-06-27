@@ -47,7 +47,7 @@ class Cena5ViewController: UIViewController {
         
         
         dialogLabelCena5.numberOfLines = 0
-        dialogLabelCena5.font = UIFont(name: "Juninho-Regular", size: 18)
+        dialogLabelCena5.font = UIFont(name: "Junorepacked-Regular", size: 28)
         dialogLabelCena5.numberOfLines = 2
         dialogLabelCena5.textColor = .black
         dialogLabelCena5.textAlignment = .center

@@ -62,7 +62,7 @@ class Cena1ViewController: UIViewController {
             for _ in 1...5 { // Repetição da quantidade de vibrações
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
             }
-            pulsing()
+         
         }
         
 //        if !audioPlayer.isPlaying{
@@ -70,18 +70,18 @@ class Cena1ViewController: UIViewController {
 //        }
     }
     
-    func pulsing(){
-        let pulse = Pulsing(numberOfPulses: 1, radius: 150, position: stopButtonOut.center)
-        pulse.animationDuration = 3.0
+  //  func pulsing(){
+  //      let pulse = Pulsing(numberOfPulses: 1, radius: 150, position: stopButtonOut.center)
+   //     pulse.animationDuration = 3.0
         //     pulse2.backgroundColor = UIColor.blue.cgColor
-        pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-        self.view.layer.insertSublayer(pulse, below: stopButtonOut.layer)
-    }
+   //     pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
+    //    self.view.layer.insertSublayer(pulse, below: stopButtonOut.layer)
+  //  }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 320})
+        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 310})
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
             self.stopButtonOut.isHidden = false

@@ -44,7 +44,7 @@ class Cena8ViewController: UIViewController {
         let imageFech = UIImage.init(named: "fech")
         fech.image = imageFech
         
-        let gifChave = UIImage.gifImageWithName("key") // variável com gif do asset da chave
+        let gifChave = UIImage.gifImageWithName("chave") // variável com gif do asset da chave
         key.image = gifChave // setando o asset gif no ImageView
         
         keyViewOrigin = key.frame.origin // posicao da key Asset
@@ -85,13 +85,13 @@ class Cena8ViewController: UIViewController {
     }
     
     
-    func pulsedFech() {
-        let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: fech.center)
-        pulse.animationDuration = 1.0
-//        pulse.backgroundColor = UIColor.blue.cgColor
-         pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-        self.view.layer.insertSublayer(pulse, below: fech.layer)
-    }
+//    func pulsedFech() {
+//        let pulse = Pulsing(numberOfPulses: 1, radius: 60, position: fech.center)
+//        pulse.animationDuration = 1.0
+////        pulse.backgroundColor = UIColor.blue.cgColor
+//         pulse.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
+//        self.view.layer.insertSublayer(pulse, below: fech.layer)
+//    }
     
     @objc func handlePan(sender: UIPanGestureRecognizer) {
         print ("Handle Pan")
@@ -118,7 +118,7 @@ class Cena8ViewController: UIViewController {
     }
     
     @objc func update() {// Função de atualização para opreações constantes
-        pulsedFech()
+//        pulsedFech()
         if movendo == false {
             shakeKey()
         }
