@@ -41,11 +41,11 @@ class Cena8ViewController: UIViewController {
 //        fech.layer.borderColor = UIColor.red.cgColor
 //        fech.layer.borderWidth = 3
         
-        let imageFech = UIImage.init(named: "fech")
-        fech.image = imageFech
         
-        let gifChave = UIImage.gifImageWithName("chave") // variável com gif do asset da chave
-        key.image = gifChave // setando o asset gif no ImageView
+        fech.image = nil
+        
+        let chave = UIImage.init(named: "chave")// variável com gif do asset da chave
+        key.image = chave // setando o asset gif no ImageView
         
         keyViewOrigin = key.frame.origin // posicao da key Asset
         

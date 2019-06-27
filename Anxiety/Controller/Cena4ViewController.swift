@@ -20,10 +20,17 @@ class Cena4ViewController: UIViewController {
     var escovaViewOrigin: CGPoint!
     var movendo = false
     var timer: Timer!
+    var countEscova: Int = 0
+    var semEscove: Bool = false
     
     
     var labelEnd: Bool = false
     var initialView: Bool = false
+    
+    let Bolha = UIImage.gifImageWithName("Bolha")
+    
+    @IBOutlet weak var buttonOut: UIButton!
+    
     
     @IBOutlet weak var Cena4ImageView: UIImageView!
 
@@ -33,25 +40,26 @@ class Cena4ViewController: UIViewController {
         super.viewDidLoad()
         initialView = true
         escovaViewOrigin = EscovaImage.frame.origin
-       
+        semEscove = false
         movendo = false
+        buttonOut.isHidden = true
+        buttonOut.isEnabled = false
+        
          let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
         EscovaImage.addGestureRecognizer(pan)
         view.bringSubviewToFront(EscovaImage)
-        
+        Mouth.image = Bolha
+        Mouth.isHidden = true
         
         // Do any additional setup after loading the view, typically from a nib.
         Cena4ImageView.isAccessibilityElement = true// Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena4Gif = UIImage.gifImageWithName("Cena_4") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena4
         Cena4ImageView.image = Cena4Gif // Adicionando a variável à tela de ImageView
   
-        
-        
-        
     }
     
     @objc func handlePan(sender: UIPanGestureRecognizer) {
-        print ("Handle Pan")
+       
         let escovaView = sender.view!
         
         switch sender.state {
@@ -82,16 +90,49 @@ class Cena4ViewController: UIViewController {
     
     
     func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
-        print ("Movendo")
+        
         movendo = true
         let translation = sender.translation(in: view)
         
         view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
         sender.setTranslation(CGPoint.zero, in: view)
+        
+        if !(view.frame.intersects(Mouth.frame)) {
+            semEscove = false
+        } else if view.frame.intersects(Mouth.frame), !semEscove {
+            Mouth.isHidden = false
+            countEscova += 1
+            semEscove = true
+            switch countEscova {
+            case 1:
+                Mouth.frame.size = CGSize(width: 236, height: 93)
+                Mouth.center = self.view.center
+            case 2:
+                Mouth.frame.size = CGSize(width: 270, height: 122)
+                Mouth.center = self.view.center
+            case 3:
+                Mouth.frame.size = CGSize(width: 304, height: 148)
+                Mouth.center = self.view.center
+            case 4:
+                Mouth.frame.size = CGSize(width: 334, height: 174)
+                Mouth.center = self.view.center
+            case 5:
+                buttonOut.isHidden = false
+                buttonOut.isEnabled = true
+            default:
+                print("ja foi irmão")
+            }
+            
+            
+            
+            print(countEscova)
+        }
+        
+        
     }
     
     func returnViewToOrigin(view: UIView) {
-        print ("Voltando")
+        
         movendo = false
         UIView.animate(withDuration: 0.3, animations: {
             view.frame.origin = self.escovaViewOrigin
@@ -99,13 +140,7 @@ class Cena4ViewController: UIViewController {
     }
     
     
-//    func deleteView(view: UIView) {
-//        print ("Deletando")
-//        UIView.animate(withDuration: 0.3, animations: {
-//            view.alpha = 0.0
-//        })
-//    }
-
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
