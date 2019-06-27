@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqh-2e-NvL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efe-03-8YO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="47.5" y="638" width="280" height="350"/>
+                                <rect key="frame" x="47.5" y="638" width="280" height="350.00000000000023"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="oq3-x7-eiz"/>
                                     <constraint firstAttribute="height" constant="350" id="w1h-ZT-eOt"/>
@@ -315,11 +315,11 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
-                                <rect key="frame" x="0.0" y="371" width="375" height="212"/>
+                                <rect key="frame" x="38.5" y="432" width="298" height="145"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="DTI-1O-3Eu"/>
-                                    <constraint firstAttribute="height" constant="212" id="s7M-T1-pcc"/>
+                                    <constraint firstAttribute="width" constant="298" id="DTI-1O-3Eu"/>
+                                    <constraint firstAttribute="height" constant="145" id="s7M-T1-pcc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -335,7 +335,7 @@
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="bottom" secondItem="bZW-6i-ZUN" secondAttribute="bottom" id="jut-O8-NeE"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="GU9-fX-13z" secondAttribute="trailing" constant="16" id="lfd-IF-qbz"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
-                            <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="2" id="r7X-So-CsF"/>
+                            <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="8" id="r7X-So-CsF"/>
                             <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" constant="8" id="xcH-3j-7RH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZW-6i-ZUN"/>
@@ -573,7 +573,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V18-0V-6rb">
-                                <rect key="frame" x="230" y="376" width="73" height="60"/>
+                                <rect key="frame" x="230" y="404" width="33" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -869,16 +869,26 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="X79-cz-nVR"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
+                                <rect key="frame" x="16" y="273" width="285" height="459"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="XfT-8U-Uzb"/>
+                                    <constraint firstAttribute="height" constant="459" id="xDj-uT-ZJf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="coO-76-o4Z" secondAttribute="bottom" constant="-65" id="0rF-NO-Wz6"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="bottom" secondItem="uuB-kT-gAz" secondAttribute="bottom" constant="16" id="9ls-av-yIB"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" id="AR6-Gm-Adv"/>
                             <constraint firstItem="axh-ic-mhk" firstAttribute="top" secondItem="6vk-wc-7Hi" secondAttribute="top" constant="16" id="KVV-lb-OD4"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="trailing" secondItem="6vk-wc-7Hi" secondAttribute="trailing" id="W4h-nn-3J1"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="top" secondItem="5GG-WQ-e2c" secondAttribute="top" id="e7k-09-hrL"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="bottom" secondItem="6vk-wc-7Hi" secondAttribute="bottom" id="k0g-mM-bN8"/>
+                            <constraint firstItem="uuB-kT-gAz" firstAttribute="leading" secondItem="coO-76-o4Z" secondAttribute="trailing" constant="8" id="kKb-b7-wZU"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="axh-ic-mhk" secondAttribute="trailing" constant="16" id="oNQ-sZ-Yje"/>
+                            <constraint firstItem="coO-76-o4Z" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" constant="16" id="pRL-gp-fpJ"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="uuB-kT-gAz" secondAttribute="trailing" constant="16" id="qS8-Bp-XMM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vk-wc-7Hi"/>
@@ -1274,7 +1284,6 @@
                         <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
                         <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
-                        <segue destination="A6N-NS-WoM" kind="show" identifier="segueCena19_2" animates="NO" id="RaI-Zt-Pde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OY-wI-KXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1324,7 +1333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c28-Mg-yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18996" y="1429"/>
+            <point key="canvasLocation" x="17969" y="1651"/>
         </scene>
         <!--Cena20 View Controller-->
         <scene sceneID="vsD-vy-TDe">
@@ -1620,7 +1629,7 @@
         <image name="Brush" width="554" height="100"/>
         <image name="Cena_1.gif" width="750" height="1334"/>
         <image name="Cena_10.gif" width="750" height="1334"/>
-        <image name="Cena_11.png" width="750" height="805"/>
+        <image name="Cena_11.png" width="750" height="1334"/>
         <image name="Cena_12.gif" width="750" height="1334"/>
         <image name="Cena_13.gif" width="750" height="1334"/>
         <image name="Cena_15.gif" width="750" height="1334"/>
@@ -1640,7 +1649,7 @@
         <image name="Cena_5.gif" width="750" height="1334"/>
         <image name="Cena_6.png" width="750" height="1334"/>
         <image name="Cena_7.gif" width="750" height="1334"/>
-        <image name="Cena_8.png" width="750" height="1334"/>
+        <image name="Cena_8.png" width="500" height="889"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="Iphone" width="750" height="1334"/>
         <image name="Left" width="58" height="84"/>
@@ -1650,6 +1659,7 @@
         <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="500" height="797"/>
         <image name="chave.png" width="62" height="85"/>
+        <image name="hand" width="633" height="720"/>
         <image name="home" width="266" height="266"/>
         <image name="menu.gif" width="750" height="1334"/>
         <image name="parar" width="500" height="159"/>
@@ -1657,6 +1667,6 @@
         <image name="skip" width="266" height="266"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lwG-my-eug"/>
+        <segue reference="X79-cz-nVR"/>
     </inferredMetricsTieBreakers>
 </document>

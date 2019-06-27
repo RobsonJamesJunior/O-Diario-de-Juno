@@ -18,12 +18,12 @@ extension UIView {
         let rotation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
         rotation.values = [-5, 5, -5, 5, -3, 3, -2, 2, 0].map {
             ( degrees: Double) -> Double in
-            let radians: Double = .pi / 180.0
+            let radians: Double = .pi / 180
             return radians
         }
         
         let shakeGroup: CAAnimationGroup = CAAnimationGroup()
-        shakeGroup.animations = [translation, rotation]
+        shakeGroup.animations = [translation, rotation] // add Rotation
         shakeGroup.duration = duration
         shakeGroup.repeatCount = .infinity
         self.layer.add(shakeGroup, forKey: "shakeIt")

@@ -67,6 +67,12 @@ class Cena8ViewController: UIViewController {
         shake.fromValue = fromValue
         shake.toValue = toValue
         key.layer.add(shake, forKey: "position")
+        
+        let pulse1 = Pulsing(numberOfPulses: 1, radius: 35, position: fech.center)
+        pulse1.animationDuration = 1.0
+        //  pulse1.backgroundColor = UIColor.blue.cgColor
+        pulse1.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
+        self.view.layer.insertSublayer(pulse1, below: fech.layer)
     }
     
 

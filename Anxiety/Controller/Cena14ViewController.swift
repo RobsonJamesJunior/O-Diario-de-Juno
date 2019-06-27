@@ -30,11 +30,7 @@ class Cena14ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialView = true
-        // Do any additional setup after loading the view, typically from a nib.
-        //        Cena14ImageView.isAccessibilityElement = true
-        //  let Cena14Gif = UIImage.gifImageWithName("Cena_14") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena6
-        //  Cena14ImageView.image = Cena14Gif // Adicionando a variável à tela de ImageView
-        // timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena14ViewController.update), userInfo: nil, repeats: true)
+       
         
     }
     

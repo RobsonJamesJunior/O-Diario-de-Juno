@@ -105,18 +105,15 @@ class Cena4ViewController: UIViewController {
             semEscove = true
             switch countEscova {
             case 1:
-                Mouth.frame.size = CGSize(width: 236, height: 93)
-                Mouth.center = self.view.center
-            case 2:
                 Mouth.frame.size = CGSize(width: 270, height: 122)
                 Mouth.center = self.view.center
-            case 3:
+            case 2:
                 Mouth.frame.size = CGSize(width: 304, height: 148)
                 Mouth.center = self.view.center
-            case 4:
+            case 3:
                 Mouth.frame.size = CGSize(width: 334, height: 174)
                 Mouth.center = self.view.center
-            case 5:
+            case 4:
                 buttonOut.isHidden = false
                 buttonOut.isEnabled = true
             default:

@@ -13,21 +13,14 @@ class Cena7ViewController: UIViewController {
 
     @IBOutlet weak var Cena7ImageView: UIImageView!
    
-    
-    
     var timer: Timer!
     var IsOk: Int = 0
     var labelEnd: Bool = false
     var initialView: Bool = false
     
-    var ovoOriginView: CGPoint!
-    var mamaoOriginView: CGPoint!
-    var paoOriginView: CGPoint!
+    var podePassar: Bool = false
     
     var movendo = false
-    
-   
-  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +29,7 @@ class Cena7ViewController: UIViewController {
         Cena7ImageView.isAccessibilityElement = true
 
         
-        let Cena7Image = UIImage.init(named: "Cena_7")
+        let Cena7Image = UIImage.gifImageWithName("Cena_7")
         
         Cena7ImageView.image = Cena7Image // Adicionando a variável à tela de ImageView
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(Cena7ViewController.update), userInfo: nil, repeats: true)
@@ -74,7 +67,8 @@ class Cena7ViewController: UIViewController {
             default:
                 showOutgoingMessage10(text: cena6[IsOk])
 //                dicasLoad()
-                performSegue(withIdentifier: "next", sender: nil)
+                podePassar = true
+//                performSegue(withIdentifier: "next", sender: nil)
             }
             IsOk += 1
         } else{
@@ -84,10 +78,11 @@ class Cena7ViewController: UIViewController {
         
     }
     
+    // MARK: 1
     func showOutgoingMessage1(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -137,10 +132,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 2
     func showOutgoingMessage2(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -158,7 +154,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
-                y: view.frame.height - bubbleImageSize.height - 530, //posição y
+                y: view.frame.height - bubbleImageSize.height - 490, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -190,10 +186,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 3
     func showOutgoingMessage3(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -211,7 +208,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
-                y: view.frame.height - bubbleImageSize.height - 480, //posição y
+                y: view.frame.height - bubbleImageSize.height - 400, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -243,10 +240,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 4
     func showOutgoingMessage4(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -264,7 +262,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
-                y: view.frame.height - bubbleImageSize.height - 420, //posição y
+                y: view.frame.height - bubbleImageSize.height - 340, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -296,10 +294,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 5
     func showOutgoingMessage5(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -349,10 +348,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 6
     func showOutgoingMessage6(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -370,7 +370,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 245 ,// posição x
-                y: view.frame.height - bubbleImageSize.height - 565, //posição y
+                y: view.frame.height - bubbleImageSize.height - 570, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -402,10 +402,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 7
     func showOutgoingMessage7(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -423,7 +424,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 245 ,// posição x
-                y: view.frame.height - bubbleImageSize.height - 520, //posição y
+                y: view.frame.height - bubbleImageSize.height - 490, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -455,10 +456,11 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 8
     func showOutgoingMessage8(text: String) {
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -476,7 +478,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 245 ,// posição x
-                y: view.frame.height - bubbleImageSize.height - 480, //posição y
+                y: view.frame.height - bubbleImageSize.height - 400, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -508,11 +510,12 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 9
     func showOutgoingMessage9(text: String) {
         
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
         
@@ -536,7 +539,7 @@ class Cena7ViewController: UIViewController {
         
         let outgoingMessageView = UIImageView(frame:
             CGRect(x: view.frame.width - bubbleImageSize.width - 225 ,// posição x
-                y: view.frame.height - bubbleImageSize.height - 420, //posição y
+                y: view.frame.height - bubbleImageSize.height - 340, //posição y
                 width: bubbleImageSize.width,
                 height: bubbleImageSize.height))
         
@@ -568,12 +571,13 @@ class Cena7ViewController: UIViewController {
         }
     }
     
+    // MARK: 10
     func showOutgoingMessage10(text: String) {
         let device = UIDevice.modelName
 
         let label =  UILabel()
         label.numberOfLines = 0
-        label.font = UIFont(name: "IndieFlower", size: 22)
+        label.font = UIFont(name: "IndieFlower", size: 18)
         label.textColor = .black
         label.text = ""
 
@@ -592,7 +596,7 @@ class Cena7ViewController: UIViewController {
         if ((device == "iPhone 7")||(device == "Simulator iPhone 7")) {
             let outgoingMessageView = UIImageView(frame:
                 CGRect(x: view.frame.width - bubbleImageSize.width - 230,// posição x
-                    y: view.frame.height - bubbleImageSize.height - 380, //posição y
+                    y: view.frame.height - bubbleImageSize.height - 270, //posição y
                     width: bubbleImageSize.width,
                     height: bubbleImageSize.height))
 
@@ -654,7 +658,12 @@ class Cena7ViewController: UIViewController {
     
     
     @IBAction func passDialog(_ sender: Any) {
-        labelEnd = true
+        
+        if podePassar == true {
+           performSegue(withIdentifier: "next", sender: nil)
+        } else {
+            labelEnd = true
+        }
     }
     
     override var prefersStatusBarHidden: Bool{
