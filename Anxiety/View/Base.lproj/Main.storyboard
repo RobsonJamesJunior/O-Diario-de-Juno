@@ -21,13 +21,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="91"/>
+                                <rect key="frame" x="16" y="170" width="343" height="75"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="54" name="IndieFlower"/>
+                                                <font key="NSFont" metaFont="system" size="54"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -1657,6 +1657,6 @@
         <image name="skip" width="266" height="266"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lwG-my-eug"/>
+        <segue reference="LTs-jF-Jgk"/>
     </inferredMetricsTieBreakers>
 </document>
