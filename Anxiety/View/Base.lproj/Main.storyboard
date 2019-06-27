@@ -72,7 +72,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="0.0" y="638" width="375" height="350"/>
+                                <rect key="frame" x="47.5" y="638" width="280" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="oq3-x7-eiz"/>
+                                    <constraint firstAttribute="height" constant="350" id="w1h-ZT-eOt"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-7E-nFm">
                                 <rect key="frame" x="299" y="36" width="60" height="60"/>
@@ -91,7 +95,6 @@
                                     <constraint firstAttribute="width" constant="180" id="8vE-Ep-oz5"/>
                                     <constraint firstAttribute="height" constant="76" id="YBF-mi-tvx"/>
                                 </constraints>
-                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="ButtonStopVibration:" destination="W0a-9h-xUq" eventType="touchUpInside" id="op8-T4-kUD"/>
                                     <segue destination="DUr-Os-nl6" kind="show" animates="NO" id="rxr-gr-7RK"/>
@@ -100,16 +103,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5lZ-Qr-FsH" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="5mO-PM-PXv"/>
                             <constraint firstItem="9DI-7E-nFm" firstAttribute="top" secondItem="bOP-rH-s2e" secondAttribute="top" constant="16" id="FHf-db-UQA"/>
                             <constraint firstItem="bOP-rH-s2e" firstAttribute="bottom" secondItem="w8h-Ju-ooM" secondAttribute="bottom" id="JBM-8Z-aQ3"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
                             <constraint firstAttribute="bottom" secondItem="5lZ-Qr-FsH" secondAttribute="bottom" constant="-321" id="Ozg-s6-bTa"/>
-                            <constraint firstItem="5lZ-Qr-FsH" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="P5M-F7-pvj"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
                             <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerX" secondItem="8ze-UO-fiH" secondAttribute="centerX" id="bZB-Oi-ybc"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
+                            <constraint firstItem="5lZ-Qr-FsH" firstAttribute="centerX" secondItem="8ze-UO-fiH" secondAttribute="centerX" id="wLt-Nc-NEO"/>
                             <constraint firstItem="bOP-rH-s2e" firstAttribute="trailing" secondItem="9DI-7E-nFm" secondAttribute="trailing" constant="16" id="wSe-6F-bf8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bOP-rH-s2e"/>
@@ -1657,9 +1659,8 @@
         <image name="Cena_7.png" width="750" height="1334"/>
         <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
-        <image name="Stop" width="518" height="205"/>
         <image name="caixa_dialogo" width="697" height="215"/>
-        <image name="cell_alarm" width="350" height="350"/>
+        <image name="cell_alarm" width="640" height="1020"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="266" height="266"/>
         <image name="key.gif" width="500" height="500"/>
@@ -1672,6 +1673,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="leZ-Sl-Yqu"/>
+        <segue reference="66f-uO-lzy"/>
     </inferredMetricsTieBreakers>
 </document>
