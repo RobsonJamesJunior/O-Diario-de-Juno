@@ -28,7 +28,7 @@ class Cena2ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         dialoLabelCena2.numberOfLines = 0
-        dialoLabelCena2.font = UIFont(name: "Junorepacked-Regular", size: 28)
+        dialoLabelCena2.font = UIFont(name: "Juninhorepacked-Regular", size: 28)
         dialoLabelCena2.numberOfLines = 2
         dialoLabelCena2.textColor = .black
         dialoLabelCena2.textAlignment = .center
