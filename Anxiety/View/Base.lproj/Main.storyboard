@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yqh-2e-NvL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ITT-Dr-ArQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -378,15 +378,24 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="W6Q-gE-yIK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inspira" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-Wa-xkz">
+                                <rect key="frame" x="77" y="112" width="217" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="Zud-f7-gkT"/>
+                                    <constraint firstAttribute="width" constant="217" id="esJ-af-PqX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iRz-Ue-5G4" firstAttribute="centerX" secondItem="arj-6R-psu" secondAttribute="centerX" id="1tB-IW-bFJ"/>
+                            <constraint firstItem="lHc-Wa-xkz" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" constant="77" id="9LA-ff-D2Z"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="bottom" secondItem="iRz-Ue-5G4" secondAttribute="bottom" constant="60" id="CTv-Zq-1ix"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="bottom" secondItem="Np6-J3-fur" secondAttribute="bottom" id="DMa-aO-d2R"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="Hnm-Ht-FC9" secondAttribute="trailing" constant="16" id="EEF-ar-LaR"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="trailing" secondItem="Np6-J3-fur" secondAttribute="trailing" id="FdR-z5-i5T"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="bottom" secondItem="UDm-rB-eAR" secondAttribute="bottom" id="GRM-cs-3EF"/>
+                            <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="lHc-Wa-xkz" secondAttribute="trailing" constant="81" id="GiW-YY-Mpy"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="F3M-UV-ENg" secondAttribute="trailing" constant="20" id="K9G-gd-GHH"/>
                             <constraint firstItem="F3M-UV-ENg" firstAttribute="centerY" secondItem="iRz-Ue-5G4" secondAttribute="centerY" id="L90-mk-bZE"/>
                             <constraint firstItem="UDm-rB-eAR" firstAttribute="top" secondItem="Np6-J3-fur" secondAttribute="top" id="SsD-zy-FaT"/>
@@ -397,12 +406,14 @@
                             <constraint firstItem="UDm-rB-eAR" firstAttribute="leading" secondItem="Np6-J3-fur" secondAttribute="leading" id="rsG-wJ-Fc8"/>
                             <constraint firstItem="Np6-J3-fur" firstAttribute="trailing" secondItem="UDm-rB-eAR" secondAttribute="trailing" id="uJc-Nq-jxV"/>
                             <constraint firstItem="N6x-w5-JHf" firstAttribute="top" secondItem="arj-6R-psu" secondAttribute="top" id="ubb-hf-aN2"/>
+                            <constraint firstItem="lHc-Wa-xkz" firstAttribute="top" secondItem="Np6-J3-fur" secondAttribute="top" constant="92" id="xJa-B1-u6Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np6-J3-fur"/>
                     </view>
                     <connections>
                         <outlet property="Cena5ImageView" destination="N6x-w5-JHf" id="05H-0V-raq"/>
                         <outlet property="dialogLabelCena5" destination="F3M-UV-ENg" id="vTx-vL-fIz"/>
+                        <outlet property="imageBlur" destination="lHc-Wa-xkz" id="wkv-kf-o88"/>
                         <segue destination="AaJ-nd-og4" kind="showDetail" identifier="Segue5" animates="NO" id="3hs-BC-8wS"/>
                     </connections>
                 </viewController>
@@ -1646,6 +1657,7 @@
         <image name="Cena_7.png" width="750" height="1334"/>
         <image name="Cena_8.png" width="750" height="1334"/>
         <image name="Cena_9.gif" width="750" height="1334"/>
+        <image name="Inspira" width="200" height="200"/>
         <image name="Stop" width="518" height="205"/>
         <image name="caixa_dialogo" width="750" height="360"/>
         <image name="cell_alarm" width="350" height="350"/>
@@ -1661,6 +1673,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="zgU-rF-g5n"/>
+        <segue reference="W6Q-gE-yIK"/>
     </inferredMetricsTieBreakers>
 </document>
