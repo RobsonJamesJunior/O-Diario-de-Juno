@@ -132,7 +132,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                     
                     //MARK: Preparrrre Hereeee
                     
-                   // performSegue(withIdentifier: "Segue23", sender: nil)
+                    performSegue(withIdentifier: "segueTobeContinue2", sender: nil)
                 }
             } else {
                 if countTimerCrom == true {
@@ -194,22 +194,6 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         feedbackLabel.layer.add(flash, forKey: nil)
     }
-    
-    
-// button inspirar
-//        if inspBool == false {
-//            inspBool = true
-//            let Cena23Gif = UIImage.gifImageWithName("Cena_23") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
-//            Cena23ImageView.image = Cena23Gif // Adicionando a variável à tela de ImageView
-//        }
-    
-    
-// button respirar
-//        if respBool == false {
-//            respBool = true
-//            let Cena23_2Gif = UIImage.gifImageWithName("Cena_23_2") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
-//            Cena23ImageView.image = Cena23_2Gif // Adicionando a variável à tela de ImageView
-//        }
     
     
     override var prefersStatusBarHidden: Bool{

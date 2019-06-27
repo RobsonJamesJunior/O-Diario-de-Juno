@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efe-03-8YO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -845,6 +845,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_13.gif" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-QN-35S">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
+                                <rect key="frame" x="0.0" y="273" width="375" height="459"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="XfT-8U-Uzb"/>
+                                    <constraint firstAttribute="height" constant="459" id="xDj-uT-ZJf"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
                                 <rect key="frame" x="309" y="601" width="50" height="50"/>
                                 <constraints>
@@ -869,13 +876,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="X79-cz-nVR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
-                                <rect key="frame" x="16" y="273" width="285" height="459"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="XfT-8U-Uzb"/>
-                                    <constraint firstAttribute="height" constant="459" id="xDj-uT-ZJf"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -886,9 +886,9 @@
                             <constraint firstItem="QW6-QN-35S" firstAttribute="trailing" secondItem="6vk-wc-7Hi" secondAttribute="trailing" id="W4h-nn-3J1"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="top" secondItem="5GG-WQ-e2c" secondAttribute="top" id="e7k-09-hrL"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="bottom" secondItem="6vk-wc-7Hi" secondAttribute="bottom" id="k0g-mM-bN8"/>
-                            <constraint firstItem="uuB-kT-gAz" firstAttribute="leading" secondItem="coO-76-o4Z" secondAttribute="trailing" constant="8" id="kKb-b7-wZU"/>
+                            <constraint firstItem="uuB-kT-gAz" firstAttribute="leading" secondItem="coO-76-o4Z" secondAttribute="trailing" constant="-66" id="kKb-b7-wZU"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="axh-ic-mhk" secondAttribute="trailing" constant="16" id="oNQ-sZ-Yje"/>
-                            <constraint firstItem="coO-76-o4Z" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" constant="16" id="pRL-gp-fpJ"/>
+                            <constraint firstItem="coO-76-o4Z" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" id="pRL-gp-fpJ"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="uuB-kT-gAz" secondAttribute="trailing" constant="16" id="qS8-Bp-XMM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vk-wc-7Hi"/>
@@ -1284,6 +1284,7 @@
                         <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
                         <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
+                        <segue destination="A6N-NS-WoM" kind="show" identifier="segueTobeContinue1" id="lho-cL-CB8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OY-wI-KXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1298,7 +1299,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_19_1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-4G-ULI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToBeContinue.png" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-4G-ULI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="iVS-6Z-gra"/>
@@ -1333,7 +1334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c28-Mg-yjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17969" y="1651"/>
+            <point key="canvasLocation" x="18068" y="1389"/>
         </scene>
         <!--Cena20 View Controller-->
         <scene sceneID="vsD-vy-TDe">
@@ -1575,6 +1576,7 @@
                         <outlet property="feedbackLabel" destination="WdI-DF-fEf" id="YRG-HL-TZz"/>
                         <outlet property="progressBar" destination="VtI-MT-gL4" id="h2G-KB-gGI"/>
                         <outlet property="respImageView" destination="aig-Dv-cSl" id="Ljq-aB-eUi"/>
+                        <segue destination="A6N-NS-WoM" kind="show" identifier="segueTobeContinue2" id="BxL-9r-GNN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2K-WO-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1637,7 +1639,6 @@
         <image name="Cena_17.gif" width="750" height="1334"/>
         <image name="Cena_18.gif" width="750" height="1334"/>
         <image name="Cena_19.gif" width="750" height="1334"/>
-        <image name="Cena_19_1.gif" width="750" height="1334"/>
         <image name="Cena_2.gif" width="750" height="1334"/>
         <image name="Cena_20.gif" width="750" height="1334"/>
         <image name="Cena_21.gif" width="750" height="1334"/>
@@ -1656,6 +1657,7 @@
         <image name="Play1" width="135" height="135"/>
         <image name="Rigth" width="59" height="84"/>
         <image name="Scream2.png" width="530" height="986"/>
+        <image name="ToBeContinue.png" width="751" height="1334"/>
         <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="500" height="797"/>
         <image name="chave.png" width="62" height="85"/>
@@ -1667,6 +1669,7 @@
         <image name="skip" width="266" height="266"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="lho-cL-CB8"/>
         <segue reference="X79-cz-nVR"/>
     </inferredMetricsTieBreakers>
 </document>

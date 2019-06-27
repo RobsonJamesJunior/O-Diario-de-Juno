@@ -21,8 +21,8 @@ class Cena24ViewController: UIViewController {
          initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         Cena24ImageView.isAccessibilityElement = true
-        let Cena24Gif = UIImage.gifImageWithName("Cena_24") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
-        Cena24ImageView.image = Cena24Gif // Adicionando a variável à tela de ImageView
+        let Cena24 = UIImage.init(named: "ToBeContinue") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena
+        Cena24ImageView.image = Cena24 // Adicionando a variável à tela de ImageView
     }
     
     override var prefersStatusBarHidden: Bool{

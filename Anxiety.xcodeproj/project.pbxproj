@@ -64,6 +64,7 @@
 		1D40366422C4DD5000D12EDA /* Cena_16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366322C4DD4F00D12EDA /* Cena_16.gif */; };
 		1D40366622C4FFE100D12EDA /* Cena_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366522C4FFE100D12EDA /* Cena_8.png */; };
 		1D40366822C5015F00D12EDA /* Cena_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366722C5015F00D12EDA /* Cena_11.png */; };
+		1D40366A22C5088200D12EDA /* ToBeContinue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40366922C5088200D12EDA /* ToBeContinue.png */; };
 		1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */; };
 		1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */; };
 		1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */; };
@@ -167,6 +168,7 @@
 		1D40366322C4DD4F00D12EDA /* Cena_16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_16.gif; sourceTree = "<group>"; };
 		1D40366522C4FFE100D12EDA /* Cena_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_8.png; sourceTree = "<group>"; };
 		1D40366722C5015F00D12EDA /* Cena_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cena_11.png; sourceTree = "<group>"; };
+		1D40366922C5088200D12EDA /* ToBeContinue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToBeContinue.png; sourceTree = "<group>"; };
 		1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena21ViewController.swift; sourceTree = "<group>"; };
 		1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena22ViewController.swift; sourceTree = "<group>"; };
 		1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena23ViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		1D2CA00822C3653500C5B5CC /* ImagensCenas */ = {
 			isa = PBXGroup;
 			children = (
+				1D40366922C5088200D12EDA /* ToBeContinue.png */,
 				1D40365322C488F400D12EDA /* chave.png */,
 				1D2CA00A22C3654D00C5B5CC /* Cena_1.gif */,
 				1D2CA01D22C3655000C5B5CC /* Cena_2.gif */,
@@ -518,6 +521,7 @@
 				1D2CA05022C36F8500C5B5CC /* Cena_21.gif in Resources */,
 				1D2CA02822C3665300C5B5CC /* Cena_3.gif in Resources */,
 				1D40364C22C47D6800D12EDA /* Scream3.png in Resources */,
+				1D40366A22C5088200D12EDA /* ToBeContinue.png in Resources */,
 				1D40366222C4DCFC00D12EDA /* Cena_18.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
 				1D7C0FF4218F241C006DFE69 /* coração.mp3 in Resources */,
@@ -721,7 +725,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CW963BG8P;
+				DEVELOPMENT_TEAM = 97WB89LRXA;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -741,7 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CW963BG8P;
+				DEVELOPMENT_TEAM = 97WB89LRXA;
 				INFOPLIST_FILE = Anxiety/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

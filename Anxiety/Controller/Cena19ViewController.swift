@@ -103,7 +103,7 @@ class Cena19ViewController: UIViewController {
                     performSegue(withIdentifier: "segueCena19_1", sender: nil)
                     initialView = false
                 case .down:
-                    performSegue(withIdentifier: "segueCena19_2", sender: nil)
+                    performSegue(withIdentifier: "segueTobeContinue1", sender: nil)
                     initialView = false
                 default:
                     break
