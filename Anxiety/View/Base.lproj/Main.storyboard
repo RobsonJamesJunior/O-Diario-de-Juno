@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="40"/>
+                                <rect key="frame" x="16" y="170" width="343" height="43"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -306,13 +306,6 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
-                                <rect key="frame" x="76" y="291" width="237" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="20f-4f-jP1"/>
-                                    <constraint firstAttribute="width" constant="237" id="SDV-sn-b40"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
                                 <rect key="frame" x="62" y="500" width="251" height="69"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -321,11 +314,18 @@
                                     <constraint firstAttribute="height" constant="69" id="s7M-T1-pcc"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolha.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
+                                <rect key="frame" x="104" y="304" width="183" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="20f-4f-jP1"/>
+                                    <constraint firstAttribute="width" constant="183" id="SDV-sn-b40"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerY" secondItem="zoX-JC-cPa" secondAttribute="centerY" id="8dd-iL-Eez"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="top" secondItem="zoX-JC-cPa" secondAttribute="top" id="CA0-Zo-sUG"/>
-                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="top" secondItem="bZW-6i-ZUN" secondAttribute="top" constant="271" id="CCS-fe-Jud"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="trailing" secondItem="bZW-6i-ZUN" secondAttribute="trailing" id="Cpd-na-dB4"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="vcV-DU-P4X" secondAttribute="trailing" constant="32" id="F3b-rX-jWI"/>
                             <constraint firstItem="jPn-LM-erk" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" id="Qym-nF-uSg"/>
@@ -335,7 +335,7 @@
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="GU9-fX-13z" secondAttribute="trailing" constant="16" id="lfd-IF-qbz"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
                             <constraint firstItem="vcV-DU-P4X" firstAttribute="top" secondItem="jPn-LM-erk" secondAttribute="bottom" constant="16" id="r7X-So-CsF"/>
-                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" constant="7" id="xcH-3j-7RH"/>
+                            <constraint firstItem="ukC-Lu-ezh" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" constant="8" id="xcH-3j-7RH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZW-6i-ZUN"/>
                     </view>
@@ -343,6 +343,7 @@
                         <outlet property="Cena4ImageView" destination="0A1-Kw-Pfc" id="NyP-JR-5mb"/>
                         <outlet property="EscovaImage" destination="jPn-LM-erk" id="09y-Fy-tak"/>
                         <outlet property="Mouth" destination="ukC-Lu-ezh" id="zmO-Pn-ceA"/>
+                        <outlet property="buttonOut" destination="vcV-DU-P4X" id="kIf-eJ-fqZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7W-2k-S4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -593,8 +594,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.15683335479999999" blue="0.1140543671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
-                                <rect key="frame" x="65" y="235" width="65" height="71"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chave.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
+                                <rect key="frame" x="73" y="289" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1633,6 +1634,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bolha.gif" width="579" height="379"/>
         <image name="Brush" width="554" height="100"/>
         <image name="Cena_1.gif" width="750" height="1334"/>
         <image name="Cena_10.gif" width="750" height="1334"/>
@@ -1661,6 +1663,7 @@
         <image name="Cena_9.gif" width="750" height="1334"/>
         <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="640" height="1020"/>
+        <image name="chave.gif" width="80" height="99"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="266" height="266"/>
         <image name="menu.gif" width="750" height="1334"/>
@@ -1672,6 +1675,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="AFy-AR-ZPS"/>
+        <segue reference="leZ-Sl-Yqu"/>
     </inferredMetricsTieBreakers>
 </document>
