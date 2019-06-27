@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="43"/>
+                                <rect key="frame" x="16" y="170" width="343" height="40"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -577,10 +577,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="key.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
-                                <rect key="frame" x="65" y="189" width="65" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRA-nA-qpG">
                                 <rect key="frame" x="299" y="36" width="60" height="60"/>
                                 <constraints>
@@ -596,6 +592,10 @@
                                 <rect key="frame" x="230" y="376" width="73" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.15683335479999999" blue="0.1140543671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kep-nb-7uu">
+                                <rect key="frame" x="65" y="235" width="65" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1663,7 +1663,6 @@
         <image name="cell_alarm" width="640" height="1020"/>
         <image name="fech" width="98" height="92"/>
         <image name="home" width="266" height="266"/>
-        <image name="key.gif" width="500" height="500"/>
         <image name="menu.gif" width="750" height="1334"/>
         <image name="play" width="350" height="350"/>
         <image name="predecessor" width="531" height="531"/>
@@ -1673,6 +1672,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQ5-7h-Wck"/>
-        <segue reference="66f-uO-lzy"/>
+        <segue reference="AFy-AR-ZPS"/>
     </inferredMetricsTieBreakers>
 </document>

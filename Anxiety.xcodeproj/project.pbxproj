@@ -84,6 +84,7 @@
 		1DBE1BC92188EA560000F746 /* TipsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE1BC82188EA560000F746 /* TipsScenes.swift */; };
 		1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A121B6CBBD0019804B /* Pulsing.swift */; };
 		1DC8A3A621B6D6120019804B /* key.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8A3A521B6D6120019804B /* key.gif */; };
+		1DE8DC8522C46A86008D99EB /* chave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1DE8DC8422C46A86008D99EB /* chave.gif */; };
 		1DFDAECD2271E54400824D98 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDAECC2271E54400824D98 /* ProgressBarView.swift */; };
 		5E06217922BD228300B4A83C /* ShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06217822BD228300B4A83C /* ShakeView.swift */; };
 		5E4057F8226F60A1005AE9C2 /* MusicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */; };
@@ -181,6 +182,7 @@
 		1DBE1BC82188EA560000F746 /* TipsScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipsScenes.swift; path = Anxiety/Controller/TipsScenes.swift; sourceTree = SOURCE_ROOT; };
 		1DC8A3A121B6CBBD0019804B /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		1DC8A3A521B6D6120019804B /* key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = key.gif; sourceTree = "<group>"; };
+		1DE8DC8422C46A86008D99EB /* chave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chave.gif; sourceTree = "<group>"; };
 		1DFDAECC2271E54400824D98 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		5E06217822BD228300B4A83C /* ShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeView.swift; sourceTree = "<group>"; };
 		5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBackground.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		1D2CA00822C3653500C5B5CC /* ImagensCenas */ = {
 			isa = PBXGroup;
 			children = (
+				1DE8DC8422C46A86008D99EB /* chave.gif */,
 				1D2CA00A22C3654D00C5B5CC /* Cena_1.gif */,
 				1D2CA01D22C3655000C5B5CC /* Cena_2.gif */,
 				1D2CA01122C3654E00C5B5CC /* Cena_3.gif */,
@@ -446,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE8DC8522C46A86008D99EB /* chave.gif in Resources */,
 				1D2CA04E22C36F7000C5B5CC /* Cena_20.gif in Resources */,
 				1D2CA02522C3664900C5B5CC /* Cena_4.gif in Resources */,
 				1D2CA03622C3668200C5B5CC /* Cena_19_1.gif in Resources */,

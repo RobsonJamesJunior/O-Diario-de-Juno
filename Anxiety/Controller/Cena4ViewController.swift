@@ -15,6 +15,8 @@ class Cena4ViewController: UIViewController {
     @IBOutlet weak var EscovaImage: UIImageView!
     
     @IBOutlet weak var Mouth: UIImageView!
+    
+    
     var escovaViewOrigin: CGPoint!
     var movendo = false
     var timer: Timer!
@@ -24,8 +26,7 @@ class Cena4ViewController: UIViewController {
     var initialView: Bool = false
     
     @IBOutlet weak var Cena4ImageView: UIImageView!
-    @IBOutlet weak var Boca: UIImageView!
-    @IBOutlet weak var Escova: UIImageView!
+
     //    var timer: Timer!
     
     override func viewDidLoad() {
