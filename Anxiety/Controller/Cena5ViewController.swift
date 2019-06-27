@@ -11,6 +11,8 @@ import AVFoundation // Biblioteca para utilizar sons
 
 class Cena5ViewController: UIViewController {
     
+    @IBOutlet weak var imageBlur: UIImageView!
+    
     @IBOutlet weak var Cena5ImageView: UIImageView!
     var audioPlayer = AVAudioPlayer()
     var timer: Timer!
@@ -19,6 +21,10 @@ class Cena5ViewController: UIViewController {
     var fimDefrase: Bool =  false
     var labelEnd: Bool = false
     var initialView: Bool = false
+    var count = 10
+    
+    var filter = CIFilter(name: "CIGaussianBlur")
+    var first: Bool = true
     
     @IBOutlet weak var dialogLabelCena5: UILabel!
     
@@ -27,6 +33,18 @@ class Cena5ViewController: UIViewController {
         super.viewDidLoad()
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
+        
+       
+        let inputImage = CIImage(cgImage: (imageBlur.image?.cgImage)!)
+
+        filter?.setValue(inputImage, forKey: "inputImage")
+        filter?.setValue(count, forKey: "inputRadius")
+        //filter?.setValue(cout, forKey: "inputIntesity")
+
+        let blurred = filter?.outputImage
+        imageBlur.image = UIImage(ciImage: blurred!)
+        
+        
         
         dialogLabelCena5.numberOfLines = 0
         dialogLabelCena5.font = UIFont(name: "Juninhorepacked-Regular", size: 28)
@@ -47,7 +65,7 @@ class Cena5ViewController: UIViewController {
     
     @IBAction func setDialogCena5(_ sender: Any) {
         validAnimation = false
-        if fimDefrase == true {
+        if fimDefrase == true && first == false{
             dialogLabelCena5.text?.removeAll()
             IsOk += 1
             validAnimation = true
@@ -263,8 +281,95 @@ class Cena5ViewController: UIViewController {
 ////    }
 //
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        
+        let touch = touches.first
+        if(touch?.view == imageBlur)
+        {
+            
+        }
+        print("entrou")
+        
+    }
     
+    override func touchesMoved(_ touches: Set<UITouch>,with event: UIEvent?){
+        let touch = touches.first
+        
+        // print("movendo")
+        if count == 10{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 9
+                print("movendo")
+            }
+        } else if count == 9{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 8
+            }
+        } else if count == 8{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 7
+            }
+        }else if count == 7{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 6
+            }
+        }else if count == 6{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 5
+            }
+        }else if count == 5{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 4
+            }
+        }else if count == 4{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 3
+            }
+        }else if count == 3{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 2
+            }
+        }else if count == 2{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 1
+            }
+        }else if count == 1{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.count = 0
+            }
+        }else if count == 0{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.first = false
+            }
+        }
+        
+        
+        
+        self.filter?.setValue(self.count, forKey: "inputRadius")
+        print(self.filter)
+        let blurred = self.filter?.outputImage
+        self.imageBlur.image = UIImage(ciImage: blurred!)
+        print("movendo")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        if(touch?.view == imageBlur)
+        {
+            print("continuou")
+            
+        }
+        
+    }
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    
 }
