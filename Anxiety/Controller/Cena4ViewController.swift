@@ -17,6 +17,10 @@ class Cena4ViewController: UIViewController {
     @IBOutlet weak var Mouth: UIImageView!
     
     
+    
+    @IBOutlet weak var espumaContact: UIImageView!
+    
+    
     var escovaViewOrigin: CGPoint!
     var movendo = false
     var timer: Timer!
@@ -68,7 +72,7 @@ class Cena4ViewController: UIViewController {
             moveViewWithPan(view: escovaView, sender: sender)
             
         case .ended:
-            if escovaView.frame.intersects(Mouth.frame) {
+            if escovaView.frame.intersects(espumaContact.frame) {
                 returnViewToOrigin(view: escovaView)
                // performSegue(withIdentifier: "next", sender: nil)
             } else {
@@ -97,9 +101,9 @@ class Cena4ViewController: UIViewController {
         view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
         sender.setTranslation(CGPoint.zero, in: view)
         
-        if !(view.frame.intersects(Mouth.frame)) {
+        if !(view.frame.intersects(espumaContact.frame)) {
             semEscove = false
-        } else if view.frame.intersects(Mouth.frame), !semEscove {
+        } else if view.frame.intersects(espumaContact.frame), !semEscove {
             Mouth.isHidden = false
             countEscova += 1
             semEscove = true
