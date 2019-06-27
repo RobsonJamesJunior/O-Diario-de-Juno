@@ -64,6 +64,7 @@
 		1D40364E22C47D7300D12EDA /* Scream2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40364D22C47D7300D12EDA /* Scream2.png */; };
 		1D40365022C4816200D12EDA /* Bolha.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D40364F22C4816200D12EDA /* Bolha.gif */; };
 		1D40365422C488F400D12EDA /* chave.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365322C488F400D12EDA /* chave.png */; };
+		1D40365622C4911F00D12EDA /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40365522C4911F00D12EDA /* IndieFlower.ttf */; };
 		1D68E7F8218FCB4500FDA350 /* Cena21ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */; };
 		1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */; };
 		1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */; };
@@ -167,6 +168,7 @@
 		1D40364D22C47D7300D12EDA /* Scream2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scream2.png; sourceTree = "<group>"; };
 		1D40364F22C4816200D12EDA /* Bolha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bolha.gif; sourceTree = "<group>"; };
 		1D40365322C488F400D12EDA /* chave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chave.png; sourceTree = "<group>"; };
+		1D40365522C4911F00D12EDA /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
 		1D68E7F7218FCB4500FDA350 /* Cena21ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena21ViewController.swift; sourceTree = "<group>"; };
 		1D68E7F9218FCB6900FDA350 /* Cena22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena22ViewController.swift; sourceTree = "<group>"; };
 		1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cena23ViewController.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 				1D40364922C47AD000D12EDA /* Juninhorepacked-Regular.ttf */,
 				5E82FA4E2188AC0600A43BE5 /* Juninho-Regular.ttf */,
 				1DE8DC8622C46D1C008D99EB /* Junorepacked-Regular.ttf */,
+				1D40365522C4911F00D12EDA /* IndieFlower.ttf */,
 			);
 			path = font;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				1D7C0FF9218F241C006DFE69 /* metro.wav in Resources */,
 				1DE8DC8722C46D1C008D99EB /* Junorepacked-Regular.ttf in Resources */,
 				1DC8A3A621B6D6120019804B /* key.gif in Resources */,
+				1D40365622C4911F00D12EDA /* IndieFlower.ttf in Resources */,
 				1D7C1003218F241C006DFE69 /* coração2.mp3 in Resources */,
 				1D7C0FF7218F241C006DFE69 /* passaro2.wav in Resources */,
 				1D2CA05422C36FBA00C5B5CC /* Cena_23_2.gif in Resources */,

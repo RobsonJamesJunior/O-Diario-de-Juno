@@ -31,7 +31,7 @@ class Cena19ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         dialogCena19Label.numberOfLines = 0
-        dialogCena19Label.font = UIFont(name: "Juninhorepacked-Regular", size: 28)
+        dialogCena19Label.font = UIFont(name: "IndieFlower", size: 28)
         dialogCena19Label.numberOfLines = 2
         dialogCena19Label.textColor = .black
         dialogCena19Label.textAlignment = .center

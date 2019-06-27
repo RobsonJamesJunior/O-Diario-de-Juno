@@ -23,7 +23,7 @@ class Cena5ViewController: UIViewController {
     var count = 10
     
     var filter = CIFilter(name: "CIGaussianBlur")
-    var first: Bool = true
+    
     
     @IBOutlet weak var dialogLabelCena5: UILabel!
     
@@ -35,7 +35,7 @@ class Cena5ViewController: UIViewController {
         
         
         dialogLabelCena5.numberOfLines = 0
-        dialogLabelCena5.font = UIFont(name: "Juninhorepacked-Regular", size: 28)
+        dialogLabelCena5.font = UIFont(name: "IndieFlower", size: 28)
         dialogLabelCena5.numberOfLines = 2
         dialogLabelCena5.textColor = .black
         dialogLabelCena5.textAlignment = .center
@@ -53,8 +53,7 @@ class Cena5ViewController: UIViewController {
     
     @IBAction func setDialogCena5(_ sender: Any) {
         validAnimation = false
-        if fimDefrase == true && first == false{
-            dialogLabelCena5.text?.removeAll()
+        if fimDefrase == true{ dialogLabelCena5.text?.removeAll()
             IsOk += 1
             validAnimation = true
             fimDefrase = false
@@ -66,7 +65,7 @@ class Cena5ViewController: UIViewController {
             if validAnimation == true {
                 setLabelDialog()
             }
-        } else{
+        } else {
             initialView = false
             performSegue(withIdentifier: "Segue5", sender: nil)
         }
@@ -86,188 +85,6 @@ class Cena5ViewController: UIViewController {
         fimDefrase = true
         validAnimation = false
     }
-    
-    
-//    func showOutgoingMessage1(text: String) {
-//        let label =  UILabel()
-//        label.numberOfLines = 0
-//        label.font = UIFont(name: "Juninho-Regular", size: 18)
-//        label.textColor = .black
-//        label.text = ""
-//
-//        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-//                                    height: .greatestFiniteMagnitude)
-//        let boundingBox = text.boundingRect(with: constraintRect,
-//                                            options: .usesLineFragmentOrigin,
-//                                            attributes: [.font: label.font],
-//                                            context: nil)
-//        label.frame.size = CGSize(width: ceil(boundingBox.width),
-//                                  height: ceil(boundingBox.height))
-//
-//        let bubbleImageSize = CGSize(width: label.frame.width + 28,
-//                                     height: label.frame.height + 20)
-//
-//        let outgoingMessageView = UIImageView(frame:
-//            CGRect(x: view.frame.width - bubbleImageSize.width - 210, // posição x
-//                y: view.frame.height - bubbleImageSize.height - 550, //posição y
-//                width: bubbleImageSize.width,
-//                height: bubbleImageSize.height))
-//
-//        let bubbleImage = UIImage(named: "bubble_Chat")?
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-//                            resizingMode: .tile)
-//            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-//
-//        outgoingMessageView.image = bubbleImage
-//
-//        view.addSubview(outgoingMessageView)
-//
-//        label.center = outgoingMessageView.center
-//
-//        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-//
-//        for letra in labelDialog {
-//            label.text! += ("\(letra)")
-//            RunLoop.current.run(until: Date()+0.10)
-//            view.addSubview(label)
-//        }
-//    }
-//
-//    func showOutgoingMessage2(text: String) {
-//        let label =  UILabel()
-//        label.numberOfLines = 0
-//        label.font = UIFont(name: "Juninho-Regular", size: 18)
-//        label.textColor = .black
-//        label.text = ""
-//
-//        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-//                                    height: .greatestFiniteMagnitude)
-//        let boundingBox = text.boundingRect(with: constraintRect,
-//                                            options: .usesLineFragmentOrigin,
-//                                            attributes: [.font: label.font],
-//                                            context: nil)
-//        label.frame.size = CGSize(width: ceil(boundingBox.width),
-//                                  height: ceil(boundingBox.height))
-//
-//        let bubbleImageSize = CGSize(width: label.frame.width + 28,
-//                                     height: label.frame.height + 20)
-//
-//        let outgoingMessageView = UIImageView(frame:
-//            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
-//                y: view.frame.height - bubbleImageSize.height - 300, //posição y
-//                width: bubbleImageSize.width,
-//                height: bubbleImageSize.height))
-//
-//        let bubbleImage = UIImage(named: "bubble_Chat")?
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-//                            resizingMode: .tile)
-//            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-//
-//        outgoingMessageView.image = bubbleImage
-//
-//        view.addSubview(outgoingMessageView)
-//
-//        label.center = outgoingMessageView.center
-//
-//        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-//
-//        for letra in labelDialog {
-//            label.text! += ("\(letra)")
-//            RunLoop.current.run(until: Date()+0.10)
-//            view.addSubview(label)
-//        }
-//    }
-//
-//    func showOutgoingMessage3(text: String) {
-//        let label =  UILabel()
-//        label.numberOfLines = 0
-//        label.font = UIFont(name: "Juninho-Regular", size: 18)
-//        label.textColor = .black
-//        label.text = ""
-//
-//        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-//                                    height: .greatestFiniteMagnitude)
-//        let boundingBox = text.boundingRect(with: constraintRect,
-//                                            options: .usesLineFragmentOrigin,
-//                                            attributes: [.font: label.font],
-//                                            context: nil)
-//        label.frame.size = CGSize(width: ceil(boundingBox.width),
-//                                  height: ceil(boundingBox.height))
-//
-//        let bubbleImageSize = CGSize(width: label.frame.width + 28,
-//                                     height: label.frame.height + 20)
-//
-//        let outgoingMessageView = UIImageView(frame:
-//            CGRect(x: view.frame.width - bubbleImageSize.width - 10, // posição x
-//                y: view.frame.height - bubbleImageSize.height - 550, //posição y
-//                width: bubbleImageSize.width,
-//                height: bubbleImageSize.height))
-//
-//        let bubbleImage = UIImage(named: "bubble_Chat")?
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-//                            resizingMode: .tile)
-//            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-//
-//        outgoingMessageView.image = bubbleImage
-//
-//        view.addSubview(outgoingMessageView)
-//
-//        label.center = outgoingMessageView.center
-//
-//        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-//
-//        for letra in labelDialog {
-//            label.text! += ("\(letra)")
-//            RunLoop.current.run(until: Date()+0.10)
-//            view.addSubview(label)
-//        }
-//    }
-//
-////    func showOutgoingMessage4(text: String) {
-////        let label =  UILabel()
-////        label.numberOfLines = 0
-////        label.font = UIFont.systemFont(ofSize: 18)
-////        label.textColor = .black
-////        label.text = ""
-////
-////        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-////                                    height: .greatestFiniteMagnitude)
-////        let boundingBox = text.boundingRect(with: constraintRect,
-////                                            options: .usesLineFragmentOrigin,
-////                                            attributes: [.font: label.font],
-////                                            context: nil)
-////        label.frame.size = CGSize(width: ceil(boundingBox.width),
-////                                  height: ceil(boundingBox.height))
-////
-////        let bubbleImageSize = CGSize(width: label.frame.width + 28,
-////                                     height: label.frame.height + 20)
-////
-////        let outgoingMessageView = UIImageView(frame:
-////            CGRect(x: view.frame.width - bubbleImageSize.width - 10,// posição x
-////                y: view.frame.height - bubbleImageSize.height - 550, //posição y
-////                width: bubbleImageSize.width,
-////                height: bubbleImageSize.height))
-////
-////        let bubbleImage = UIImage(named: "bubble_Chat")?
-////            .resizableImage(withCapInsets: UIEdgeInsets(top: 17, left: 21, bottom: 17, right: 21),
-////                            resizingMode: .tile)
-////            .withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-////
-////        outgoingMessageView.image = bubbleImage
-////
-////        view.addSubview(outgoingMessageView)
-////
-////        label.center = outgoingMessageView.center
-////
-////        let labelDialog = (Bundle.main.infoDictionary?["CFBoundleName"] as? String) ?? text
-////
-////        for letra in labelDialog {
-////            label.text! += ("\(letra)")
-////            RunLoop.current.run(until: Date()+0.10)
-////            view.addSubview(label)
-////        }
-////    }
-//
     
  
   
