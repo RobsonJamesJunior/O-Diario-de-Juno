@@ -307,6 +307,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="leZ-Sl-Yqu"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
+                                <rect key="frame" x="38.5" y="432" width="298" height="145"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="DTI-1O-3Eu"/>
+                                    <constraint firstAttribute="height" constant="145" id="s7M-T1-pcc"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolha.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
                                 <rect key="frame" x="104" y="304" width="183" height="59"/>
                                 <constraints>
@@ -314,12 +322,11 @@
                                     <constraint firstAttribute="width" constant="183" id="SDV-sn-b40"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
-                                <rect key="frame" x="38.5" y="432" width="298" height="145"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-Qh-Xcg">
+                                <rect key="frame" x="84.5" y="317" width="206" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="298" id="DTI-1O-3Eu"/>
-                                    <constraint firstAttribute="height" constant="145" id="s7M-T1-pcc"/>
+                                    <constraint firstAttribute="height" constant="40" id="jJi-zR-Qtw"/>
+                                    <constraint firstAttribute="width" constant="206" id="nYS-cD-ioG"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -331,7 +338,9 @@
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="vcV-DU-P4X" secondAttribute="trailing" constant="32" id="F3b-rX-jWI"/>
                             <constraint firstItem="jPn-LM-erk" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" id="Qym-nF-uSg"/>
                             <constraint firstItem="GU9-fX-13z" firstAttribute="top" secondItem="bZW-6i-ZUN" secondAttribute="top" constant="16" id="Sma-aq-RFc"/>
+                            <constraint firstItem="zhF-Qh-Xcg" firstAttribute="centerX" secondItem="zoX-JC-cPa" secondAttribute="centerX" id="Wet-PR-OPZ"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="bottom" secondItem="vcV-DU-P4X" secondAttribute="bottom" constant="32" id="bI2-73-e8l"/>
+                            <constraint firstItem="zhF-Qh-Xcg" firstAttribute="top" secondItem="bZW-6i-ZUN" secondAttribute="top" constant="297" id="c4O-3h-Q2B"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="bottom" secondItem="bZW-6i-ZUN" secondAttribute="bottom" id="jut-O8-NeE"/>
                             <constraint firstItem="bZW-6i-ZUN" firstAttribute="trailing" secondItem="GU9-fX-13z" secondAttribute="trailing" constant="16" id="lfd-IF-qbz"/>
                             <constraint firstItem="0A1-Kw-Pfc" firstAttribute="leading" secondItem="bZW-6i-ZUN" secondAttribute="leading" id="mz0-Ei-rvG"/>
@@ -345,6 +354,7 @@
                         <outlet property="EscovaImage" destination="jPn-LM-erk" id="09y-Fy-tak"/>
                         <outlet property="Mouth" destination="ukC-Lu-ezh" id="zmO-Pn-ceA"/>
                         <outlet property="buttonOut" destination="vcV-DU-P4X" id="kIf-eJ-fqZ"/>
+                        <outlet property="espumaContact" destination="zhF-Qh-Xcg" id="cNG-yz-hV1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7W-2k-S4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1670,6 +1680,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lho-cL-CB8"/>
-        <segue reference="X79-cz-nVR"/>
+        <segue reference="leZ-Sl-Yqu"/>
     </inferredMetricsTieBreakers>
 </document>
