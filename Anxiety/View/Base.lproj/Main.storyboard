@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efe-03-8YO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -867,14 +867,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_13.gif" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-QN-35S">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
-                                <rect key="frame" x="0.0" y="273" width="375" height="459"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
+                                <rect key="frame" x="0.0" y="465" width="375" height="459"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="XfT-8U-Uzb"/>
                                     <constraint firstAttribute="height" constant="459" id="xDj-uT-ZJf"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
                                 <rect key="frame" x="309" y="601" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ncy-D5-cYm"/>
@@ -898,17 +898,26 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="X79-cz-nVR"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHs-SW-AdV">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5o6-CV-l5r"/>
+                                    <constraint firstAttribute="height" constant="100" id="KPH-01-KY9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="coO-76-o4Z" secondAttribute="bottom" constant="-65" id="0rF-NO-Wz6"/>
+                            <constraint firstAttribute="bottom" secondItem="coO-76-o4Z" secondAttribute="bottom" constant="-257" id="0rF-NO-Wz6"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="bottom" secondItem="uuB-kT-gAz" secondAttribute="bottom" constant="16" id="9ls-av-yIB"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" id="AR6-Gm-Adv"/>
                             <constraint firstItem="axh-ic-mhk" firstAttribute="top" secondItem="6vk-wc-7Hi" secondAttribute="top" constant="16" id="KVV-lb-OD4"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="trailing" secondItem="6vk-wc-7Hi" secondAttribute="trailing" id="W4h-nn-3J1"/>
+                            <constraint firstItem="gHs-SW-AdV" firstAttribute="centerX" secondItem="5GG-WQ-e2c" secondAttribute="centerX" id="cdP-sE-tjo"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="top" secondItem="5GG-WQ-e2c" secondAttribute="top" id="e7k-09-hrL"/>
                             <constraint firstItem="QW6-QN-35S" firstAttribute="bottom" secondItem="6vk-wc-7Hi" secondAttribute="bottom" id="k0g-mM-bN8"/>
                             <constraint firstItem="uuB-kT-gAz" firstAttribute="leading" secondItem="coO-76-o4Z" secondAttribute="trailing" constant="-66" id="kKb-b7-wZU"/>
+                            <constraint firstItem="gHs-SW-AdV" firstAttribute="centerY" secondItem="5GG-WQ-e2c" secondAttribute="centerY" id="lBK-Pg-A2K"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="axh-ic-mhk" secondAttribute="trailing" constant="16" id="oNQ-sZ-Yje"/>
                             <constraint firstItem="coO-76-o4Z" firstAttribute="leading" secondItem="6vk-wc-7Hi" secondAttribute="leading" id="pRL-gp-fpJ"/>
                             <constraint firstItem="6vk-wc-7Hi" firstAttribute="trailing" secondItem="uuB-kT-gAz" secondAttribute="trailing" constant="16" id="qS8-Bp-XMM"/>
@@ -917,6 +926,9 @@
                     </view>
                     <connections>
                         <outlet property="Cena13ImageView" destination="QW6-QN-35S" id="Xf4-Qy-2oU"/>
+                        <outlet property="maoImage" destination="coO-76-o4Z" id="r0a-sI-LLT"/>
+                        <outlet property="orelhaArea" destination="gHs-SW-AdV" id="tg0-vk-wos"/>
+                        <segue destination="A24-hE-sSG" kind="show" identifier="segueOrelha" animates="NO" id="VNm-Eu-s2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orl-n1-EN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1279,10 +1291,25 @@
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Rmb-Jb-Tco"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeRigthB" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-fi-e7C">
+                                <rect key="frame" x="18" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fUU-qr-tBa"/>
+                                    <constraint firstAttribute="height" constant="128" id="n1s-SV-b2z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeDownB" translatesAutoresizingMaskIntoConstraints="NO" id="eou-58-ijo">
+                                <rect key="frame" x="67.5" y="523" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kk2-XM-5k7"/>
+                                    <constraint firstAttribute="width" constant="240" id="x2t-Gh-cfx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OMD-QB-h0w" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="45j-gn-Qyw"/>
+                            <constraint firstItem="fzp-fi-e7C" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" constant="18" id="7Ya-fp-toP"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="top" secondItem="28P-JZ-y4C" secondAttribute="top" id="7u5-dn-I1E"/>
                             <constraint firstItem="OMD-QB-h0w" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="9WI-f3-E6M"/>
                             <constraint firstItem="SfX-Fo-yF3" firstAttribute="centerX" secondItem="28P-JZ-y4C" secondAttribute="centerX" id="B1Y-z2-gc4"/>
@@ -1296,6 +1323,9 @@
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="leading" secondItem="Yik-pY-qlD" secondAttribute="leading" id="bfe-gO-wU7"/>
                             <constraint firstItem="dj5-6Z-mGk" firstAttribute="top" secondItem="Yik-pY-qlD" secondAttribute="top" constant="16" id="drr-lP-FdI"/>
                             <constraint firstItem="OC4-2E-tsw" firstAttribute="height" secondItem="SfX-Fo-yF3" secondAttribute="height" id="f4A-rn-leP"/>
+                            <constraint firstItem="Yik-pY-qlD" firstAttribute="bottom" secondItem="eou-58-ijo" secondAttribute="bottom" constant="16" id="fL0-wp-lyV"/>
+                            <constraint firstItem="eou-58-ijo" firstAttribute="centerX" secondItem="28P-JZ-y4C" secondAttribute="centerX" id="wtS-XA-jPO"/>
+                            <constraint firstItem="fzp-fi-e7C" firstAttribute="centerY" secondItem="28P-JZ-y4C" secondAttribute="centerY" id="wwd-pA-D8K"/>
                             <constraint firstItem="Yik-pY-qlD" firstAttribute="trailing" secondItem="dj5-6Z-mGk" secondAttribute="trailing" constant="16" id="xCh-te-rOV"/>
                             <constraint firstItem="BLx-Z6-IiC" firstAttribute="bottom" secondItem="Yik-pY-qlD" secondAttribute="bottom" id="yjh-Eh-lJu"/>
                         </constraints>
@@ -1305,6 +1335,8 @@
                         <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
                         <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
                         <outlet property="dialogCena19Label" destination="OC4-2E-tsw" id="iCg-mz-EYl"/>
+                        <outlet property="dicaSwipeBaixo" destination="eou-58-ijo" id="8Sp-rO-e5O"/>
+                        <outlet property="dicaSwipeFrente" destination="fzp-fi-e7C" id="emf-Ru-VRQ"/>
                         <segue destination="MB3-rv-Xbu" kind="show" identifier="segueCena19_1" animates="NO" id="Klo-eZ-FOf"/>
                         <segue destination="A6N-NS-WoM" kind="show" identifier="segueTobeContinue1" id="lho-cL-CB8"/>
                     </connections>
@@ -1681,6 +1713,8 @@
         <image name="Play1" width="135" height="135"/>
         <image name="Rigth" width="59" height="84"/>
         <image name="Scream2.png" width="530" height="986"/>
+        <image name="SwipeDownB" width="832" height="412"/>
+        <image name="SwipeRigthB" width="878" height="353"/>
         <image name="ToBeContinue.png" width="751" height="1334"/>
         <image name="caixa_dialogo" width="697" height="215"/>
         <image name="cell_alarm" width="1280" height="2040"/>
@@ -1694,8 +1728,9 @@
         <image name="sonecar_2" width="500" height="119"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BxL-9r-GNN"/>
+        <segue reference="lho-cL-CB8"/>
+        <segue reference="VNm-Eu-s2T"/>
         <segue reference="uMj-NW-ys4"/>
-        <segue reference="x5k-1z-zBI"/>
+        <segue reference="X79-cz-nVR"/>
     </inferredMetricsTieBreakers>
 </document>

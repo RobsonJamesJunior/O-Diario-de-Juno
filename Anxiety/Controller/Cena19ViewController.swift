@@ -15,6 +15,13 @@ class Cena19ViewController: UIViewController {
     
     @IBOutlet weak var caixaDialog: UIImageView!
     
+    
+    @IBOutlet weak var dicaSwipeFrente: UIImageView!
+    
+    
+    @IBOutlet weak var dicaSwipeBaixo: UIImageView!
+
+    
     var timer: Timer!
     var IsOk: Int = 0
     var validAnimation: Bool = true
@@ -29,6 +36,9 @@ class Cena19ViewController: UIViewController {
         caixaDialog.isHidden = false
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
+        
+        dicaSwipeBaixo.isHidden = true
+        dicaSwipeFrente.isHidden = true
         
         dialogCena19Label.numberOfLines = 0
         dialogCena19Label.font = UIFont(name: "IndieFlower", size: 22)
@@ -65,6 +75,8 @@ class Cena19ViewController: UIViewController {
             okNext = true
             dialogCena19Label.isHidden = true
             caixaDialog.isHidden = true
+            dicaSwipeBaixo.isHidden = false
+            dicaSwipeFrente.isHidden = false
             
         }
     }

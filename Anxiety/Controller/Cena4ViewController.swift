@@ -89,11 +89,9 @@ class Cena4ViewController: UIViewController {
         }
     }
     
-    @objc func update() {// Função de atualização para opreações constantes
-        if movendo == false {
-            
-        }
-    }
+//    @objc func update() {// Função de atualização para opreações constantes
+//        
+//    }
     
     
     

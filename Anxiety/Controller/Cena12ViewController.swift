@@ -13,6 +13,7 @@ class Cena12ViewController: UIViewController {
     @IBOutlet weak var pressToContinue: UIButton!
    
     @IBOutlet weak var Cena12ImageView: UIImageView!
+    
     var labelEnd: Bool = false
     var initialView: Bool = false
     
