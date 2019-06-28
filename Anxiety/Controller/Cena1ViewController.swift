@@ -19,6 +19,9 @@ class Cena1ViewController: UIViewController {
     @IBOutlet weak var stopButtonOut: UIButton!
     
 
+    @IBOutlet weak var sinecaButton: UIButton!
+    
+    
     @IBOutlet weak var alarmCell: UIImageView!
     var timer: Timer!
     var audioPlayer = AVAudioPlayer()
@@ -61,6 +64,11 @@ class Cena1ViewController: UIViewController {
     }
 
     
+    @IBAction func sonecar(_ sender: Any) {
+        print("pegando")
+    }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -68,10 +76,13 @@ class Cena1ViewController: UIViewController {
         
         UIView.animate(withDuration: 1, animations: {self.stopButtonOut.frame.origin.y -= 210})
         
+        UIView.animate(withDuration: 1, animations: {self.sinecaButton.frame.origin.y -= 210})
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
 //            self.stopButtonOut.isHidden = false
             self.alarmCell.shake(duration: 2.0)
             self.stopButtonOut.shake(duration: 2.0)
+            self.sinecaButton.shake(duration: 2.0)
             }
     }
     

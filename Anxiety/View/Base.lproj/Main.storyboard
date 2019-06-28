@@ -72,12 +72,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="47.5" y="638" width="280" height="350.00000000000023"/>
+                                <rect key="frame" x="47.5" y="638" width="280" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="oq3-x7-eiz"/>
                                     <constraint firstAttribute="height" constant="350" id="w1h-ZT-eOt"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yA-7K-b21">
+                                <rect key="frame" x="90" y="697.5" width="195" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="9bS-qJ-DOD"/>
+                                    <constraint firstAttribute="width" constant="195" id="L05-af-gtm"/>
+                                </constraints>
+                                <state key="normal" image="sonecar_2"/>
+                                <connections>
+                                    <action selector="sonecar:" destination="W0a-9h-xUq" eventType="touchUpInside" id="2b9-7i-G82"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
                                 <rect key="frame" x="117.5" y="788.5" width="140" height="49"/>
                                 <constraints>
@@ -104,11 +115,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5yA-7K-b21" firstAttribute="centerX" secondItem="w8h-Ju-ooM" secondAttribute="centerX" id="3VE-H0-dy4"/>
                             <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerY" secondItem="5lZ-Qr-FsH" secondAttribute="centerY" id="9yF-C6-IDD"/>
                             <constraint firstItem="9DI-7E-nFm" firstAttribute="top" secondItem="bOP-rH-s2e" secondAttribute="top" constant="16" id="FHf-db-UQA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="top" secondItem="8ze-UO-fiH" secondAttribute="top" id="Mce-FV-1X3"/>
                             <constraint firstAttribute="bottom" secondItem="5lZ-Qr-FsH" secondAttribute="bottom" constant="-321" id="Ozg-s6-bTa"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="trailing" secondItem="bOP-rH-s2e" secondAttribute="trailing" id="XTa-WR-eto"/>
+                            <constraint firstItem="w8h-Ju-ooM" firstAttribute="top" secondItem="5yA-7K-b21" secondAttribute="bottom" constant="45" id="iIv-Ob-Yrj"/>
                             <constraint firstItem="w8h-Ju-ooM" firstAttribute="centerX" secondItem="5lZ-Qr-FsH" secondAttribute="centerX" id="nOn-pX-hc9"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="leading" secondItem="bOP-rH-s2e" secondAttribute="leading" id="qNP-4q-SLA"/>
                             <constraint firstItem="eMq-j2-opY" firstAttribute="bottom" secondItem="bOP-rH-s2e" secondAttribute="bottom" id="rgR-wK-YqQ"/>
@@ -120,6 +133,7 @@
                     <connections>
                         <outlet property="Cena1ImageView" destination="eMq-j2-opY" id="oXW-QS-aEz"/>
                         <outlet property="alarmCell" destination="5lZ-Qr-FsH" id="Jo0-Tp-ccG"/>
+                        <outlet property="sinecaButton" destination="5yA-7K-b21" id="e9x-RK-66v"/>
                         <outlet property="stopButtonOut" destination="w8h-Ju-ooM" id="fTO-aN-xjZ"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackMenu" animates="NO" id="66f-uO-lzy"/>
                     </connections>
@@ -1669,7 +1683,7 @@
         <image name="Scream2.png" width="530" height="986"/>
         <image name="ToBeContinue.png" width="751" height="1334"/>
         <image name="caixa_dialogo" width="697" height="215"/>
-        <image name="cell_alarm" width="500" height="797"/>
+        <image name="cell_alarm" width="1280" height="2040"/>
         <image name="chave.png" width="62" height="85"/>
         <image name="hand" width="633" height="720"/>
         <image name="home" width="266" height="266"/>
@@ -1677,9 +1691,10 @@
         <image name="parar" width="500" height="159"/>
         <image name="respira" width="266" height="266"/>
         <image name="skip" width="266" height="266"/>
+        <image name="sonecar_2" width="500" height="119"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lho-cL-CB8"/>
-        <segue reference="leZ-Sl-Yqu"/>
+        <segue reference="66f-uO-lzy"/>
     </inferredMetricsTieBreakers>
 </document>
