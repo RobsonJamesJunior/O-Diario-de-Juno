@@ -15,6 +15,8 @@ class Cena14ViewController: UIViewController {
     var initialView: Bool = false
     var countNextMusic = 0
     var timer: Timer!
+    var firstTouch: Bool = false
+    
     @IBOutlet weak var imageSong: UIImageView!
     
     
@@ -30,35 +32,38 @@ class Cena14ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialView = true
-       
+        firstTouch = true
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(Cena14ViewController.update), userInfo: nil, repeats: true)
         
     }
     
     
     @objc func update() { // Função de atualização para opreações constantes
-        
-        let pulse1 = Pulsing(numberOfPulses: 1, radius: 35, position: nextOut.center)
-        pulse1.animationDuration = 1.0
-        //  pulse1.backgroundColor = UIColor.blue.cgColor
-        pulse1.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-        self.view.layer.insertSublayer(pulse1, below: nextOut.layer)
-        
-        let pulse2 = Pulsing(numberOfPulses: 1, radius: 35, position: backOut.center)
-        pulse2.animationDuration = 1.0
-        //     pulse2.backgroundColor = UIColor.blue.cgColor
-        pulse2.backgroundColor = #colorLiteral(red: 0.0736188814, green: 0.682425797, blue: 0.919788897, alpha: 1)
-        self.view.layer.insertSublayer(pulse2, below: backOut.layer)
-        
-        let pulse3 = Pulsing(numberOfPulses: 1, radius: 45, position: playOut.center)
-        pulse3.animationDuration = 2.0
-        //    pulse3.backgroundColor = UIColor.green.cgColor
-        pulse3.backgroundColor = #colorLiteral(red: 0.8353014588, green: 0.3816941381, blue: 0.3409173489, alpha: 1)
-        self.view.layer.insertSublayer(pulse3, below: playOut.layer)
+        if firstTouch {
+            let pulse1 = Pulsing(numberOfPulses: 1, radius: 80, position: nextOut.center)
+            pulse1.animationDuration = 1.0
+            //  pulse1.backgroundColor = UIColor.blue.cgColor
+            pulse1.backgroundColor = #colorLiteral(red: 0.6981794238, green: 0.8099042773, blue: 0.9306624532, alpha: 1)
+            self.view.layer.insertSublayer(pulse1, below: nextOut.layer)
+            
+            let pulse2 = Pulsing(numberOfPulses: 1, radius: 80, position: backOut.center)
+            pulse2.animationDuration = 1.0
+            //     pulse2.backgroundColor = UIColor.blue.cgColor
+            pulse2.backgroundColor = #colorLiteral(red: 0.6981794238, green: 0.8099042773, blue: 0.9306624532, alpha: 1)
+            self.view.layer.insertSublayer(pulse2, below: backOut.layer)
+            
+            let pulse3 = Pulsing(numberOfPulses: 1, radius: 80, position: playOut.center)
+            pulse3.animationDuration = 1.0
+            //    pulse3.backgroundColor = UIColor.green.cgColor
+            pulse3.backgroundColor = #colorLiteral(red: 0.9811585546, green: 0.7588065267, blue: 0.8108978868, alpha: 1)
+            self.view.layer.insertSublayer(pulse3, below: playOut.layer)
+        }
     }
     
     
     
     @IBAction func next(_ sender: Any) {
+        firstTouch = false
         if countNextMusic >= 0 && countNextMusic < 5 {
             countNextMusic += 1
         }
@@ -87,6 +92,7 @@ class Cena14ViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
+        firstTouch = false
         if countNextMusic > 0 && countNextMusic <= 5 {
             countNextMusic -= 1
         }
@@ -113,14 +119,6 @@ class Cena14ViewController: UIViewController {
             print("oie")
         }
     }
-    
-    
-    
-    
-    //    let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
-    //    pulse.animationDuration = 1.0
-    //    pulse.backgroundColor = UIColor.blue.cgColor
-    //    self.view.layer.insertSublayer(pulse, below: respImageView.layer)
     
     
     

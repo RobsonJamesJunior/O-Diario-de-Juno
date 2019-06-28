@@ -36,8 +36,14 @@ class Cena10ViewController: UIViewController {
     
     
     @IBAction func StopSounTraffic(_ sender: Any) {
-        
+        Transito.sharedHelper.audioPlayer?.stop()
     }
+    
+    
+    @IBAction func backToMenu(_ sender: Any) {
+        Transito.sharedHelper.audioPlayer?.stop()
+    }
+    
     
     override var prefersStatusBarHidden: Bool{
         return true

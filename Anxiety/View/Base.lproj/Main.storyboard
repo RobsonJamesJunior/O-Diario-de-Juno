@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kv1-zQ-Mta">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A24-hE-sSG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -762,6 +762,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
+                                    <action selector="backToMenu:" destination="rGv-8F-XZB" eventType="touchUpInside" id="QSp-3L-Etk"/>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="s8o-c1-ApH"/>
                                 </connections>
                             </button>
@@ -1345,7 +1346,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeDownB" translatesAutoresizingMaskIntoConstraints="NO" id="eou-58-ijo">
-                                <rect key="frame" x="67.5" y="523" width="240" height="128.00000000000011"/>
+                                <rect key="frame" x="67.5" y="523" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="kk2-XM-5k7"/>
                                     <constraint firstAttribute="width" constant="240" id="x2t-Gh-cfx"/>
@@ -1780,6 +1781,6 @@
         <segue reference="VNm-Eu-s2T"/>
         <segue reference="vMv-HG-7l3"/>
         <segue reference="uMj-NW-ys4"/>
-        <segue reference="SjY-cO-eps"/>
+        <segue reference="LTs-jF-Jgk"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -30,7 +30,8 @@ class Cena4ViewController: UIViewController {
     
     var labelEnd: Bool = false
     var initialView: Bool = false
-    
+    var feedbackGenerator: UINotificationFeedbackGenerator?
+
     let Bolha = UIImage.gifImageWithName("Bolha")
     
     @IBOutlet weak var buttonOut: UIButton!
@@ -51,6 +52,7 @@ class Cena4ViewController: UIViewController {
         movendo = false
         buttonOut.isHidden = true
         buttonOut.isEnabled = false
+        feedbackGenerator = UINotificationFeedbackGenerator()
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
         self.panG = pan
@@ -111,20 +113,24 @@ class Cena4ViewController: UIViewController {
             semEscove = true
             switch countEscova {
             case 1:
+            self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 270, height: 122)
                 Mouth.center = self.view.center
             case 2:
+            self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 304, height: 148)
                 Mouth.center = self.view.center
             case 3:
+            self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 334, height: 174)
                 Mouth.center = self.view.center
             case 4:
-//                self.movendo = false
-//                returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
-//                buttonOut.isHidden = false
-//                buttonOut.isEnabled = true
-                performSegue(withIdentifier: "EscovaGo", sender: nil)
+            self.feedbackGenerator?.notificationOccurred(.success)
+                self.movendo = false
+                returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
+                buttonOut.isHidden = false
+                buttonOut.isEnabled = true
+//                performSegue(withIdentifier: "EscovaGo", sender: nil)
             default:
                 print("ja foi irmão")
             }
