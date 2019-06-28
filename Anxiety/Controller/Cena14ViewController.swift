@@ -110,8 +110,11 @@ class Cena14ViewController: UIViewController {
             print("4" )
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms1", type: "wav")
             imageSong.image = UIImage(named: "Scream3")
+            print("oie")
         }
     }
+    
+    
     
     
     //    let pulse = Pulsing(numberOfPulses: 1, radius: 95, position: respImageView.center)
