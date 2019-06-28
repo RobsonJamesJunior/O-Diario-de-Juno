@@ -113,18 +113,28 @@ class Cena4ViewController: UIViewController {
             semEscove = true
             switch countEscova {
             case 1:
+                self.feedbackGenerator?.notificationOccurred(.success)
+                Mouth.frame.size = CGSize(width: 183, height: 59)
+                Mouth.center = self.view.center
+
+            case 2:
             self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 270, height: 122)
                 Mouth.center = self.view.center
-            case 2:
+            case 3:
             self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 304, height: 148)
                 Mouth.center = self.view.center
-            case 3:
+            case 4:
             self.feedbackGenerator?.notificationOccurred(.success)
                 Mouth.frame.size = CGSize(width: 334, height: 174)
                 Mouth.center = self.view.center
-            case 4:
+            case 5:
+                self.feedbackGenerator?.notificationOccurred(.success)
+                Mouth.frame.size = CGSize(width: 340, height: 289)
+                Mouth.center = self.view.center
+                
+            case 6:
             self.feedbackGenerator?.notificationOccurred(.success)
                 self.movendo = false
                 returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
