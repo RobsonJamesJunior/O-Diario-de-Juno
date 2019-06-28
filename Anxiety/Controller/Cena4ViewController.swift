@@ -40,7 +40,10 @@ class Cena4ViewController: UIViewController {
 
     //    var timer: Timer!
     
+    var panG: UIPanGestureRecognizer? = nil
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         initialView = true
         escovaViewOrigin = EscovaImage.frame.origin
@@ -49,12 +52,13 @@ class Cena4ViewController: UIViewController {
         buttonOut.isHidden = true
         buttonOut.isEnabled = false
         
-         let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(Cena8ViewController.handlePan(sender:)))
+        self.panG = pan
         EscovaImage.addGestureRecognizer(pan)
         view.bringSubviewToFront(EscovaImage)
         Mouth.image = Bolha
         Mouth.isHidden = true
-        
+     
         // Do any additional setup after loading the view, typically from a nib.
         Cena4ImageView.isAccessibilityElement = true// Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena4Gif = UIImage.gifImageWithName("Cena_4") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena4
@@ -118,6 +122,8 @@ class Cena4ViewController: UIViewController {
                 Mouth.frame.size = CGSize(width: 334, height: 174)
                 Mouth.center = self.view.center
             case 4:
+                self.movendo = false
+                returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
                 buttonOut.isHidden = false
                 buttonOut.isEnabled = true
             default:

@@ -41,6 +41,8 @@ class Cena1ViewController: UIViewController {
         stopButtonOut.isHidden = false
         alarmCell.shake(duration: 2.0)
 
+        self.sinecaButton.isEnabled = false
+        
         // Do any additional setup after loading the view, typically from a nib.
         Cena1ImageView.isAccessibilityElement = true // Comando que transforma a ImageView em um objeto visível pelo crossover
         let Cena1Gif = UIImage.gifImageWithName("Cena_1") // Cria uma variável com a imagem Gif através da extensão da biblioteca ImageView que será utilizada na ImageView da Cena1

@@ -84,10 +84,7 @@
                                     <constraint firstAttribute="height" constant="46" id="9bS-qJ-DOD"/>
                                     <constraint firstAttribute="width" constant="195" id="L05-af-gtm"/>
                                 </constraints>
-                                <state key="normal" image="sonecar_2"/>
-                                <connections>
-                                    <action selector="sonecar:" destination="W0a-9h-xUq" eventType="touchUpInside" id="2b9-7i-G82"/>
-                                </connections>
+                                <state key="normal" image="soncar_2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
                                 <rect key="frame" x="117.5" y="788.5" width="140" height="49"/>
@@ -1691,7 +1688,7 @@
         <image name="parar" width="500" height="159"/>
         <image name="respira" width="266" height="266"/>
         <image name="skip" width="266" height="266"/>
-        <image name="sonecar_2" width="500" height="119"/>
+        <image name="soncar_2" width="1377" height="327"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lho-cL-CB8"/>
