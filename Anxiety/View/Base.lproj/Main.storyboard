@@ -84,7 +84,7 @@
                                     <constraint firstAttribute="height" constant="46" id="9bS-qJ-DOD"/>
                                     <constraint firstAttribute="width" constant="195" id="L05-af-gtm"/>
                                 </constraints>
-                                <state key="normal" image="soncar_2"/>
+                                <state key="normal" image="sonecar_2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
                                 <rect key="frame" x="117.5" y="788.5" width="140" height="49"/>
@@ -366,6 +366,7 @@
                         <outlet property="Mouth" destination="ukC-Lu-ezh" id="zmO-Pn-ceA"/>
                         <outlet property="buttonOut" destination="vcV-DU-P4X" id="kIf-eJ-fqZ"/>
                         <outlet property="espumaContact" destination="zhF-Qh-Xcg" id="cNG-yz-hV1"/>
+                        <segue destination="ITT-Dr-ArQ" kind="show" identifier="EscovaGo" animates="NO" id="uMj-NW-ys4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7W-2k-S4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1497,7 +1498,8 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="cVp-2i-YcO"/>
+                                    <action selector="backToMenu:" destination="XUu-vf-qhr" eventType="touchUpInside" id="AkD-cH-mC6"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="B25-FJ-D2K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1520,7 +1522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaZ-Re-PDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20749.599999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="20798" y="124"/>
         </scene>
         <!--Cena23 View Controller-->
         <scene sceneID="Sgd-iY-1tU">
@@ -1541,6 +1543,7 @@
                                 </constraints>
                                 <state key="normal" image="home"/>
                                 <connections>
+                                    <action selector="backToMenu:" destination="Im4-oa-puN" eventType="touchUpInside" id="4WZ-jE-xIs"/>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="x5k-1z-zBI"/>
                                 </connections>
                             </button>
@@ -1688,10 +1691,11 @@
         <image name="parar" width="500" height="159"/>
         <image name="respira" width="266" height="266"/>
         <image name="skip" width="266" height="266"/>
-        <image name="soncar_2" width="1377" height="327"/>
+        <image name="sonecar_2" width="500" height="119"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lho-cL-CB8"/>
-        <segue reference="66f-uO-lzy"/>
+        <segue reference="BxL-9r-GNN"/>
+        <segue reference="uMj-NW-ys4"/>
+        <segue reference="x5k-1z-zBI"/>
     </inferredMetricsTieBreakers>
 </document>

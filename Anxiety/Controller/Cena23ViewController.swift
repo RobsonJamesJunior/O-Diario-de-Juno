@@ -133,6 +133,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                     //MARK: Preparrrre Hereeee
                     
                     performSegue(withIdentifier: "segueTobeContinue2", sender: nil)
+                    Coracao1.sharedHelper.audioPlayer?.stop()
                 }
             } else {
                 if countTimerCrom == true {
@@ -194,6 +195,12 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
         
         feedbackLabel.layer.add(flash, forKey: nil)
     }
+    
+    
+    @IBAction func backToMenu(_ sender: Any) {
+        Coracao1.sharedHelper.audioPlayer?.stop()
+    }
+    
     
     
     override var prefersStatusBarHidden: Bool{

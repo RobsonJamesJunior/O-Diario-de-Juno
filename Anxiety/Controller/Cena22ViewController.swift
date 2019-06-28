@@ -5,6 +5,12 @@ class Cena22ViewController: UIViewController {
     
     
     @IBOutlet weak var Cena22ImageView: UIImageView!
+    
+    @IBAction func backToMenu(_ sender: Any) {
+        Coracao1.sharedHelper.audioPlayer?.stop()
+    }
+    
+    
     var labelEnd: Bool = false
     var initialView: Bool = false
     

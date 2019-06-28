@@ -122,17 +122,14 @@ class Cena4ViewController: UIViewController {
                 Mouth.frame.size = CGSize(width: 334, height: 174)
                 Mouth.center = self.view.center
             case 4:
-                self.movendo = false
-                returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
-                buttonOut.isHidden = false
-                buttonOut.isEnabled = true
+//                self.movendo = false
+//                returnViewToOrigin(view: view); self.EscovaImage.removeGestureRecognizer(panG!)
+//                buttonOut.isHidden = false
+//                buttonOut.isEnabled = true
+                performSegue(withIdentifier: "EscovaGo", sender: nil)
             default:
                 print("ja foi irmão")
             }
-            
-            
-            
-            print(countEscova)
         }
         
         
