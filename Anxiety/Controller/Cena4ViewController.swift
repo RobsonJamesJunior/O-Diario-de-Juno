@@ -16,8 +16,6 @@ class Cena4ViewController: UIViewController {
     
     @IBOutlet weak var Mouth: UIImageView!
     
-    
-    
     @IBOutlet weak var espumaContact: UIImageView!
     
     
@@ -142,7 +140,7 @@ class Cena4ViewController: UIViewController {
                 buttonOut.isEnabled = true
 //                performSegue(withIdentifier: "EscovaGo", sender: nil)
             default:
-                print("ja foi irmão")
+                print("Index don't have command")
             }
         }
         
@@ -162,4 +160,9 @@ class Cena4ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena4 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

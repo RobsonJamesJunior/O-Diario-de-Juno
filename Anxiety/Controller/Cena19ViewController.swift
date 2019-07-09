@@ -113,9 +113,11 @@ class Cena19ViewController: UIViewController {
                 switch sender.direction {
                 case .left:
                     performSegue(withIdentifier: "segueCena19_1", sender: nil)
+                    self.timer.invalidate()
                     initialView = false
                 case .down:
                     performSegue(withIdentifier: "segueTobeContinue1", sender: nil)
+                    self.timer.invalidate()
                     initialView = false
                 default:
                     break
@@ -128,4 +130,9 @@ class Cena19ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena19 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

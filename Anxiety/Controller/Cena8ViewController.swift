@@ -78,7 +78,7 @@ class Cena8ViewController: UIViewController {
 
     
     @objc func handlePan(sender: UIPanGestureRecognizer) {
-        print ("Handle Pan")
+//        print ("Handle Pan")
         let keyView = sender.view!
         
         switch sender.state {
@@ -90,7 +90,8 @@ class Cena8ViewController: UIViewController {
             if keyView.frame.intersects(fech.frame) {
                 deleteView(view: keyView)
                 initialView = false
-                 performSegue(withIdentifier: "next", sender: nil)
+                performSegue(withIdentifier: "next", sender: nil)
+                self.timer.invalidate()
             } else {
                 returnViewToOrigin(view: keyView)
                 shakeKey()
@@ -111,7 +112,7 @@ class Cena8ViewController: UIViewController {
     
     
     func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
-        print ("Movendo")
+//        print ("Movendo")
         movendo = true
         let translation = sender.translation(in: view)
         
@@ -120,7 +121,7 @@ class Cena8ViewController: UIViewController {
     }
     
     func returnViewToOrigin(view: UIView) {
-        print ("Voltando")
+//        print ("Voltando")
         movendo = false
         UIView.animate(withDuration: 0.3, animations: {
             view.frame.origin = self.keyViewOrigin
@@ -129,7 +130,7 @@ class Cena8ViewController: UIViewController {
     
     
     func deleteView(view: UIView) {
-        print ("Deletando")
+//        print ("Deletando")
         UIView.animate(withDuration: 0.3, animations: {
             view.alpha = 0.0
         })
@@ -139,4 +140,9 @@ class Cena8ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena8 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

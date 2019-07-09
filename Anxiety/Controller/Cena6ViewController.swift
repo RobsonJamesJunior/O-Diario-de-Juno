@@ -59,6 +59,7 @@ class Cena6ViewController: UIViewController {
             } else{
                 initialView = false
                 performSegue(withIdentifier: "Segue6", sender: nil)
+                self.timer.invalidate()
             }
         }
     }
@@ -87,9 +88,12 @@ class Cena6ViewController: UIViewController {
         }
     }
     
-
-
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena6 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

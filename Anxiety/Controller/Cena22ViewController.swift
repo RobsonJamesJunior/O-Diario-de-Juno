@@ -30,4 +30,8 @@ class Cena22ViewController: UIViewController {
         return true
     }
     
+    deinit {
+        print("Cena22 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

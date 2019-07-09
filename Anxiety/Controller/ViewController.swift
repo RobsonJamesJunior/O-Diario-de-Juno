@@ -32,15 +32,12 @@ class ViewController: UIViewController {
         
     }
     
-   
-
-    
     override var prefersStatusBarHidden: Bool{
         return true
     }
     
-    @objc func update() { // Função de atualização para opreações constantes
-       
+    deinit {
+        print("View Controller was de-initialized - \(self) - \(Date())")
     }
-    
+      
 }

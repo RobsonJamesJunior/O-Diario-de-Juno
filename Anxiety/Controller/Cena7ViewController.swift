@@ -619,7 +619,7 @@ class Cena7ViewController: UIViewController {
                 view.addSubview(label)
             }
         } else {
-            print(device)
+//            print(device)
             let outgoingMessageView = UIImageView(frame:
                 CGRect(x: view.frame.width - bubbleImageSize.width - 320 ,// posição x
                     y: view.frame.height - bubbleImageSize.height - 395, //posição y
@@ -661,6 +661,7 @@ class Cena7ViewController: UIViewController {
         
         if podePassar == true {
            performSegue(withIdentifier: "next", sender: nil)
+            self.timer.invalidate()
         } else {
             labelEnd = true
         }
@@ -669,4 +670,9 @@ class Cena7ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena7 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

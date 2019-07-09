@@ -54,6 +54,7 @@ class Cena2ViewController: UIViewController {
             } else{
                 initialView = false
                 performSegue(withIdentifier: "Segue2", sender: nil)
+                self.timer.invalidate()
             }
         }
     }
@@ -96,6 +97,10 @@ class Cena2ViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    deinit {
+        print("Cena2 View Controller was de-initialized - \(self) - \(Date())")
     }
     
 }

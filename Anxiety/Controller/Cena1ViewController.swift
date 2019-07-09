@@ -61,13 +61,16 @@ class Cena1ViewController: UIViewController {
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // Comando de vibrar
             }
          
+        } else {
+            self.removeFromParent()
+            self.timer.invalidate()
         }
         
     }
 
     
     @IBAction func sonecar(_ sender: Any) {
-        print("pegando")
+        //Features
     }
     
     
@@ -98,6 +101,11 @@ class Cena1ViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    
+    deinit {
+        print("Cena1 View Controller was de-initialized - \(self) - \(Date())")
     }
     
 }

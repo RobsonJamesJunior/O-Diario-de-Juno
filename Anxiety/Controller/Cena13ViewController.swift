@@ -84,10 +84,12 @@ class Cena13ViewController: UIViewController {
         })
     }
     
-    
-    
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    deinit {
+        print("Cena13 View Controller was de-initialized - \(self) - \(Date())")
     }
     
 }

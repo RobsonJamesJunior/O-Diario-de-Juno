@@ -108,7 +108,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
             cronom = NSDate.timeIntervalSinceReferenceDate
 
             respImageView.image = imageRespira
-            print("Began")
+//            print("Began")
             labelEnd = false
             longePressBeginTime = NSDate.timeIntervalSinceReferenceDate
             let Cena23Gif = UIImage.gifImageWithName("Cena_23")
@@ -133,6 +133,7 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
                     //MARK: Preparrrre Hereeee
                     
                     performSegue(withIdentifier: "segueTobeContinue2", sender: nil)
+                   self.timer.invalidate()
                     Coracao1.sharedHelper.audioPlayer?.stop()
                 }
             } else {
@@ -205,6 +206,10 @@ class Cena23ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    deinit {
+        print("Cena23 View Controller was de-initialized - \(self) - \(Date())")
     }
     
 }

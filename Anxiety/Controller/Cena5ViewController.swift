@@ -68,6 +68,7 @@ class Cena5ViewController: UIViewController {
         } else {
             initialView = false
             performSegue(withIdentifier: "Segue5", sender: nil)
+            self.timer.invalidate()
         }
         
     }
@@ -92,5 +93,8 @@ class Cena5ViewController: UIViewController {
         return true
     }
     
+    deinit {
+        print("Cena5 View Controller was de-initialized - \(self) - \(Date())")
+    }
     
 }

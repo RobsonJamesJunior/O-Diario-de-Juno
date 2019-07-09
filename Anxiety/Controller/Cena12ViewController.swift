@@ -26,8 +26,13 @@ class Cena12ViewController: UIViewController {
         Cena12ImageView.image = Cena12Gif // Adicionando a variável à tela de ImageView
 
     }
+    
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    deinit {
+        print("Cena12 View Controller was de-initialized - \(self) - \(Date())")
     }
     
 }

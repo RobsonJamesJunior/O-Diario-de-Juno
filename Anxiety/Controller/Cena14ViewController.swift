@@ -57,6 +57,8 @@ class Cena14ViewController: UIViewController {
             //    pulse3.backgroundColor = UIColor.green.cgColor
             pulse3.backgroundColor = #colorLiteral(red: 0.9811585546, green: 0.7588065267, blue: 0.8108978868, alpha: 1)
             self.view.layer.insertSublayer(pulse3, below: playOut.layer)
+        } else {
+            self.timer.invalidate()
         }
     }
     
@@ -67,24 +69,24 @@ class Cena14ViewController: UIViewController {
         if countNextMusic >= 0 && countNextMusic < 5 {
             countNextMusic += 1
         }
-        print("next \(countNextMusic)" )
+ //       print("next \(countNextMusic)" )
         if countNextMusic == 1{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms2", type: "wav")
             imageSong.image = UIImage(named: "Scream2")
-            print("a" )
+//            print("a" )
         }else if countNextMusic == 2{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms3", type: "wav")
             imageSong.image = UIImage(named: "Scream3")
-            print("b" )
+//            print("b" )
         }else if countNextMusic == 3{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms4", type: "wav")
-            print("c" )
+//            print("c" )
             imageSong.image = UIImage(named: "Scream2")
         }else if countNextMusic == 4{
             imageSong.image = UIImage(named: "Scream3")
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms1", type: "wav")
             countNextMusic = 0
-            print("d" )
+  //          print("d" )
         } else if countNextMusic > 4{
             countNextMusic = 0
         }
@@ -96,33 +98,36 @@ class Cena14ViewController: UIViewController {
         if countNextMusic > 0 && countNextMusic <= 5 {
             countNextMusic -= 1
         }
-        print("back \(countNextMusic)" )
+//        print("back \(countNextMusic)" )
         if countNextMusic == 0{
             countNextMusic = 5
         }
         else if countNextMusic == 1{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms2", type: "wav")
             imageSong.image = UIImage(named: "Scream2")
-            print("1" )
+ //           print("1" )
         }else if countNextMusic == 2{
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms3", type: "wav")
             imageSong.image = UIImage(named: "Scream3")
-            print("2" )
+//            print("2" )
         }else if countNextMusic == 3{
-            print("3" )
+//            print("3" )
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms4", type: "wav")
             imageSong.image = UIImage(named: "Scream2")
         }else if countNextMusic == 4{
-            print("4" )
+ //           print("4" )
             MusicHelper.sharedHelper.playBackgroundMusic(nome: "ms1", type: "wav")
             imageSong.image = UIImage(named: "Scream3")
-            print("oie")
+  //          print("5")
         }
     }
-    
-    
     
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena14 View Controller was de-initialized - \(self) - \(Date())")
+    }
+    
 }

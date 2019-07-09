@@ -28,4 +28,8 @@ class Cena24ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     }
+    
+    deinit {
+        print("Cena24 View Controller was de-initialized - \(self) - \(Date())")
+    }
 }
