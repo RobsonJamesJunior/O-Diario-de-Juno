@@ -10,7 +10,6 @@ import UIKit
 import AudioToolbox // Biblioteca para utilizar vibração
 import AVFoundation // Biblioteca para utilizar sons
 
-
 class Cena1ViewController: UIViewController {
     
     @IBOutlet weak var Cena1ImageView: UIImageView!
@@ -23,7 +22,8 @@ class Cena1ViewController: UIViewController {
     
     
     @IBOutlet weak var alarmCell: UIImageView!
-    var timer: Timer!
+    
+    weak var timer: Timer!
     var audioPlayer = AVAudioPlayer()
     var IsOk: Bool = false
     var initialView: Bool = false
@@ -62,7 +62,8 @@ class Cena1ViewController: UIViewController {
             }
          
         } else {
-            self.removeFromParent()
+//            self.dismiss(animated: false, completion: {})
+//            self.removeFromParent()
             self.timer.invalidate()
         }
         
@@ -77,18 +78,20 @@ class Cena1ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 310})
-        
-        UIView.animate(withDuration: 1, animations: {self.stopButtonOut.frame.origin.y -= 210})
-        
-        UIView.animate(withDuration: 1, animations: {self.sinecaButton.frame.origin.y -= 210})
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
-//            self.stopButtonOut.isHidden = false
-            self.alarmCell.shake(duration: 2.0)
-            self.stopButtonOut.shake(duration: 2.0)
-            self.sinecaButton.shake(duration: 2.0)
+        if IsOk == false {
+            UIView.animate(withDuration: 1, animations: {self.alarmCell.frame.origin.y -= 310})
+            
+            UIView.animate(withDuration: 1, animations: {self.stopButtonOut.frame.origin.y -= 210})
+            
+            UIView.animate(withDuration: 1, animations: {self.sinecaButton.frame.origin.y -= 210})
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+                //            self.stopButtonOut.isHidden = false
+                self.alarmCell.shake(duration: 2.0)
+                self.stopButtonOut.shake(duration: 2.0)
+                self.sinecaButton.shake(duration: 2.0)
             }
+        }
     }
     
     
@@ -96,6 +99,7 @@ class Cena1ViewController: UIViewController {
         initialView = false
         performSegue(withIdentifier: "BackMenu", sender: nil)
         IsOk = true
+        self.dismiss(animated: false, completion: {})
     }
     
 
@@ -103,6 +107,10 @@ class Cena1ViewController: UIViewController {
         return true
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("1 - Dispose of any resources that can be recreated")
+    }
     
     deinit {
         print("Cena1 View Controller was de-initialized - \(self) - \(Date())")

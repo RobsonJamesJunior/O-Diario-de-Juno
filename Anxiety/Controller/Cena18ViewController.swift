@@ -31,6 +31,11 @@ class Cena18ViewController: UIViewController {
         return true
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("18 - Dispose of any resources that can be recreated")
+    }
+    
     deinit {
         print("Cena18 View Controller was de-initialized - \(self) - \(Date())")
     }

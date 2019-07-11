@@ -36,6 +36,11 @@ class ViewController: UIViewController {
         return true
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("0 - Dispose of any resources that can be recreated")
+    }
+    
     deinit {
         print("View Controller was de-initialized - \(self) - \(Date())")
     }

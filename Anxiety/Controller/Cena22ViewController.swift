@@ -30,6 +30,11 @@ class Cena22ViewController: UIViewController {
         return true
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("22 - Dispose of any resources that can be recreated")
+    }
+    
     deinit {
         print("Cena22 View Controller was de-initialized - \(self) - \(Date())")
     }

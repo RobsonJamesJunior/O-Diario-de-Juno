@@ -24,6 +24,7 @@ class Cena2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.post(name: Cena1, object: nil)
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -97,6 +98,11 @@ class Cena2ViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool{
         return true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("2 - Dispose of any resources that can be recreated")
     }
     
     deinit {
