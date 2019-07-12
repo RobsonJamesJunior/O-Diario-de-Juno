@@ -24,7 +24,6 @@ class Cena2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.post(name: Cena1, object: nil)
         initialView = true
         // Do any additional setup after loading the view, typically from a nib.
         
