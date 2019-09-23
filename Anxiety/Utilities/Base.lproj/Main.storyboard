@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSA-63-AMl">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-r4-blF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-ji-vnb">
-                                <rect key="frame" x="16" y="170" width="343" height="91"/>
+                                <rect key="frame" x="16" y="150" width="343" height="91"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start Game">
@@ -34,7 +33,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="W0a-9h-xUq" kind="presentation" animates="NO" id="Dy1-mc-iQ1"/>
+                                    <segue destination="W0a-9h-xUq" kind="presentation" id="wEd-HW-in6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,6 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0dG-8B-lXj"/>
                     <connections>
                         <outlet property="MainCenaImageView" destination="bTk-r4-blF" id="sfJ-Dd-M4a"/>
                         <outlet property="startGame" destination="qy8-ji-vnb" id="SGC-AX-F0x"/>
@@ -60,26 +60,41 @@
             </objects>
             <point key="canvasLocation" x="-1076" y="124"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="1Sz-pw-lae">
+            <objects>
+                <viewController id="TSA-63-AMl" customClass="MainViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFO-qe-ERl" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Dtw-Ro-eqj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvI-0a-kIP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1076" y="1059"/>
+        </scene>
         <!--Cena1 View Controller-->
         <scene sceneID="aEi-vV-sfP">
             <objects>
                 <viewController id="W0a-9h-xUq" customClass="Cena1ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ze-UO-fiH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-j2-opY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-Qr-FsH">
-                                <rect key="frame" x="47.5" y="638" width="280" height="350"/>
+                                <rect key="frame" x="47.5" y="618" width="280" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="oq3-x7-eiz"/>
                                     <constraint firstAttribute="height" constant="350" id="w1h-ZT-eOt"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yA-7K-b21">
-                                <rect key="frame" x="90" y="697.5" width="195" height="46"/>
+                                <rect key="frame" x="90" y="677.5" width="195" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="9bS-qJ-DOD"/>
                                     <constraint firstAttribute="width" constant="195" id="L05-af-gtm"/>
@@ -87,7 +102,7 @@
                                 <state key="normal" image="sonecar_2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ju-ooM">
-                                <rect key="frame" x="117.5" y="788.5" width="140" height="49"/>
+                                <rect key="frame" x="117.5" y="768.5" width="140" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="ZnJ-ZZ-PHY"/>
                                     <constraint firstAttribute="width" constant="140" id="h7x-4r-aVH"/>
@@ -99,7 +114,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-7E-nFm">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="CxK-xu-j9n"/>
                                     <constraint firstAttribute="height" constant="60" id="jA4-wy-gTt"/>
@@ -144,27 +159,27 @@
             <objects>
                 <viewController id="DUr-Os-nl6" customClass="Cena2ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nH9-NI-WaB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-UE-Q6D">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdH-Mi-Ypw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <connections>
                                     <action selector="ContDialog:" destination="DUr-Os-nl6" eventType="touchUpInside" id="GRt-ud-Ffr"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="ufH-57-UXJ">
-                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="Tv6-o3-LMi"/>
                                     <constraint firstAttribute="width" constant="375" id="eXu-7u-BLz"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBn-iG-Glw">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="mW5-vZ-4l8"/>
                                     <constraint firstAttribute="width" constant="60" id="owh-dv-AxD"/>
@@ -175,7 +190,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-91-me8">
-                                <rect key="frame" x="187.5" y="558" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="538" width="0.0" height="0.0"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -201,6 +216,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sX5-hC-qmI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nYa-p3-RD5"/>
                     <connections>
                         <outlet property="Cena2ImageView" destination="n7f-UE-Q6D" id="bF2-jT-d9F"/>
                         <outlet property="dialoLabelCena2" destination="h5X-91-me8" id="6Yh-Zg-VuP"/>
@@ -217,33 +233,33 @@
             <objects>
                 <viewController id="XPV-67-qBN" customClass="Cena3ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vM1-hG-aTC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_3.gif" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-f0-tHc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-Qx-UoE">
-                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="M0z-fL-aUD"/>
                                     <constraint firstAttribute="height" constant="98" id="lyB-Zq-NsB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-QQ-BUz">
-                                <rect key="frame" x="20" y="509" width="335" height="98"/>
+                                <rect key="frame" x="20" y="489" width="335" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSg-6m-wcC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <connections>
                                     <action selector="setDialogCena3:" destination="XPV-67-qBN" eventType="touchUpInside" id="6RI-DH-b4B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-Fz-qt9">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ono-qH-69h"/>
                                     <constraint firstAttribute="width" constant="60" id="zTc-23-UkY"/>
@@ -290,14 +306,14 @@
             <objects>
                 <viewController id="yqh-2e-NvL" customClass="Cena4ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zoX-JC-cPa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_4.gif" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-Kw-Pfc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcV-DU-P4X">
-                                <rect key="frame" x="293" y="585" width="50" height="50"/>
+                                <rect key="frame" x="293" y="565" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="4Ew-x8-99E"/>
                                     <constraint firstAttribute="height" constant="50" id="dEG-cG-XBA"/>
@@ -308,7 +324,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-fX-13z">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Gft-l1-5BW"/>
                                     <constraint firstAttribute="height" constant="60" id="zv2-za-TLo"/>
@@ -319,7 +335,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brush" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-LM-erk">
-                                <rect key="frame" x="38.5" y="432" width="298" height="145"/>
+                                <rect key="frame" x="38.5" y="412" width="298" height="145"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="DTI-1O-3Eu"/>
@@ -327,14 +343,14 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-Qh-Xcg">
-                                <rect key="frame" x="155" y="309" width="93" height="20"/>
+                                <rect key="frame" x="155" y="289" width="93" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="jJi-zR-Qtw"/>
                                     <constraint firstAttribute="width" constant="93" id="nYS-cD-ioG"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolha.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-Lu-ezh">
-                                <rect key="frame" x="104" y="304" width="183" height="59"/>
+                                <rect key="frame" x="104" y="294" width="183" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="20f-4f-jP1"/>
                                     <constraint firstAttribute="width" constant="183" id="SDV-sn-b40"/>
@@ -378,33 +394,33 @@
             <objects>
                 <viewController id="ITT-Dr-ArQ" customClass="Cena5ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arj-6R-psu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_5.gif" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-w5-JHf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-Ue-5G4">
-                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="8I0-Pk-mfd"/>
                                     <constraint firstAttribute="height" constant="98" id="eR3-O3-0Z5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-UV-ENg">
-                                <rect key="frame" x="20" y="509" width="335" height="98"/>
+                                <rect key="frame" x="20" y="489" width="335" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-rB-eAR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <connections>
                                     <action selector="setDialogCena5:" destination="ITT-Dr-ArQ" eventType="touchUpInside" id="Cjz-k3-UOC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnm-Ht-FC9">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9MH-Um-5mB"/>
                                     <constraint firstAttribute="height" constant="60" id="s7R-63-Bsu"/>
@@ -436,6 +452,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np6-J3-fur"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iCy-tu-CmJ"/>
                     <connections>
                         <outlet property="Cena5ImageView" destination="N6x-w5-JHf" id="05H-0V-raq"/>
                         <outlet property="dialogLabelCena5" destination="F3M-UV-ENg" id="vTx-vL-fIz"/>
@@ -451,33 +468,33 @@
             <objects>
                 <viewController id="AaJ-nd-og4" customClass="Cena6ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b4b-XJ-ys9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_6.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-Ce-POe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="NcW-TR-1Ih">
-                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="yGg-Go-TRF"/>
                                     <constraint firstAttribute="width" constant="375" id="zgT-zb-k9K"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttu-fJ-lXp">
-                                <rect key="frame" x="20" y="509" width="335" height="98"/>
+                                <rect key="frame" x="20" y="489" width="335" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwe-Ga-GrO">
-                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="525"/>
                                 <connections>
                                     <action selector="setDialogCena6:" destination="AaJ-nd-og4" eventType="touchUpInside" id="a6Y-3v-DH2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gea-3U-f5K">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Tux-Y4-FOe"/>
                                     <constraint firstAttribute="height" constant="60" id="xeR-Rn-mvl"/>
@@ -524,14 +541,14 @@
             <objects>
                 <viewController id="oeO-wZ-Xpy" customClass="Cena7ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9d4-zz-e8c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_7.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-el-hFr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-Jv-YTI">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0az-BQ-QBN"/>
                                     <constraint firstAttribute="width" constant="60" id="eLn-9X-xRF"/>
@@ -542,7 +559,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0R-Op-aTK">
-                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="543"/>
                                 <connections>
                                     <action selector="passDialog:" destination="oeO-wZ-Xpy" eventType="touchUpInside" id="8Jq-Nl-wag"/>
                                 </connections>
@@ -577,14 +594,14 @@
             <objects>
                 <viewController id="rj0-kG-OH3" customClass="Cena8ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZJ-si-03k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_8.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-6d-VhE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRA-nA-qpG">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="5Sq-oo-bVZ"/>
                                     <constraint firstAttribute="width" constant="60" id="tM8-Ug-9pb"/>
@@ -631,14 +648,14 @@
             <objects>
                 <viewController id="kv1-zQ-Mta" customClass="Cena9ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdv-9f-1gI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_9.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kx3-2c-RYn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isI-Nq-1Jg">
-                                <rect key="frame" x="281" y="203" width="48" height="150"/>
+                                <rect key="frame" x="281" y="183" width="48" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="JRd-sV-FFc"/>
                                     <constraint firstAttribute="width" constant="48" id="wGT-2V-ew7"/>
@@ -648,7 +665,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-iJ-o0y">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MTO-4c-K9b"/>
                                     <constraint firstAttribute="width" constant="50" id="n3a-kM-eWX"/>
@@ -661,11 +678,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hE-FW-t4D">
-                                <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.69879066780821919" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-Cg-9aF">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="8kj-eS-VwS"/>
                                     <constraint firstAttribute="height" constant="60" id="xCz-V7-sw8"/>
@@ -676,14 +693,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Painel" translatesAutoresizingMaskIntoConstraints="NO" id="4eH-N5-UlT">
-                                <rect key="frame" x="89" y="193.5" width="197" height="280"/>
+                                <rect key="frame" x="89" y="183.5" width="197" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="2pN-HM-e6d"/>
                                     <constraint firstAttribute="height" constant="280" id="IEU-lv-jdg"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pds-Tj-3Cm">
-                                <rect key="frame" x="157" y="380" width="61" height="70"/>
+                                <rect key="frame" x="157" y="360" width="61" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Mot-aF-moC"/>
                                     <constraint firstAttribute="width" constant="61" id="bhA-A0-88G"/>
@@ -718,6 +735,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbR-mF-PPL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="W7k-it-bHT"/>
                     <connections>
                         <outlet property="Cena9ImageView" destination="Kx3-2c-RYn" id="0D9-FZ-flr"/>
                         <outlet property="backGroundPopUp" destination="2hE-FW-t4D" id="L7t-Zf-LKh"/>
@@ -734,14 +752,14 @@
             <objects>
                 <viewController id="rGv-8F-XZB" customClass="Cena10ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8C7-eG-iTC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_10.gif" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-YB-fsC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-Jf-6B5">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3hD-NU-k5y"/>
                                     <constraint firstAttribute="width" constant="50" id="tth-c7-MYC"/>
@@ -755,7 +773,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hma-29-7RP">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="eEs-cf-qoM"/>
                                     <constraint firstAttribute="width" constant="60" id="nLj-Qi-6cz"/>
@@ -780,6 +798,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="81I-Fa-lUk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8yi-ii-S23"/>
                     <connections>
                         <outlet property="Cena10ImageView" destination="9TM-YB-fsC" id="2C5-RN-9ql"/>
                     </connections>
@@ -793,14 +812,14 @@
             <objects>
                 <viewController id="DXh-Ka-2lH" customClass="Cena11ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nz0-EX-gQm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_11.png" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-50-BtW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-KL-r2z">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2bq-Iw-KDx"/>
                                     <constraint firstAttribute="width" constant="50" id="y1B-8O-wWi"/>
@@ -813,7 +832,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLc-A7-P0a">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="VUg-k1-ZNv"/>
                                     <constraint firstAttribute="width" constant="60" id="Zcc-sO-7Ok"/>
@@ -837,6 +856,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0xt-e6-brd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M2L-UN-eS6"/>
                     <connections>
                         <outlet property="Cena11ImageView" destination="qYa-50-BtW" id="iaC-KW-xkC"/>
                     </connections>
@@ -850,14 +870,14 @@
             <objects>
                 <viewController id="EDj-kU-hUY" customClass="Cena12ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Yt-eq-Sda">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_12.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-c4-HsI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-HL-8BO">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Ci2-BF-mih"/>
                                     <constraint firstAttribute="height" constant="50" id="pTM-cH-zkA"/>
@@ -870,7 +890,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-2u-izX">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="aiN-dY-Ib4"/>
                                     <constraint firstAttribute="height" constant="60" id="bOa-dk-lBD"/>
@@ -894,6 +914,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vgL-TQ-03V"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gol-VN-voR"/>
                     <connections>
                         <outlet property="Cena12ImageView" destination="Erw-c4-HsI" id="FAV-TQ-MpG"/>
                         <outlet property="pressToContinue" destination="YrW-HL-8BO" id="LI0-fN-pEr"/>
@@ -908,21 +929,21 @@
             <objects>
                 <viewController id="Efe-03-8YO" customClass="Cena13ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5GG-WQ-e2c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_13.gif" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-QN-35S">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="coO-76-o4Z">
-                                <rect key="frame" x="0.0" y="465" width="375" height="459"/>
+                                <rect key="frame" x="0.0" y="445" width="375" height="459"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="XfT-8U-Uzb"/>
                                     <constraint firstAttribute="height" constant="459" id="xDj-uT-ZJf"/>
                                 </constraints>
                             </imageView>
                             <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-kT-gAz">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ncy-D5-cYm"/>
                                     <constraint firstAttribute="width" constant="50" id="dfP-L0-STN"/>
@@ -935,7 +956,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axh-ic-mhk">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="juj-fU-hlG"/>
                                     <constraint firstAttribute="width" constant="60" id="tES-hx-FKQ"/>
@@ -946,7 +967,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHs-SW-AdV">
-                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="273.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5o6-CV-l5r"/>
                                     <constraint firstAttribute="height" constant="100" id="KPH-01-KY9"/>
@@ -971,6 +992,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vk-wc-7Hi"/>
                     </view>
+                    <navigationItem key="navigationItem" id="76m-RG-Bkc"/>
                     <connections>
                         <outlet property="Cena13ImageView" destination="QW6-QN-35S" id="Xf4-Qy-2oU"/>
                         <outlet property="maoImage" destination="coO-76-o4Z" id="r0a-sI-LLT"/>
@@ -987,7 +1009,7 @@
             <objects>
                 <viewController id="A24-hE-sSG" customClass="Cena14ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38N-lW-L7D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Iphone" translatesAutoresizingMaskIntoConstraints="NO" id="had-8l-XNL">
@@ -995,7 +1017,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDA-63-S7i">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UHX-jj-wsa"/>
                                     <constraint firstAttribute="width" constant="60" id="ygg-vx-upd"/>
@@ -1006,7 +1028,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYm-cg-ON1" userLabel="play">
-                                <rect key="frame" x="156" y="572" width="60" height="55"/>
+                                <rect key="frame" x="156" y="552" width="60" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="5yh-sD-06M"/>
                                     <constraint firstAttribute="height" constant="55" id="xgd-cc-xdx"/>
@@ -1019,7 +1041,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owi-iG-Ge7" userLabel="back">
-                                <rect key="frame" x="64" y="574.5" width="45" height="50"/>
+                                <rect key="frame" x="64" y="554.5" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dJi-6t-Ado"/>
                                     <constraint firstAttribute="width" constant="45" id="zK0-Fb-9pr"/>
@@ -1030,7 +1052,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdJ-oF-8IK" userLabel="next">
-                                <rect key="frame" x="265" y="572" width="45" height="50"/>
+                                <rect key="frame" x="265" y="552" width="45" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="NPe-au-f3V"/>
                                     <constraint firstAttribute="height" constant="50" id="k4U-dT-fiz"/>
@@ -1058,6 +1080,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ugz-aT-wMN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9rT-3h-3fW"/>
                     <connections>
                         <outlet property="backOut" destination="Owi-iG-Ge7" id="fmM-9c-tVd"/>
                         <outlet property="imageSong" destination="LVe-Ax-WrX" id="Gac-NI-H12"/>
@@ -1074,14 +1097,14 @@
             <objects>
                 <viewController id="dOF-nU-Xdd" customClass="Cena15ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q46-Be-YCq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_15.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-Eg-7RC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AED-Sy-uYE">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="m0o-UU-2T9"/>
                                     <constraint firstAttribute="height" constant="50" id="rpp-2c-Nt1"/>
@@ -1094,7 +1117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22y-tR-F6G">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Adc-SZ-0I4"/>
                                     <constraint firstAttribute="height" constant="60" id="ido-Bp-MPm"/>
@@ -1118,6 +1141,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IC6-x3-UAe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="B96-at-DXa"/>
                     <connections>
                         <outlet property="Cena15ImageView" destination="dDC-Eg-7RC" id="AW1-7j-cJd"/>
                     </connections>
@@ -1131,14 +1155,14 @@
             <objects>
                 <viewController id="CkS-cv-e6A" customClass="Cena16ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bax-8O-lVz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_16.gif" translatesAutoresizingMaskIntoConstraints="NO" id="OTs-2i-5P4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJ0-6Y-gJF">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Z2t-hb-Lde"/>
                                     <constraint firstAttribute="width" constant="50" id="eGD-yB-n5O"/>
@@ -1151,7 +1175,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atx-k5-DWw">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="t3c-Pm-rAg"/>
                                     <constraint firstAttribute="height" constant="60" id="yZa-87-n32"/>
@@ -1175,6 +1199,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SFW-9g-iab"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Fj-IW-KW3"/>
                     <connections>
                         <outlet property="Cena16ImageView" destination="OTs-2i-5P4" id="fdQ-tQ-qtq"/>
                     </connections>
@@ -1188,14 +1213,14 @@
             <objects>
                 <viewController id="fIC-XP-e3d" customClass="Cena17ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhN-x4-gK5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_17.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vNU-F8-Zb4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUp-DZ-ccM">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RDg-KA-H2f"/>
                                     <constraint firstAttribute="height" constant="50" id="sn9-zZ-2ew"/>
@@ -1208,7 +1233,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7T-nx-iJY">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="rUg-p3-a8H"/>
                                     <constraint firstAttribute="height" constant="60" id="uFN-0U-aDz"/>
@@ -1232,6 +1257,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cfw-CR-YE3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dbm-fu-vdE"/>
                     <connections>
                         <outlet property="Cena17ImageView" destination="vNU-F8-Zb4" id="d6Y-pO-GvJ"/>
                     </connections>
@@ -1245,14 +1271,14 @@
             <objects>
                 <viewController id="ldx-is-LfP" customClass="Cena18ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lrf-WK-J6n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_18.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-qp-i84">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-mS-guG">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="HlN-JW-YYZ"/>
                                     <constraint firstAttribute="height" constant="50" id="QkB-g0-N9g"/>
@@ -1265,7 +1291,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-Ir-fZJ">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="1HL-al-3i3"/>
                                     <constraint firstAttribute="height" constant="60" id="xud-JQ-VsT"/>
@@ -1289,6 +1315,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nrd-Gc-dS6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n9q-Dx-mOX"/>
                     <connections>
                         <outlet property="Cena18ImageView" destination="ZcS-qp-i84" id="AD8-Nd-bJI"/>
                     </connections>
@@ -1302,33 +1329,33 @@
             <objects>
                 <viewController id="AkW-kv-PzE" customClass="Cena19ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="28P-JZ-y4C">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_19.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-Z6-IiC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-QB-h0w">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <connections>
                                     <action selector="setDialogCena19:" destination="AkW-kv-PzE" eventType="touchUpInside" id="roY-lm-D4K"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caixa_dialogo" translatesAutoresizingMaskIntoConstraints="NO" id="SfX-Fo-yF3">
-                                <rect key="frame" x="0.0" y="509" width="375" height="98"/>
+                                <rect key="frame" x="0.0" y="489" width="375" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="LeS-D9-nKM"/>
                                     <constraint firstAttribute="width" constant="375" id="sUs-nh-rrs"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC4-2E-tsw">
-                                <rect key="frame" x="20" y="509" width="335" height="98"/>
+                                <rect key="frame" x="20" y="489" width="335" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-6Z-mGk">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="y7h-xL-HN0"/>
                                     <constraint firstAttribute="width" constant="60" id="zUV-fR-s7g"/>
@@ -1339,14 +1366,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeRigthB" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-fi-e7C">
-                                <rect key="frame" x="44" y="311" width="168" height="88"/>
+                                <rect key="frame" x="44" y="301" width="168" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="fUU-qr-tBa"/>
                                     <constraint firstAttribute="height" constant="88" id="n1s-SV-b2z"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwipeDownB" translatesAutoresizingMaskIntoConstraints="NO" id="eou-58-ijo">
-                                <rect key="frame" x="103.5" y="559" width="168" height="88"/>
+                                <rect key="frame" x="103.5" y="539" width="168" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="kk2-XM-5k7"/>
                                     <constraint firstAttribute="width" constant="168" id="x2t-Gh-cfx"/>
@@ -1378,6 +1405,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yik-pY-qlD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4Th-2t-zxk"/>
                     <connections>
                         <outlet property="Cena19ImageView" destination="BLx-Z6-IiC" id="0go-af-zWN"/>
                         <outlet property="caixaDialog" destination="SfX-Fo-yF3" id="A1Y-1d-GFU"/>
@@ -1397,11 +1425,11 @@
             <objects>
                 <viewController id="A6N-NS-WoM" customClass="Cena19_1ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1eY-Ik-Jn5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToBeContinue.png" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-4G-ULI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="iVS-6Z-gra"/>
                                 </constraints>
@@ -1429,6 +1457,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="723-0K-Wiq"/>
                     </view>
+                    <navigationItem key="navigationItem" id="a1t-8L-784"/>
                     <connections>
                         <outlet property="Cena19_1ImageView" destination="BtG-4G-ULI" id="cQg-kZ-QjR"/>
                     </connections>
@@ -1442,14 +1471,14 @@
             <objects>
                 <viewController id="MB3-rv-Xbu" customClass="Cena20ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptZ-r1-ihi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_20.gif" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-Qp-ZEe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-4d-t9Z">
-                                <rect key="frame" x="304" y="596" width="55" height="55"/>
+                                <rect key="frame" x="304" y="576" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="L4l-qG-TrZ"/>
                                     <constraint firstAttribute="height" constant="55" id="Z0M-nH-6bb"/>
@@ -1460,7 +1489,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-gk-GjZ">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="3XD-ZK-euc"/>
                                     <constraint firstAttribute="height" constant="60" id="e39-Dg-Raz"/>
@@ -1484,6 +1513,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v0c-ds-RfW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6iO-fC-HsZ"/>
                     <connections>
                         <outlet property="Cena20ImageView" destination="cVn-Qp-ZEe" id="iZn-52-30T"/>
                     </connections>
@@ -1497,14 +1527,14 @@
             <objects>
                 <viewController id="jwi-VD-0CH" customClass="Cena21ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1mt-BX-r7t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_21.gif" translatesAutoresizingMaskIntoConstraints="NO" id="sd3-tx-v4M">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RX-A7-VtY">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0vr-90-N6y"/>
                                     <constraint firstAttribute="width" constant="50" id="v8U-1V-Ihg"/>
@@ -1515,7 +1545,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ue-TR-Mpm">
-                                <rect key="frame" x="299" y="36" width="60" height="60"/>
+                                <rect key="frame" x="299" y="16" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Eo3-lN-d5C"/>
                                     <constraint firstAttribute="width" constant="60" id="JZe-AU-hOX"/>
@@ -1539,6 +1569,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RNX-UH-IPh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Q8d-oG-4fC"/>
                     <connections>
                         <outlet property="Cena21ImageView" destination="sd3-tx-v4M" id="mYJ-SZ-zVg"/>
                     </connections>
@@ -1552,14 +1583,14 @@
             <objects>
                 <viewController id="XUu-vf-qhr" customClass="Cena22ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="etf-kJ-Gob">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_22.gif" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-xr-VLW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-J8-530">
-                                <rect key="frame" x="309" y="601" width="50" height="50"/>
+                                <rect key="frame" x="309" y="581" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1cb-jv-MXl"/>
                                     <constraint firstAttribute="width" constant="50" id="Qvn-dK-rgw"/>
@@ -1608,11 +1639,11 @@
             <objects>
                 <viewController id="Im4-oa-puN" customClass="Cena23ViewController" customModule="Anxiety" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZYn-32-Oo5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cena_23.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Nzz-bQ-L11">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APM-DJ-krM">
                                 <rect key="frame" x="299" y="16" width="60" height="60"/>
@@ -1627,7 +1658,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtI-MT-gL4" customClass="ProgressBarView" customModule="Anxiety" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="468" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="448" width="150" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="eVk-Mi-Hgw"/>
@@ -1635,14 +1666,14 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="respira" translatesAutoresizingMaskIntoConstraints="NO" id="aig-Dv-cSl">
-                                <rect key="frame" x="137.5" y="493" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="473" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="T4p-p5-SIj"/>
                                     <constraint firstAttribute="height" constant="100" id="nQh-h9-gsb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdI-DF-fEf">
-                                <rect key="frame" x="16" y="355" width="343" height="61"/>
+                                <rect key="frame" x="16" y="338" width="343" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="0.39816994863013699" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Pressione o botão por 2 segundos e respire">
@@ -1781,6 +1812,6 @@
         <segue reference="VNm-Eu-s2T"/>
         <segue reference="vMv-HG-7l3"/>
         <segue reference="uMj-NW-ys4"/>
-        <segue reference="leZ-Sl-Yqu"/>
+        <segue reference="66f-uO-lzy"/>
     </inferredMetricsTieBreakers>
 </document>

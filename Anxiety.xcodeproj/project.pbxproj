@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D16555623394CF2001A56D0 /* GDD.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1D16555523394CF2001A56D0 /* GDD.rtf */; };
+		1D16555823394DE3001A56D0 /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1D16555723394DE3001A56D0 /* MainScene.sks */; };
+		1D16557E23394F51001A56D0 /* Scene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16557D23394F51001A56D0 /* Scene1.swift */; };
+		1D16558023395098001A56D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D16557F23395098001A56D0 /* MainViewController.swift */; };
 		1D2CA02522C3664900C5B5CC /* Cena_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA00C22C3654D00C5B5CC /* Cena_4.gif */; };
 		1D2CA02622C3664C00C5B5CC /* Cena_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA00A22C3654D00C5B5CC /* Cena_1.gif */; };
 		1D2CA02722C3664E00C5B5CC /* Cena_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D2CA01D22C3655000C5B5CC /* Cena_2.gif */; };
@@ -111,6 +115,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D16555523394CF2001A56D0 /* GDD.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = GDD.rtf; sourceTree = "<group>"; };
+		1D16555723394DE3001A56D0 /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainScene.sks; sourceTree = "<group>"; };
+		1D16557D23394F51001A56D0 /* Scene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1.swift; sourceTree = "<group>"; };
+		1D16557F23395098001A56D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1D2CA00A22C3654D00C5B5CC /* Cena_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_1.gif; sourceTree = "<group>"; };
 		1D2CA00C22C3654D00C5B5CC /* Cena_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_4.gif; sourceTree = "<group>"; };
 		1D2CA01122C3654E00C5B5CC /* Cena_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Cena_3.gif; sourceTree = "<group>"; };
@@ -227,6 +235,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D16554D23394C12001A56D0 /* Scene1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D16555723394DE3001A56D0 /* MainScene.sks */,
+				1D16557D23394F51001A56D0 /* Scene1.swift */,
+			);
+			path = Scene1;
+			sourceTree = "<group>";
+		};
+		1D16554E23394C2A001A56D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D16555423394CB1001A56D0 /* Assets */,
+				1D16555323394C9D001A56D0 /* Game Design */,
+				1D16555223394C98001A56D0 /* UI */,
+				1D16555123394C8D001A56D0 /* Sound Design */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D16554F23394C39001A56D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1D7DC80B21B6012900360F12 /* ExtensoesFramework */,
+				E2726C41217A1DDE00FC04FF /* Main.storyboard */,
+				E2726C44217A1DE000FC04FF /* Assets.xcassets */,
+				E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */,
+				1D16557F23395098001A56D0 /* MainViewController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1D16555023394C44001A56D0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1D16554D23394C12001A56D0 /* Scene1 */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1D16555123394C8D001A56D0 /* Sound Design */ = {
+			isa = PBXGroup;
+			children = (
+				1D7C0FE3218F2385006DFE69 /* Sounds */,
+			);
+			path = "Sound Design";
+			sourceTree = "<group>";
+		};
+		1D16555223394C98001A56D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5E82FA4D2188AB7E00A43BE5 /* font */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1D16555323394C9D001A56D0 /* Game Design */ = {
+			isa = PBXGroup;
+			children = (
+				1D16555523394CF2001A56D0 /* GDD.rtf */,
+			);
+			path = "Game Design";
+			sourceTree = "<group>";
+		};
+		1D16555423394CB1001A56D0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1DC8A3A721B6D61A0019804B /* AssetsGif */,
+				1D2CA00822C3653500C5B5CC /* ImagensCenas */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		1D2CA00822C3653500C5B5CC /* ImagensCenas */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,18 +393,6 @@
 			path = AssetsGif;
 			sourceTree = "<group>";
 		};
-		5E71351D217A281F008290E4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E2726C41217A1DDE00FC04FF /* Main.storyboard */,
-				1D2CA00822C3653500C5B5CC /* ImagensCenas */,
-				1DC8A3A721B6D61A0019804B /* AssetsGif */,
-				E2726C44217A1DE000FC04FF /* Assets.xcassets */,
-				E2726C46217A1DE000FC04FF /* LaunchScreen.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		5E71351E217A2829008290E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,7 +423,6 @@
 				1D68E7FB218FCB7B00FDA350 /* Cena23ViewController.swift */,
 				1D68E7FD218FCB8D00FDA350 /* Cena24ViewController.swift */,
 				1DB47036218FD72F00BDB5F1 /* Cena19_1ViewController.swift */,
-				1D7DC80B21B6012900360F12 /* ExtensoesFramework */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,7 +430,6 @@
 		5E75ABD12183B95300C59507 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1D7C0FE3218F2385006DFE69 /* Sounds */,
 				5E75ABD22183B9A900C59507 /* DilalogScenes.swift */,
 				1DBE1BC82188EA560000F746 /* TipsScenes.swift */,
 				5E4057F7226F60A1005AE9C2 /* MusicBackground.swift */,
@@ -399,10 +466,11 @@
 		E2726C3C217A1DDE00FC04FF /* Anxiety */ = {
 			isa = PBXGroup;
 			children = (
-				5E82FA4D2188AB7E00A43BE5 /* font */,
+				1D16554F23394C39001A56D0 /* Utilities */,
+				1D16554E23394C2A001A56D0 /* Resources */,
+				1D16555023394C44001A56D0 /* Scenes */,
 				5E75ABD12183B95300C59507 /* Model */,
 				5E71351E217A2829008290E4 /* Controller */,
-				5E71351D217A281F008290E4 /* View */,
 				E2726C49217A1DE000FC04FF /* Info.plist */,
 			);
 			path = Anxiety;
@@ -511,6 +579,7 @@
 				1D40366622C4FFE100D12EDA /* Cena_8.png in Resources */,
 				1D2CA04822C36F2F00C5B5CC /* Cena_15.gif in Resources */,
 				1D7C0FFC218F241C006DFE69 /* comendo.mp3 in Resources */,
+				1D16555823394DE3001A56D0 /* MainScene.sks in Resources */,
 				1D2CA02922C3665700C5B5CC /* Cena_5.gif in Resources */,
 				1D40365022C4816200D12EDA /* Bolha.gif in Resources */,
 				1D2CA05222C36F9B00C5B5CC /* Cena_22.gif in Resources */,
@@ -521,6 +590,7 @@
 				1D2CA05022C36F8500C5B5CC /* Cena_21.gif in Resources */,
 				1D2CA02822C3665300C5B5CC /* Cena_3.gif in Resources */,
 				1D40364C22C47D6800D12EDA /* Scream3.png in Resources */,
+				1D16555623394CF2001A56D0 /* GDD.rtf in Resources */,
 				1D40366A22C5088200D12EDA /* ToBeContinue.png in Resources */,
 				1D40366222C4DCFC00D12EDA /* Cena_18.gif in Resources */,
 				E2726C45217A1DE000FC04FF /* Assets.xcassets in Resources */,
@@ -548,6 +618,7 @@
 				1D68E7FC218FCB7B00FDA350 /* Cena23ViewController.swift in Sources */,
 				1D2DB902218219A30097921A /* Cena11ViewController.swift in Sources */,
 				1DC8A3A221B6CBBD0019804B /* Pulsing.swift in Sources */,
+				1D16558023395098001A56D0 /* MainViewController.swift in Sources */,
 				1D2DB900218219720097921A /* Cena10ViewController.swift in Sources */,
 				1D68E7FA218FCB6900FDA350 /* Cena22ViewController.swift in Sources */,
 				E2726C3E217A1DDE00FC04FF /* AppDelegate.swift in Sources */,
@@ -557,6 +628,7 @@
 				1D2DB90E21821C880097921A /* Cena17ViewController.swift in Sources */,
 				1D7DC80921B600FA00360F12 /* DeviceExtensao.swift in Sources */,
 				5E405802226F6933005AE9C2 /* Passaros.swift in Sources */,
+				1D16557E23394F51001A56D0 /* Scene1.swift in Sources */,
 				1D2DB8FC218218C60097921A /* Cena8ViewController.swift in Sources */,
 				1D2DB8EE2182160E0097921A /* Cena1ViewController.swift in Sources */,
 				5E4057FA226F65E8005AE9C2 /* AguaPiaSound.swift in Sources */,
